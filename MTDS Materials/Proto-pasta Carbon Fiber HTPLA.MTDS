@@ -1,0 +1,115 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Carbon Fiber HTPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < Technical Page | https://proto-pasta.com/pages/carbon-fiber-pla
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.3
+  < g/cm^3
+
+> Melting Temperature
+  <
+  < 155
+  < °C
+
+> Glass Transition Temperature
+  <
+  < 60
+  < °C
+
+> Heat Deflection Temperature
+  <
+  < 140 | After heat treatment
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  <
+  < Increased rigidity vs. standard PLA
+  <
+
+> Young's Modulus (Interlayer)
+  <
+  < Increased rigidity vs. standard PLA
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 55
+  < °C
+
+> Nozzle Size
+  <
+  < 0.5
+  < mm
+
+> Build Plate Type
+  <
+  < Spring-loaded direct drive
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Standard
+  <
+
+> Annealing Condition
+  <
+  < Heat treat at 95 - 110 °C for improved temperature resistance
+  <
+
+# Specific
+
+> Processing Temperature
+  <
+  < 220 @ 6 mm³/s, 240 @ 12 mm³/s
+  <
+
+> Carbon Fiber Content
+  <
+  < 10 - 15
+  < % by weight
+
+> Composition
+  <
+  < NatureWorks 4043D PLA with chopped carbon fibers
+  <
+

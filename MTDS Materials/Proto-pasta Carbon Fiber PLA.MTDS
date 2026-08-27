@@ -1,0 +1,76 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Carbon Fiber PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < Technical Page | https://proto-pasta.com/pages/carbon-fiber-pla
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.3
+  < g/cm^3
+
+> Melting Temperature
+  <
+  < 155
+  < °C
+
+> Glass Transition Temperature
+  <
+  < 60
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50
+  < °C
+
+> Nozzle Size
+  <
+  < 0.5
+  < mm
+
+> Build Plate Type
+  <
+  < Spring-loaded direct drive
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Standard
+  <
+
