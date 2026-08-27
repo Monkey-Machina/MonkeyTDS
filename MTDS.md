@@ -187,34 +187,54 @@ A field contains at most one method. To record a property measured by more than 
 | BuildTak | Proprietary textured build-plate surface |
 
 ## Standard Units
-| Unit | Definition | 
-| ----- | ------- |
-| m | Meter |
-| mm | Millimeter |
-| g | Gram |
-| kg | Kilogram |
-| g/cm^3 | Grams per cubic centimeter |
-| g/10 min | Grams per ten minutes (melt flow rate) |
-| °C | Degrees Celsius |
-| MPa | Megapascal |
-| kJ/m^2 | Kilojoules per square meter |
-| % | Percent |
-| % RH | Percent relative humidity |
-| ° | Degree of angle |
-| mm/s | Millimeters per second |
-| mm^3/s | Cubic millimeters per second (volumetric flow) |
-| h | Hour |
-| min | Minute |
-| ohm-cm | Ohm-centimeter (volume resistivity) |
-| ohm/sq | Ohm per square (surface resistivity) |
-| ohm | Ohm |
-| kohm | Kilohm |
-| Mohm | Megohm |
-| T | Tesla (magnetic flux density) |
-| W/m·K | Watt per meter-kelvin (thermal conductivity) |
-| ppm/°C | Parts per million per degree Celsius (coefficient of thermal expansion) |
-| kV/mm | Kilovolt per millimeter (dielectric strength) |
-| wt% | Percent by weight |
+Every unit is defined over the seven SI base units (kg, m, s, A, K, mol, cd) as a
+scale factor times a product of base-unit powers, so any two units of the same
+dimension can be converted programmatically. `scripts/units.py` is the reference
+implementation; tooling normalises each numeric field to a single canonical unit
+per subject (see below) when compiling the dataset.
+
+| Unit | SI definition | Meaning |
+| ---- | ------------- | ------- |
+| m | 1 · m | Meter |
+| cm | 1e-2 · m | Centimeter |
+| mm | 1e-3 · m | Millimeter |
+| g | 1e-3 · kg | Gram |
+| kg | 1 · kg | Kilogram |
+| s | 1 · s | Second |
+| min | 60 · s | Minute |
+| h | 3600 · s | Hour |
+| K | 1 · K | Kelvin |
+| °C | 1 · K + 273.15 | Degrees Celsius (affine) |
+| g/cm^3 | 1e3 · kg·m⁻³ | Grams per cubic centimeter |
+| MPa | 1e6 · kg·m⁻¹·s⁻² | Megapascal |
+| GPa | 1e9 · kg·m⁻¹·s⁻² | Gigapascal |
+| kJ/m^2 | 1e3 · kg·s⁻² | Kilojoules per square meter |
+| % | 1e-2 · (dimensionless) | Percent |
+| % RH | 1e-2 · (dimensionless) | Percent relative humidity |
+| wt% | 1e-2 · (dimensionless) | Percent by weight |
+| ° | π/180 · (dimensionless) | Degree of angle |
+| mm/s | 1e-3 · m·s⁻¹ | Millimeters per second |
+| mm^3/s | 1e-9 · m³·s⁻¹ | Cubic millimeters per second (volumetric flow) |
+| g/10 min | 1 · kg (per 10 min, reporting convention) | Melt mass-flow rate |
+| cm^3/10 min | 1 · m³ (per 10 min, reporting convention) | Melt volume-flow rate |
+| ohm | 1 · kg·m²·s⁻³·A⁻² | Ohm |
+| kohm | 1e3 · kg·m²·s⁻³·A⁻² | Kilohm |
+| Mohm | 1e6 · kg·m²·s⁻³·A⁻² | Megohm |
+| ohm-cm | 1e-2 · kg·m³·s⁻³·A⁻² | Ohm-centimeter (volume resistivity) |
+| ohm-m | 1 · kg·m³·s⁻³·A⁻² | Ohm-meter (volume resistivity) |
+| ohm/sq | 1 · kg·m²·s⁻³·A⁻² | Ohm per square (surface resistivity) |
+| kV/mm | 1e6 · kg·m·s⁻³·A⁻¹ | Kilovolt per millimeter (dielectric strength) |
+| T | 1 · kg·s⁻²·A⁻¹ | Tesla (magnetic flux density) |
+| W/m·K | 1 · kg·m·s⁻³·K⁻¹ | Watt per meter-kelvin (thermal conductivity) |
+| ppm/°C | 1e-6 · K⁻¹ | Parts per million per degree Celsius (thermal expansion) |
+
+### Canonical units
+When the dataset is compiled, each numeric field is converted to one canonical
+unit per subject — chosen automatically as the most common SI-recognised unit
+that subject appears in — and emitted as `valueCanonical` / `canonicalUnit`
+alongside the verbatim value. Files may report a property in any dimensionally
+consistent unit; the compiler normalises it. A unit that is dimensionally wrong
+for its subject is flagged (`compile_materials.py --check` exits non-zero).
 
 ### .MTDS File Format
 The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.
