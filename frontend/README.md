@@ -36,11 +36,16 @@ python ../scripts/compile_materials.py --out data/materials.json
 ## Features
 
 - **Text search** across manufacturer / product / material.
-- **Facets**: Manufacturer, Material — with live counts.
+- **Facets**: Manufacturer, Material — live counts; collapsed to the 5 largest,
+  "show all N" expands the full list alphabetically (state remembered).
 - **Property range filters**: add any measured property, set min / max; an empty
   range just means "has a value for this property". Multiple ranges are AND-ed.
   Live result count.
-- **Sortable columns** (click header; click again for desc; third click clears).
+- **Result columns are configurable**: `+` adds a property column, `‹ › ×` on
+  each header reorder / remove it. Choice is saved in `localStorage`.
+- **Sortable columns** (click header label; again for desc; third click clears).
+- **Units** are shown in grey after each value (values across a column may carry
+  different units, so there is no single column-level unit).
 - **Compare tray**: tick rows anywhere, persists in `localStorage`, jump to the
   matrix from the masthead.
 - **Compare matrix**: sticky property column, grouped by MTDS category, best value

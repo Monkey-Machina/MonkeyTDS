@@ -4,19 +4,13 @@
      #/?<filters>          faceted search + results table
      #/m/<id>              material detail
      #/compare?ids=a,b,c   comparison matrix
-   All filter/sort state lives in the URL so any view is a shareable link. */
-
-var DATA = null;                    // {schema, generatedAt, materials:[...]}
-var BY_ID = {};                     // id -> material
-var SUBJECTS = [];                  // subjects that carry numbers, by frequency
-var UNIT_FOR = {};                  // subject -> most common unit
-var TRAY = load_tray();             // Set of ids queued for compare
+   Filter/sort state lives in the URL; column choice + facet expansion live in
+   localStorage (per browser). */
 
 var DEFAULT_COLS = [
   "Density", "Tensile Strength (In-Plane)", "Young's Modulus (In-Plane)",
   "Heat Deflection Temperature", "Breaking Elongation Rate (In-Plane)"
 ];
-/* core properties used for the per-material "completeness" bar */
 var CORE = [
   "Density", "Melt Index", "Glass Transition Temperature", "Heat Deflection Temperature",
   "Tensile Strength (In-Plane)", "Tensile Strength (Interlayer)",
@@ -24,52 +18,57 @@ var CORE = [
   "Breaking Elongation Rate (In-Plane)", "Bending Strength (In-Plane)",
   "Bending Modulus (In-Plane)", "Impact Strength (In-Plane)"
 ];
+var FACET_COLLAPSED = 5;
 
-/* ---------- data loading ----------
-   data/materials.js sets window.__MTDS_DATA__ (works from file:// too);
-   fall back to fetching the .json if only that was regenerated. */
+var DATA = null;
+var BY_ID = {};
+var SUBJECTS = [];                  // property subjects that carry numbers, by frequency
+var UNIT_FOR = {};                  // subject -> most common unit
+var TRAY = load_set("mtds_tray");   // ids queued for compare
+var COLS = load_cols();             // chosen result columns
+var FACET_OPEN = load_obj("mtds_facet_open");
+var RESTORE_Q = null;               // caret position to restore after a text-search re-render
+
+/* ---------- data ---------- */
 (window.__MTDS_DATA__
   ? Promise.resolve(window.__MTDS_DATA__)
   : fetch("data/materials.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-)
-  .then(function (d) {
-    DATA = d;
-    var PROP_CATS = { "Physical Property": 1, "Mechanical Property": 1, "Chemical Property": 1, "Electrical Property": 1, "Magnetic Property": 1 };
-    var propSubj = {};                 // subject -> seen in a property category
-    d.materials.forEach(function (m) {
-      BY_ID[m.id] = m;
-      m._nums = {};                 // subject -> representative number
-      m._methods = {};              // subject -> method string (first seen)
-      m.fields.forEach(function (f) {
-        f.subject = f.subject.replace(/[’‘`]/g, "'");   // normalise apostrophes
-        if (PROP_CATS[f.category]) propSubj[f.subject] = 1;
-        var n = parse_num(f.value);
-        if (n !== null && !(f.subject in m._nums)) m._nums[f.subject] = n;
-        if (f.method && !(f.subject in m._methods)) m._methods[f.subject] = f.method;
-      });
+).then(function (d) {
+  DATA = d;
+  var PROP_CATS = { "Physical Property": 1, "Mechanical Property": 1, "Chemical Property": 1, "Electrical Property": 1, "Magnetic Property": 1 };
+  var propSubj = {};
+  d.materials.forEach(function (m) {
+    BY_ID[m.id] = m;
+    m._nums = {}; m._methods = {}; m._raw = {};
+    m.fields.forEach(function (f) {
+      f.subject = f.subject.replace(/[’‘`]/g, "'");
+      if (PROP_CATS[f.category]) propSubj[f.subject] = 1;
+      if (!(f.subject in m._raw)) m._raw[f.subject] = { value: f.value, units: f.units };
+      var n = parse_num(f.value);
+      if (n !== null && !(f.subject in m._nums)) m._nums[f.subject] = n;
+      if (f.method && !(f.subject in m._methods)) m._methods[f.subject] = f.method;
     });
-    var freq = {}, unit = {};
-    d.materials.forEach(function (m) {
-      Object.keys(m._nums).forEach(function (s) { freq[s] = (freq[s] || 0) + 1; });
-      m.fields.forEach(function (f) {
-        if (f.units) { unit[f.subject] = unit[f.subject] || {}; unit[f.subject][f.units] = (unit[f.subject][f.units] || 0) + 1; }
-      });
-    });
-    SUBJECTS = Object.keys(freq).filter(function (s) { return freq[s] >= 3 && propSubj[s]; })
-      .sort(function (a, b) { return freq[b] - freq[a]; });
-    Object.keys(unit).forEach(function (s) {
-      UNIT_FOR[s] = Object.keys(unit[s]).sort(function (a, b) { return unit[s][b] - unit[s][a]; })[0];
-    });
-    document.getElementById("dataset-info").textContent =
-      d.materialCount + " materials · compiled " + (d.generatedAt || "").slice(0, 10);
-    route();
-  })
-  .catch(function (e) {
-    document.getElementById("app").innerHTML =
-      "<p><b>Could not load material data</b> (" + esc(e.message) + ").<br>" +
-      "Make sure <code>data/materials.js</code> exists, or serve this folder over HTTP " +
-      "(<code>python -m http.server</code> in <code>frontend/</code>).</p>";
   });
+  var freq = {}, unit = {};
+  d.materials.forEach(function (m) {
+    Object.keys(m._nums).forEach(function (s) { freq[s] = (freq[s] || 0) + 1; });
+    m.fields.forEach(function (f) {
+      if (f.units) { unit[f.subject] = unit[f.subject] || {}; unit[f.subject][f.units] = (unit[f.subject][f.units] || 0) + 1; }
+    });
+  });
+  SUBJECTS = Object.keys(freq).filter(function (s) { return freq[s] >= 3 && propSubj[s]; })
+    .sort(function (a, b) { return freq[b] - freq[a]; });
+  Object.keys(unit).forEach(function (s) {
+    UNIT_FOR[s] = Object.keys(unit[s]).sort(function (a, b) { return unit[s][b] - unit[s][a]; })[0];
+  });
+  document.getElementById("dataset-info").textContent =
+    d.materialCount + " materials · compiled " + (d.generatedAt || "").slice(0, 10);
+  route();
+}).catch(function (e) {
+  document.getElementById("app").innerHTML =
+    "<p><b>Could not load material data</b> (" + esc(e.message) + ").<br>" +
+    "Make sure <code>data/materials.js</code> exists, or serve this folder over HTTP.</p>";
+});
 
 window.addEventListener("hashchange", route);
 
@@ -78,7 +77,7 @@ function parse_num(s) {
   if (s == null) return null;
   s = String(s).trim().replace(/,/g, "");
   if (s === "" || /^n\/?a$/i.test(s) || /no break/i.test(s)) return null;
-  s = s.replace(/\s*[x×]\s*10\s*\^?\s*([+-]?\d+)/gi, "e$1");   // 2.2 x 10^4 -> 2.2e4
+  s = s.replace(/\s*[x×]\s*10\s*\^?\s*([+-]?\d+)/gi, "e$1");
   var rng = s.match(/(-?\d*\.?\d+(?:e[+-]?\d+)?)\s*[-–]\s*(-?\d*\.?\d+(?:e[+-]?\d+)?)/i);
   if (rng && !/±/.test(s)) return (parseFloat(rng[1]) + parseFloat(rng[2])) / 2;
   var m = s.match(/-?\d*\.?\d+(?:e[+-]?\d+)?/i);
@@ -90,14 +89,12 @@ function esc(s) {
   });
 }
 function el(html) { var d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; }
-function fmt(n) {
-  if (n == null) return "";
-  var a = Math.abs(n);
-  if (a !== 0 && (a >= 1e5 || a < 1e-3)) return n.toExponential(2);
-  return (Math.round(n * 1000) / 1000).toString();
+function shortlabel(s) { return s.replace(" (In-Plane)", "").replace(" (Interlayer)", " (Z)"); }
+function cell_val(raw) {
+  if (!raw || raw.value == null || raw.value === "") return "";
+  return esc(raw.value) + (raw.units ? " <span class='uval'>" + esc(raw.units) + "</span>" : "");
 }
 
-/* URL state: everything after "#/" or "#/compare" is a query string */
 function get_params() {
   var h = location.hash.replace(/^#/, "");
   var qi = h.indexOf("?");
@@ -108,15 +105,20 @@ function set_params(p, base) {
   location.hash = (base || "/") + (s ? "?" + s : "");
 }
 
-/* compare tray persistence */
-function load_tray() {
-  try { return new Set(JSON.parse(localStorage.getItem("mtds_tray") || "[]")); }
-  catch (e) { return new Set(); }
+/* localStorage-backed state */
+function load_set(k) { try { return new Set(JSON.parse(localStorage.getItem(k) || "[]")); } catch (e) { return new Set(); } }
+function load_obj(k) { try { return JSON.parse(localStorage.getItem(k) || "{}") || {}; } catch (e) { return {}; } }
+function save_json(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+function load_cols() {
+  try {
+    var c = JSON.parse(localStorage.getItem("mtds_cols") || "null");
+    if (c && c.length) return c;
+  } catch (e) {}
+  return DEFAULT_COLS.slice();
 }
-function save_tray() {
-  try { localStorage.setItem("mtds_tray", JSON.stringify([].concat.apply([], [Array.from(TRAY)]))); } catch (e) {}
-  render_compare_bar();
-}
+function save_cols() { save_json("mtds_cols", COLS); }
+function save_tray() { save_json("mtds_tray", Array.from(TRAY)); render_compare_bar(); }
+
 function render_compare_bar() {
   var b = document.getElementById("compare-bar");
   if (!TRAY.size) { b.innerHTML = ""; return; }
@@ -143,18 +145,16 @@ function view_search() {
   var q = (p.get("q") || "").toLowerCase().trim();
   var fMan = new Set((p.get("man") || "").split(",").filter(Boolean));
   var fMat = new Set((p.get("mat") || "").split(",").filter(Boolean));
-  var ranges = [];                            // [{subject,min,max}]
+  var ranges = [];
   (p.get("r") || "").split(";").filter(Boolean).forEach(function (t) {
-    var a = t.split("~"); ranges.push({ subject: decodeURIComponent(a[0]), min: a[1] === "" ? null : +a[1], max: a[2] === "" ? null : +a[2] });
+    var a = t.split("~");
+    ranges.push({ subject: decodeURIComponent(a[0]), min: a[1] === "" || a[1] == null ? null : +a[1], max: a[2] === "" || a[2] == null ? null : +a[2] });
   });
   var sortKey = p.get("sort") || "";
   var sortDir = p.get("dir") || "asc";
 
   function pass(m) {
-    if (q) {
-      var hay = (m.manufacturer + " " + m.productName + " " + m.material).toLowerCase();
-      if (hay.indexOf(q) < 0) return false;
-    }
+    if (q && (m.manufacturer + " " + m.productName + " " + m.material).toLowerCase().indexOf(q) < 0) return false;
     if (fMan.size && !fMan.has(m.manufacturer)) return false;
     if (fMat.size && !fMat.has(m.material)) return false;
     for (var i = 0; i < ranges.length; i++) {
@@ -167,60 +167,69 @@ function view_search() {
   }
   var hits = DATA.materials.filter(pass);
 
-  // sort
   if (sortKey) {
+    var meta = { manufacturer: 1, productName: 1, material: 1 };
     hits.sort(function (a, b) {
-      var x, y;
-      if (sortKey === "manufacturer" || sortKey === "productName" || sortKey === "material") {
-        x = a[sortKey].toLowerCase(); y = b[sortKey].toLowerCase();
+      if (meta[sortKey]) {
+        var x = a[sortKey].toLowerCase(), y = b[sortKey].toLowerCase();
         return x < y ? -1 : x > y ? 1 : 0;
       }
-      x = a._nums[sortKey]; y = b._nums[sortKey];
-      if (x == null) return 1; if (y == null) return -1;
-      return x - y;
+      var u = a._nums[sortKey], w = b._nums[sortKey];
+      if (u == null) return 1; if (w == null) return -1;
+      return u - w;
     });
     if (sortDir === "desc") hits.reverse();
   }
 
-  // ---- build page ----
   var root = el('<div id="search"><div id="filters"></div><div id="results"></div></div>');
-  document.getElementById("app").innerHTML = "";
-  document.getElementById("app").appendChild(root);
-
-  /* filter rail */
+  var app = document.getElementById("app");
+  app.innerHTML = ""; app.appendChild(root);
   var F = root.querySelector("#filters");
+  var R = root.querySelector("#results");
+
+  /* ---- text ---- */
   F.appendChild(el('<fieldset><legend>Text</legend>' +
     '<input type="text" id="q" placeholder="manufacturer / product / material" value="' + esc(p.get("q") || "") + '"></fieldset>'));
-  F.querySelector("#q").addEventListener("input", debounce(function (e) {
-    var np = get_params(); e.target.value ? np.set("q", e.target.value) : np.delete("q"); np.delete("sort"); set_params(np);
-  }, 250));
+  var qEl = F.querySelector("#q");
+  qEl.addEventListener("input", debounce(function () {
+    RESTORE_Q = qEl.selectionStart;
+    var np = get_params();
+    qEl.value ? np.set("q", qEl.value) : np.delete("q");
+    np.delete("sort"); np.delete("dir");
+    set_params(np);
+  }, 200));
 
+  /* ---- facets ---- */
   F.appendChild(facet_block("Manufacturer", "man", fMan, count_by(hits, function (m) { return m.manufacturer; })));
   F.appendChild(facet_block("Material", "mat", fMat, count_by(hits, function (m) { return m.material; })));
 
-  /* property range filters */
+  /* ---- property ranges ---- */
   var rf = el('<fieldset><legend>Property ranges</legend></fieldset>');
+  function write_ranges() {
+    var np = get_params();
+    var s = ranges.map(function (r) { return encodeURIComponent(r.subject) + "~" + (r.min == null ? "" : r.min) + "~" + (r.max == null ? "" : r.max); }).join(";");
+    s ? np.set("r", s) : np.delete("r");
+    np.delete("sort"); np.delete("dir"); set_params(np);
+  }
   ranges.forEach(function (r, i) {
-    var row = el('<div class="rangerow"><span>' + esc(r.subject) +
-      ' <span class="unit">' + esc(UNIT_FOR[r.subject] || "") + '</span></span>' +
+    var row = el('<div class="rangerow"><span class="rl">' + esc(r.subject) +
+      (UNIT_FOR[r.subject] ? ' <span class="uval">' + esc(UNIT_FOR[r.subject]) + "</span>" : "") + "</span>" +
       '<span class="inputs"><input type="number" step="any" placeholder="min" value="' + (r.min == null ? "" : r.min) + '">' +
       '<input type="number" step="any" placeholder="max" value="' + (r.max == null ? "" : r.max) + '">' +
       '<button title="remove">×</button></span></div>');
     var ins = row.querySelectorAll("input");
     ins[0].onchange = ins[1].onchange = function () {
-      ranges[i].min = ins[0].value === "" ? null : +ins[0].value;
-      ranges[i].max = ins[1].value === "" ? null : +ins[1].value;
-      write_ranges(ranges);
+      r.min = ins[0].value === "" ? null : +ins[0].value;
+      r.max = ins[1].value === "" ? null : +ins[1].value;
+      write_ranges();
     };
-    row.querySelector("button").onclick = function () { ranges.splice(i, 1); write_ranges(ranges); };
+    row.querySelector("button").onclick = function () { ranges.splice(i, 1); write_ranges(); };
     rf.appendChild(row);
   });
-  var add = el('<div class="rangerow"><select><option value="">+ add property…</option>' +
-    SUBJECTS.filter(function (s) { return !ranges.some(function (r) { return r.subject === s; }); })
-      .map(function (s) { return '<option>' + esc(s) + "</option>"; }).join("") + "</select><span></span></div>");
-  add.querySelector("select").onchange = function (e) {
-    if (e.target.value) { ranges.push({ subject: e.target.value, min: null, max: null }); write_ranges(ranges); }
-  };
+  var avail = SUBJECTS.filter(function (s) { return !ranges.some(function (r) { return r.subject === s; }); });
+  var add = el('<select><option value="">+ add property…</option>' +
+    avail.map(function (s) { return "<option>" + esc(s) + "</option>"; }).join("") + "</select>");
+  add.onchange = function () { if (add.value) { ranges.push({ subject: add.value, min: null, max: null }); write_ranges(); } };
   rf.appendChild(add);
   F.appendChild(rf);
 
@@ -228,87 +237,136 @@ function view_search() {
   reset.onclick = function () { location.hash = "/"; };
   F.appendChild(reset);
 
-  /* results */
-  var R = root.querySelector("#results");
-  var cols = DEFAULT_COLS;
+  /* ---- results toolbar ---- */
   var tb = el('<div class="toolbar"><span class="count">' + hits.length + " material" + (hits.length === 1 ? "" : "s") + "</span>" +
     '<button class="linkish" id="exp-csv">export CSV</button>' +
     '<button class="linkish" id="exp-json">export JSON</button>' +
     '<span class="small muted">(current results)</span></div>');
   R.appendChild(tb);
-  tb.querySelector("#exp-csv").onclick = function () { export_rows(hits, cols, "csv"); };
-  tb.querySelector("#exp-json").onclick = function () { export_rows(hits, cols, "json"); };
+  tb.querySelector("#exp-csv").onclick = function () { export_rows(hits, "csv"); };
+  tb.querySelector("#exp-json").onclick = function () { export_rows(hits, "json"); };
 
+  /* ---- results table ---- */
+  function sort_to(k) {
+    var np = get_params();
+    if (sortKey === k && sortDir === "asc") np.set("dir", "desc");
+    else if (sortKey === k && sortDir === "desc") { np.delete("sort"); np.delete("dir"); }
+    else { np.set("sort", k); np.set("dir", "asc"); }
+    set_params(np);
+  }
   var wrap = el('<div class="wrap"></div>');
-  var t = el('<table class="data"><thead></thead><tbody></tbody></table>');
-  var head = "<tr><th class='nosort'></th>" +
-    th("Manufacturer", "manufacturer", sortKey, sortDir) +
-    th("Product", "productName", sortKey, sortDir) +
-    th("Material", "material", sortKey, sortDir) +
-    cols.map(function (c) { return th(shortlabel(c) + unit_sup(c), c, sortKey, sortDir, true); }).join("") + "</tr>";
-  t.querySelector("thead").innerHTML = head;
-  t.querySelectorAll("thead th").forEach(function (thEl) {
-    if (thEl.classList.contains("nosort")) return;
-    thEl.onclick = function () {
-      var np = get_params(), k = thEl.dataset.k;
-      if (sortKey === k && sortDir === "asc") np.set("dir", "desc");
-      else { np.set("sort", k); np.set("dir", "asc"); }
-      if (sortKey === k && sortDir === "desc") { np.delete("sort"); np.delete("dir"); }
-      set_params(np);
-    };
+  var t = document.createElement("table");
+  t.className = "data";
+  var thead = document.createElement("thead");
+  var htr = document.createElement("tr");
+  htr.appendChild(document.createElement("th"));
+  [["Manufacturer", "manufacturer"], ["Product", "productName"], ["Material", "material"]].forEach(function (c) {
+    htr.appendChild(head_cell(c[0], c[1], sortKey, sortDir, false, sort_to));
   });
-  var body = t.querySelector("tbody");
+  COLS.forEach(function (c, i) {
+    htr.appendChild(head_cell(shortlabel(c), c, sortKey, sortDir, true, sort_to, i));
+  });
+  htr.appendChild(add_col_cell());
+  thead.appendChild(htr);
+  t.appendChild(thead);
+
+  var tbody = document.createElement("tbody");
   hits.slice(0, 500).forEach(function (m) {
     var tr = document.createElement("tr");
-    var chk = TRAY.has(m.id) ? " checked" : "";
-    tr.innerHTML = "<td><input type='checkbox' data-id='" + esc(m.id) + "'" + chk + "></td>" +
+    tr.innerHTML = "<td><input type='checkbox'" + (TRAY.has(m.id) ? " checked" : "") + "></td>" +
       "<td>" + esc(m.manufacturer) + "</td>" +
       '<td><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.productName) + "</a></td>" +
       "<td>" + esc(m.material) + "</td>" +
-      cols.map(function (c) { return "<td class='num'>" + esc(fmt(m._nums[c] == null ? null : m._nums[c])) + "</td>"; }).join("");
+      COLS.map(function (c) { return "<td class='num'>" + cell_val(m._raw[c]) + "</td>"; }).join("") +
+      "<td></td>";
     tr.querySelector("input").onchange = function (e) {
       e.target.checked ? TRAY.add(m.id) : TRAY.delete(m.id); save_tray();
     };
-    body.appendChild(tr);
+    tbody.appendChild(tr);
   });
+  t.appendChild(tbody);
   wrap.appendChild(t);
   R.appendChild(wrap);
   if (hits.length > 500) R.appendChild(el('<p class="small muted">showing first 500; narrow the filters to see the rest.</p>'));
 
-  function write_ranges(rs) {
-    var np = get_params();
-    var s = rs.map(function (r) { return encodeURIComponent(r.subject) + "~" + (r.min == null ? "" : r.min) + "~" + (r.max == null ? "" : r.max); }).join(";");
-    s ? np.set("r", s) : np.delete("r");
-    np.delete("sort"); set_params(np);
+  /* restore text-search caret after a re-render triggered by typing */
+  if (RESTORE_Q != null) {
+    qEl.focus();
+    try { qEl.setSelectionRange(RESTORE_Q, RESTORE_Q); } catch (e) {}
+    RESTORE_Q = null;
+  }
+
+  function add_col_cell() {
+    var th = document.createElement("th");
+    th.className = "nosort addcol";
+    th.title = "add column";
+    th.textContent = "+";
+    th.onclick = function () {
+      var pool = SUBJECTS.filter(function (s) { return COLS.indexOf(s) < 0; });
+      var sel = el('<select><option value="">add column…</option>' +
+        pool.map(function (s) { return "<option>" + esc(s) + "</option>"; }).join("") + "</select>");
+      sel.onchange = function () { if (sel.value) { COLS.push(sel.value); save_cols(); route(); } };
+      sel.onblur = function () { route(); };
+      th.textContent = ""; th.appendChild(sel); sel.focus();
+    };
+    return th;
   }
 }
 
-function th(label, key, sortKey, sortDir, num) {
-  var cls = (num ? "num " : "") + (sortKey === key ? (sortDir === "desc" ? "sort-desc" : "sort-asc") : "");
-  return "<th class='" + cls.trim() + "' data-k='" + esc(key) + "'>" + label + "</th>";
+function head_cell(label, key, sortKey, sortDir, num, sort_to, colIdx) {
+  var th = document.createElement("th");
+  if (num) th.className = "num";
+  var arrow = sortKey === key ? (sortDir === "desc" ? " ▼" : " ▲") : "";
+  var span = el("<span class='hl'>" + esc(label) + "<span class='ind'>" + arrow + "</span></span>");
+  span.onclick = function () { sort_to(key); };
+  th.appendChild(span);
+  if (colIdx != null) {
+    var ctl = el("<span class='colctl'>" +
+      "<button title='move left'>‹</button><button title='move right'>›</button><button title='remove'>×</button></span>");
+    var bs = ctl.querySelectorAll("button");
+    bs[0].onclick = function (e) { e.stopPropagation(); if (colIdx > 0) { swap(COLS, colIdx, colIdx - 1); save_cols(); route(); } };
+    bs[1].onclick = function (e) { e.stopPropagation(); if (colIdx < COLS.length - 1) { swap(COLS, colIdx, colIdx + 1); save_cols(); route(); } };
+    bs[2].onclick = function (e) { e.stopPropagation(); COLS.splice(colIdx, 1); save_cols(); route(); };
+    th.appendChild(ctl);
+  }
+  return th;
 }
-function shortlabel(s) { return s.replace(" (In-Plane)", "").replace(" (Interlayer)", " (Z)"); }
-function unit_sup(s) { return UNIT_FOR[s] ? " <span class='small muted'>" + esc(UNIT_FOR[s]) + "</span>" : ""; }
+function swap(a, i, j) { var t = a[i]; a[i] = a[j]; a[j] = t; }
 
+/* facet block: collapsed = top N by count (+ any selected), expanded = all alphabetical */
 function facet_block(title, param, selected, counts) {
-  var keys = Object.keys(counts).sort();
   var fs = el('<fieldset><legend>' + esc(title) + "</legend></fieldset>");
-  keys.forEach(function (k) {
-    var id = param + "_" + k.replace(/\W/g, "");
+  var all = Object.keys(counts);
+  var byCount = all.slice().sort(function (a, b) { return counts[b] - counts[a] || (a < b ? -1 : 1); });
+  var open = !!FACET_OPEN[param];
+  var shown;
+  if (open) {
+    shown = all.slice().sort();
+  } else {
+    var top = byCount.slice(0, FACET_COLLAPSED);
+    selected.forEach(function (s) { if (top.indexOf(s) < 0 && all.indexOf(s) >= 0) top.push(s); });
+    shown = top.sort(function (a, b) { return counts[b] - counts[a] || (a < b ? -1 : 1); });
+  }
+  shown.forEach(function (k) {
     var row = el('<label class="facet"><span><input type="checkbox" ' + (selected.has(k) ? "checked" : "") +
-      '> ' + esc(k) + '</span><span class="n">' + counts[k] + "</span></label>");
+      "> " + esc(k) + '</span><span class="n">' + counts[k] + "</span></label>");
     row.querySelector("input").onchange = function (e) {
       var np = get_params();
       var cur = new Set((np.get(param) || "").split(",").filter(Boolean));
       e.target.checked ? cur.add(k) : cur.delete(k);
       cur.size ? np.set(param, Array.from(cur).join(",")) : np.delete(param);
-      np.delete("sort"); set_params(np);
+      np.delete("sort"); np.delete("dir"); set_params(np);
     };
     fs.appendChild(row);
   });
+  if (all.length > FACET_COLLAPSED) {
+    var tgl = el('<button class="linkish facet-toggle">' +
+      (open ? "▾ show fewer" : "▸ show all " + all.length) + "</button>");
+    tgl.onclick = function () { FACET_OPEN[param] = !open; save_json("mtds_facet_open", FACET_OPEN); route(); };
+    fs.appendChild(tgl);
+  }
   return fs;
 }
-/* count materials per key within the current result set */
 function count_by(hits, keyfn) {
   var c = {};
   hits.forEach(function (m) { var k = keyfn(m); if (k) c[k] = (c[k] || 0) + 1; });
@@ -323,23 +381,21 @@ function view_detail(id) {
 
   var cats = [];
   m.fields.forEach(function (f) { if (cats.indexOf(f.category) < 0) cats.push(f.category); });
-
-  // completeness against a fixed core set of properties
   var have = CORE.filter(function (s) { return m._nums[s] != null; }).length;
   var pct = Math.round(100 * have / CORE.length);
-
   var inTray = TRAY.has(m.id);
+
   var html = '<p class="small"><a href="#/">&larr; search</a></p>' +
     "<h1>" + esc(m.manufacturer) + " " + esc(m.productName) + "</h1>" +
     '<p class="kv"><b>Material</b> ' + esc(m.material) + "</p>" +
     '<p class="kv"><b>Core data</b> <span class="completeness"><i style="width:' + pct + '%"></i></span> ' +
-      have + " of " + CORE.length + " core properties</p>" +
+    have + " of " + CORE.length + " core properties</p>" +
     '<p><button class="btn" id="tray-toggle">' + (inTray ? "Remove from compare" : "Add to compare") + "</button> " +
     '<button class="linkish" id="dl-json">download this material as JSON</button></p>';
 
   cats.forEach(function (cat) {
-    html += "<h2>" + esc(cat) + "</h2>";
-    html += '<table class="data"><thead><tr>' +
+    html += "<h2>" + esc(cat) + "</h2>" +
+      '<div class="wrap"><table class="data"><thead><tr>' +
       "<th class='nosort'>Subject</th><th class='nosort'>Method</th><th class='nosort num'>Value</th>" +
       "<th class='nosort'>Units</th><th class='nosort'>Note / source</th></tr></thead><tbody>";
     m.fields.filter(function (f) { return f.category === cat; }).forEach(function (f) {
@@ -353,15 +409,14 @@ function view_detail(id) {
         "<td>" + esc(f.units || "") + "</td>" +
         "<td class='annot small'>" + note.join(" &middot; ") + "</td></tr>";
     });
-    html += "</tbody></table>";
+    html += "</tbody></table></div>";
   });
 
   if (m.sources && m.sources.length) {
     html += "<h2>Sources</h2><ul class='srclist small'>";
     m.sources.forEach(function (s) {
       html += "<li>" + esc(s.type || "doc") + " &mdash; " +
-        (s.url && /^https?:/.test(s.url) ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.url) + "</a>" : esc(s.url || "")) +
-        "</li>";
+        (s.url && /^https?:/.test(s.url) ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.url) + "</a>" : esc(s.url || "")) + "</li>";
     });
     html += "</ul>";
   }
@@ -388,7 +443,6 @@ function view_compare() {
     return;
   }
 
-  // union of (category, subject) in dataset order, per material take first field of that subject
   var order = [], seen = {};
   mats.forEach(function (m) {
     m.fields.forEach(function (f) {
@@ -410,7 +464,7 @@ function view_compare() {
   order.forEach(function (o) {
     if (o.cat !== curCat) {
       curCat = o.cat;
-      html += '<tr><td class="sub" colspan="' + (mats.length + 1) + '" style="background:#e8e8e8">' + esc(o.cat) + "</td></tr>";
+      html += '<tr class="catrow"><td class="sticky sub" colspan="' + (mats.length + 1) + '">' + esc(o.cat) + "</td></tr>";
     }
     var cells = mats.map(function (m) {
       var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
@@ -419,43 +473,45 @@ function view_compare() {
     var nums = cells.map(function (c) { return c.n; }).filter(function (n) { return n != null; });
     var best = null;
     if (nums.length >= 2) {
-      var strengthy = /Strength|Modulus|Impact|Elongation|Adhesion|Temperature|Resistivity/.test(o.sub);
+      var strengthy = /Strength|Modulus|Impact|Elongation|Adhesion|Temperature|Resistivity|Hardness/.test(o.sub);
       best = strengthy ? Math.max.apply(null, nums) : Math.min.apply(null, nums);
     }
-    var vals = cells.map(function (c) { return c.f ? (c.f.value || "") + (c.f.units ? " " + c.f.units : "") : ""; });
-    var allSame = vals.every(function (v) { return v === vals[0]; }) && vals[0] !== "";
+    var vals = cells.map(function (c) { return c.f ? (c.f.value || "") + "|" + (c.f.units || "") : ""; });
+    var allSame = vals[0] !== "" && vals.every(function (v) { return v === vals[0]; });
     var methods = cells.map(function (c) { return c.method || ""; }).filter(Boolean);
     var methodClash = methods.length > 1 && !methods.every(function (x) { return x === methods[0]; });
 
-    html += '<tr' + (methodClash ? ' class="warn" title="different test methods"' : "") + '>' +
+    html += "<tr" + (methodClash ? ' class="warn"' : "") + ">" +
       '<td class="sticky sub">' + esc(o.sub) + (methodClash ? ' <span class="annot small">⚠ method differs</span>' : "") + "</td>" +
-      cells.map(function (c, i) {
+      cells.map(function (c) {
         var cls = [];
         if (best != null && c.n === best) cls.push("hit");
         else if (allSame) cls.push("same");
-        var txt = c.f ? esc((c.f.value || "") + (c.f.units ? " " + c.f.units : "")) : "<span class='muted'>&mdash;</span>";
-        if (c.f && c.f.methodNote) txt += " <span class='annot small'>(" + esc(c.f.methodNote) + ")</span>";
+        var txt = c.f
+          ? esc(c.f.value || "") + (c.f.units ? " <span class='uval'>" + esc(c.f.units) + "</span>" : "") +
+            (c.f.methodNote ? " <span class='annot small'>(" + esc(c.f.methodNote) + ")</span>" : "")
+          : "<span class='muted'>&mdash;</span>";
         return "<td class='" + cls.join(" ") + "'>" + txt + "</td>";
       }).join("") + "</tr>";
   });
   html += "</tbody></table></div>" +
     '<p class="small"><button class="linkish" id="cmp-csv">export CSV</button></p>' +
-    '<p class="small muted">Highlight = best in row (max for strength/stiffness/temperature, min otherwise). ' +
-    "Grey = identical. Yellow row = the materials cite different test methods, so the numbers are not directly comparable.</p>";
+    '<p class="small muted">Highlight = best in row (max for strength / stiffness / temperature, min otherwise). ' +
+    "Grey = identical. Yellow row = the materials cite different test methods.</p>";
 
   A.innerHTML = html;
   A.querySelectorAll(".pill button").forEach(function (b) {
     b.onclick = function () {
       var keep = mats.map(function (m) { return m.id; }).filter(function (x) { return x !== b.dataset.id; });
       TRAY.delete(b.dataset.id); save_tray();
-      var np = new URLSearchParams(); np.set("ids", keep.map(encodeURIComponent).join(","));
+      var np = new URLSearchParams(); if (keep.length) np.set("ids", keep.map(encodeURIComponent).join(","));
       set_params(np, "/compare");
     };
   });
   document.getElementById("cmp-csv").onclick = function () {
-    var rows = [["Property"].concat(mats.map(function (m) { return m.manufacturer + " " + m.productName; }))];
+    var rows = [["Category", "Property"].concat(mats.map(function (m) { return m.manufacturer + " " + m.productName; }))];
     order.forEach(function (o) {
-      rows.push([o.cat + " / " + o.sub].concat(mats.map(function (m) {
+      rows.push([o.cat, o.sub].concat(mats.map(function (m) {
         var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
         return f ? (f.value || "") + (f.units ? " " + f.units : "") : "";
       })));
@@ -465,17 +521,19 @@ function view_compare() {
 }
 
 /* ---------- export / util ---------- */
-function export_rows(mats, cols, kind) {
+function export_rows(mats, kind) {
   if (kind === "json") {
     download("materials.json", JSON.stringify(mats.map(function (m) {
       return { id: m.id, manufacturer: m.manufacturer, productName: m.productName, material: m.material, fields: m.fields, sources: m.sources };
     }), null, 2), "application/json");
     return;
   }
-  var header = ["Manufacturer", "Product", "Material"].concat(cols.map(function (c) { return c + (UNIT_FOR[c] ? " (" + UNIT_FOR[c] + ")" : ""); }));
+  var header = ["Manufacturer", "Product", "Material"].concat(COLS.map(function (c) { return c + (UNIT_FOR[c] ? " (" + UNIT_FOR[c] + ")" : ""); }));
   var rows = [header];
   mats.forEach(function (m) {
-    rows.push([m.manufacturer, m.productName, m.material].concat(cols.map(function (c) { return m._nums[c] == null ? "" : m._nums[c]; })));
+    rows.push([m.manufacturer, m.productName, m.material].concat(COLS.map(function (c) {
+      return m._raw[c] ? (m._raw[c].value || "") : "";
+    })));
   });
   download("materials.csv", to_csv(rows), "text/csv");
 }
