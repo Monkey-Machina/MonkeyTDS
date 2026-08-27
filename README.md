@@ -7,3 +7,5 @@
 - Put the data into a standardized TDS structure
 - Put the data into a structure which lets users easily find information
 - Put the data into a structure which lets users easily contribute information
+
+Some of these objectives are fulfilled by using the MTDS which is independent of MonkeyTDS. MonkeyTDS is a at its core, an interface for MTDS compliant files and a library of MTDS compliant files.
