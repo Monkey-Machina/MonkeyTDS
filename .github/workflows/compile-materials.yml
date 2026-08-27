@@ -1,0 +1,26 @@
+name: Compile materials
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile MTDS materials into materials.json
+        run: python scripts/compile_materials.py --out materials.json
+
+      - name: Attach materials.json to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" materials.json --clobber
