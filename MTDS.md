@@ -29,6 +29,7 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Physical Property | Heat Deflection Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Saturated Water Absorption Rate | *Req.* | *Req.* | *Req.* |
 | Physical Property | Odor | *Opt.* | *Req.* | *Opt.* |
+| Physical Property | Color | *Opt.* | *Req.* | *Opt.* |
 | Mechanical Property | Young's Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Young's Modulus (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Tensile Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
@@ -72,3 +73,39 @@ In addition to standard fields MTDS outlines standard methods, values and units.
 | ----- | ------- |
 | m | Meter |
 | mm | Millimeter |
+
+### .MTDS File Format
+The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.
+
+### Example .MTDS Files (comments highlighted)
+###### Short Template Example
+```
+# Category
+> Subject
+  < Method
+  < Value
+  < Units
+
+> Subject
+  < Value
+
+# Category
+> Subject
+  < Value
+```
+###### Short Standard Subjects Example
+```
+# Specification
+> Manufacturer
+  < Inland
+
+> Product Name
+  < PLA Basic
+
+# Physical Property
+> Density
+  < ISO 1183
+  < 1.22
+  < g/cm^3
+
+```
