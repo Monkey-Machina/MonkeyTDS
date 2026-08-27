@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -19,6 +21,18 @@ jobs:
 
       - name: Compile MTDS materials into materials.json
         run: python scripts/compile_materials.py --out materials.json
+
+      - name: Commit materials.json to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add materials.json
+          if git diff --cached --quiet; then
+            echo "materials.json unchanged"
+          else
+            git commit -m "Update materials.json"
+            git push origin HEAD:main
+          fi
 
       - name: Attach materials.json to the release
         env:
