@@ -1,13 +1,8 @@
 name: Deploy frontend to Pages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "frontend/**"
-      - "MTDS Materials/**"
-      - "scripts/**"
-      - ".github/workflows/pages.yml"
+  release:
+    types: [published]
   workflow_dispatch:
 
 permissions:
