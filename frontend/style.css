@@ -1,0 +1,124 @@
+/* MonkeyTDS frontend — function-first, modelled on MatWeb / ASM MatWeb.
+   Dense tables, thin borders, blue underlined links, minimal chrome.
+   Small deliberate deviations for readability: system font, a little row
+   padding, sticky headers, a monospace numeric column, grey trailing units. */
+
+:root {
+  --ink: #1a1a1a;
+  --line: #b9b9b9;
+  --line-soft: #dcdcdc;
+  --link: #0b3d91;
+  --link-visited: #6a1b9a;
+  --head-bg: #e8e8e8;
+  --row-alt: #f6f6f6;
+  --hit: #fff7d6;
+  --bad: #fdecea;
+  --bar-bg: #2f3a45;
+  --unit: #999;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font: 13px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  overflow-x: hidden;          /* page never scrolls sideways; wide tables scroll inside .wrap */
+}
+a { color: var(--link); text-decoration: underline; }
+a:visited { color: var(--link-visited); }
+a:hover { text-decoration: none; }
+
+/* ---- masthead ---- */
+#masthead {
+  display: flex; align-items: baseline; gap: 14px;
+  background: var(--bar-bg); color: #fff;
+  padding: 6px 12px; font-size: 12px;
+}
+#masthead a { color: #cfe0ff; }
+#masthead .wordmark { font-weight: 700; font-size: 15px; text-decoration: none; letter-spacing: .5px; }
+#masthead .spacer { flex: 1; }
+#dataset-info { color: #aab6c2; }
+#compare-bar a { color: #fff; }
+#compare-bar .count { background: #12633a; padding: 1px 6px; border-radius: 2px; }
+
+#footer { border-top: 1px solid var(--line); margin-top: 24px; padding: 10px 12px; color: #666; font-size: 11px; }
+#app { padding: 10px 12px; }
+
+h1 { font-size: 18px; margin: 4px 0 2px; }
+h2 {
+  font-size: 13px; text-transform: uppercase; letter-spacing: .6px;
+  background: var(--head-bg); border: 1px solid var(--line);
+  padding: 3px 6px; margin: 16px 0 0;
+}
+.muted { color: #666; }
+.small { font-size: 11px; }
+.uval { color: var(--unit); font-size: .88em; margin-left: 3px; }
+
+/* ---- search layout ---- */
+#search { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 16px; align-items: start; }
+#filters, #results { min-width: 0; }
+@media (max-width: 720px) { #search { grid-template-columns: 1fr; } }
+
+#filters fieldset { border: 1px solid var(--line-soft); margin: 0 0 10px; padding: 6px 8px 8px; min-width: 0; }
+#filters legend { font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; padding: 0 4px; }
+#filters input[type=text], #filters input[type=number], #filters select { font: inherit; padding: 2px 3px; border: 1px solid var(--line); max-width: 100%; }
+#filters input[type=text], #filters > fieldset > select { width: 100%; }
+#q { font-size: 14px; padding: 4px; }
+
+.facet { display: flex; justify-content: space-between; gap: 6px; }
+.facet .n { color: #888; font-variant-numeric: tabular-nums; }
+.facet-toggle { display: block; margin-top: 4px; font-size: 11px; }
+
+.rangerow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px; margin-bottom: 5px; align-items: start; }
+.rangerow .rl { overflow-wrap: anywhere; }
+.rangerow .inputs { display: flex; gap: 3px; }
+.rangerow .inputs input { width: 58px; }
+.rangerow .inputs button { border: 1px solid var(--line); background: #eee; cursor: pointer; padding: 0 5px; }
+
+button.btn { font: inherit; padding: 3px 9px; border: 1px solid var(--line); background: #f0f0f0; cursor: pointer; }
+button.btn:hover { background: #e4e4e4; }
+button.linkish { border: 0; background: none; color: var(--link); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
+
+/* ---- results ---- */
+#results .toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 5px; margin-bottom: 4px; }
+#results .toolbar .count { font-weight: 700; }
+
+.wrap { overflow-x: auto; max-width: 100%; }
+
+table.data { border-collapse: collapse; width: 100%; font-size: 12px; }
+table.data th, table.data td { border: 1px solid var(--line-soft); padding: 3px 6px; text-align: left; vertical-align: top; }
+table.data thead th { background: var(--head-bg); position: sticky; top: 0; z-index: 2; border-color: var(--line); white-space: nowrap; }
+table.data tbody tr:nth-child(even) { background: var(--row-alt); }
+table.data td.num, table.data th.num { text-align: right; white-space: nowrap; }
+table.data td.num { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+table.data td.sub { white-space: nowrap; font-weight: 600; }
+
+th .hl { cursor: pointer; }
+th .hl:hover { text-decoration: underline; }
+th .ind { font-size: 9px; }
+th .colctl { margin-left: 5px; white-space: nowrap; }
+th .colctl button { border: 1px solid var(--line); background: #f0f0f0; cursor: pointer; font: 10px/1 monospace; padding: 1px 3px; }
+th.addcol { cursor: pointer; text-align: center; font-weight: 700; color: var(--link); }
+th.addcol select { font: inherit; }
+
+/* ---- detail ---- */
+.kv { margin: 2px 0; }
+.kv b { display: inline-block; min-width: 130px; }
+.completeness { display: inline-block; height: 10px; background: var(--line-soft); width: 160px; vertical-align: middle; border: 1px solid var(--line); }
+.completeness > i { display: block; height: 100%; background: #12633a; }
+.annot { color: #666; }
+.srclist li { margin: 1px 0; word-break: break-all; }
+
+/* ---- compare ---- */
+table.compare td.hit { background: var(--hit); }
+table.compare td.same { color: #888; }
+table.compare tr.warn td { background: var(--bad); }
+table.compare tr.catrow td { background: var(--head-bg); font-weight: 600; }
+table.compare th.sticky, table.compare td.sticky { position: sticky; left: 0; background: #fff; z-index: 1; border-right: 2px solid var(--line); }
+table.compare thead th.sticky { z-index: 3; background: var(--head-bg); }
+table.compare tr.catrow td.sticky { background: var(--head-bg); }
+
+.pill { display: inline-block; border: 1px solid var(--line); padding: 0 5px; margin: 1px; font-size: 11px; background: #f4f4f4; }
+.pill button { border: 0; background: none; cursor: pointer; color: #a00; font: inherit; }
