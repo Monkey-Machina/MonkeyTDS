@@ -10,6 +10,8 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Physical Property | Physical material properties |
 | Mechanical Property | Mechanical material properties |
 | Chemical Property | Chemical material properties |
+| Electrical Property | Electrical material properties |
+| Magnetic Property | Magnetic material properties |
 | Print Setting | Recommended settings and conditions for printing the material |
 | Specific | Information which which is not a Specification or Property but not common enough to warrant a new category |
 
@@ -24,6 +26,9 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Specification | Net Weight | N/A | *Opt.* | *Opt.* |
 | Specification | Spool Material | N/A | *Opt.* | N/A |
 | Specification | Spool Size | N/A | *Opt.* | *Opt.* |
+| Specification | Filler Content | N/A | *Req.* | *Req.* |
+| Specification | Post-Treatment Shrinkage (In-Plane) | *Opt.* | *Req.* | *Opt.* |
+| Specification | Post-Treatment Shrinkage (Interlayer) | *Opt.* | *Req.* | *Opt.* |
 | Specification | Source | N/A | *Req.* | N/A |
 | Physical Property | Density | *Req.* | *Req.* | *Req.* | 
 | Physical Property | Melt Index | *Req.* | *Req.* | *Req.* | 
@@ -33,6 +38,9 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Physical Property | Vicat Softening Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Heat Deflection Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Saturated Water Absorption Rate | *Req.* | *Req.* | *Req.* |
+| Physical Property | Moisture Absorption | *Opt.* | *Req.* | *Req.* |
+| Physical Property | Coefficient of Thermal Expansion | *Req.* | *Req.* | *Req.* |
+| Physical Property | Thermal Conductivity | *Req.* | *Req.* | *Req.* |
 | Physical Property | Odor | *Opt.* | *Req.* | *Opt.* |
 | Physical Property | Color | *Opt.* | *Req.* | *Opt.* |
 | Mechanical Property | Young's Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
@@ -41,12 +49,16 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Mechanical Property | Tensile Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Breaking Elongation Rate (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Breaking Elongation Rate (Interlayer) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Elongation at Yield (In-Plane) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Elongation at Yield (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Modulus (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Impact Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Impact Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Interlayer Adhesion | *Opt.* | *Req.* | *Req.* |
+| Mechanical Property | Shore Hardness | *Req.* | *Req.* | N/A |
 | Chemical Property | Composition | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Chemical Stability | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Solubility | *Opt.* | *Req.* | *Opt.* |
@@ -60,6 +72,13 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Chemical Property | Thermal Decomposition Products | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Odor of Thermal Decomposition | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Skin Hazards | *Opt.* | *Req.* | *Opt.* |
+| Chemical Property | Flammability Rating | *Req.* | *Req.* | N/A |
+| Electrical Property | Volume Resistivity | *Req.* | *Req.* | *Req.* |
+| Electrical Property | Surface Resistivity | *Req.* | *Req.* | *Req.* |
+| Electrical Property | Filament Resistance | *Opt.* | *Req.* | *Req.* |
+| Electrical Property | Dielectric Strength | *Req.* | *Req.* | *Req.* |
+| Magnetic Property | Magnetic Classification | N/A | *Req.* | N/A |
+| Magnetic Property | Magnetic Induction at Saturation | *Opt.* | *Req.* | *Req.* |
 | Print Setting | Drying Condition | N/A | *Req.* | N/A |
 | Print Setting | Print & Storage Humidity | N/A | *Opt.* | *Req.* |
 | Print Setting | Nozzle Size | N/A | *Req.* | *Req.* |
@@ -76,6 +95,8 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Print Setting | Max Bridging Length | N/A | *Opt.* | *Req.* |
 | Print Setting | Support Material | N/A | *Opt.* | N/A |
 | Print Setting | Annealing Condition | N/A | *Opt.* | N/A |
+
+`Elongation at Yield` is the strain at the yield point, distinct from `Breaking Elongation Rate` (strain at break). `Interlayer Adhesion` is a single bond-strength value between deposited layers, reported by some manufacturers separately from the direction-resolved mechanical subjects. `Moisture Absorption` is measured at a stated time (annotate the duration), distinct from `Saturated Water Absorption Rate` (equilibrium). `Shore Hardness` carries its scale in the value, e.g. `95A` or `81D`.
 
 ## MTDS Standard Field Methods, Values, and Units
 In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
@@ -98,6 +119,20 @@ Any part of a field (subject, method, value, or units) may be followed by ` | ` 
 | GB/T 1043 | Chinese standard for Charpy impact strength, equivalent to ISO 179 |
 | GB/T 1633 | Chinese standard for Vicat softening temperature, equivalent to ISO 306 |
 | DSC | Differential scanning calorimetry |
+| ASTM D638 | Determination of tensile properties, US equivalent of ISO 527 |
+| ASTM D790 | Determination of flexural properties, US equivalent of ISO 178 |
+| ASTM D648 | Determination of deflection temperature under load, US equivalent of ISO 75 |
+| ASTM D256 | Determination of Izod pendulum impact resistance |
+| ASTM D257 | Determination of DC resistance or conductance of insulating materials |
+| ASTM E831 | Linear thermal expansion by thermomechanical analysis |
+| ISO 11359 | Thermomechanical analysis, coefficient of linear thermal expansion |
+| ISO 22007 | Determination of thermal conductivity and thermal diffusivity |
+| IEC 60243 | Electric strength of insulating materials |
+| UL 94 | Flammability classification of plastic materials |
+| ISO 868 | Determination of indentation hardness by means of a durometer (Shore hardness) |
+| ISO 7619-1 | Determination of indentation hardness, durometer method (Shore hardness) |
+| ISO 37 | Determination of tensile stress-strain properties of rubber and elastomers |
+| GB/T 531.1 | Chinese standard for Shore durometer hardness, equivalent to ISO 7619-1 |
 
 A field contains at most one method. To record a property measured by more than one method, repeat the whole field, once per method. Test conditions are added as annotations, such as `< ISO 75 | 1.8 MPa` or `< ISO 1133 | 210 °C, 2.16 kg`.
 
@@ -137,6 +172,19 @@ A field contains at most one method. To record a property measured by more than 
 | Resistant | Not degraded or attacked by the stated agent |
 | Stable under normal storage and handling conditions | No hazardous reaction under normal storage and handling |
 | No hazard | Presents no known hazard |
+| V-0 | UL 94 flammability rating |
+| V-1 | UL 94 flammability rating |
+| V-2 | UL 94 flammability rating |
+| 5VA | UL 94 flammability rating |
+| 5VB | UL 94 flammability rating |
+| HB | UL 94 horizontal-burn rating |
+| Ferromagnetic | Strongly attracted to magnets and able to retain magnetization |
+| Paramagnetic | Weakly attracted to magnets |
+| Non-magnetic | Not attracted to magnets |
+| PEI Sheet | Polyetherimide build-plate surface |
+| Kapton Tape | Polyimide film build-plate surface |
+| Garolite | Glass-epoxy laminate build-plate surface |
+| BuildTak | Proprietary textured build-plate surface |
 
 ## Standard Units
 | Unit | Definition | 
@@ -154,8 +202,19 @@ A field contains at most one method. To record a property measured by more than 
 | % RH | Percent relative humidity |
 | ° | Degree of angle |
 | mm/s | Millimeters per second |
+| mm^3/s | Cubic millimeters per second (volumetric flow) |
 | h | Hour |
 | min | Minute |
+| ohm-cm | Ohm-centimeter (volume resistivity) |
+| ohm/sq | Ohm per square (surface resistivity) |
+| ohm | Ohm |
+| kohm | Kilohm |
+| Mohm | Megohm |
+| T | Tesla (magnetic flux density) |
+| W/m·K | Watt per meter-kelvin (thermal conductivity) |
+| ppm/°C | Parts per million per degree Celsius (coefficient of thermal expansion) |
+| kV/mm | Kilovolt per millimeter (dielectric strength) |
+| wt% | Percent by weight |
 
 ### .MTDS File Format
 The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.

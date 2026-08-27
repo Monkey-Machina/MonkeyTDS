@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PETG Magnetite 40%
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.03
+  < mm
+
+> Source
+  <
+  < TDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/01/7cdc9586-technical-data-sheet-2.pdf
+  <
+
+> Source
+  <
+  < SDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/01/460d12e5-petg-magnetite-filament-safety-data-sheet.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < N/A
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < N/A
+  <
+
+> Density
+  < ISO 1183
+  < 1.82
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.11
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.13
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 93
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 90
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 82D ± 0.4
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 13.8 ± 0.6
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 45.9 ± 0.6
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 43.3 ± 0.6
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 2000 ± 30
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 2000 ± 20
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 3.9 ± 0.1
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 3.8 ± 0.1
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 72.8 ± 2.4
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 70.3 ± 0.4
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2800 ± 700
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 2500 ± 200
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 7.1 ± 0.1
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 7.2 ± 0.1
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 49 ± 4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 60.2 ± 12
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 4.8 ± 0.2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 3.6 ± 0.3
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyethylene Terephthalate Glycol Copolymer filled with Magnetite
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 270 ± 5
+  < °C
+
+> Bed Temperature
+  <
+  < 100 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 100
+  < mm/s
+
+> Cooling Fan
+  <
+  < 10 - 20
+  < %
+
+> Build Plate Type
+  <
+  < satin sheet; powder-coated sheet
+  <

@@ -1,0 +1,95 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Magnetic Iron PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < Technical Page | https://proto-pasta.com/pages/magnetic-iron-pla
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.8
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < Similar to standard PLA, possibly less
+  <
+
+> Tensile Strength (Interlayer)
+  <
+  < Similar to standard PLA, possibly less
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 185 - 195
+  < °C
+
+> Bed Temperature
+  <
+  < 50
+  < °C
+
+> Build Plate Type
+  <
+  < Standard
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Standard
+  <
+
+# Specific
+
+> Magnetic Properties
+  <
+  < Ferromagnetic, responds to magnets
+  <
+
+> Magnetic Induction at Saturation
+  <
+  < 0.15
+  < Tesla
+
+> Relative Permeability
+  <
+  < 5 - 8 | frequency independent up to 1 MHz
+  <
+
+> Spool Yield
+  <
+  < 100
+  < meters | per 500g spool
+

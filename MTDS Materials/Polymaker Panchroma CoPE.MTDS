@@ -1,0 +1,99 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Panchroma CoPE
+  <
+
+> Material
+  <
+  < PET
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/Panchroma_TDS_V2.1.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/lana-downloads/Panchroma%E2%84%A2-CoPE-EU-EN-V1.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  < | at 23 °C
+  < 1.30
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 66
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2515 ± 71
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 51.6 ± 0.3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 36.1 ± 1.2
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy
+  < 2.9 ± 0.1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Copolyester
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 55 °C for 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 190 - 230 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 60 °C
+  <
+
+> Print Speed
+  <
+  < Up to 400 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 mm
+  <
+
+> Support Material
+  <
+  < PolySupport and PolyDissolve S1
+  <

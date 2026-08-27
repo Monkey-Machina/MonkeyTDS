@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PP Glass Fiber
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.04
+  < mm
+
+> Source
+  <
+  < TDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/07/512923fd-tds_pp_glass_fiber_en.pdf
+  <
+
+> Source
+  <
+  < SDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/07/13c88860-25_03_03_sds_prusament-pp-glass-fiber-by-prusa-polymers_en.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < 14.7
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < N/A
+  <
+
+> Density
+  < ISO 1183
+  < 1.12
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.11
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.11
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 138.3
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 112.6
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 68.5D ± 0.6
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 18 ± 1
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 40.3 ± 2.9
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 48.8 ± 2.8
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 2100 ± 100
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 2500 ± 100
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 4.5 ± 0.1
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 4.1 ± 0.2
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 50.2 ± 3.3
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 70.4 ± 5.3
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2100 ± 100
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 2700 ± 500
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 10.3 ± 0.3
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 6.1 ± 0.2
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 17.6 ± 2.6
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 26.9 ± 2.1
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 7.9 ± 0.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 9.9 ± 0.8
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polypropylene filled with Glass Fiber
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 245 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 95 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 50
+  < mm/s
+
+> Cooling Fan
+  <
+  < 0 (only when printing bridges, it is at 100%)
+  < %
+
+> Build Plate Type
+  <
+  < PP sheet
+  <

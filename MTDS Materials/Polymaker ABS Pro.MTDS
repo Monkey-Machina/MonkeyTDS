@@ -1,0 +1,229 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Polymaker ABS Pro
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_Polymaker_ABS-Pro_V1.1_2026_06_01_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/Polymaker-ABS-Pro-US-SDS-EN_20260528.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.04 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 210 °C, 2.16 kg
+  < 11.1
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 114.9
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 436.4
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 116.1
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 106.4
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 101.4
+  < °C
+
+> Saturated Water Absorption Rate
+  < | max, 70% RH, 23 °C
+  < 0.51
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2.33 ± 0.03
+  < GPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.95 ± 0.02
+  < GPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 34.94 ± 0.62
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 21.87 ± 0.32
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 7.34 ± 1.13
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.54 ± 0.13
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2.33 ± 0.05
+  < GPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 2.17 ± 0.01
+  < GPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 60.05 ± 0.46
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 41.24 ± 2.14
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 14.48 ± 0.96
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 8.87 ± 1.14
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 39.58 ± 12.45
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Good
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Fair
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal conditions of use, storage and transport
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides (CO, CO2)
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 70 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 270 - 290 °C
+  <
+
+> Bed Temperature
+  <
+  < 100 - 110 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PEI
+  <
+
+> Cooling Fan
+  <
+  < 0 - 30%
+  <
+
+> Print Speed
+  <
+  < Up to 250 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure required
+  <
