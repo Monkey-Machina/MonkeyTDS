@@ -1,6 +1,6 @@
 window.__MTDS_DATA__ = {
   "schema": "mtds-compiled/1",
-  "generatedAt": "2026-08-27T22:32:27Z",
+  "generatedAt": "2026-08-27T23:40:33Z",
   "materialCount": 163,
   "materials": [
     {
@@ -32938,9 +32938,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (In-Plane)",
           "method": "ISO 527",
           "methodNote": "GB/T 1040",
-          "value": "2.32 ± 0.03",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2320 ± 30",
+          "valueNote": "as published 2.32 ± 0.03 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -32948,9 +32948,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (Interlayer)",
           "method": "ISO 527",
           "methodNote": "GB/T 1040",
-          "value": "2.10 ± 0.01",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2100 ± 10",
+          "valueNote": "as published 2.10 ± 0.01 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -32998,9 +32998,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (In-Plane)",
           "method": "ISO 178",
           "methodNote": "GB/T 9341",
-          "value": "2.50 ± 0.07",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2500 ± 70",
+          "valueNote": "as published 2.50 ± 0.07 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -33008,9 +33008,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (Interlayer)",
           "method": "ISO 178",
           "methodNote": "GB/T 9341",
-          "value": "2.21 ± 0.05",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2210 ± 50",
+          "valueNote": "as published 2.21 ± 0.05 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -33387,9 +33387,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (In-Plane)",
           "method": "ISO 527",
           "methodNote": "GB/T 1040",
-          "value": "2.33 ± 0.03",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2330 ± 30",
+          "valueNote": "as published 2.33 ± 0.03 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -33397,9 +33397,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (Interlayer)",
           "method": "ISO 527",
           "methodNote": "GB/T 1040",
-          "value": "1.95 ± 0.02",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "1950 ± 20",
+          "valueNote": "as published 1.95 ± 0.02 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -33447,9 +33447,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (In-Plane)",
           "method": "ISO 178",
           "methodNote": "GB/T 9341",
-          "value": "2.33 ± 0.05",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2330 ± 50",
+          "valueNote": "as published 2.33 ± 0.05 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -33457,9 +33457,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (Interlayer)",
           "method": "ISO 178",
           "methodNote": "GB/T 9341",
-          "value": "2.17 ± 0.01",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2170 ± 10",
+          "valueNote": "as published 2.17 ± 0.01 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39624,9 +39624,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (In-Plane)",
           "method": "ISO 527",
           "methodNote": "ISO 527-1: 2019, as printed",
-          "value": "2.27 ± 0.05",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2270 ± 50",
+          "valueNote": "as published 2.27 ± 0.05 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39634,9 +39634,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (Interlayer)",
           "method": "ISO 527",
           "methodNote": "ISO 527-2: 2025, as printed",
-          "value": "1.85 ± 0.04",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "1850 ± 40",
+          "valueNote": "as published 1.85 ± 0.04 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39644,9 +39644,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (In-Plane)",
           "method": "ISO 527",
           "methodNote": "ISO 527-1: 2019, after annealing",
-          "value": "2.53 ± 0.03",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2530 ± 30",
+          "valueNote": "as published 2.53 ± 0.03 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39654,9 +39654,9 @@ window.__MTDS_DATA__ = {
           "subject": "Young's Modulus (Interlayer)",
           "method": "ISO 527",
           "methodNote": "ISO 527-2: 2025, after annealing",
-          "value": "1.94 ± 0.16",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "1940 ± 160",
+          "valueNote": "as published 1.94 ± 0.16 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39744,9 +39744,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (In-Plane)",
           "method": "ISO 178",
           "methodNote": "ISO 178: 2019, as printed",
-          "value": "2.21 ± 0.14",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2210 ± 140",
+          "valueNote": "as published 2.21 ± 0.14 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39754,9 +39754,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (Interlayer)",
           "method": "ISO 178",
           "methodNote": "ISO 178: 2019, as printed",
-          "value": "1.91 ± 0.04",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "1910 ± 40",
+          "valueNote": "as published 1.91 ± 0.04 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39764,9 +39764,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (In-Plane)",
           "method": "ISO 178",
           "methodNote": "ISO 178: 2019, after annealing",
-          "value": "2.42 ± 0.05",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2420 ± 50",
+          "valueNote": "as published 2.42 ± 0.05 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
@@ -39774,9 +39774,9 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (Interlayer)",
           "method": "ISO 178",
           "methodNote": "ISO 178: 2019, after annealing",
-          "value": "2.02 ± 0.03",
-          "valueNote": null,
-          "units": "GPa",
+          "value": "2020 ± 30",
+          "valueNote": "as published 2.02 ± 0.03 GPa",
+          "units": "MPa",
           "unitsNote": null
         },
         {
