@@ -162,6 +162,8 @@ The .MTDS file format is a standard for storing MTDS material information in a p
 
 A subject may appear more than once within a category, for example multiple Source fields or one property measured by several methods.
 
+Every field has exactly three `<` lines in fixed order: Method, Value, Units. A part that is absent is written as an empty `<` line so the position of each part is unambiguous.
+
 ### Example .MTDS Files (comments highlighted)
 ###### Short Template Example
 ```
@@ -172,20 +174,22 @@ A subject may appear more than once within a category, for example multiple Sour
   < Units
 
 > Subject
+  <
   < Value
-
-# Category
-> Subject
-  < Value
+  <
 ```
 ###### Short Standard Subjects Example
 ```
 # Specification
 > Manufacturer
+  <
   < Inland
+  <
 
 > Product Name
+  <
   < PLA Basic
+  <
 
 # Physical Property
 > Density
@@ -198,4 +202,8 @@ A subject may appear more than once within a category, for example multiple Sour
   < 54
   < °C
 
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
 ```
