@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PVB
+  <
+
+> Material
+  <
+  < PVB
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.03
+  < mm
+
+> Source
+  <
+  < TDS | https://prusament.com/wp-content/uploads/2022/10/PVB_Prusament_TDS_2021_10_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://prusament.com/media/2021/01/PVB-MSDS-EN.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < 6 - 7
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < 5 - 6
+  < cm^3/10 min
+
+> Density
+  < Prusa Polymers
+  < 1.10
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.18
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.35
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 63
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 58
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 77D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 9 ± 1
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 50 ± 5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 49 ± 5
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 1700 ± 100
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 1700 ± 100
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 4.6 ± 0.7
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 4.4 ± 0.7
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 72 ± 1
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 73 ± 3
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2200 ± 100
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 2300 ± 100
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 8.4 ± 0.4
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 8.5 ± 0.3
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 55 ± 7
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 59 ± 12
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 7 ± 1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 10 ± 1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyvinyl Butyral
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 215 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 75 ± 5
+  < °C
+
+> Print Speed
+  <
+  < up to 200
+  < mm/s
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Build Plate Type
+  <
+  < smooth PEI sheet; satin sheet
+  <

@@ -1,0 +1,204 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < Woodfill
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.04
+  < mm
+
+> Source
+  <
+  < TDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2024/07/286c3bc0-tds_prusament_woodfill-linden-light_en.pdf
+  <
+
+> Source
+  <
+  < SDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2024/07/e5bd5a20-sds_prusament_woodfill-linden-light_en.pdf
+  <
+
+# Physical Property
+
+> Color
+  <
+  < Linden Light
+  <
+
+> Melt Index
+  < ISO 1133
+  < 4 - 5
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < 3 - 4
+  < cm^3/10 min
+
+> Density
+  < ISO 1183
+  < 1.16
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.45
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.82
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 62.6
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 58.2
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 67D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 7 ± 1
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 21 ± 1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 23 ± 1
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 900 ± 100
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 800 ± 200
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 4.3 ± 0.1
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 4.1 ± 0.2
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 30 ± 1
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 37 ± 1
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1400 ± 100
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1900 ± 100
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 8.4 ± 0.2
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 7.3 ± 0.2
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 17 ± 2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 21 ± 2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < N/A
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < N/A
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Biobased Polymer Blend
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 60 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 200
+  < mm/s
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Build Plate Type
+  <
+  < satin sheet; smooth PEI sheet with a glue
+  <
