@@ -1,0 +1,296 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon PA12-CF10
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/TDS_FIBERON-PA12-CF10_V1.1_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/tech-docs/PolyMide_PA12-CF_SDS_US_EN_V1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.06 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 280 °C, 2.16 kg
+  < 25.0
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 55
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 171
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 120
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 445.2
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 170.2
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 105
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 131
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C, equilibrium
+  < 1.5
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, dry (annealed 100 C/16 h)
+  < 3311.2 ± 134.9
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 1806.6 ± 145.7
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, wet (immersed 60 C/48 h, 2.92% moisture)
+  < 3131.7 ± 124.2
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 1622.0 ± 71.7
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 77.4 ± 1.1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 52.2 ± 0.8
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, wet
+  < 71.7 ± 0.7
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 42.1 ± 1.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 4.2 ± 0.4
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 5.0 ± 1.0
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, wet
+  < 5.3 ± 0.3
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 5.3 ± 1.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 2886.5 ± 144.8
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, dry
+  < 1452.8 ± 96.5
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, wet
+  < 2652.7 ± 57.2
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, wet
+  < 1145.9 ± 76.9
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 112.4 ± 1.0
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, dry
+  < 69.8 ± 2.2
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, wet
+  < 91.8 ± 1.5
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, wet
+  < 52.2 ± 1.5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, dry
+  < 9.9 ± 0.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, dry
+  < 33.7 ± 1.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, dry
+  < 27.6 ± 3.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, wet
+  < 10.2 ± 0.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, wet
+  < 41.2 ± 4.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, wet
+  < 20.6 ± 4.7
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PA12 with carbon fiber
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ANSI/ESD S11.11
+  < > 10^12 | TDS prints ">1012 Ω", OL
+  < ohm
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 100 °C / 10 h
+  <
+
+> Nozzle Temperature
+  <
+  < 280 - 300 °C
+  <
+
+> Bed Temperature
+  <
+  < 40 - 50 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Print Speed
+  <
+  < Up to 300 mm/s
+  <
+
+> Annealing Condition
+  <
+  < 100 °C / 16 h
+  <
+
+> Support Material
+  <
+  < PolyDissolve S1
+  <

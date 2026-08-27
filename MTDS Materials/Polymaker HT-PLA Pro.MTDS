@@ -1,0 +1,324 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < HT-PLA Pro
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_Polymaker_HT-PLA-Pro_V1.4_2026-7-17_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/Polymaker-HT-PLA-Pro-SDS-United-States-EN-2026-06-25-PL-XC-2026-US-008.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | ISO 1183-1: 2015
+  < 1.24 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | ISO 1133-1: 2022, 210 °C, 2.16 kg
+  < 24.43
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | ISO 11357-1: 2023, ISO 11357-2: 2020
+  < 59.15
+  < °C
+
+> Melting Temperature
+  < DSC | ISO 11357-1: 2023, ISO 11357-3: 2025
+  < 173.35
+  < °C
+
+> Crystallization Temperature
+  < DSC | ISO 11357-1: 2023, ISO 11357-3: 2025
+  < 129.98
+  < °C
+
+> Decomposition Temperature
+  < TGA | ISO 11358-1: 2022
+  < 320.14
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | ISO 306: 2022, as printed
+  < 148.3
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | ISO 306: 2022, annealed
+  < 150.5
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, ISO 75-1: 2020 / ISO 75-2: 2013, as printed
+  < 53.8
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, ISO 75-1: 2020 / ISO 75-2: 2013, as printed
+  < 56.3
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, ISO 75-1: 2020 / ISO 75-2: 2013, annealed
+  < 68.6
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, ISO 75-1: 2020 / ISO 75-2: 2013, annealed
+  < 107.6
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | ISO 527-1: 2019, as printed
+  < 2.27 ± 0.05
+  < GPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | ISO 527-2: 2025, as printed
+  < 1.85 ± 0.04
+  < GPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | ISO 527-1: 2019, after annealing
+  < 2.53 ± 0.03
+  < GPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | ISO 527-2: 2025, after annealing
+  < 1.94 ± 0.16
+  < GPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | ISO 527-1: 2019, as printed
+  < 37.6 ± 1.1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | ISO 527-2: 2025, as printed
+  < 26.8 ± 1.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | ISO 527-1: 2019, after annealing
+  < 38.2 ± 0.4
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | ISO 527-2: 2025, after annealing
+  < 25.0 ± 1.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | ISO 527-1: 2019, as printed
+  < 13 ± 3
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | ISO 527-2: 2025, as printed
+  < 2.6 ± 0.7
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | ISO 527-1: 2019, after annealing
+  < 4.3 ± 0.7
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | ISO 527-2: 2025, after annealing
+  < 1.9 ± 0.4
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | ISO 178: 2019, as printed
+  < 2.21 ± 0.14
+  < GPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | ISO 178: 2019, as printed
+  < 1.91 ± 0.04
+  < GPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | ISO 178: 2019, after annealing
+  < 2.42 ± 0.05
+  < GPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | ISO 178: 2019, after annealing
+  < 2.02 ± 0.03
+  < GPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | ISO 178: 2019, as printed
+  < 60.1 ± 2.1
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | ISO 178: 2019, as printed
+  < 37.1 ± 1.5
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | ISO 178: 2019, after annealing
+  < 65.0 ± 0.7
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | ISO 178: 2019, after annealing
+  < 34.8 ± 0.3
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | ISO 179-1: 2023, notched Charpy, as printed
+  < 9.94 ± 1.43
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | ISO 179-1: 2023, unnotched Charpy, as printed
+  < 45.7 ± 7.3
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | ISO 179-1: 2023, unnotched Charpy, as printed
+  < 10.3 ± 2.1
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | ISO 179-1: 2023, notched Charpy, after annealing
+  < 10.1 ± 1.3
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | ISO 179-1: 2023, unnotched Charpy, after annealing
+  < 38.7 ± 8.0
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | ISO 179-1: 2023, unnotched Charpy, after annealing
+  < 7.15 ± 1.15
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Fair
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Poor
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal conditions of use, storage and transport
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides (CO, CO2)
+  <
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 60 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 230 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 65 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Texture PEI
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < Up to 300 mm/s
+  <
+
+> Retraction Length
+  < | direct drive
+  < 1 - 3 mm
+  <
+
+> Retraction Speed
+  < | direct drive
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure not needed
+  <
+
+> Annealing Condition
+  <
+  < 100 °C for 30 min (for higher temperature resistance)
+  <

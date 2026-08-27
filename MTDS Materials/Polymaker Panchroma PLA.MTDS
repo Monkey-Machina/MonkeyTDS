@@ -1,0 +1,177 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Panchroma PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/Panchroma_TDS_V2.1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < | at 23 °C, Matte
+  < 1.37
+  < g/cm^3
+
+> Density
+  < | at 23 °C, Satin
+  < 1.24
+  < g/cm^3
+
+> Density
+  < | at 23 °C, Silk
+  < 1.24
+  < g/cm^3
+
+> Density
+  < | at 23 °C, Others
+  < 1.17
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306 | Matte
+  < 62
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | Satin
+  < 62
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | Silk
+  < 64.7
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | Others
+  < 63
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | Matte
+  < 1997 ± 64
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | Satin
+  < 2246 ± 91
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | Silk
+  < 2403 ± 74.5
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | Others
+  < 3427 ± 65
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | Matte
+  < 23.2 ± 0.5
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | Satin
+  < 31.1 ± 0.8
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | Silk
+  < 41.1 ± 0.8
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | Others
+  < 52.3 ± 0.3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | Matte
+  < 12.2 ± 0.7
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | Satin
+  < 16.7 ± 0.4
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | Silk
+  < 23.8 ± 2.8
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | Others
+  < 40.5 ± 0.5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, Matte
+  < 10.0 ± 0.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, Satin
+  < 6.7 ± 0.5
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, Silk
+  < 13.8 ± 1.3
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, Others
+  < 3.3 ± 0.2
+  < kJ/m^2
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 55 °C for 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 190 - 230 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 60 °C
+  <
+
+> Print Speed
+  <
+  < Matte: up to 300 mm/s; Satin: up to 300 mm/s; Silk: up to 250 mm/s; Others: up to 200 mm/s
+  <
+
+> Retraction Length
+  <
+  < Matte: 1 - 3 mm; Satin: 1 - 3 mm; Silk: 1 mm; Others: 1 mm
+  <
+
+> Support Material
+  <
+  < PolySupport and PolyDissolve S1
+  <

@@ -1,0 +1,244 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < PolyLite PETG
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/TDS_Polymaker_PolyLite-PETG_V6.0_2026-06-09_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/tech-docs/PolyLite_%20PETG_SDS_US_EN_V1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.25 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 240 °C, 2.16 kg
+  < 10.8
+  < g/10 min
+
+> Light Transmission
+  < GB/T 2410
+  < 90
+  < %
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 81
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 84
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 78
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 75
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C
+  < 0.54
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2116.8 ± 68.1
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1898.7 ± 98.5
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 50.8 ± 0.9
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 42.8 ± 2.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 8.4 ± 1.7
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 3.3 ± 0.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 1898.5 ± 35.5
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 69.6 ± 0.8
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 2.6 ± 0.2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, Charpy
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Fair
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Poor
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 65 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 230 - 260 °C
+  <
+
+> Bed Temperature
+  <
+  < 70 - 80 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Texture PEI
+  <
+
+> Cooling Fan
+  <
+  < OFF - 20%
+  <
+
+> Print Speed
+  <
+  < 50 - 100 mm/s
+  <
+
+> Retraction Length
+  < | direct drive
+  < 1 - 3 mm
+  <
+
+> Retraction Speed
+  < | direct drive
+  < 20 - 40 mm/s
+  <
+
+> Nozzle Material
+  <
+  < All-metal hot-end needed
+  <
+
+> Support Material
+  <
+  < PolyDissolve S1
+  <

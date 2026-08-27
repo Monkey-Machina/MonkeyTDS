@@ -1,0 +1,219 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < PolySmooth
+  <
+
+> Material
+  <
+  < PVB
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/TDS_Polymaker_PolySmooth_6.0_2026-06-08_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/tech-docs/PolySmooth_SDS_US_EN_V1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.10 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 210 °C, 2.16 kg
+  < 6.7
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 70
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 260
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 70
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 66
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 68
+  < °C
+
+> Saturated Water Absorption Rate
+  < | equilibrium
+  < 2.36
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2199 ± 43
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2010 ± 69
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 51.8 ± 0.7
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 38.9 ± 0.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 14.5 ± 2.9
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.8 ± 0.3
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2198 ± 57
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 75.9 ± 0.8
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 3.1 ± 0.8
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PVB
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides, nitrogen oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides, nitrogen oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 50 °C for 12 h
+  <
+
+> Nozzle Temperature
+  <
+  < 190 - 220 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 70 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Texture PEI
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < 50 - 200 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 - 3 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure not needed
+  <
+
+> Support Material
+  <
+  < PolyDissolve S1
+  <

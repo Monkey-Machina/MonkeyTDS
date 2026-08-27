@@ -1,0 +1,226 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon PPS-GF20
+  <
+
+> Material
+  <
+  < PPS
+  <
+
+> Filler Content
+  <
+  < 20
+  < wt%
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_FIBERON-PPS-GF20_V1.1-1.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/Fiberon%E2%84%A2-PPS-GF20-US-EN-V1.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.36 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 300 °C, 5 kg
+  < 27
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 95.0
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 279.6
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 225.8
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 440.2
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 272.5
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, specimens annealed 130 °C
+  < 125.8
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, specimens annealed 130 °C
+  < 236.3
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, specimens annealed 230 °C
+  < 219.6
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, specimens annealed 230 °C
+  < 248.9
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C, equilibrium
+  < 0.11
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, specimens annealed 130 C/10 h
+  < 4552.0 ± 54.6
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, specimens annealed 130 C/10 h
+  < 2557.2 ± 101.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, specimens annealed 130 C/10 h
+  < 64.1 ± 2.1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, specimens annealed 130 C/10 h
+  < 22.9 ± 0.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, specimens annealed 130 C/10 h
+  < 2.0 ± 0.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, specimens annealed 130 C/10 h
+  < 1.1 ± 0.1
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, specimens annealed 130 C/10 h
+  < 4110.7 ± 124.9
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, specimens annealed 130 C/10 h
+  < 2605.7 ± 101.8
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, specimens annealed 130 C/10 h
+  < 102.3 ± 3.7
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, specimens annealed 130 C/10 h
+  < 45.7 ± 1.1
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, specimens annealed 130 C/10 h
+  < 7.3 ± 0.2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, specimens annealed 130 C/10 h
+  < 27.3 ± 1.1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, specimens annealed 130 C/10 h
+  < 4.3 ± 0.3
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PPS with 20% glass fiber
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < V-0 | TDS prints "V0"
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ANSI/ESD S11.11
+  < > 10^12 | TDS prints ">1012 Ω", OL
+  < ohm
+
+> Dielectric Strength
+  < IEC 60243 | IEC 60243-1:2013
+  < 6.05
+  < kV/mm
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 100 °C / 10 h
+  <
+
+> Nozzle Temperature
+  <
+  < 310 - 350 °C
+  <
+
+> Bed Temperature
+  <
+  < 80 - 90 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Cooling Fan
+  <
+  < OFF
+  <
+
+> Print Speed
+  <
+  < Up to 250 mm/s
+  <
+
+> Annealing Condition
+  <
+  < 130 °C / 10 h
+  <
+
+> Support Material
+  <
+  < PolySupport for PA12
+  <

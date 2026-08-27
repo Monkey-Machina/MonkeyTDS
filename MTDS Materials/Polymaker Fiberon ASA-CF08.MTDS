@@ -1,0 +1,216 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon ASA-CF08
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Filler Content
+  <
+  < 8
+  < wt%
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_FIBERON-ASA-CF08_V1.0_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/lana-downloads/Fiberon_ASA-CF08_SDS_US_EN_V1.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.09 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 240 °C, 5 kg
+  < 13.9
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 106.6
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 328.4
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 110.8
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 97.3
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 103.0
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C, equilibrium
+  < 0.37
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 3611.7 ± 181.1
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1903.8 ± 71.0
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 43.5 ± 0.7
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 25.0 ± 0.4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1.8 ± 0.1
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.7 ± 0.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3265.0 ± 56.5
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1743.4 ± 59.9
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 306 | GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)
+  < 69.1 ± 1.62
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 306 | GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)
+  < 46.5 ± 0.8
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 5.5 ± 0.14
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 11.0 ± 0.5
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 11.9 ± 0.9
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ASA with 8% carbon fiber
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ANSI/ESD S11.11
+  < > 10^12 | TDS prints ">1012 Ω", OL
+  < ohm
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 90 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 260 - 280 °C
+  <
+
+> Bed Temperature
+  <
+  < 90 - 100 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Cooling Fan
+  <
+  < OFF
+  <
+
+> Print Speed
+  <
+  < Up to 350 mm/s
+  <
