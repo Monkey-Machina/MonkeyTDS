@@ -38,6 +38,7 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Physical Property | Vicat Softening Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Heat Deflection Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Saturated Water Absorption Rate | *Req.* | *Req.* | *Req.* |
+| Physical Property | Moisture Absorption | *Opt.* | *Req.* | *Req.* |
 | Physical Property | Coefficient of Thermal Expansion | *Req.* | *Req.* | *Req.* |
 | Physical Property | Thermal Conductivity | *Req.* | *Req.* | *Req.* |
 | Physical Property | Odor | *Opt.* | *Req.* | *Opt.* |
@@ -48,12 +49,16 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Mechanical Property | Tensile Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Breaking Elongation Rate (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Breaking Elongation Rate (Interlayer) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Elongation at Yield (In-Plane) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Elongation at Yield (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Modulus (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Bending Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Impact Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Impact Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Interlayer Adhesion | *Opt.* | *Req.* | *Req.* |
+| Mechanical Property | Shore Hardness | *Req.* | *Req.* | N/A |
 | Chemical Property | Composition | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Chemical Stability | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Solubility | *Opt.* | *Req.* | *Opt.* |
@@ -91,6 +96,8 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Print Setting | Support Material | N/A | *Opt.* | N/A |
 | Print Setting | Annealing Condition | N/A | *Opt.* | N/A |
 
+`Elongation at Yield` is the strain at the yield point, distinct from `Breaking Elongation Rate` (strain at break). `Interlayer Adhesion` is a single bond-strength value between deposited layers, reported by some manufacturers separately from the direction-resolved mechanical subjects. `Moisture Absorption` is measured at a stated time (annotate the duration), distinct from `Saturated Water Absorption Rate` (equilibrium). `Shore Hardness` carries its scale in the value, e.g. `95A` or `81D`.
+
 ## MTDS Standard Field Methods, Values, and Units
 In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
 
@@ -122,6 +129,10 @@ Any part of a field (subject, method, value, or units) may be followed by ` | ` 
 | ISO 22007 | Determination of thermal conductivity and thermal diffusivity |
 | IEC 60243 | Electric strength of insulating materials |
 | UL 94 | Flammability classification of plastic materials |
+| ISO 868 | Determination of indentation hardness by means of a durometer (Shore hardness) |
+| ISO 7619-1 | Determination of indentation hardness, durometer method (Shore hardness) |
+| ISO 37 | Determination of tensile stress-strain properties of rubber and elastomers |
+| GB/T 531.1 | Chinese standard for Shore durometer hardness, equivalent to ISO 7619-1 |
 
 A field contains at most one method. To record a property measured by more than one method, repeat the whole field, once per method. Test conditions are added as annotations, such as `< ISO 75 | 1.8 MPa` or `< ISO 1133 | 210 °C, 2.16 kg`.
 
