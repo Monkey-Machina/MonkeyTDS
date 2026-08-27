@@ -53,11 +53,11 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Chemical Property | Odor of Combustion Products | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Skin Hazards | *Opt.* | *Req.* | *Opt.* |
 
-## MTDS Standard Field Methods & Values
-In addition to standard fields MTDS outlines standard methods and values. Standard methods and values are separate from standard field subjects. Applicable field standard methods and values should be used outside of standard subject fields, and standard subject fields can use non-standard methods and values. The purpose of these method and value standards is to maximize user ability to search and filter MTDS files.
+## MTDS Standard Field Methods, Values, and Units
+In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
 
 ### Standard Methods
-| Method | Meaning | 
+| Method | Definition | 
 | ------ | ------- |
 |  |  |
 
@@ -66,3 +66,9 @@ In addition to standard fields MTDS outlines standard methods and values. Standa
 | ----- | ------- |
 | Bambu Lab | A specific filament manufacturer |
 | Polymaker | A specific filament manufacturer |
+
+## Standard Units
+| Unit | Definition | 
+| ----- | ------- |
+| m | Meter |
+| mm | Millimeter |
