@@ -1,0 +1,209 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PA11
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.02
+  < mm
+
+> Source
+  <
+  < TDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2026/08/2d2145fc-pa11_tds_eng.pdf
+  <
+
+> Source
+  <
+  < SDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2026/08/1f634098-prusament-pa11-natural-safety-data-sheet.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < N/A
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < N/A
+  < cm^3/10 min
+
+> Density
+  < ISO 1183
+  < 1.02
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.26
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.46
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 58.7
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 49.9
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 70D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 32 ± 1
+  < MPa
+
+> Tensile strength anisotropy coefficient
+  < Prusa Polymers
+  < 0.84
+  <
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 38.3 ± 0.8
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 39.5 ± 0.5
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 1200 ± 0
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 1200 ± 0
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 5.6 ± 0.1
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 5.6 ± 0.1
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 41.4 ± 0.8
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 47.2 ± 0.7
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1100 ± 0
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1000 ± 0
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 11.0 ± 0.5
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 11.6 ± 0.3
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < N/A
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < N/A
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 12.9 ± 2.1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 11.7 ± 1.2
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyamide 11
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 275 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 100 ± 10
+  < °C
+
+> Chamber Temperature
+  <
+  < 55 ± 5
+  < °C
+
+> Maximum Volumetric Speed
+  <
+  < 10
+  < mm3/s
+
+> Cooling Fan
+  <
+  < 15-20
+  < %
+
+> Build Plate Type
+  <
+  < PA Nylon sheet
+  <

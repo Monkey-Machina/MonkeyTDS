@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PC Blend Carbon Fiber
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.04
+  < mm
+
+> Source
+  <
+  < TDS | https://prusament.com/wp-content/uploads/2023/04/TDS_Prusament-PCCF_2023_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://prusament.com//wp-content/uploads/2021/06/PCB_CF_MSDS_EN.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < 11 - 13
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < 10 - 12
+  < cm^3/10 min
+
+> Density
+  < Prusa Polymers
+  < 1.22
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.09
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.11
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 114
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 106
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 83D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 23 ± 2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 64 ± 3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 70 ± 3
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 2600 ± 100
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 3200 ± 100
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 4.6 ± 0.4
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 3.7 ± 0.5
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 94 ± 3
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 130 ± 2
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 3500 ± 200
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 4200 ± 300
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 8.4 ± 0.3
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 6.6 ± 0.1
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 32 ± 5
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 35 ± 4
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 12 ± 1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 17 ± 2
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polycarbonate Blend filled with Carbon Fiber
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 285 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 110 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 200
+  < mm/s
+
+> Cooling Fan
+  <
+  < 0 (0 - 20*)
+  < %
+
+> Build Plate Type
+  <
+  < satin sheet; powder coated sheet; smooth PEI sheet**
+  <

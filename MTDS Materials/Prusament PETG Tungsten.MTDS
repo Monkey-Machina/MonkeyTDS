@@ -1,0 +1,194 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PETG Tungsten
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.03
+  < mm
+
+> Source
+  <
+  < TDS | https://prusament.com/wp-content/uploads/2023/03/TDS_Prusament-PETG-Tungsten-75_EN-1.pdf
+  <
+
+> Source
+  <
+  < SDS | https://prusament.com//wp-content/uploads/2023/03/MSDS_Prusament-PETG-Tungsten-75_EN.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < N/A
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < N/A
+  < cm^3/10 min
+
+> Density
+  < Prusa Polymers
+  < 4
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.07
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.1
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 94
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 86
+  < °C
+
+> Half-Value Layer
+  < when applied 99mTc, 140 keV
+  < 1.402
+  < mm
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 79D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 9 ± 2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 35 ± 4
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 39 ± 6
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 1900 ± 200
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 2100 ± 200
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 3.5 ± 0.4
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 3.1 ± 0.5
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 59 ± 1
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 70 ± 2
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2800 ± 100
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 2800 ± 200
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 6.7 ± 0.2
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 6.1 ± 0.2
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 22 ± 2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 19 ± 3
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyethylene Terephthalate Glycol Copolymer filled with tungsten powder (75 % in mass)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 80 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 200
+  < mm/s
+
+> Cooling Fan
+  <
+  < 50
+  < %
+
+> Build Plate Type
+  <
+  < satin sheet; powder coated sheet; smooth PEI sheet*
+  <
