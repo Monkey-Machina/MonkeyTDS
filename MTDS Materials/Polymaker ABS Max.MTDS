@@ -1,0 +1,229 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Polymaker ABS Max
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_Polymaker_ABS-Max_V1.1_2026_06_01_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/Polymaker-ABS-Max-US-SDS-EN_20260528.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.06 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 210 °C, 2.16 kg
+  < 6.6
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 126.3
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 433.0
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 127.4
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 118.1
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 113.1
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2.32 ± 0.03
+  < GPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.10 ± 0.01
+  < GPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 35.66 ± 0.58
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 25.41 ± 0.36
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 6.72 ± 0.34
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.81 ± 0.15
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2.50 ± 0.07
+  < GPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 2.21 ± 0.05
+  < GPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 63.29 ± 1.19
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 45.12 ± 0.89
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 10.51 ± 0.67
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 8.01 ± 0.77
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 29.37 ± 2.40
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Good
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Fair
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal conditions of use, storage and transport
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides (CO, CO2)
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 70 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 270 - 300 °C
+  <
+
+> Bed Temperature
+  <
+  < 120 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PEI
+  <
+
+> Cooling Fan
+  <
+  < 0 - 30%
+  <
+
+> Chamber Temperature
+  <
+  < 65 °C or higher
+  <
+
+> Print Speed
+  <
+  < Up to 200 mm/s
+  <
+
+> Retraction Length
+  < | direct drive
+  < 1 mm
+  <
+
+> Retraction Speed
+  < | direct drive
+  < 20 mm/s
+  <
+
+> Nozzle Material
+  <
+  < All-metal hot-end needed
+  <

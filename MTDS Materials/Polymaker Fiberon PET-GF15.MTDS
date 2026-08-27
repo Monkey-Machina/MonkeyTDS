@@ -1,0 +1,236 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon PET-GF15
+  <
+
+> Material
+  <
+  < PET
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_FIBERON_PET-GF15_v2.0_2026-02-02.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/Fiberon_PET-GF15_SDS_EU_EN_V1.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.43 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 270 °C, 2.16 kg
+  < 36.9
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 59.5
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 231.6
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 201.4
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 422.8
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 232.6
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, as printed
+  < 71.8
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, as printed
+  < 81.6
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, annealed
+  < 87.3
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, annealed
+  < 133.7
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C, equilibrium
+  < 0.32
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 4144.2 ± 133.3
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 3428.9 ± 257.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 59.9 ± 0.8
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 48.2 ± 0.3
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 4.0 ± 0.5
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.6 ± 0.1
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3705.4 ± 84.5
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 2998.4 ± 92.3
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 306 | GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)
+  < 104.2 ± 2.4
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 306 | GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)
+  < 80.3 ± 2.5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 8.7 ± 0.6
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 27.2 ± 2.0
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 13.9 ± 1.6
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PET with glass fiber
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ANSI/ESD S11.11
+  < > 10^12 | TDS prints ">1012 Ω", OL
+  < ohm
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 100 °C / 10 h
+  <
+
+> Nozzle Temperature
+  <
+  < 280 - 310 °C
+  <
+
+> Bed Temperature
+  <
+  < 70 - 80 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Cooling Fan
+  <
+  < OFF
+  <
+
+> Print Speed
+  <
+  < Up to 250 mm/s
+  <
+
+> Annealing Condition
+  <
+  < 120 °C / 16 h
+  <
+
+> Nozzle Material
+  <
+  < Wear-resistant nozzle (hardened steel or ruby) recommended
+  <

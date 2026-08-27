@@ -1,0 +1,234 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < PolyWood PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/TDS_Polymaker_Polywood-PLA_2.0_2026-06-08_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/PolyWood_SDS_US_EN_V1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 0.9 | at 23 °C
+  < g/cm^3
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 59
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 151
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 60
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 50
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 54
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C
+  < 0.40
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1688.5 ± 80.8
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1726.3 ± 199.8
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 24.4 ± 0.3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 20.8 ± 0.9
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 8.8 ± 0.3
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.0 ± 0.4
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 1958.9 ± 72.6
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 50.2 ± 1.6
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 2.4 ± 0.3
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA (foamed)
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Fair
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Poor
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 55 °C for 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 190 - 210 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 60 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Texture PEI (Glue when needed)
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < 50 - 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 3 - 6 mm
+  <
+
+> Retraction Speed
+  <
+  < 40 - 60 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure not needed
+  <
+
+> Support Material
+  <
+  < PolySupport and PolyDissolve S1
+  <
