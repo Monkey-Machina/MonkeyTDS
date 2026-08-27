@@ -1,0 +1,95 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Conductive PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < Technical Page | https://proto-pasta.com/pages/conductive-pla
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.15
+  < g/cm^3
+
+# Chemical Property
+
+> Resistance to Organic Solvent
+  <
+  < Heat sensitive, avoid above 50°C
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 215 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 50
+  < °C
+
+> Build Plate Type
+  <
+  < Standard
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Standard
+  <
+
+# Specific
+
+> Volume Resistivity (Molded Resin)
+  <
+  < 15
+  < ohm-cm
+
+> Volume Resistivity (3D Printed X/Y)
+  <
+  < 30
+  < ohm-cm
+
+> Volume Resistivity (3D Printed Z)
+  <
+  < 115
+  < ohm-cm
+
+> Filament Resistance (1.75mm, 10cm)
+  <
+  < 2 - 3
+  < kohm
+
+> Filament Resistance (2.85mm, 10cm)
+  <
+  < 800 - 1200
+  < ohm
+

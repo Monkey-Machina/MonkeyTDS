@@ -1,0 +1,78 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < HTPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < Technical Page | https://proto-pasta.com/pages/high-temp-pla
+  <
+
+# Physical Property
+
+> Heat Deflection Temperature
+  <
+  < 140
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 205 - 235
+  < °C
+
+> Bed Temperature
+  <
+  <
+  < °C
+
+> Print Speed
+  <
+  < 20 - 40
+  < mm/s
+
+> Annealing Condition
+  <
+  < Heat treat at 95 - 110 °C for 5 - 240 minutes depending on part size
+  <
+
+# Specific
+
+> Heat Treatment Temperature
+  <
+  < 95 - 110
+  < °C
+
+> Post-Treatment Shrinkage (X/Y)
+  <
+  < 0.5 | HTPLA v3
+  < %
+
+> Post-Treatment Shrinkage (Z)
+  <
+  < Negligible | HTPLA v3
+  <
+
