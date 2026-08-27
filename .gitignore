@@ -1,1 +1,3 @@
 /materials.json
+__pycache__/
+*.pyc

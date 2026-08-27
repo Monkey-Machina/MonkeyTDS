@@ -44,7 +44,9 @@ var RESTORE_Q = null;               // caret position to restore after a text-se
       f.subject = f.subject.replace(/[’‘`]/g, "'");
       if (PROP_CATS[f.category]) propSubj[f.subject] = 1;
       if (!(f.subject in m._raw)) m._raw[f.subject] = { value: f.value, units: f.units };
-      var n = parse_num(f.value);
+      var n = (f.valueCanonical != null) ? f.valueCanonical
+            : (f.valueNumber != null) ? f.valueNumber
+            : parse_num(f.value);
       if (n !== null && !(f.subject in m._nums)) m._nums[f.subject] = n;
       if (f.method && !(f.subject in m._methods)) m._methods[f.subject] = f.method;
     });
@@ -58,8 +60,9 @@ var RESTORE_Q = null;               // caret position to restore after a text-se
   });
   SUBJECTS = Object.keys(freq).filter(function (s) { return freq[s] >= 3 && propSubj[s]; })
     .sort(function (a, b) { return freq[b] - freq[a]; });
+  var canon = d.canonicalUnits || {};
   Object.keys(unit).forEach(function (s) {
-    UNIT_FOR[s] = Object.keys(unit[s]).sort(function (a, b) { return unit[s][b] - unit[s][a]; })[0];
+    UNIT_FOR[s] = canon[s] || Object.keys(unit[s]).sort(function (a, b) { return unit[s][b] - unit[s][a]; })[0];
   });
   document.getElementById("dataset-info").textContent =
     d.materialCount + " materials · compiled " + (d.generatedAt || "").slice(0, 10);
@@ -73,14 +76,18 @@ var RESTORE_Q = null;               // caret position to restore after a text-se
 window.addEventListener("hashchange", route);
 
 /* ---------- helpers ---------- */
+var FLOAT_RE = /-?\d*\.?\d+(?:e[+-]?\d+)?/i;
 function parse_num(s) {
   if (s == null) return null;
   s = String(s).trim().replace(/,/g, "");
-  if (s === "" || /^n\/?a$/i.test(s) || /no break/i.test(s)) return null;
-  s = s.replace(/\s*[x×]\s*10\s*\^?\s*([+-]?\d+)/gi, "e$1");
-  var rng = s.match(/(-?\d*\.?\d+(?:e[+-]?\d+)?)\s*[-–]\s*(-?\d*\.?\d+(?:e[+-]?\d+)?)/i);
+  if (s === "" || /^n\s*\/?\s*a$/i.test(s) || /no break/i.test(s)) return null;
+  var m = s.match(/([\d.]+)\s*(?:±\s*[\d.]+\s*)?[x×·*]\s*10\s*\^?\s*([+-]?\d+)/);
+  if (m) return parseFloat(m[1]) * Math.pow(10, parseInt(m[2], 10));
+  m = s.match(/(?:^|[^\d.])10\s*\^\s*([+-]?\d+)/);
+  if (m) return Math.pow(10, parseInt(m[1], 10));
+  var rng = s.match(new RegExp("(" + FLOAT_RE.source + ")\\s*[-–]\\s*(" + FLOAT_RE.source + ")", "i"));
   if (rng && !/±/.test(s)) return (parseFloat(rng[1]) + parseFloat(rng[2])) / 2;
-  var m = s.match(/-?\d*\.?\d+(?:e[+-]?\d+)?/i);
+  m = s.match(FLOAT_RE);
   return m ? parseFloat(m[0]) : null;
 }
 function esc(s) {
@@ -468,7 +475,8 @@ function view_compare() {
     }
     var cells = mats.map(function (m) {
       var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
-      return { f: f, n: f ? parse_num(f.value) : null, method: f ? f.method : null };
+      var n = f ? (f.valueCanonical != null ? f.valueCanonical : parse_num(f.value)) : null;
+      return { f: f, n: n, method: f ? f.method : null };
     });
     var nums = cells.map(function (c) { return c.n; }).filter(function (n) { return n != null; });
     var best = null;
