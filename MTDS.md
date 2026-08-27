@@ -99,7 +99,7 @@ Any part of a field (subject, method, value, or units) may be followed by ` | ` 
 | GB/T 1633 | Chinese standard for Vicat softening temperature, equivalent to ISO 306 |
 | DSC | Differential scanning calorimetry |
 
-A field may repeat a part on its own line to record parallels, such as `< ISO 527` and `< GB/T 1040` for one property. Test conditions are added as annotations, such as `< ISO 75 | 1.8 MPa` or `< ISO 1133 | 210 °C, 2.16 kg`.
+A field contains at most one method. To record a property measured by more than one method, repeat the whole field, once per method. Test conditions are added as annotations, such as `< ISO 75 | 1.8 MPa` or `< ISO 1133 | 210 °C, 2.16 kg`.
 
 ### Standard Values
 | Value | Definition | 
@@ -159,6 +159,8 @@ A field may repeat a part on its own line to record parallels, such as `< ISO 52
 
 ### .MTDS File Format
 The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.
+
+A subject may appear more than once within a category, for example multiple Source fields or one property measured by several methods.
 
 ### Example .MTDS Files (comments highlighted)
 ###### Short Template Example
