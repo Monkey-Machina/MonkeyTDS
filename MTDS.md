@@ -80,6 +80,9 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 ## MTDS Standard Field Methods, Values, and Units
 In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
 
+### Field Annotations
+Any part of a field (subject, method, value, or units) may be followed by ` | ` and free-form annotation text. The text before the ` | ` is the standardized content; the text after it is an unstandardized note or subtext intended for substring search. For example `< ISO 75 | 1.8 MPa`, `< DSC | 10 °C/min`, or `< 12.2 | X-Y`.
+
 ### Standard Methods
 | Method | Definition | 
 | ------ | ------- |
@@ -96,14 +99,7 @@ In addition to standard fields MTDS outlines standard methods, values and units.
 | GB/T 1633 | Chinese standard for Vicat softening temperature, equivalent to ISO 306 |
 | DSC | Differential scanning calorimetry |
 
-#### Method Field Syntax
-A field MAY contain more than one `< Method` entry, one per line, to record parallel methods such as an ISO method and its GB/T equivalent.
-
-Each `< Method` entry is one of:
-- a Standard Method written exactly as it appears in the table above, or
-- a Standard Method, then `, ` (comma and space), then free-form test condition text.
-
-A parser splits an entry on its first `, `. The text before it MUST match a Standard Method exactly; the text after it is the test condition. Test conditions are not standardized and are meant for substring search. Common condition text includes `1.8 MPa`, `0.45 MPa`, `10 °C/min`, `210 °C, 2.16 kg`, `25 °C, 55% RH`, `notched`, and `unnotched`.
+A field may repeat a part on its own line to record parallels, such as `< ISO 527` and `< GB/T 1040` for one property. Test conditions are added as annotations, such as `< ISO 75 | 1.8 MPa` or `< ISO 1133 | 210 °C, 2.16 kg`.
 
 ### Standard Values
 | Value | Definition | 
@@ -141,8 +137,6 @@ A parser splits an entry on its first `, `. The text before it MUST match a Stan
 | Resistant | Not degraded or attacked by the stated agent |
 | Stable under normal storage and handling conditions | No hazardous reaction under normal storage and handling |
 | No hazard | Presents no known hazard |
-| notched | Impact test condition: notched specimen |
-| unnotched | Impact test condition: unnotched specimen |
 
 ## Standard Units
 | Unit | Definition | 
@@ -196,5 +190,10 @@ The .MTDS file format is a standard for storing MTDS material information in a p
   < ISO 1183
   < 1.22
   < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 54
+  < °C
 
 ```
