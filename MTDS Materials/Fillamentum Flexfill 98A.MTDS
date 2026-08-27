@@ -1,0 +1,189 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < Flexfill 98A
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fillamentum.com/en/products/flexfill-98a/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.12
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 8
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 215
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 65
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 68
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 55
+  < °C
+
+> Saturated Water Absorption Rate
+  < 23 °C, 50% RH
+  < 1.2
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C
+  < 35
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | 23 °C
+  < 25
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 23 °C
+  < 13
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | 23 °C
+  < 10
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 23 °C
+  < 510
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | 23 °C
+  < 450
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 23 °C
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < TPU
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 50 - 60 °C, 4 - 6 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 10% RH
+  <
+
+> Nozzle Size
+  <
+  < 0.4 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 215 - 235 °C
+  <
+
+> Build Plate Type
+  <
+  < PEI Sheet
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue stick
+  <
+
+> Bed Temperature
+  <
+  < 50 - 65 °C
+  <
+
+> Cooling Fan
+  <
+  < Turn off
+  <
+
+> Print Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Retraction Length
+  <
+  < 3 - 5 mm
+  <
+
+> Retraction Speed
+  <
+  < 25 - 35 mm/s
+  <
+
+> Support Material
+  <
+  < Flexible support not recommended
+  <
