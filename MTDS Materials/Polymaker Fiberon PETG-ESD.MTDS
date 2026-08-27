@@ -1,0 +1,256 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon PETG-ESD
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_FIBERON-PETG-ESD_V1.1_EN-1.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/tech-docs/PolyMax_%20PETG-ESD_SDS_US_EN.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.24 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 280 °C, 5 kg
+  < 14
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 77
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 373
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 86
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 72
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 76
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C, equilibrium
+  < 0.41
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1983.0 ± 74.9
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1626.4 ± 31.5
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 36.1 ± 0.9
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 20.7 ± 0.6
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 7.3 ± 0.7
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.8 ± 0.1
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 1650.8 ± 140.7
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1150.9 ± 75.6
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 54.0 ± 2.5
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 24.1 ± 1.2
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 5.7 ± 0.5
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 29.3 ± 2.2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 5.2 ± 0.7
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG (ESD grade)
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < | 0 degree specimen, 250 C nozzle
+  < (1.6 ± 0.3) x 10^7
+  < ohm
+
+> Surface Resistivity
+  < | 0 degree specimen, 270 C nozzle
+  < (4.7 ± 0.8) x 10^5
+  < ohm
+
+> Surface Resistivity
+  < | 0 degree specimen, 290 C nozzle
+  < < 1 x 10^4
+  < ohm
+
+> Surface Resistivity
+  < | 45 degree specimen, 250 C nozzle
+  < (7.0 ± 0.9) x 10^6
+  < ohm
+
+> Surface Resistivity
+  < | 45 degree specimen, 270 C nozzle
+  < (3.4 ± 1.2) x 10^5
+  < ohm
+
+> Surface Resistivity
+  < | 45 degree specimen, 290 C nozzle
+  < < 1 x 10^4
+  < ohm
+
+> Surface Resistivity
+  < | 90 degree specimen, 250 C nozzle
+  < (8.8 ± 0.8) x 10^6
+  < ohm
+
+> Surface Resistivity
+  < | 90 degree specimen, 270 C nozzle
+  < (3.2 ± 1.0) x 10^5
+  < ohm
+
+> Surface Resistivity
+  < | 90 degree specimen, 290 C nozzle
+  < < 1 x 10^4
+  < ohm
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 65 °C / 3 h
+  <
+
+> Nozzle Temperature
+  <
+  < 250 - 290 °C
+  <
+
+> Bed Temperature
+  <
+  < 70 - 80 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Cooling Fan
+  <
+  < OFF
+  <
+
+> Print Speed
+  <
+  < Up to 500 mm/s
+  <

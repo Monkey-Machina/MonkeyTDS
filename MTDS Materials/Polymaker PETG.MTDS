@@ -1,0 +1,239 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Polymaker PETG
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_Polymaker_PETG_V2.0_2025-11-17.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/Polymaker_PETG_SDS_US_EN_V1.0-%EF%BC%88%E5%AE%8C%E6%88%90%EF%BC%89.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.30 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 230 °C, 2.16 kg
+  < 16.3
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 71.24
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 405.49
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 75
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 69
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 65
+  < °C
+
+> Saturated Water Absorption Rate
+  < | max, 70% RH, 23 °C
+  < 0.51
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2311.11 ± 92.41
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2202.91 ± 52.34
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 47.96 ± 4.88
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 45.71 ± 1.76
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 9.33 ± 6.57
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 3.54 ± 2.35
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2277.34 ± 198.09
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1958.74 ± 126.39
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 80.08 ± 3.53
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 57.65 ± 5.63
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 4.95 ± 0.55
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 20.24 ± 3.95
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy
+  < 15.74 ± 3.91
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Fair
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Poor
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 55 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 240 - 260 °C
+  <
+
+> Bed Temperature
+  <
+  < 60 - 70 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Textured PEI
+  <
+
+> Cooling Fan
+  <
+  < 20% - 60%
+  <
+
+> Print Speed
+  <
+  < Up to 300 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 - 3 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure not needed
+  <

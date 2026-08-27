@@ -1,0 +1,271 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon PA612-CF15
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/TDS_FIBERON-PA612-CF15_V1.1_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/tech-docs/PolyMide%20PA612-CF_SDS_AU_EN_V1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.03 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 260 °C, 2.16 kg
+  < 9.9
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 210
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 180
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 448.4
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 206.2
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 114
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 175
+  < °C
+
+> Saturated Water Absorption Rate
+  < | 70% RH, 23 °C, equilibrium
+  < 2.2
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, dry (annealed 100 C/16 h)
+  < 5136.7 ± 192.2
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 2786.4 ± 78.4
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, wet (immersed 60 C/48 h, 2.57% moisture)
+  < 3990.8 ± 136.5
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 2386.8 ± 150.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 91.9 ± 2.0
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 48.3 ± 3.9
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, wet
+  < 83.1 ± 2.2
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 35.6 ± 3.0
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 2.6 ± 0.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 2.1 ± 0.2
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, wet
+  < 4.1 ± 0.3
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 1.7 ± 0.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 4583.5 ± 62.7
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, dry
+  < 2264.8 ± 203.8
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, wet
+  < 3888.3 ± 56.3
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, wet
+  < 1764.5 ± 98.9
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 138.0 ± 2.2
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, dry
+  < 73.5 ± 3.9
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, wet
+  < 118.1 ± 1.6
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, wet
+  < 64.6 ± 2.0
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, dry
+  < 8.1 ± 0.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, dry
+  < 29.9 ± 1.6
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, dry
+  < 12.6 ± 1.4
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, wet
+  < 7.7 ± 0.5
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, wet
+  < 41.0 ± 1.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, wet
+  < 17.6 ± 2.0
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PA612 with carbon fiber
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ANSI/ESD S11.11
+  < > 10^12 | TDS prints ">1012 Ω", OL
+  < ohm
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 100 °C / 10 h
+  <
+
+> Nozzle Temperature
+  <
+  < 250 - 300 °C
+  <
+
+> Bed Temperature
+  <
+  < 40 - 50 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Print Speed
+  <
+  < Up to 300 mm/s
+  <
+
+> Annealing Condition
+  <
+  < 100 °C / 16 h
+  <
+
+> Support Material
+  <
+  < PolyDissolve S1
+  <

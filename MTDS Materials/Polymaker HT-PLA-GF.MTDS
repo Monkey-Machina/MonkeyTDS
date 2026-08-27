@@ -1,0 +1,334 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < HT-PLA-GF
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Post-Treatment Shrinkage (In-Plane)
+  < | X-Y, dimensional performance
+  < 0.05
+  < %
+
+> Post-Treatment Shrinkage (Interlayer)
+  < | Z, dimensional performance
+  < 0.05
+  < %
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_Polymaker_HT-PLA-GF_V1.2_2025-12-09_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/lana-downloads/Polymaker_TM_HT-PLAGF_SDS_US_EN_V1.0-1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.34 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 210 °C, 2.16 kg
+  < 22.9
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 59.76
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 174.87
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 81.56
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 348.15
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633, as printed
+  < 148.9
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633, annealed
+  < 148.3
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, as printed
+  < 59.7
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, as printed
+  < 75.5
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, annealed
+  < 84
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, annealed
+  < 114.7
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, as printed
+  < 3793.85 ± 129.17
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, as printed
+  < 3018.1 ± 83.42
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, after annealing
+  < 4206.91 ± 182.01
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, after annealing
+  < 3052.15 ± 101.57
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, as printed
+  < 50.09 ± 0.73
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, as printed
+  < 23.68 ± 1.28
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, after annealing
+  < 50.2 ± 0.93
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, after annealing
+  < 22.46 ± 1.54
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, as printed
+  < 2.77 ± 0.45
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, as printed
+  < 0.85 ± 0.05
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, after annealing
+  < 2.3 ± 0.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, after annealing
+  < 0.79 ± 0.07
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, as printed
+  < 3684.87 ± 115.49
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, as printed
+  < 2197.76 ± 269.42
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, after annealing
+  < 3948.4 ± 67.03
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, after annealing
+  < 1953.62 ± 260.81
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, as printed
+  < 86.41 ± 1.38
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, as printed
+  < 29.21 ± 1.42
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, after annealing
+  < 87.76 ± 1.96
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, after annealing
+  < 29.17 ± 2.69
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, as printed
+  < 5.31 ± 0.46
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, notched Charpy, as printed
+  < 4.28 ± 0.18
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, after annealing
+  < 4.92 ± 0.5
+  < kJ/m^2 | TDS prints unit as MPa
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, notched Charpy, after annealing
+  < 4.37 ± 0.27
+  < kJ/m^2 | TDS prints unit as MPa
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA with glass fiber
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Good
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Fair
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Poor
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 60 °C / 6 h
+  <
+
+> Nozzle Temperature
+  <
+  < 210 - 230 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 60 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Textured PEI
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < Up to 350 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 - 3 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure not needed
+  <
+
+> Annealing Condition
+  <
+  < 80 - 100 °C (recommended 100 °C) for 20 - 30 min (recommended 30 min)
+  <
+
+> Nozzle Material
+  <
+  < Hardened nozzle required
+  <

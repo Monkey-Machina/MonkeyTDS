@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PP Carbon Fiber
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.04
+  < mm
+
+> Source
+  <
+  < TDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/01/b4ef2bf6-technical-data-sheet-1.pdf
+  <
+
+> Source
+  <
+  < SDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/01/330976cb-safety-data-sheet.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < N/A
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < N/A
+  < cm_3_/10 min
+
+> Density
+  < ISO 1183
+  < 0.91
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.03
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.04
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 158
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 115
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 62D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 13 ± 1
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 27.3 ± 0.7
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 30.7 ± 0.3
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 2100 ± 100
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 2500 ± 100
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 3.4 ± 0.1
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 3.2 ± 0.1
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 27.5 ± 0.7
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 41.7 ± 1.5
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1800 ± 100
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 3400 ± 300
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 8.0 ± 0.1
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 3.7 ± 0.5
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < 19 ± 1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < 17.2 ± 1.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 14.5 ± 0.3
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 10.5 ± 0.8
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polypropylen filled with Carbon Fiber
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 270 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 85 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 40
+  < mm/s
+
+> Cooling Fan
+  <
+  < 0 (only when printing bridges it is at 100%)
+  < %
+
+> Build Plate Type
+  <
+  < PP sheet
+  <

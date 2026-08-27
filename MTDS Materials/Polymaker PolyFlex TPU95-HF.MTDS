@@ -1,0 +1,189 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < PolyFlex TPU95-HF
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/TDS_Polymaker_PolyFlex-TPU95-HF_V5.5_2025-12-29_EN.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/tech-docs/PolyFlex_TPU95HF_SDS_US_EN_V1.2.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.16 | at 23 °C (TDS prints "at 3°C")
+  < g/cm^3
+
+> Melt Index
+  < | 210 °C, 2.16 kg
+  < 9.3
+  < g/10 min
+
+> Saturated Water Absorption Rate
+  < | equilibrium
+  < 0.69
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Shore Hardness
+  < ISO 7619-1 | GB/T 531.1
+  < 95A
+  <
+
+> Stress at 100% Strain (In-Plane)
+  < ISO 37 | GB/T 528
+  < 15.5 ± 0.7
+  < MPa
+
+> Stress at 200% Strain (In-Plane)
+  < ISO 37 | GB/T 528
+  < 19.9 ± 0.8
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < ISO 37 | GB/T 528
+  < 23.0 ± 0.5
+  < MPa
+
+> Stress at 400% Strain (In-Plane)
+  < ISO 37 | GB/T 528
+  < 24.2 ± 0.6
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 37 | GB/T 528, at break
+  < 26.6 ± 0.6
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 37 | GB/T 528
+  < 495.8 ± 16.2
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < TPU
+  <
+
+> Resistance to Acid
+  < | weak acids
+  < Fair
+  <
+
+> Resistance to Acid
+  < | strong acids
+  < Poor
+  <
+
+> Resistance to Alkali
+  < | weak alkalis
+  < Fair
+  <
+
+> Resistance to Alkali
+  < | strong alkalis
+  < Poor
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Combustion Products
+  <
+  < Carbon oxides
+  <
+
+> Thermal Decomposition Products
+  <
+  < Carbon oxides, 4,4'-diphenylmethane diisocyanate (MDI)
+  <
+
+> Skin Hazards
+  < | skin corrosion / irritation (SDS section 11)
+  < Not classified
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 70 °C / 8 h
+  <
+
+> Nozzle Temperature
+  <
+  < 200 - 230 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 50 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Textured PEI
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < 30 - 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 3 - 6 mm
+  <
+
+> Retraction Speed
+  <
+  < 40 - 60 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < Enclosure not needed
+  <

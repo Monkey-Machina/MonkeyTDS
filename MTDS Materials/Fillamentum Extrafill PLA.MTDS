@@ -1,0 +1,259 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < Extrafill PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Spool Material
+  <
+  < Cardboard
+  <
+
+> Spool Size
+  <
+  <
+  <
+
+> Source
+  <
+  < TDS | https://fillamentum.com/en/products/extrafill-pla/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.24
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 16
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 160
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 58
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 56
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 53
+  < °C
+
+> Saturated Water Absorption Rate
+  < 23 °C, 50% RH
+  < 0.4
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C
+  < 2700
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | 23 °C
+  < 2100
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 23 °C
+  < 50
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | 23 °C
+  < 45
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 23 °C
+  < 6
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | 23 °C
+  < 3.5
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | 23 °C
+  < 2800
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | 23 °C
+  < 2200
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | 23 °C
+  < 80
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | 23 °C
+  < 65
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 23 °C, notched
+  < 3.5
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | 23 °C, notched
+  < 2.5
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 50 - 60 °C, 4 - 6 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 15% RH
+  <
+
+> Nozzle Size
+  <
+  < 0.4 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 210 - 230 °C
+  <
+
+> Build Plate Type
+  <
+  < PEI Sheet
+  <
+
+> Build Plate Surface Preparation
+  <
+  < None / Glue stick
+  <
+
+> Bed Temperature
+  <
+  < 20 - 60 °C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < 40 - 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 - 2 mm
+  <
+
+> Retraction Speed
+  <
+  < 30 - 40 mm/s
+  <
+
+> Max Overhang Angle
+  <
+  < 45°
+  <
+
+> Max Bridging Length
+  <
+  < 10 - 15 mm
+  <
+
+> Support Material
+  <
+  < Support for PLA
+  <

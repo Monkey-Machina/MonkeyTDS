@@ -1,0 +1,321 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Fiberon PA612-ESD
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Filler Content
+  < | carbon fiber
+  < 10
+  < wt%
+
+> Source
+  <
+  < TDS | https://polymaker.com/wp-content/uploads/lana-downloads/TDS_FIBERON-PA612-ESD_V1.0_EN-1.pdf
+  <
+
+> Source
+  <
+  < SDS | https://polymaker.com/wp-content/uploads/lana-downloads/Fiberon%E2%84%A2-PA612-ESD-SDS-US-EN.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.10 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  < | 275 °C, 5 kg
+  < 17.4
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 41.8
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 187.3
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 180.3
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 441.0
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 190.0
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 125.4
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 157.0
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, dry (annealed 100 C/16 h)
+  < 4293.7 ± 116.4
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 1784.4 ± 102.8
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, wet (immersed 60 C/48 h, 4.64% moisture)
+  < 3730.8 ± 156.2
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 1343.9 ± 99.5
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 84.3 ± 2.3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 21.5 ± 2.7
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, wet
+  < 73.6 ± 2.3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 19.2 ± 1.6
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 3.0 ± 0.1
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 1.4 ± 0.1
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, wet
+  < 4.2 ± 0.4
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040, wet
+  < 1.9 ± 0.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 3745.5 ± 292.6
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, dry
+  < 1362.3 ± 111.7
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, wet
+  < 3056.1 ± 175.5
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341, wet
+  < 1420.1 ± 114.0
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 116.2 ± 5.9
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, dry
+  < 39.5 ± 1.5
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, wet
+  < 102.6 ± 4.8
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341, wet
+  < 40.5 ± 1.3
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, dry
+  < 5.9 ± 0.4
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, dry
+  < 24.1 ± 2.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, dry
+  < 4.5 ± 0.2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy, wet
+  < 4.9 ± 0.3
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, un-notched Charpy, wet
+  < 33.6 ± 2.0
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, un-notched Charpy, wet
+  < 3.6 ± 0.1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PA612 with carbon nanotubes and 10% carbon fiber
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < | 0 degree specimen, 280 C nozzle
+  < 7.74 x 10^7
+  < ohm/sq
+
+> Surface Resistivity
+  < | 0 degree specimen, 290 C nozzle
+  < 4.62 x 10^6
+  < ohm/sq
+
+> Surface Resistivity
+  < | 0 degree specimen, 300 C nozzle
+  < 1.39 x 10^6
+  < ohm/sq
+
+> Surface Resistivity
+  < | 0 degree specimen, 320 C nozzle
+  < 1.18 x 10^4
+  < ohm/sq
+
+> Surface Resistivity
+  < | 45 degree specimen, 280 C nozzle
+  < 8.71 x 10^5
+  < ohm/sq
+
+> Surface Resistivity
+  < | 45 degree specimen, 290 C nozzle
+  < 2.54 x 10^4
+  < ohm/sq
+
+> Surface Resistivity
+  < | 45 degree specimen, 300 C nozzle
+  < 2.15 x 10^4
+  < ohm/sq
+
+> Surface Resistivity
+  < | 45 degree specimen, 320 C nozzle
+  < < 1.0 x 10^3
+  < ohm/sq
+
+> Surface Resistivity
+  < | 90 degree specimen, 280 C nozzle
+  < 7.49 x 10^5
+  < ohm/sq
+
+> Surface Resistivity
+  < | 90 degree specimen, 290 C nozzle
+  < 3.04 x 10^4
+  < ohm/sq
+
+> Surface Resistivity
+  < | 90 degree specimen, 300 C nozzle
+  < 1.70 x 10^4
+  < ohm/sq
+
+> Surface Resistivity
+  < | 90 degree specimen, 320 C nozzle
+  < < 1.0 x 10^3
+  < ohm/sq
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 100 °C / 10 h
+  <
+
+> Nozzle Temperature
+  <
+  < 280 - 300 °C
+  <
+
+> Bed Temperature
+  <
+  < 40 - 50 °C
+  <
+
+> Chamber Temperature
+  <
+  < Room temperature
+  <
+
+> Print Speed
+  <
+  < Up to 300 mm/s
+  <
+
+> Annealing Condition
+  <
+  < 100 °C / 16 h
+  <
+
+> Support Material
+  <
+  < PolySupport for PA12
+  <

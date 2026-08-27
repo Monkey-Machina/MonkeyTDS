@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Prusa Polymers
+  <
+
+> Product Name
+  <
+  < PETG
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.02
+  < mm
+
+> Source
+  <
+  < TDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2023/10/9f8d2165-tds_prusament-petg_n_en.pdf
+  <
+
+> Source
+  <
+  < SDS | https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2023/10/73ae03b8-23_06_07_bl_prusament-petg-by-prusa-polymers_en.pdf
+  <
+
+# Physical Property
+
+> Melt Index
+  < ISO 1133
+  < N/A
+  < g/10 min
+
+> Melt Volume Rate
+  < ISO 1133
+  < N/A
+  < cm^3/10 min
+
+> Density
+  < ISO 1183
+  < 1.27
+  < g/cm^3
+
+> Moisture Absorption
+  < Prusa Polymers | 24 h
+  < 0.07
+  < %
+
+> Moisture Absorption
+  < Prusa Polymers | 7 days
+  < 0.10
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 68
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 68
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < Prusa Polymers
+  < 74D
+  <
+
+> Interlayer Adhesion
+  < Prusa Polymers
+  < 18 ± 4
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | yield
+  < 47 ± 2
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-1 | yield
+  < 50 ± 1
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 1500 ± 100
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527-1
+  < 1600 ± 100
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-1
+  < 5.1 ± 0.1
+  < %
+
+> Elongation at Yield (Interlayer)
+  < ISO 527-1
+  < 5.1 ± 0.1
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 66 ± 2
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178
+  < 70 ± 1
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1700 ± 100
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1600 ± 100
+  < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 9.0 ± 0.1
+  < mm
+
+> Deflection at Flexural Strength (Interlayer)
+  < ISO 178
+  < 9.3 ± 0.2
+  < mm
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | unnotched Charpy
+  < NB (no break)
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | unnotched Charpy
+  < NB (no break)
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1 | notched Charpy
+  < 6 ± 1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179-1 | notched Charpy
+  < 3 ± 1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyethylene Terephthalate Glycol Copolymer
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 ± 10
+  < °C
+
+> Bed Temperature
+  <
+  < 80 ± 10
+  < °C
+
+> Print Speed
+  <
+  < up to 200
+  < mm/s
+
+> Cooling Fan
+  <
+  < 50
+  < %
+
+> Build Plate Type
+  <
+  < satin sheet; powder coated sheet; smooth PEI sheet*
+  <
