@@ -7,13 +7,23 @@ tweaks (system font, sticky headers, a monospace numeric column, subtle zebra).
 
 ## Run
 
+Just open `frontend/index.html` in a browser — the data is loaded as a plain
+`<script>` (`data/materials.js`), so no server is required.
+
+To serve it over HTTP instead (e.g. to mimic deployment):
+
 ```
 cd frontend
-python -m http.server 8000
-# open http://localhost:8000/
+python -m http.server 8000   # -> http://localhost:8000/
 ```
 
-(Must be served over HTTP — it `fetch`es `data/materials.json`.)
+## Regenerate the data
+
+```
+cd frontend
+python ../scripts/compile_materials.py --out data/materials.json
+{ printf 'window.__MTDS_DATA__ = '; cat data/materials.json; printf ';\n'; } > data/materials.js
+```
 
 ## Views (all state in the URL — every view is a shareable link)
 
@@ -43,8 +53,9 @@ python -m http.server 8000
 ## Data
 
 `data/materials.json` is produced by `../scripts/compile_materials.py` from the
-`.MTDS` files in `../MTDS Materials/`. It is committed here as a snapshot; re-run
-the compile script to refresh it. `app.js` normalises a few data inconsistencies
+`.MTDS` files in `../MTDS Materials/`; `data/materials.js` is that same JSON wrapped
+as `window.__MTDS_DATA__ = …;` so the page works from `file://`. Both are committed
+snapshots — see "Regenerate the data" above. `app.js` normalises a few data inconsistencies
 at load time (curly vs straight apostrophes in subject names) and parses a
 representative number out of value strings like `35 ± 4`, `9 - 11`, `> 700`,
 `(1.6 ± 0.3) x 10^7` for filtering / sorting / comparison.

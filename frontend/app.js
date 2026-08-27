@@ -25,9 +25,13 @@ var CORE = [
   "Bending Modulus (In-Plane)", "Impact Strength (In-Plane)"
 ];
 
-/* ---------- data loading ---------- */
-fetch("data/materials.json")
-  .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+/* ---------- data loading ----------
+   data/materials.js sets window.__MTDS_DATA__ (works from file:// too);
+   fall back to fetching the .json if only that was regenerated. */
+(window.__MTDS_DATA__
+  ? Promise.resolve(window.__MTDS_DATA__)
+  : fetch("data/materials.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+)
   .then(function (d) {
     DATA = d;
     var PROP_CATS = { "Physical Property": 1, "Mechanical Property": 1, "Chemical Property": 1, "Electrical Property": 1, "Magnetic Property": 1 };
@@ -62,8 +66,9 @@ fetch("data/materials.json")
   })
   .catch(function (e) {
     document.getElementById("app").innerHTML =
-      "<p><b>Could not load data/materials.json</b> (" + e.message + ").<br>" +
-      "Serve this folder over HTTP, e.g. <code>python -m http.server</code> in <code>frontend/</code>.</p>";
+      "<p><b>Could not load material data</b> (" + esc(e.message) + ").<br>" +
+      "Make sure <code>data/materials.js</code> exists, or serve this folder over HTTP " +
+      "(<code>python -m http.server</code> in <code>frontend/</code>).</p>";
   });
 
 window.addEventListener("hashchange", route);
