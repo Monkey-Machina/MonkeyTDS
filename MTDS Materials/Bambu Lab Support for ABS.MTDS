@@ -1,0 +1,294 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < Support for ABS
+  <
+
+> Material
+  <
+  < HIPS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Spool Material
+  <
+  < PC + ABS (Temperature resistance 90 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/4ea7b59ca78c485f828115735ed35050.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/3de1308c7f99453d827115f85da3ec3f/SDS20250723S06_Bambu_Support_for_ABS.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/9479a16b0736487386ab500723e6c6cb.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.16
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 11.6 ± 0.7
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 195
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < N/A
+  <
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < N/A
+  <
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.14
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < N/A
+  <
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < HIPS
+  <
+
+> Skin Hazards
+  <
+  < No available
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides, nitrogen oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Light pungent odor
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 80 °C, 4 h; X1 Series Printer Heatbed: 85 - 95 °C, 6 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed, with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 240 - 270 °C
+  <
+
+> Build Plate Type
+  <
+  < Cool Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 80 - 100°C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < < 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.6 - 1.0 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 25 - 45 °C
+  <
+
+> Max Overhang Angle
+  <
+  < 55°
+  <
+
+> Max Bridging Length
+  <
+  < 30 mm
+  <
+
+> Support Material
+  <
+  < Turn On
+  <

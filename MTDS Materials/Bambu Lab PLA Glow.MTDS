@@ -1,0 +1,326 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PLA Glow
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Material
+  <
+  < PC + ABS (Temperature resistance 90 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/cd34cf072d14484bbf027290d16abe9b.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/4a35986db81f466fa7ff4f84344ef57a/SDS20251127A12_Bambu_PLA_Glow.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/2c7b9c30a9014c65bb4aeacd9c70e6af.pdf
+  <
+
+> Source
+  <
+  < Hex Code | https://store.bblcdn.com/s7/default/bbc0a351ffca4503968910ba98cae27d/PLA_Glow_Hex_Code_Table.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.26
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 23.3± 2.4
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 155
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 55
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 56
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 52
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.46
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2030 ± 210
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1750 ± 180
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 32 ± 3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 26 ± 3
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 8.6 ± 1.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 6.5 ± 0.8
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2640 ± 130
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 2230 ± 110
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 76 ± 4
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 55 ± 3
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 27.3 ± 2.2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043 | notched
+  < 8.8 ± 1.7
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 19.8 ± 1.8
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polylactic acid
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 55 °C, 8 h; X1 Series Printer Heatbed: 65 - 75 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 190 - 230 °C
+  <
+
+> Build Plate Type
+  <
+  < Cool Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 35 - 45 °C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < < 250 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.6 - 1.0 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 25 - 45 °C
+  <
+
+> Max Overhang Angle
+  <
+  < ~ 55°
+  <
+
+> Max Bridging Length
+  <
+  < 30 mm
+  <
+
+> Support Material
+  <
+  < Support for PLA
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 220
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 35
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 200
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %

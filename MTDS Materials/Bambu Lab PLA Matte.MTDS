@@ -1,0 +1,351 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PLA Matte
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Material
+  <
+  < ABS (Temperature resistance 70 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/s7/default/5b061f2feeac4ba88f355a33248bbda7/Bambu_PLA_Matte_Technical_Data_Sheet.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/5697d821ae3a4020a89530d4d3162de7/SDS20250724A01_Bambu_PLA_Matte.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/0d30076831474a6c9bfc8fe96e0df8d1.pdf
+  <
+
+> Source
+  <
+  < Hex Code | https://cdn.shopify.com/s/files/1/0584/7236/6216/files/Bambu_PLA_Matte_Hex_Code.pdf?v=1745547424
+  <
+
+> Source
+  <
+  < SVHC | https://store.bblcdn.com/s7/default/624c6756ef07462ba7a618e4574c6156/2501A89132A_PLA_Matte_A01-P4_SVHC.pdf
+  <
+
+> Source
+  <
+  < PAHs | https://store.bblcdn.com/s7/default/0363bfe9f01d43ce8ad2e2bd9dc922a5/2501A89314A_PLA_Matte__A01-P4_PAHS.pdf
+  <
+
+> Source
+  <
+  < TSCA | https://store.bblcdn.com/s7/default/9e63c4f7125d4496b754402ffbd08d48/2501A89316A_PLA_Matte_A01-P4_TSCA.pdf
+  <
+
+> Source
+  <
+  < POPs | https://store.bblcdn.com/s7/default/796829098ba04f84a2cee6e94b334262/2501A89315A_PLA_Matte__A01-P4_POPS.pdf
+  <
+
+> Source
+  <
+  < CP65 | https://store.bblcdn.com/s7/default/e7c056c9bfa747888778fa99669b824a/2501A89317A_PLA_Matte_A01-P4_CP65.pdf
+  <
+
+> Source
+  <
+  < EN71-3 | https://store.bblcdn.com/s7/default/bba49099b2424d6b9ea03820042ba266/PLA_Matte_EN_71.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.31
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 18.0 ± 3.2
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 163
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 61
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 63
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 52
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.40
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1960 ± 180
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1670 ± 140
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 30 ± 5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 22 ± 4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 14.8 ± 4.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 4.8 ±1.7
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2360 ± 250
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1770 ± 210
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 53 ± 6
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 29 ± 5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 19.2 ± 3.7
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 6.6 ± 1.1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 50 °C, 8 h; X1 Series Printer Heatbed: 60 - 70 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.2, 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 190 - 230 °C
+  <
+
+> Build Plate Type
+  <
+  < Cool Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 35 - 45 °C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < < 300 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.6 - 1.0 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 25 - 45 °C
+  <
+
+> Max Overhang Angle
+  <
+  < 55°
+  <
+
+> Max Bridging Length
+  <
+  < 30 mm
+  <
+
+> Support Material
+  <
+  < Support for PLA
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 220
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 35
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 200
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %

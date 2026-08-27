@@ -1,0 +1,326 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PLA Silk Multi-Color
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Material
+  <
+  < ABS (Temperature resistance 70 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0584/7236/6216/files/Bambu_PLA_Silk_Dual_Color_Technical_Data_Sheet.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s1/default/805aa06ac0aa426db6ac3141eb326d8a/SDS20251127A05_Bambu_PLA_Silk.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://cdn.shopify.com/s/files/1/0573/5320/7868/files/Bambu_PLA_Silk_RoHS.pdf
+  <
+
+> Source
+  <
+  < Hex Code | https://store.bblcdn.com/s1/default/7e3a5dec148b468d862d96593d01d624/PLA_Silk_Mutil-color_Hex_Code_Table.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.32
+  < g/cm^3
+
+> Odor
+  <
+  < Odorless
+  <
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 20.5 ± 1.2
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 152
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 57
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 56
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 50
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.52
+  < %
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1830 ± 210
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1250 ± 140
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 27 ± 4
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 18 ± 4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 3.5 ± 0.6
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.7 ± 0.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2370 ± 150
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1840 ± 160
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 66 ± 4
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 21 ± 5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 24.5 ± 1.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043 | notched
+  < 8.2 ± 0.5
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 4.6 ± 1.1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polylacticacid
+  <
+
+> Solubility
+  <
+  < Insolubleinwater
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 55 °C, 8 h; X1 Series Printer Heatbed: 65 - 75 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH ( Sealed,with desiccant )
+  <
+
+> Nozzle Size
+  <
+  < 0.2, 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 210 - 240 °C
+  <
+
+> Build Plate Type
+  <
+  < Cool Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 35 - 45°C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < < 250 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.6 - 1.0 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 25 - 45 °C
+  <
+
+> Max Overhang Angle
+  <
+  < 55°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 30 mm
+  <
+
+> Support Material
+  <
+  < Support for PLA
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 230
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 35
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 200
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %

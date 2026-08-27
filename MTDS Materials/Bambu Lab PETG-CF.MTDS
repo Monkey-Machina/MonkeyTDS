@@ -1,0 +1,326 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PETG-CF
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Material
+  <
+  < ABS (Temperature resistance 70 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/626e4f424bf345ae965ad0ddfcaf2459.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/ba33b9b27cc845888522e5cf9439b85a/SDS20251127G50_Bambu_PETG_CF.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/87dee4bc82c64829b94c0a8d6e55e23c.pdf
+  <
+
+> Source
+  <
+  < Hex Code | https://store.bblcdn.com/s7/default/2b5c536e5f824b6d80484c3bcfdfbb17/PETG-CF_Hex_Code_Table.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.25
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 250 °C, 2.16 kg
+  < 19.3 ± 2.4
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 225
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 68
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 85
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 68
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.30
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2460 ± 230
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1340 ± 150
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 35 ± 5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 29 ± 4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 10.4 ± 0.6
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 4.7 ± 0.4
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2910 ± 260
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1560 ± 180
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 70 ± 5
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 48 ± 4
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 41.2 ± 2.6
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043 | notched
+  < 15.7 ±1.6
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 10.7 ± 1.6
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG, carbon fiber
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 65 °C, 8 h; X1 Series Printer Heatbed: 75 - 85 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH ( Sealed, with desiccant )
+  <
+
+> Nozzle Size
+  <
+  < 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 240 - 270 °C
+  <
+
+> Build Plate Type
+  <
+  < Engineering Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 65 - 75 °C
+  <
+
+> Cooling Fan
+  <
+  < 0 - 60%
+  <
+
+> Print Speed
+  <
+  < < 200 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.8 - 1.4 mm
+  <
+
+> Retraction Speed
+  <
+  < 30 - 60 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 35 - 50 °C
+  <
+
+> Max Overhang Angle
+  <
+  < ~ 70°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 30 mm
+  <
+
+> Support Material
+  <
+  < Turn on
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 255
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 70
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 150
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %

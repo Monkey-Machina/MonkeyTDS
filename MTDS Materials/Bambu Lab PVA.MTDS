@@ -1,0 +1,294 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PVA
+  <
+
+> Material
+  <
+  < PVA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Spool Material
+  <
+  < PC+ABS (Temperature resistance 90 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/s7/default/868930e5a44944258586caa250cc8143/Bambu_PVA_Technical_Data_Sheet.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/69b4bf7b69f844f3a26062752279763b/SDS20251127S04_Bambu_PVA.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/s7/default/5a9005351ca8426b8fa2b1b61c8ef4fc/RoHS_report_Bambu_PVA.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.27
+  < g/cm^3
+
+> Odor
+  <
+  < Odorless
+  <
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 7.2 ± 1.1
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 202
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < N/A
+  <
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < N/A
+  <
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 6.25
+  < %
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < N/A
+  <
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyvinylalcohol
+  <
+
+> Solubility
+  <
+  < Solubleinwater
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Skin Hazards
+  <
+  < Not available
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides, etc
+  <
+
+> Odor of Combustion Products
+  <
+  < Light pungent odor
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 80 °C, 8 - 12 h; X1 Series Printer Heatbed: 90 - 100 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed, with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.2, 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 220 - 250 °C
+  <
+
+> Build Plate Type
+  <
+  < Cool Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 35 - 45°C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < < 200 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.6 - 1.0 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 25 - 45 °C
+  <
+
+> Max Overhang Angle
+  <
+  < 55°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 30 mm
+  <
+
+> Support Material
+  <
+  < /
+  <

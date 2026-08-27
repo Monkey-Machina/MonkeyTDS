@@ -1,0 +1,321 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PET-CF
+  <
+
+> Material
+  <
+  < PET
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Spool Material
+  <
+  < PC + ABS (Temperature resistance 90 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/9690d6226f024acab2ba0dd52dabb654.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/c6526c0edf264b698110ec3ddf4d5143/SDS20251127T01_Bambu_PET_CF.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/54b1c5ae4f094655b838bb1f45f58453.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.29
+  < g/cm^3
+
+> Odor
+  <
+  < Odorless
+  <
+
+> Melt Index
+  < ISO 1133 | 280 °C, 2.16 kg
+  < 25.3 ± 2.5
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 250
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 75
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 130
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 226
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 182
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.37
+  < %
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 4730 ± 260
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2160 ± 170
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 74 ± 6
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 35 ± 5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 4.5 ± 1.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.4 ± 0.8
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 5320 ± 270
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 2210 ± 180
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 131 ± 6
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 49 ± 5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 36.0 ± 2.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043 | notched
+  < 8.6 ± 0.5
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 4.5 ± 0.6
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyethyleneterephthalate,carbonfiber
+  <
+
+> Solubility
+  <
+  < Insolubleinwater
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Pungent odor
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 80 °C, 8 - 12 h; X1 Series Printer Heatbed: 90 - 100 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.4, 0.6 (recommended), 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 260 - 290 °C
+  <
+
+> Build Plate Type
+  <
+  < Engineering Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 80 - 100 °C
+  <
+
+> Cooling Fan
+  <
+  < 0 - 60%
+  <
+
+> Print Speed
+  <
+  < < 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.8 - 1.4 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 45 - 60 °C
+  <
+
+> Max Overhang Angle
+  <
+  < ~ 70°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 30 mm
+  <
+
+> Support Material
+  <
+  < Support for PA/PET
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 270
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 80
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 100
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %
