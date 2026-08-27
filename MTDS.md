@@ -77,8 +77,6 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Print Setting | Support Material | N/A | *Opt.* | N/A |
 | Print Setting | Annealing Condition | N/A | *Opt.* | N/A |
 
-For Mechanical Property subjects, *(In-Plane)* refers to the X-Y print plane and *(Interlayer)* refers to the Z axis. A notched or unnotched specimen is indicated with the Method field.
-
 ## MTDS Standard Field Methods, Values, and Units
 In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
 
@@ -86,6 +84,7 @@ In addition to standard fields MTDS outlines standard methods, values and units.
 | Method | Definition | 
 | ------ | ------- |
 | ISO 1183 | Determination of the density of plastics |
+| ISO 1133 | Determination of melt mass-flow rate |
 | ISO 527 | Determination of tensile properties |
 | ISO 178 | Determination of flexural properties |
 | ISO 179 | Determination of Charpy impact strength |
@@ -96,10 +95,15 @@ In addition to standard fields MTDS outlines standard methods, values and units.
 | GB/T 1043 | Chinese standard for Charpy impact strength, equivalent to ISO 179 |
 | GB/T 1633 | Chinese standard for Vicat softening temperature, equivalent to ISO 306 |
 | DSC | Differential scanning calorimetry |
-| notched | Impact test performed on a notched specimen |
-| unnotched | Impact test performed on an unnotched specimen |
 
-A method may append its test conditions, for example `ISO 75 1.8 MPa`, `ISO 75 0.45 MPa`, `DSC, 10 °C/min`, `210 °C, 2.16 kg`, or `25 °C, 55% RH`.
+#### Method Field Syntax
+A field MAY contain more than one `< Method` entry, one per line, to record parallel methods such as an ISO method and its GB/T equivalent.
+
+Each `< Method` entry is one of:
+- a Standard Method written exactly as it appears in the table above, or
+- a Standard Method, then `, ` (comma and space), then free-form test condition text.
+
+A parser splits an entry on its first `, `. The text before it MUST match a Standard Method exactly; the text after it is the test condition. Test conditions are not standardized and are meant for substring search. Common condition text includes `1.8 MPa`, `0.45 MPa`, `10 °C/min`, `210 °C, 2.16 kg`, `25 °C, 55% RH`, `notched`, and `unnotched`.
 
 ### Standard Values
 | Value | Definition | 
@@ -137,6 +141,8 @@ A method may append its test conditions, for example `ISO 75 1.8 MPa`, `ISO 75 0
 | Resistant | Not degraded or attacked by the stated agent |
 | Stable under normal storage and handling conditions | No hazardous reaction under normal storage and handling |
 | No hazard | Presents no known hazard |
+| notched | Impact test condition: notched specimen |
+| unnotched | Impact test condition: unnotched specimen |
 
 ## Standard Units
 | Unit | Definition | 
