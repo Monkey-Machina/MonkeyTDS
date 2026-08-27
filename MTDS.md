@@ -1,7 +1,7 @@
 # MTDS (Material Technical Data Standard)
 MTDS is a standard for organizing material information built on fields. Specifically here, a field contains a subject, method, value, and units, of which only Subject is required.
 
-MTDS defines a number of standard fields. MTDS also recognizes field categories, and defines 3 standard categories. A MTDS compliant material entry may contain any number of non-standard fields contained within any number of non-standard categories but will not contain non-standard fields or categories for which a standard counterpart already exists. Below is a table of all formally recognized MTDS Standard Fields & Categories. Standard Fields are REQUIRED to be contained within the category defined by MTDS.
+MTDS defines a number of standard field Subjects. MTDS also recognizes field categories, and defines 3 standard categories. A MTDS compliant material entry may contain any number of non-standard fields contained within any number of non-standard categories but will not contain non-standard fields or categories for which a standard counterpart already exists. Below is a table of all formally recognized MTDS Standard Fields & Categories. Standard Fields are REQUIRED to be contained within the category defined by MTDS.
 
 ### MTDS Standard Categories
 | Name | Usage |
@@ -12,7 +12,7 @@ MTDS defines a number of standard fields. MTDS also recognizes field categories,
 | Chemical Property | Chemical material properties |
 | Specific | Information which which is not a Specification or Property but not common enough to warrant a new category |
 
-### MTDS Standard Fields
+### MTDS Standard Field Subjects
 | Category | Subject | Method | Value | Units |
 | -------- | ------- | ------ | ---- | ----- | 
 | Specification | Manufacturer | N/A | *Req.* | N/A |
@@ -52,3 +52,17 @@ MTDS defines a number of standard fields. MTDS also recognizes field categories,
 | Chemical Property | Combustion Products | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Odor of Combustion Products | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Skin Hazards | *Opt.* | *Req.* | *Opt.* |
+
+## MTDS Standard Field Methods & Values
+In addition to standard fields MTDS outlines standard methods and values. Standard methods and values are separate from standard field subjects. Applicable field standard methods and values should be used outside of standard subject fields, and standard subject fields can use non-standard methods and values. The purpose of these method and value standards is to maximize user ability to search and filter MTDS files.
+
+### Standard Methods
+| Method | Meaning | 
+| ------ | ------- |
+|  |  |
+
+### Standard Values
+| Value | Definition | 
+| ----- | ------- |
+| Bambu Lab | A specific filament manufacturer |
+| Polymaker | A specific filament manufacturer |
