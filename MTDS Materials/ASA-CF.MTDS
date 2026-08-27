@@ -1,0 +1,311 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < ASA-CF
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Material
+  <
+  < PC+ABS (Temperature resistance 90 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/s7/default/44b0a48ab1d84e819647c980eb179ae9/Bambus_ASA-CF_Technical_Data_Sheet.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/4ec628bb3bae400abf17bbd65e2d65cc/SDS20250729B51_Bambu_ASA_CF.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/s7/default/a7676855216f4ea2b41e625c8b5a8cac/Bambu_ASA-CF_RoHS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.02
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 210 °C, 2.16 kg
+  < 1.74 ± 0.3
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 210
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 108
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 102
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.33
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 4200 ± 270
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2290 ± 260
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 34 ± 3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 30 ± 4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 9.6 ± 1.4
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 4.4 ± 0.8
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3740 ± 130
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1350 ± 120
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 72 ± 5
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 33 ± 3
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 14.0 ± 2.2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043 | notched
+  < 6.2 ± 1.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 9.4 ± 0.6
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < acrylonitrile - styrene - acrylate
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides, nitrogen oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Pungent odor
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 80 °C, 8 h; X1 Series Printer Heatbed: 90 - 100 °C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed, with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 250 - 280 °C
+  <
+
+> Build Plate Type
+  <
+  < Textured PEI Plate / Smooth PEI Plate
+  <
+
+> Bed Temperature
+  <
+  < 80 - 100°C
+  <
+
+> Cooling Fan
+  <
+  < Turn on
+  <
+
+> Print Speed
+  <
+  < < 250 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.8 - 1.4 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 45 - 60 °C
+  <
+
+> Max Overhang Angle
+  <
+  < ~ 70°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 40 mm
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 220
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 35
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 200
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %

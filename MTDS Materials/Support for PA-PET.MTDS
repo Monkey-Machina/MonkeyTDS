@@ -1,0 +1,274 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < Support for PA/PET
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Spool Material
+  <
+  < PC + ABS (Temperature resistance 90 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/7e83189be1eb4a3dab8ce9b9a7b2065a.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/bdb2423e515640f5be007524d58c62a6/SDS20250723S03_Bambu_Support_for_PAPET.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/bf35c3ce0472420599ad3703e7b71e8a.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.17
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 280 °C, 2.16 kg
+  < 29.2± 2.1
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 255
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < N/A
+  <
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < N/A
+  <
+
+> Saturated Water Absorption Rate
+  < 25°C, 55% RH
+  < 1.23
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < N/A
+  <
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < N/A
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < N/A
+  <
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < N/A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < Nylon
+  <
+
+> Skin Hazards
+  <
+  < Not available
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Flammability
+  <
+  < Flammable and self-extinguishing in the air
+  <
+
+> Odor of Combustion Products
+  <
+  < Pungent odor
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides, nitrogen oxides
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < 80 °C, 8 - 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed, with desiccant)
+  <
+
+> Nozzle Temperature
+  <
+  < 260 - 290 °C
+  <
+
+> Build Plate Type
+  <
+  < Engineering Plate, High Temperature Plate or Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PVP Glue
+  <
+
+> Bed Temperature
+  <
+  < 80 - 100°C
+  <
+
+> Cooling Fan
+  <
+  < 0 - 60%
+  <
+
+> Print Speed
+  <
+  < < 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.8 - 1.4 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 45 - 60 °C
+  <

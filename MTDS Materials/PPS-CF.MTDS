@@ -1,0 +1,331 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PPS-CF
+  <
+
+> Material
+  <
+  < PPS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Spool Material
+  <
+  < Cardboard Spool (Temperature resistance 145 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/26f4f40359484040a8660c9150a90fc0.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s7/default/45fbd547649c4cb2b3cf40de31566593/SDS20250723T02_Bambu_PPS-CF.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/3f42b5fbe07140a48b6ce699494d423d.pdf
+  <
+
+> Source
+  <
+  < UL 94 Test Report | https://store.bblcdn.com/s4/default/324268b60e52447c8ffe46893d9ab50c.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.26
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 320 °C, 2.16 kg
+  < 11.48 ± 1.23
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 284
+  < °C
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 100
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 214
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 268
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 235
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.05
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 8230 ± 270
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2850 ± 160
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 87 ± 5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 24 ± 3
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1.2 ± 0.4
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 0.7 ± 0.3
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 7160 ± 280
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 2460 ± 190
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 142 ± 5
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 36 ± 4
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 27.8 ± 2.3
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043 | notched
+  < 6.2 ± 1.6
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 2.8 ± 0.4
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Polyphenylene sulfide (PPS), carbon fiber
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Resistant
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant
+  <
+
+> Flammability
+  <
+  < Self-extinguishing when away from fire; flame-retardant
+  <
+
+> Thermal Decomposition Products
+  <
+  < Hydrocarbons, water, carbon oxides, sulfur dioxide, sulfides
+  <
+
+> Odor of Thermal Decomposition
+  <
+  < Characterized odor
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 100 - 140 °C, 8 - 12 h; X1 Series Printer Heatbed: 110 - 120°C, 12 h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.4, 0.6 ( recommended), 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 310 - 340 °C
+  <
+
+> Build Plate Type
+  <
+  < Smooth PEI Plate / Textured PEI Plate
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glue
+  <
+
+> Bed Temperature
+  <
+  < 100 - 120 °C
+  <
+
+> Cooling Fan
+  <
+  < 0 - 40%
+  <
+
+> Print Speed
+  <
+  < < 100 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.8 - 1.4 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 60 - 90 °C
+  <
+
+> Max Overhang Angle
+  <
+  < ~ 70°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 40 mm
+  <
+
+> Support Material
+  <
+  < /
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 320
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 110
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 60
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %

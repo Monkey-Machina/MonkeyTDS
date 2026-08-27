@@ -1,0 +1,346 @@
+# Specification
+
+> Manufacturer
+  <
+  < Bambu Lab
+  <
+
+> Product Name
+  <
+  < PETG Basic
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Material
+  <
+  < ABS (Temperature resistance 70 °C)
+  <
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Height: 67 mm
+  <
+
+> Source
+  <
+  < TDS | https://store.bblcdn.com/s1/default/cb94589bf7994fdcbfa833badefae9cd/Bambu_PETG_Basic_Technical_Data_Sheet.pdf
+  <
+
+> Source
+  <
+  < MSDS | https://store.bblcdn.com/s1/default/ff262dc7e9344319aee7abc006466e98/SDS20251017G00_Bambu_PETG_Basic.pdf
+  <
+
+> Source
+  <
+  < RoHS | https://store.bblcdn.com/s1/default/a0e7c5b2c47a4f6bb0e43763c16b60e7/PETG_Basic_RoHs.pdf
+  <
+
+> Source
+  <
+  < Hex Code | https://store.bblcdn.com/s7/default/7260019fb4b243ce9b1963d51fc24e83/PETG_Basic_Hex_Code_Table.pdf
+  <
+
+> Source
+  <
+  < POPs | https://store.bblcdn.com/s1/default/2a7eb46c409e43a2972fa721a7378380/POPS.pdf
+  <
+
+> Source
+  <
+  < CP65 | https://store.bblcdn.com/s1/default/0305367bdb9840d48c50f1e56318d7f5/CP65.pdf
+  <
+
+> Source
+  <
+  < TSCA | https://store.bblcdn.com/s1/default/46fb18d9af1a423cbdfa545c7e90281f/TSCA.pdf
+  <
+
+> Source
+  <
+  < SVHC | https://store.bblcdn.com/s1/default/3ce3e4a59fcd45bca41fccbab776e578/SVHC.pdf
+  <
+
+> Source
+  <
+  < PAHs | https://store.bblcdn.com/s1/default/f20387c91e21492882c78b8dde9da6b4/REACH_17.pdf
+  <
+
+> Source
+  <
+  < EN71-3 | https://store.bblcdn.com/s1/default/7ed0d53750d84b78bbf9339371590825/PETG_Basic_EN_71.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.25
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 245 °C, 2.16 kg
+  < 22.9 ± 2.4
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 69
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 69
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 68
+  < °C
+
+> Saturated Water Absorption Rate
+  < 25 °C, 55% RH
+  < 0.45
+  < %
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Young’s Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2780 ± 65
+  < MPa
+
+> Young’s Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2550 ± 100
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 51 ± 1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 35 ± 6
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 9.5 ± 0.7
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 5.2 ± 1.4
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 1950 ± 50
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1740 ± 40
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 75 ± 3
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 56 ± 4
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043
+  < 34.2 ± 4.1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043
+  < 10.5 ± 1.8
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG
+  <
+
+> Skin Hazards
+  <
+  < No hazard
+  <
+
+> Chemical Stability
+  <
+  < Stable under normal storage and handling conditions
+  <
+
+> Solubility
+  <
+  < Insoluble in water
+  <
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant to some organic solvents
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to most kinds of oil and grease
+  <
+
+> Flammability
+  <
+  < Flammable
+  <
+
+> Combustion Products
+  <
+  < Water, carbon oxides
+  <
+
+> Odor of Combustion Products
+  <
+  < Odorless
+  <
+
+# Print Setting
+
+> Drying Condition
+  <
+  < Blast Drying Oven: 65 °C, 8 h; X1 Series & P Series & H2 Series Printer Heatbed: 80 °C, 12 h AMS 2 Pro & AMS HT : 65 °C, 8h
+  <
+
+> Print & Storage Humidity
+  <
+  < < 20% RH (Sealed, with desiccant)
+  <
+
+> Nozzle Size
+  <
+  < 0.2, 0.4, 0.6, 0.8 mm
+  <
+
+> Nozzle Temperature
+  <
+  < 230 - 260 °C
+  <
+
+> Build Plate Type
+  <
+  < Cool Plate Supertack / Textured PEI Plate / Smooth PEI Plate
+  <
+
+> Bed Temperature
+  <
+  < 65 - 75 °C
+  <
+
+> Cooling Fan
+  <
+  < 0 - 60%
+  <
+
+> Print Speed
+  <
+  < < 200 mm/s
+  <
+
+> Retraction Length
+  <
+  < 0.4 - 0.8 mm
+  <
+
+> Retraction Speed
+  <
+  < 30 - 60 mm/s
+  <
+
+> Chamber Temperature
+  <
+  < 35 - 50 °C
+  <
+
+> Max Overhang Angle
+  <
+  < ~ 70°
+  <
+
+> Max Bridging Length
+  <
+  < ~ 30 mm
+  <
+
+> Support Material
+  <
+  < Support for PLA/PETG
+  <
+
+# Specific
+
+> Test Specimen Nozzle Temperature
+  <
+  < 255
+  < °C
+
+> Test Specimen Bed Temperature
+  <
+  < 70
+  < °C
+
+> Test Specimen Print Speed
+  <
+  < 150
+  < mm/s
+
+> Test Specimen Infill Density
+  <
+  < 100
+  < %
