@@ -10,6 +10,7 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Physical Property | Physical material properties |
 | Mechanical Property | Mechanical material properties |
 | Chemical Property | Chemical material properties |
+| Print Setting | Recommended settings and conditions for printing the material |
 | Specific | Information which which is not a Specification or Property but not common enough to warrant a new category |
 
 ### MTDS Standard Field Subjects
@@ -17,15 +18,19 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | -------- | ------- | ------ | ---- | ----- | 
 | Specification | Manufacturer | N/A | *Req.* | N/A |
 | Specification | Product Name | N/A | *Req.* | N/A |
-| Specification | Diameter     | *Opt.* | *Req.* | N/A |
+| Specification | Material | N/A | *Req.* | N/A |
+| Specification | Diameter     | *Opt.* | *Req.* | *Opt.* |
+| Specification | Diameter Tolerance | N/A | *Opt.* | *Opt.* |
+| Specification | Net Weight | N/A | *Opt.* | *Opt.* |
+| Specification | Spool Material | N/A | *Opt.* | N/A |
+| Specification | Spool Size | N/A | *Opt.* | *Opt.* |
 | Specification | Source | N/A | *Req.* | N/A |
 | Physical Property | Density | *Req.* | *Req.* | *Req.* | 
-| Physical Property | Melt Index | *Req.* | *Req.* | *Req.* | 
 | Physical Property | Melt Index | *Req.* | *Req.* | *Req.* | 
 | Physical Property | Melting Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Glass Transition Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Crystallization Temperature | *Req.* | *Req.* | *Req.* |
-| Physical Property | Vicar Softening Temperature | *Req.* | *Req.* | *Req.* |
+| Physical Property | Vicat Softening Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Heat Deflection Temperature | *Req.* | *Req.* | *Req.* |
 | Physical Property | Saturated Water Absorption Rate | *Req.* | *Req.* | *Req.* |
 | Physical Property | Odor | *Opt.* | *Req.* | *Opt.* |
@@ -52,7 +57,27 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Chemical Property | Flammability | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Combustion Products | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Odor of Combustion Products | *Opt.* | *Req.* | *Opt.* |
+| Chemical Property | Thermal Decomposition Products | *Opt.* | *Req.* | *Opt.* |
+| Chemical Property | Odor of Thermal Decomposition | *Opt.* | *Req.* | *Opt.* |
 | Chemical Property | Skin Hazards | *Opt.* | *Req.* | *Opt.* |
+| Print Setting | Drying Condition | N/A | *Req.* | N/A |
+| Print Setting | Print & Storage Humidity | N/A | *Opt.* | *Req.* |
+| Print Setting | Nozzle Size | N/A | *Req.* | *Req.* |
+| Print Setting | Nozzle Temperature | N/A | *Req.* | *Req.* |
+| Print Setting | Build Plate Type | N/A | *Req.* | N/A |
+| Print Setting | Build Plate Surface Preparation | N/A | *Req.* | N/A |
+| Print Setting | Bed Temperature | N/A | *Req.* | *Req.* |
+| Print Setting | Cooling Fan | N/A | *Opt.* | *Opt.* |
+| Print Setting | Print Speed | N/A | *Req.* | *Req.* |
+| Print Setting | Retraction Length | N/A | *Opt.* | *Req.* |
+| Print Setting | Retraction Speed | N/A | *Opt.* | *Req.* |
+| Print Setting | Chamber Temperature | N/A | *Opt.* | *Req.* |
+| Print Setting | Max Overhang Angle | N/A | *Opt.* | *Req.* |
+| Print Setting | Max Bridging Length | N/A | *Opt.* | *Req.* |
+| Print Setting | Support Material | N/A | *Opt.* | N/A |
+| Print Setting | Annealing Condition | N/A | *Opt.* | N/A |
+
+For Mechanical Property subjects, *(In-Plane)* refers to the X-Y print plane and *(Interlayer)* refers to the Z axis. A notched or unnotched specimen is indicated with the Method field.
 
 ## MTDS Standard Field Methods, Values, and Units
 In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
@@ -60,19 +85,77 @@ In addition to standard fields MTDS outlines standard methods, values and units.
 ### Standard Methods
 | Method | Definition | 
 | ------ | ------- |
-|  |  |
+| ISO 1183 | Determination of the density of plastics |
+| ISO 527 | Determination of tensile properties |
+| ISO 178 | Determination of flexural properties |
+| ISO 179 | Determination of Charpy impact strength |
+| ISO 306 | Determination of Vicat softening temperature |
+| ISO 75 | Determination of temperature of deflection under load |
+| GB/T 1040 | Chinese standard for tensile properties, equivalent to ISO 527 |
+| GB/T 9341 | Chinese standard for flexural properties, equivalent to ISO 178 |
+| GB/T 1043 | Chinese standard for Charpy impact strength, equivalent to ISO 179 |
+| GB/T 1633 | Chinese standard for Vicat softening temperature, equivalent to ISO 306 |
+| DSC | Differential scanning calorimetry |
+| notched | Impact test performed on a notched specimen |
+| unnotched | Impact test performed on an unnotched specimen |
+
+A method may append its test conditions, for example `ISO 75 1.8 MPa`, `ISO 75 0.45 MPa`, `DSC, 10 °C/min`, `210 °C, 2.16 kg`, or `25 °C, 55% RH`.
 
 ### Standard Values
 | Value | Definition | 
 | ----- | ------- |
 | Bambu Lab | A specific filament manufacturer |
 | Polymaker | A specific filament manufacturer |
+| Shenzhen Tuozhu Technology Co., Ltd. | Legal manufacturer of Bambu Lab filaments |
+| TDS | Technical data sheet source document |
+| MSDS | Material safety data sheet source document |
+| SDS | Safety data sheet source document |
+| RoHS | Restriction of Hazardous Substances declaration source document |
+| Hex Code | Filament color hex code source document |
+| PLA | Polylactic acid |
+| ABS | Acrylonitrile butadiene styrene |
+| ASA | Acrylonitrile styrene acrylate |
+| PC | Polycarbonate |
+| PETG | Polyethylene terephthalate glycol |
+| PET | Polyethylene terephthalate |
+| PA | Polyamide (nylon) |
+| PVA | Polyvinyl alcohol |
+| TPU | Thermoplastic polyurethane |
+| PPS | Polyphenylene sulfide |
+| PPA | Polyphthalamide |
+| HIPS | High impact polystyrene |
+| Carbon Fiber | Carbon fiber reinforcement |
+| Glass Fiber | Glass fiber reinforcement |
+| N/A | Not applicable or not measured |
+| Odorless | No perceptible odor |
+| Flammable | Supports combustion |
+| Flame retardant | Resists ignition and combustion |
+| Self-extinguishing | Stops burning when the flame source is removed |
+| Insoluble in water | Does not dissolve in water |
+| Soluble in water | Dissolves in water |
+| Not resistant | Degraded or attacked by the stated agent |
+| Resistant | Not degraded or attacked by the stated agent |
+| Stable under normal storage and handling conditions | No hazardous reaction under normal storage and handling |
+| No hazard | Presents no known hazard |
 
 ## Standard Units
 | Unit | Definition | 
 | ----- | ------- |
 | m | Meter |
 | mm | Millimeter |
+| g | Gram |
+| kg | Kilogram |
+| g/cm^3 | Grams per cubic centimeter |
+| g/10 min | Grams per ten minutes (melt flow rate) |
+| °C | Degrees Celsius |
+| MPa | Megapascal |
+| kJ/m^2 | Kilojoules per square meter |
+| % | Percent |
+| % RH | Percent relative humidity |
+| ° | Degree of angle |
+| mm/s | Millimeters per second |
+| h | Hour |
+| min | Minute |
 
 ### .MTDS File Format
 The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.
