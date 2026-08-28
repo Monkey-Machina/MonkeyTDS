@@ -1,6 +1,6 @@
 window.__MTDS_DATA__ = {
   "schema": "mtds-compiled/2",
-  "generatedAt": "2026-08-27T23:46:28Z",
+  "generatedAt": "2026-08-28T00:08:06Z",
   "materialCount": 163,
   "canonicalUnits": {
     "Abrasion Resistance": "%",

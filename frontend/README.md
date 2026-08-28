@@ -25,6 +25,14 @@ python ../scripts/compile_materials.py --out data/materials.json
 { printf 'window.__MTDS_DATA__ = '; cat data/materials.json; printf ';\n'; } > data/materials.js
 ```
 
+## Layout
+
+The search view is split into two independently-scrolling panes: a fixed-width
+filter column on the left and the results table on the right. The page itself
+never scrolls — scroll the filter column and the results table separately. The
+result count and the CSV / JSON export links live in the site banner; the
+table's column-header row stays pinned while you scroll the results.
+
 ## Views (all state in the URL — every view is a shareable link)
 
 | Route | |
@@ -36,13 +44,19 @@ python ../scripts/compile_materials.py --out data/materials.json
 ## Features
 
 - **Text search** across manufacturer / product / material.
-- **Facets**: Manufacturer, Material — live counts; collapsed to the 5 largest,
-  "show all N" expands the full list alphabetically (state remembered).
+- **Facets**: Manufacturer, Material — multi-select and additive (OR within a
+  facet); live counts ignore the facet's own selection so more can always be
+  added. Collapsed to the 5 largest, "show all N" expands the full list
+  alphabetically (state remembered).
 - **Property range filters**: add any measured property, set min / max; an empty
   range just means "has a value for this property". Multiple ranges are AND-ed.
   Live result count.
-- **Result columns are configurable**: `+` adds a property column, `‹ › ×` on
-  each header reorder / remove it. Choice is saved in `localStorage`.
+- **Result columns are configurable**: drag a header to reorder; `📍` pins a
+  column so it freezes to whichever edge you scroll it past (staying in its own
+  place in the column order, then stacking into the left or right frozen group as
+  you scroll along); `×` removes; `+` adds one (any property, or a removed fixed
+  column). Manufacturer / Product / Material / the checkbox are pinned by default.
+  Column order + pins are saved in `localStorage`.
 - **Sortable columns** (click header label; again for desc; third click clears).
 - **Units** are shown in grey after each value (values across a column may carry
   different units, so there is no single column-level unit).

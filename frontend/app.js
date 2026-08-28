@@ -7,10 +7,20 @@
    Filter/sort state lives in the URL; column choice + facet expansion live in
    localStorage (per browser). */
 
+/* column keys: "@check" "@mfr" "@product" "@material" are the fixed columns;
+   anything else is a property subject */
 var DEFAULT_COLS = [
+  "@check", "@mfr", "@product", "@material",
   "Density", "Tensile Strength (In-Plane)", "Young's Modulus (In-Plane)",
   "Heat Deflection Temperature", "Breaking Elongation Rate (In-Plane)"
 ];
+var DEFAULT_PINS = ["@check", "@mfr", "@product", "@material"];
+var SPECIAL_COLS = {
+  "@check": { label: "", sort: null, num: false },
+  "@mfr": { label: "Manufacturer", sort: "manufacturer", num: false },
+  "@product": { label: "Product", sort: "productName", num: false },
+  "@material": { label: "Material", sort: "material", num: false }
+};
 var CORE = [
   "Density", "Melt Index", "Glass Transition Temperature", "Heat Deflection Temperature",
   "Tensile Strength (In-Plane)", "Tensile Strength (Interlayer)",
@@ -25,7 +35,8 @@ var BY_ID = {};
 var SUBJECTS = [];                  // property subjects that carry numbers, by frequency
 var UNIT_FOR = {};                  // subject -> most common unit
 var TRAY = load_set("mtds_tray");   // ids queued for compare
-var COLS = load_cols();             // chosen result columns
+var COLS = load_cols();             // ordered result-table column keys
+var COL_PINS = load_pins();         // subset of COLS that stay stuck to the left
 var FACET_OPEN = load_obj("mtds_facet_open");
 var RESTORE_Q = null;               // caret position to restore after a text-search re-render
 
@@ -114,16 +125,31 @@ function set_params(p, base) {
 
 /* localStorage-backed state */
 function load_set(k) { try { return new Set(JSON.parse(localStorage.getItem(k) || "[]")); } catch (e) { return new Set(); } }
+function load_arr(k) { try { var a = JSON.parse(localStorage.getItem(k) || "[]"); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
 function load_obj(k) { try { return JSON.parse(localStorage.getItem(k) || "{}") || {}; } catch (e) { return {}; } }
 function save_json(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 function load_cols() {
   try {
     var c = JSON.parse(localStorage.getItem("mtds_cols") || "null");
-    if (c && c.length) return c;
+    if (c && c.length) {
+      if (c[0].charAt(0) !== "@")                       // migrate legacy (property-only) column lists
+        c = ["@check", "@mfr", "@product", "@material"].concat(c);
+      return c;
+    }
   } catch (e) {}
   return DEFAULT_COLS.slice();
 }
-function save_cols() { save_json("mtds_cols", COLS); }
+function load_pins() {
+  try {
+    var p = JSON.parse(localStorage.getItem("mtds_col_pins") || "null");
+    if (Array.isArray(p)) return p;
+  } catch (e) {}
+  return DEFAULT_PINS.slice();
+}
+function save_cols() { save_json("mtds_cols", COLS); save_json("mtds_col_pins", COL_PINS); }
+function col_label(key) { return SPECIAL_COLS[key] ? SPECIAL_COLS[key].label : shortlabel(key); }
+function col_sortkey(key) { return SPECIAL_COLS[key] ? SPECIAL_COLS[key].sort : key; }
+function col_num(key) { return SPECIAL_COLS[key] ? SPECIAL_COLS[key].num : true; }
 function save_tray() { save_json("mtds_tray", Array.from(TRAY)); render_compare_bar(); }
 
 function render_compare_bar() {
@@ -139,6 +165,8 @@ function render_compare_bar() {
 function route() {
   if (!DATA) return;
   render_compare_bar();
+  var st = document.getElementById("search-tools");
+  if (st) st.innerHTML = "";                 // repopulated by view_search only
   var h = location.hash.replace(/^#/, "") || "/";
   var m = h.match(/^\/m\/(.+?)(\?|$)/);
   if (m) return view_detail(decodeURIComponent(m[1]));
@@ -160,10 +188,11 @@ function view_search() {
   var sortKey = p.get("sort") || "";
   var sortDir = p.get("dir") || "asc";
 
-  function pass(m) {
-    if (q && (m.manufacturer + " " + m.productName + " " + m.material).toLowerCase().indexOf(q) < 0) return false;
-    if (fMan.size && !fMan.has(m.manufacturer)) return false;
-    if (fMat.size && !fMat.has(m.material)) return false;
+  function pass(m, skip) {
+    skip = skip || {};
+    if (!skip.q && q && (m.manufacturer + " " + m.productName + " " + m.material).toLowerCase().indexOf(q) < 0) return false;
+    if (!skip.man && fMan.size && !fMan.has(m.manufacturer)) return false;
+    if (!skip.mat && fMat.size && !fMat.has(m.material)) return false;
     for (var i = 0; i < ranges.length; i++) {
       var v = m._nums[ranges[i].subject];
       if (v == null) return false;
@@ -172,7 +201,10 @@ function view_search() {
     }
     return true;
   }
-  var hits = DATA.materials.filter(pass);
+  var hits = DATA.materials.filter(function (m) { return pass(m); });
+  // facet options/counts ignore their own selection, so more can always be added (OR within a facet)
+  var manPool = DATA.materials.filter(function (m) { return pass(m, { man: true }); });
+  var matPool = DATA.materials.filter(function (m) { return pass(m, { mat: true }); });
 
   if (sortKey) {
     var meta = { manufacturer: 1, productName: 1, material: 1 };
@@ -207,8 +239,8 @@ function view_search() {
   }, 200));
 
   /* ---- facets ---- */
-  F.appendChild(facet_block("Manufacturer", "man", fMan, count_by(hits, function (m) { return m.manufacturer; })));
-  F.appendChild(facet_block("Material", "mat", fMat, count_by(hits, function (m) { return m.material; })));
+  F.appendChild(facet_block("Manufacturer", "man", fMan, count_by(manPool, function (m) { return m.manufacturer; })));
+  F.appendChild(facet_block("Material", "mat", fMat, count_by(matPool, function (m) { return m.material; })));
 
   /* ---- property ranges ---- */
   var rf = el('<fieldset><legend>Property ranges</legend></fieldset>');
@@ -244,35 +276,33 @@ function view_search() {
   reset.onclick = function () { location.hash = "/"; };
   F.appendChild(reset);
 
-  /* ---- results toolbar ---- */
-  var tb = el('<div class="toolbar"><span class="count">' + hits.length + " material" + (hits.length === 1 ? "" : "s") + "</span>" +
+  /* ---- results tools (count + export) live in the site banner ---- */
+  var st = document.getElementById("search-tools");
+  st.innerHTML = '<span class="rescount">' + hits.length + " material" + (hits.length === 1 ? "" : "s") + "</span>" +
     '<button class="linkish" id="exp-csv">export CSV</button>' +
-    '<button class="linkish" id="exp-json">export JSON</button>' +
-    '<span class="small muted">(current results)</span></div>');
-  R.appendChild(tb);
-  tb.querySelector("#exp-csv").onclick = function () { export_rows(hits, "csv"); };
-  tb.querySelector("#exp-json").onclick = function () { export_rows(hits, "json"); };
+    '<button class="linkish" id="exp-json">export JSON</button>';
+  st.querySelector("#exp-csv").onclick = function () { export_rows(hits, "csv"); };
+  st.querySelector("#exp-json").onclick = function () { export_rows(hits, "json"); };
 
   /* ---- results table ---- */
   function sort_to(k) {
+    if (!k) return;
     var np = get_params();
     if (sortKey === k && sortDir === "asc") np.set("dir", "desc");
     else if (sortKey === k && sortDir === "desc") { np.delete("sort"); np.delete("dir"); }
     else { np.set("sort", k); np.set("dir", "asc"); }
     set_params(np);
   }
+
+  var view = COLS.slice();                     // natural order — pinning never reorders
+  var pinnedSet = {}; COL_PINS.forEach(function (k) { pinnedSet[k] = 1; });
+
   var wrap = el('<div class="wrap"></div>');
   var t = document.createElement("table");
-  t.className = "data";
+  t.className = "data cfg";
   var thead = document.createElement("thead");
   var htr = document.createElement("tr");
-  htr.appendChild(document.createElement("th"));
-  [["Manufacturer", "manufacturer"], ["Product", "productName"], ["Material", "material"]].forEach(function (c) {
-    htr.appendChild(head_cell(c[0], c[1], sortKey, sortDir, false, sort_to));
-  });
-  COLS.forEach(function (c, i) {
-    htr.appendChild(head_cell(shortlabel(c), c, sortKey, sortDir, true, sort_to, i));
-  });
+  view.forEach(function (key) { htr.appendChild(col_header(key, pinnedSet[key])); });
   htr.appendChild(add_col_cell());
   thead.appendChild(htr);
   t.appendChild(thead);
@@ -280,21 +310,27 @@ function view_search() {
   var tbody = document.createElement("tbody");
   hits.slice(0, 500).forEach(function (m) {
     var tr = document.createElement("tr");
-    tr.innerHTML = "<td><input type='checkbox'" + (TRAY.has(m.id) ? " checked" : "") + "></td>" +
-      "<td>" + esc(m.manufacturer) + "</td>" +
-      '<td><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.productName) + "</a></td>" +
-      "<td>" + esc(m.material) + "</td>" +
-      COLS.map(function (c) { return "<td class='num'>" + cell_val(m._raw[c]) + "</td>"; }).join("") +
-      "<td></td>";
-    tr.querySelector("input").onchange = function (e) {
-      e.target.checked ? TRAY.add(m.id) : TRAY.delete(m.id); save_tray();
-    };
+    tr.innerHTML = view.map(function (key) { return body_cell(key, m); }).join("") + "<td></td>";
+    var cb = tr.querySelector("input[type=checkbox]");
+    if (cb) cb.onchange = function (e) { e.target.checked ? TRAY.add(m.id) : TRAY.delete(m.id); save_tray(); };
     tbody.appendChild(tr);
   });
   t.appendChild(tbody);
   wrap.appendChild(t);
   R.appendChild(wrap);
   if (hits.length > 500) R.appendChild(el('<p class="small muted">showing first 500; narrow the filters to see the rest.</p>'));
+
+  /* each pinned column freezes to whichever edge you scroll it past, stacking in order */
+  var ths = thead.querySelectorAll("th");
+  var pinIdx = [];
+  view.forEach(function (k, i) { if (pinnedSet[k]) pinIdx.push(i); });
+  var pinW = pinIdx.map(function (i) { return ths[i].getBoundingClientRect().width; });
+  pinIdx.forEach(function (ci, j) {
+    var lft = 0, rgt = 0, x;
+    for (x = 0; x < j; x++) lft += pinW[x];
+    for (x = j + 1; x < pinIdx.length; x++) rgt += pinW[x];
+    apply_sticky_col(t, ci, lft, rgt);
+  });
 
   /* restore text-search caret after a re-render triggered by typing */
   if (RESTORE_Q != null) {
@@ -303,15 +339,70 @@ function view_search() {
     RESTORE_Q = null;
   }
 
+  function col_header(key, pinned) {
+    var th = document.createElement("th");
+    th.dataset.key = key;
+    th.draggable = true;
+    if (col_num(key)) th.className = "num";
+    if (pinned) th.classList.add("pincol");
+    var sk = col_sortkey(key);
+    var arrow = sk && sortKey === sk ? (sortDir === "desc" ? " ▼" : " ▲") : "";
+    var span = el("<span class='hl'>" + esc(col_label(key) || " ") + "<span class='ind'>" + arrow + "</span></span>");
+    if (sk) span.onclick = function () { sort_to(sk); }; else span.style.cursor = "default";
+    th.appendChild(span);
+    var ctl = el("<span class='colctl'>" +
+      "<button class='pin" + (pinned ? " on" : "") + "' title='" + (pinned ? "unpin" : "freeze column while scrolling") + "'>" + (pinned ? "📌" : "📍") + "</button>" +
+      "<button class='rm' title='remove column'>×</button></span>");
+    ctl.querySelector(".pin").onclick = function (e) {
+      e.stopPropagation();
+      if (pinned) COL_PINS = COL_PINS.filter(function (x) { return x !== key; });
+      else COL_PINS.push(key);
+      save_cols(); route();
+    };
+    ctl.querySelector(".rm").onclick = function (e) {
+      e.stopPropagation();
+      COLS = COLS.filter(function (x) { return x !== key; });
+      COL_PINS = COL_PINS.filter(function (x) { return x !== key; });
+      save_cols(); route();
+    };
+    th.appendChild(ctl);
+
+    th.addEventListener("dragstart", function (e) {
+      DRAG_COL = { key: key };
+      e.dataTransfer.effectAllowed = "move";
+      try { e.dataTransfer.setData("text/plain", key); } catch (x) {}
+    });
+    th.addEventListener("dragover", function (e) { e.preventDefault(); th.classList.add("dropcol"); });
+    th.addEventListener("dragleave", function () { th.classList.remove("dropcol"); });
+    th.addEventListener("drop", function (e) {
+      e.preventDefault(); th.classList.remove("dropcol");
+      if (!DRAG_COL || DRAG_COL.key === key) return;
+      var arr = COLS.slice();
+      arr.splice(arr.indexOf(DRAG_COL.key), 1);
+      arr.splice(arr.indexOf(key), 0, DRAG_COL.key);
+      COLS = arr; save_cols(); route();
+    });
+    return th;
+  }
+
+  function body_cell(key, m) {
+    if (key === "@check") return "<td class='chk'><input type='checkbox'" + (TRAY.has(m.id) ? " checked" : "") + "></td>";
+    if (key === "@mfr") return "<td>" + esc(m.manufacturer) + "</td>";
+    if (key === "@product") return '<td><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.productName) + "</a></td>";
+    if (key === "@material") return "<td>" + esc(m.material) + "</td>";
+    return "<td class='num'>" + cell_val(m._raw[key]) + "</td>";
+  }
+
   function add_col_cell() {
     var th = document.createElement("th");
     th.className = "nosort addcol";
     th.title = "add column";
     th.textContent = "+";
     th.onclick = function () {
-      var pool = SUBJECTS.filter(function (s) { return COLS.indexOf(s) < 0; });
+      var pool = ["@check", "@mfr", "@product", "@material"].filter(function (k) { return COLS.indexOf(k) < 0; })
+        .concat(SUBJECTS.filter(function (s) { return COLS.indexOf(s) < 0; }));
       var sel = el('<select><option value="">add column…</option>' +
-        pool.map(function (s) { return "<option>" + esc(s) + "</option>"; }).join("") + "</select>");
+        pool.map(function (s) { return '<option value="' + esc(s) + '">' + esc(col_label(s) || s) + "</option>"; }).join("") + "</select>");
       sel.onchange = function () { if (sel.value) { COLS.push(sel.value); save_cols(); route(); } };
       sel.onblur = function () { route(); };
       th.textContent = ""; th.appendChild(sel); sel.focus();
@@ -319,26 +410,21 @@ function view_search() {
     return th;
   }
 }
+var DRAG_COL = null;
 
-function head_cell(label, key, sortKey, sortDir, num, sort_to, colIdx) {
-  var th = document.createElement("th");
-  if (num) th.className = "num";
-  var arrow = sortKey === key ? (sortDir === "desc" ? " ▼" : " ▲") : "";
-  var span = el("<span class='hl'>" + esc(label) + "<span class='ind'>" + arrow + "</span></span>");
-  span.onclick = function () { sort_to(key); };
-  th.appendChild(span);
-  if (colIdx != null) {
-    var ctl = el("<span class='colctl'>" +
-      "<button title='move left'>‹</button><button title='move right'>›</button><button title='remove'>×</button></span>");
-    var bs = ctl.querySelectorAll("button");
-    bs[0].onclick = function (e) { e.stopPropagation(); if (colIdx > 0) { swap(COLS, colIdx, colIdx - 1); save_cols(); route(); } };
-    bs[1].onclick = function (e) { e.stopPropagation(); if (colIdx < COLS.length - 1) { swap(COLS, colIdx, colIdx + 1); save_cols(); route(); } };
-    bs[2].onclick = function (e) { e.stopPropagation(); COLS.splice(colIdx, 1); save_cols(); route(); };
-    th.appendChild(ctl);
-  }
-  return th;
+/* pin column `ci` (0-based, render order): it stays in place until scrolled past,
+   then freezes to the left edge at `leftPx` or the right edge at `rightPx`,
+   stacking with the other pinned columns already frozen to that edge */
+function apply_sticky_col(table, ci, leftPx, rightPx) {
+  table.querySelectorAll("tr").forEach(function (tr) {
+    var cell = tr.children[ci];
+    if (!cell) return;
+    cell.classList.add("pincol");
+    cell.style.position = "sticky";
+    cell.style.left = leftPx + "px";
+    cell.style.right = rightPx + "px";
+  });
 }
-function swap(a, i, j) { var t = a[i]; a[i] = a[j]; a[j] = t; }
 
 /* facet block: collapsed = top N by count (+ any selected), expanded = all alphabetical */
 function facet_block(title, param, selected, counts) {
@@ -536,12 +622,19 @@ function export_rows(mats, kind) {
     }), null, 2), "application/json");
     return;
   }
-  var header = ["Manufacturer", "Product", "Material"].concat(COLS.map(function (c) { return c + (UNIT_FOR[c] ? " (" + UNIT_FOR[c] + ")" : ""); }));
+  var cols = COLS.filter(function (k) { return k !== "@check"; });
+  var header = cols.map(function (k) {
+    if (SPECIAL_COLS[k]) return SPECIAL_COLS[k].label;
+    return k + (UNIT_FOR[k] ? " (" + UNIT_FOR[k] + ")" : "");
+  });
   var rows = [header];
   mats.forEach(function (m) {
-    rows.push([m.manufacturer, m.productName, m.material].concat(COLS.map(function (c) {
-      return m._raw[c] ? (m._raw[c].value || "") : "";
-    })));
+    rows.push(cols.map(function (k) {
+      if (k === "@mfr") return m.manufacturer;
+      if (k === "@product") return m.productName;
+      if (k === "@material") return m.material;
+      return m._raw[k] ? (m._raw[k].value || "") : "";
+    }));
   });
   download("materials.csv", to_csv(rows), "text/csv");
 }

@@ -19,12 +19,14 @@
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+html, body { height: 100%; }
 body {
   margin: 0;
   font: 13px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--ink);
   background: #fff;
-  overflow-x: hidden;          /* page never scrolls sideways; wide tables scroll inside .wrap */
+  overflow: hidden;            /* the filter column and the results table scroll independently, not the page */
+  display: flex; flex-direction: column;
 }
 a { color: var(--link); text-decoration: underline; }
 a:visited { color: var(--link-visited); }
@@ -32,7 +34,8 @@ a:hover { text-decoration: none; }
 
 /* ---- masthead ---- */
 #masthead {
-  display: flex; align-items: baseline; gap: 14px;
+  flex: none;
+  display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; row-gap: 3px;
   background: var(--bar-bg); color: #fff;
   padding: 6px 12px; font-size: 12px;
 }
@@ -40,11 +43,18 @@ a:hover { text-decoration: none; }
 #masthead .wordmark { font-weight: 700; font-size: 15px; text-decoration: none; letter-spacing: .5px; }
 #masthead .spacer { flex: 1; }
 #dataset-info { color: #aab6c2; }
+
+#search-tools { display: flex; align-items: baseline; gap: 12px; }
+#search-tools:empty { display: none; }
+#search-tools .rescount { color: #fff; font-weight: 700; }
+#search-tools button.linkish { color: #cfe0ff; padding: 0; }
+#search-tools button.linkish:hover { color: #fff; }
 #compare-bar a { color: #fff; }
 #compare-bar .count { background: #12633a; padding: 1px 6px; border-radius: 2px; }
 
-#footer { border-top: 1px solid var(--line); margin-top: 24px; padding: 10px 12px; color: #666; font-size: 11px; }
-#app { padding: 10px 12px; }
+#footer { flex: none; border-top: 1px solid var(--line); padding: 6px 12px; color: #666; font-size: 11px; }
+#app { flex: 1; min-height: 0; padding: 10px 12px; overflow-y: auto; display: flex; flex-direction: column; }
+#app > *:not(#search) { flex: none; }   /* detail / compare views flow and scroll #app normally */
 
 h1 { font-size: 18px; margin: 4px 0 2px; }
 h2 {
@@ -56,10 +66,18 @@ h2 {
 .small { font-size: 11px; }
 .uval { color: var(--unit); font-size: .88em; margin-left: 3px; }
 
-/* ---- search layout ---- */
-#search { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 16px; align-items: start; }
-#filters, #results { min-width: 0; }
-@media (max-width: 720px) { #search { grid-template-columns: 1fr; } }
+/* ---- search layout: two independently-scrolling panes ---- */
+#search { flex: 1; min-height: 0; display: flex; gap: 16px; align-items: stretch; }
+#filters { width: 240px; flex: none; min-width: 0; overflow-y: auto; overflow-x: hidden; padding-right: 4px; }
+#results { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+@media (max-width: 720px) {
+  body { height: auto; overflow: visible; }
+  #app { overflow: visible; }
+  #search { flex-direction: column; }
+  #filters { width: auto; overflow: visible; }
+  #results { flex: none; }
+  #results .wrap { flex: none; }
+}
 
 #filters fieldset { border: 1px solid var(--line-soft); margin: 0 0 10px; padding: 6px 8px 8px; min-width: 0; }
 #filters legend { font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; padding: 0 4px; }
@@ -82,10 +100,8 @@ button.btn:hover { background: #e4e4e4; }
 button.linkish { border: 0; background: none; color: var(--link); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
 
 /* ---- results ---- */
-#results .toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 5px; margin-bottom: 4px; }
-#results .toolbar .count { font-weight: 700; }
-
 .wrap { overflow-x: auto; max-width: 100%; }
+#results .wrap { flex: 1; min-height: 0; overflow: auto; }
 
 table.data { border-collapse: collapse; width: 100%; font-size: 12px; }
 table.data th, table.data td { border: 1px solid var(--line-soft); padding: 3px 6px; text-align: left; vertical-align: top; }
@@ -99,9 +115,22 @@ th .hl { cursor: pointer; }
 th .hl:hover { text-decoration: underline; }
 th .ind { font-size: 9px; }
 th .colctl { margin-left: 5px; white-space: nowrap; }
-th .colctl button { border: 1px solid var(--line); background: #f0f0f0; cursor: pointer; font: 10px/1 monospace; padding: 1px 3px; }
+th .colctl button { border: 1px solid var(--line); background: #f0f0f0; cursor: pointer; font: 10px/1 sans-serif; padding: 1px 3px; }
+th .colctl .pin.on { background: #ffe9a8; }
 th.addcol { cursor: pointer; text-align: center; font-weight: 700; color: var(--link); }
 th.addcol select { font: inherit; }
+
+/* configurable columns; pinned ones freeze to whichever edge they're scrolled past */
+table.data.cfg thead th[draggable] { cursor: grab; }
+table.data.cfg thead th.dropcol { box-shadow: inset 2px 0 0 var(--link); }
+table.data.cfg th.pincol, table.data.cfg td.pincol {
+  position: sticky; background: #fff; z-index: 3;
+  box-shadow: 1px 0 0 var(--line), -1px 0 0 var(--line);
+}
+table.data.cfg thead th { z-index: 4; }
+table.data.cfg thead th.pincol { z-index: 6; background: var(--head-bg); }
+table.data.cfg tbody tr:nth-child(even) td.pincol { background: var(--row-alt); }
+table.data td.chk { text-align: center; }
 
 /* ---- detail ---- */
 .kv { margin: 2px 0; }
@@ -117,8 +146,10 @@ table.compare td.same { color: #888; }
 table.compare tr.warn td { background: var(--bad); }
 table.compare tr.catrow td { background: var(--head-bg); font-weight: 600; }
 table.compare th.sticky, table.compare td.sticky { position: sticky; left: 0; background: #fff; z-index: 1; border-right: 2px solid var(--line); }
-table.compare thead th.sticky { z-index: 3; background: var(--head-bg); }
+table.compare thead th { z-index: 5; }
+table.compare thead th.sticky { z-index: 6; background: var(--head-bg); }
 table.compare tr.catrow td.sticky { background: var(--head-bg); }
+
 
 .pill { display: inline-block; border: 1px solid var(--line); padding: 0 5px; margin: 1px; font-size: 11px; background: #f4f4f4; }
 .pill button { border: 0; background: none; cursor: pointer; color: #a00; font: inherit; }
