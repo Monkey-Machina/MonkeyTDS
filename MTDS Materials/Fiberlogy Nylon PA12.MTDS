@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < Nylon PA12
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_NYLONPA12_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.01
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 135
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 55
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 145
+  < °C
+
+> Melting Temperature
+  < DSC | ISO 11357-3
+  < 178
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 45
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1400
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 5
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < > 50
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, 23 °C
+  < 12
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 255 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 100
+  < °C

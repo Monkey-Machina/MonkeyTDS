@@ -1,0 +1,107 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < CPE HT
+  <
+
+> Material
+  <
+  < CPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_CPEHT_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.18
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.455 MPa
+  < 99
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.82 MPa
+  < 85
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 43
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 58
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1548
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 7
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 185
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 59
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1495
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched Izod, 23 °C
+  < 93
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 280
+  < °C
+
+> Bed Temperature
+  <
+  < 110 - 120
+  < °C

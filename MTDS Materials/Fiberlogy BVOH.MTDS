@@ -1,0 +1,92 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < BVOH
+  <
+
+> Material
+  <
+  < BVOH
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_BVOH_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.14
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 92
+  < °C
+
+> Glass Transition Temperature
+  < DSC
+  < 68
+  < °C
+
+> Melting Temperature
+  < DSC
+  < 175
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 45
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 9
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 71
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2900
+  < MPa
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C
