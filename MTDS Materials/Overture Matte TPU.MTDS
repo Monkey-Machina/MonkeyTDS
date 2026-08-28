@@ -39,8 +39,8 @@
 
 # Mechanical Property
 
-> Tensile Stress (In-Plane)
-  < ISO 527 | GB/T 1040, at 100% elongation
+> Stress at 100% Strain (In-Plane)
+  < ISO 527 | GB/T 1040
   < 11.3 ± 0.2
   < MPa
 

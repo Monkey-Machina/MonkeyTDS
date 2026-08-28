@@ -64,13 +64,13 @@
   < 475
   < %
 
-> Tensile Stress (In-Plane)
-  < ISO 527-2 | at 100% strain
+> Stress at 100% Strain (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
   < 17
   < MPa
 
-> Tensile Stress (In-Plane)
-  < ISO 527-2 | at 300% strain
+> Stress at 300% Strain (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
   < 30
   < MPa
 
@@ -83,11 +83,6 @@
   < ISO 34-1B
   < 170 kN/m | as published
   <
-
-> Compressive Strength (In-Plane)
-  < DIN 53452
-  < 40
-  < MPa
 
 # Print Setting
 

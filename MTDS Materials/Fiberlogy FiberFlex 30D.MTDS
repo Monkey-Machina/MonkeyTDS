@@ -69,13 +69,13 @@
   < 22
   < MPa
 
-> Tensile Stress (In-Plane)
-  < ASTM D638 | at 5% strain
+> Stress at 5% Strain (In-Plane)
+  < ASTM D638
   < 1
   < MPa
 
-> Tensile Stress (In-Plane)
-  < ASTM D638 | at 10% strain
+> Stress at 10% Strain (In-Plane)
+  < ASTM D638
   < 2
   < MPa
 
