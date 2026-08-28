@@ -7,12 +7,12 @@
 
 > Product Name
   <
-  < ePA-CF
+  < PETG-Basic
   <
 
 > Material
   <
-  < PA
+  < PETG
   <
 
 > Diameter
@@ -22,106 +22,106 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PA-CF/eSUN_ePA-CF_Filament_TDS_V4.0.pdf
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PETG-Basic/PETG_Basic_TDS.pdf
   <
 
 > Source
   <
-  < Product Page | https://www.esun3d.com/epa-cf-product
+  < Product Page | https://www.esun3d.com/epetg-lite-product
   <
 
 # Physical Property
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.24 | unit to be confirmed per source
+  < 1.27 | unit to be confirmed per source
   < g/cm^3
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 11.46 | 275 °C, 5 kg
+  < 28 | 250 °C, 2.16 kg
   < g/10 min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 155 | 0.45 MPa
+  < 73 | 0.45 MPa
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 84.05
+  < 68.41
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 50.34
+  < 35.84
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 7.42
+  < 7.56
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 11.5
+  < 3.17
   < %
 
 > Bending Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 127.5
+  < 100.2
   < MPa
 
 > Bending Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 54.9
+  < 59.7
   < MPa
 
 > Bending Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 6455.44
+  < 2636.66
   < MPa
 
 > Bending Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1657.25
+  < 2207.6
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 9.85
+  < 2.28
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.15
+  < 2.06
   < kJ/m^2
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 260 - 300 °C
+  < 240 - 260 °C
   <
 
 > Bed Temperature
   <
-  < 60 - 90 °C
+  < 75 - 90 °C
   <
 
 > Cooling Fan
   <
-  < 0%
+  < 50 - 100%
   <
 
 > Print Speed
   <
-  < < 150 mm/s
+  < < 250 mm/s
   <
 
 > Drying Condition
   <
-  < 70 °C / > 12 h
+  < 60 °C / > 8 h
   <

@@ -7,12 +7,12 @@
 
 > Product Name
   <
-  < ePA-CF
+  < PLA-HS
   <
 
 > Material
   <
-  < PA
+  < PLA
   <
 
 > Diameter
@@ -22,12 +22,12 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PA-CF/eSUN_ePA-CF_Filament_TDS_V4.0.pdf
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-HS/PLA-HS-TDS.pdf
   <
 
 > Source
   <
-  < Product Page | https://www.esun3d.com/epa-cf-product
+  < Product Page | https://www.esun3d.com/epla-hs-product
   <
 
 # Physical Property
@@ -39,89 +39,84 @@
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 11.46 | 275 °C, 5 kg
+  < 5.2 | 190 °C, 2.16 kg
   < g/10 min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 155 | 0.45 MPa
+  < 53 | 0.45 MPa
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 84.05
+  < 53.64
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 50.34
+  < 30.46
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 7.42
+  < 4.34
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 11.5
+  < 2.43
   < %
 
 > Bending Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 127.5
+  < 85.29
   < MPa
 
 > Bending Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 54.9
+  < 48
   < MPa
 
 > Bending Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 6455.44
+  < 2962.32
   < MPa
 
 > Bending Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1657.25
+  < 2684.19
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 9.85
+  < 4.77
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.15
+  < 2.01
   < kJ/m^2
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 260 - 300 °C
+  < 210 - 230 °C
   <
 
 > Bed Temperature
   <
-  < 60 - 90 °C
+  < 45 - 60 °C
   <
 
 > Cooling Fan
   <
-  < 0%
+  < 100%
   <
 
 > Print Speed
   <
-  < < 150 mm/s
-  <
-
-> Drying Condition
-  <
-  < 70 °C / > 12 h
+  < 350 mm/s
   <

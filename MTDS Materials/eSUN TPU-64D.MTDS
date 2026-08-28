@@ -1,0 +1,87 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < TPU-64D
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/TPU-64D/TPU-64D_TDS.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/tpu64d-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.21 | unit to be confirmed per source
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 39
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 25
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 140
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 46
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 250 °C
+  <
+
+> Bed Temperature
+  <
+  < 0 - 60 °C
+  <
+
+> Cooling Fan
+  <
+  < 100%
+  <
+
+> Print Speed
+  <
+  < < 150 mm/s
+  <
+
+> Drying Condition
+  <
+  < 55 °C / > 4 h
+  <

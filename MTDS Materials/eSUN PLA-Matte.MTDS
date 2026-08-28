@@ -7,12 +7,12 @@
 
 > Product Name
   <
-  < ePA-CF
+  < PLA-Matte
   <
 
 > Material
   <
-  < PA
+  < PLA
   <
 
 > Diameter
@@ -22,76 +22,76 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PA-CF/eSUN_ePA-CF_Filament_TDS_V4.0.pdf
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Matte_Refilament/PLA-Matte_TDS_2025.06.19.pdf
   <
 
 > Source
   <
-  < Product Page | https://www.esun3d.com/epa-cf-product
+  < Product Page | https://www.esun3d.com/epla-matte-refil-product
   <
 
 # Physical Property
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.24 | unit to be confirmed per source
+  < 1.329 | unit to be confirmed per source
   < g/cm^3
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 11.46 | 275 °C, 5 kg
+  < 5.8 | 190 °C, 2.16 kg
   < g/10 min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 155 | 0.45 MPa
+  < 51 | 0.45 MPa
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 84.05
+  < 25.976
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 50.34
+  < 14.31
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 7.42
+  < 7.23
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 11.5
+  < 2.26
   < %
 
 > Bending Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 127.5
+  < 42.6
   < MPa
 
 > Bending Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 54.9
+  < 21.1
   < MPa
 
 > Bending Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 6455.44
+  < 2249.05
   < MPa
 
 > Bending Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1657.25
+  < 1782.62
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 9.85
+  < 4.7
   < kJ/m^2
 
 > Impact Strength (Interlayer)
@@ -103,25 +103,20 @@
 
 > Nozzle Temperature
   <
-  < 260 - 300 °C
+  < 190 - 230 °C
   <
 
 > Bed Temperature
   <
-  < 60 - 90 °C
+  < 45 - 60 °C
   <
 
 > Cooling Fan
   <
-  < 0%
+  < 100%
   <
 
 > Print Speed
   <
-  < < 150 mm/s
-  <
-
-> Drying Condition
-  <
-  < 70 °C / > 12 h
+  < < 200 mm/s
   <
