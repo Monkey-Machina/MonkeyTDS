@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_ASA_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.07
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa
+  < 96
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.8 MPa
+  < 87
+  < °C
+
+> Vicat Softening Temperature
+  < ASTM D1525
+  < 96
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 43
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2500
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 3
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 25
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched Izod, 23 °C
+  < 10
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 255 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C

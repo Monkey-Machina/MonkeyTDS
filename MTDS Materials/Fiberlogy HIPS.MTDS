@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < HIPS
+  <
+
+> Material
+  <
+  < HIPS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.85
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_HIPS_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.04
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 83
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 74
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 90
+  < °C
+
+> Melting Temperature
+  < ISO 294
+  < 180 - 260
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 25
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1850
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 1.5
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 31
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, 23 °C
+  < 12
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 245
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 100
+  < °C
