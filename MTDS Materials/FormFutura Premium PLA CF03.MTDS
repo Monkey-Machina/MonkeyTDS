@@ -1,0 +1,77 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < Premium PLA CF03
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256615?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/shop/premium-pla-cf03
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.24
+  < g/cm^3
+
+> Melting Temperature
+  <
+  < 210
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM E2092
+  < 55
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ASTM D882
+  < 3500
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D882
+  < 58
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D882 | at break
+  < 52
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D882
+  < 6
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA + circa 3% carbon fiber
+  <
