@@ -35,7 +35,7 @@ a:hover { text-decoration: none; }
 /* ---- masthead ---- */
 #masthead {
   flex: none;
-  display: flex; align-items: baseline; gap: 14px;
+  display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; row-gap: 3px;
   background: var(--bar-bg); color: #fff;
   padding: 6px 12px; font-size: 12px;
 }
@@ -43,6 +43,12 @@ a:hover { text-decoration: none; }
 #masthead .wordmark { font-weight: 700; font-size: 15px; text-decoration: none; letter-spacing: .5px; }
 #masthead .spacer { flex: 1; }
 #dataset-info { color: #aab6c2; }
+
+#search-tools { display: flex; align-items: baseline; gap: 12px; }
+#search-tools:empty { display: none; }
+#search-tools .rescount { color: #fff; font-weight: 700; }
+#search-tools button.linkish { color: #cfe0ff; padding: 0; }
+#search-tools button.linkish:hover { color: #fff; }
 #compare-bar a { color: #fff; }
 #compare-bar .count { background: #12633a; padding: 1px 6px; border-radius: 2px; }
 
@@ -94,15 +100,6 @@ button.btn:hover { background: #e4e4e4; }
 button.linkish { border: 0; background: none; color: var(--link); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
 
 /* ---- results ---- */
-#results .toolbar {
-  flex: none;
-  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-  background: var(--head-bg); border: 1px solid var(--line);
-  padding: 5px 8px; margin-bottom: 8px;
-}
-#results .toolbar .count { font-weight: 700; }
-#results .toolbar .spacer { flex: 1; }
-
 .wrap { overflow-x: auto; max-width: 100%; }
 #results .wrap { flex: 1; min-height: 0; overflow: auto; }
 
@@ -123,11 +120,12 @@ th .colctl .pin.on { background: #ffe9a8; }
 th.addcol { cursor: pointer; text-align: center; font-weight: 700; color: var(--link); }
 th.addcol select { font: inherit; }
 
-/* configurable / pinnable result columns */
+/* configurable columns; pinned ones freeze to whichever edge they're scrolled past */
 table.data.cfg thead th[draggable] { cursor: grab; }
 table.data.cfg thead th.dropcol { box-shadow: inset 2px 0 0 var(--link); }
 table.data.cfg th.pincol, table.data.cfg td.pincol {
-  position: sticky; background: #fff; z-index: 3; border-right: 1px solid var(--line);
+  position: sticky; background: #fff; z-index: 3;
+  box-shadow: 1px 0 0 var(--line), -1px 0 0 var(--line);
 }
 table.data.cfg thead th { z-index: 4; }
 table.data.cfg thead th.pincol { z-index: 6; background: var(--head-bg); }

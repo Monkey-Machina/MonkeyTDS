@@ -165,6 +165,8 @@ function render_compare_bar() {
 function route() {
   if (!DATA) return;
   render_compare_bar();
+  var st = document.getElementById("search-tools");
+  if (st) st.innerHTML = "";                 // repopulated by view_search only
   var h = location.hash.replace(/^#/, "") || "/";
   var m = h.match(/^\/m\/(.+?)(\?|$)/);
   if (m) return view_detail(decodeURIComponent(m[1]));
@@ -186,10 +188,11 @@ function view_search() {
   var sortKey = p.get("sort") || "";
   var sortDir = p.get("dir") || "asc";
 
-  function pass(m) {
-    if (q && (m.manufacturer + " " + m.productName + " " + m.material).toLowerCase().indexOf(q) < 0) return false;
-    if (fMan.size && !fMan.has(m.manufacturer)) return false;
-    if (fMat.size && !fMat.has(m.material)) return false;
+  function pass(m, skip) {
+    skip = skip || {};
+    if (!skip.q && q && (m.manufacturer + " " + m.productName + " " + m.material).toLowerCase().indexOf(q) < 0) return false;
+    if (!skip.man && fMan.size && !fMan.has(m.manufacturer)) return false;
+    if (!skip.mat && fMat.size && !fMat.has(m.material)) return false;
     for (var i = 0; i < ranges.length; i++) {
       var v = m._nums[ranges[i].subject];
       if (v == null) return false;
@@ -198,7 +201,10 @@ function view_search() {
     }
     return true;
   }
-  var hits = DATA.materials.filter(pass);
+  var hits = DATA.materials.filter(function (m) { return pass(m); });
+  // facet options/counts ignore their own selection, so more can always be added (OR within a facet)
+  var manPool = DATA.materials.filter(function (m) { return pass(m, { man: true }); });
+  var matPool = DATA.materials.filter(function (m) { return pass(m, { mat: true }); });
 
   if (sortKey) {
     var meta = { manufacturer: 1, productName: 1, material: 1 };
@@ -233,8 +239,8 @@ function view_search() {
   }, 200));
 
   /* ---- facets ---- */
-  F.appendChild(facet_block("Manufacturer", "man", fMan, count_by(hits, function (m) { return m.manufacturer; })));
-  F.appendChild(facet_block("Material", "mat", fMat, count_by(hits, function (m) { return m.material; })));
+  F.appendChild(facet_block("Manufacturer", "man", fMan, count_by(manPool, function (m) { return m.manufacturer; })));
+  F.appendChild(facet_block("Material", "mat", fMat, count_by(matPool, function (m) { return m.material; })));
 
   /* ---- property ranges ---- */
   var rf = el('<fieldset><legend>Property ranges</legend></fieldset>');
@@ -270,15 +276,13 @@ function view_search() {
   reset.onclick = function () { location.hash = "/"; };
   F.appendChild(reset);
 
-  /* ---- results toolbar ---- */
-  var tb = el('<div class="toolbar"><span class="count">' + hits.length + " material" + (hits.length === 1 ? "" : "s") + "</span>" +
-    '<span class="small muted">current results</span>' +
-    '<span class="spacer"></span>' +
+  /* ---- results tools (count + export) live in the site banner ---- */
+  var st = document.getElementById("search-tools");
+  st.innerHTML = '<span class="rescount">' + hits.length + " material" + (hits.length === 1 ? "" : "s") + "</span>" +
     '<button class="linkish" id="exp-csv">export CSV</button>' +
-    '<button class="linkish" id="exp-json">export JSON</button></div>');
-  R.appendChild(tb);
-  tb.querySelector("#exp-csv").onclick = function () { export_rows(hits, "csv"); };
-  tb.querySelector("#exp-json").onclick = function () { export_rows(hits, "json"); };
+    '<button class="linkish" id="exp-json">export JSON</button>';
+  st.querySelector("#exp-csv").onclick = function () { export_rows(hits, "csv"); };
+  st.querySelector("#exp-json").onclick = function () { export_rows(hits, "json"); };
 
   /* ---- results table ---- */
   function sort_to(k) {
@@ -290,11 +294,8 @@ function view_search() {
     set_params(np);
   }
 
-  // pinned columns render first (contiguous left block); rest follow
-  var pinnedCols = COLS.filter(function (k) { return COL_PINS.indexOf(k) >= 0; });
-  var restCols = COLS.filter(function (k) { return COL_PINS.indexOf(k) < 0; });
-  var view = pinnedCols.concat(restCols);
-  var pinnedSet = {}; pinnedCols.forEach(function (k) { pinnedSet[k] = 1; });
+  var view = COLS.slice();                     // natural order — pinning never reorders
+  var pinnedSet = {}; COL_PINS.forEach(function (k) { pinnedSet[k] = 1; });
 
   var wrap = el('<div class="wrap"></div>');
   var t = document.createElement("table");
@@ -318,16 +319,18 @@ function view_search() {
   wrap.appendChild(t);
   R.appendChild(wrap);
   if (hits.length > 500) R.appendChild(el('<p class="small muted">showing first 500; narrow the filters to see the rest.</p>'));
-  R.appendChild(el('<p class="small muted">Drag a header to reorder &middot; <b>📍</b> pin to left &middot; <b>×</b> remove &middot; <b>+</b> add. Saved in this browser.</p>'));
 
-  /* stack pinned columns at the left edge */
-  var left = 0;
+  /* each pinned column freezes to whichever edge you scroll it past, stacking in order */
   var ths = thead.querySelectorAll("th");
-  for (var pi = 0; pi < pinnedCols.length; pi++) {
-    var w = ths[pi].getBoundingClientRect().width;
-    apply_sticky_col(t, pi, left);
-    left += w;
-  }
+  var pinIdx = [];
+  view.forEach(function (k, i) { if (pinnedSet[k]) pinIdx.push(i); });
+  var pinW = pinIdx.map(function (i) { return ths[i].getBoundingClientRect().width; });
+  pinIdx.forEach(function (ci, j) {
+    var lft = 0, rgt = 0, x;
+    for (x = 0; x < j; x++) lft += pinW[x];
+    for (x = j + 1; x < pinIdx.length; x++) rgt += pinW[x];
+    apply_sticky_col(t, ci, lft, rgt);
+  });
 
   /* restore text-search caret after a re-render triggered by typing */
   if (RESTORE_Q != null) {
@@ -348,7 +351,7 @@ function view_search() {
     if (sk) span.onclick = function () { sort_to(sk); }; else span.style.cursor = "default";
     th.appendChild(span);
     var ctl = el("<span class='colctl'>" +
-      "<button class='pin" + (pinned ? " on" : "") + "' title='" + (pinned ? "unpin" : "pin to left") + "'>" + (pinned ? "📌" : "📍") + "</button>" +
+      "<button class='pin" + (pinned ? " on" : "") + "' title='" + (pinned ? "unpin" : "freeze column while scrolling") + "'>" + (pinned ? "📌" : "📍") + "</button>" +
       "<button class='rm' title='remove column'>×</button></span>");
     ctl.querySelector(".pin").onclick = function (e) {
       e.stopPropagation();
@@ -365,7 +368,7 @@ function view_search() {
     th.appendChild(ctl);
 
     th.addEventListener("dragstart", function (e) {
-      DRAG_COL = { key: key, pinned: pinned };
+      DRAG_COL = { key: key };
       e.dataTransfer.effectAllowed = "move";
       try { e.dataTransfer.setData("text/plain", key); } catch (x) {}
     });
@@ -373,8 +376,8 @@ function view_search() {
     th.addEventListener("dragleave", function () { th.classList.remove("dropcol"); });
     th.addEventListener("drop", function (e) {
       e.preventDefault(); th.classList.remove("dropcol");
-      if (!DRAG_COL || DRAG_COL.key === key || DRAG_COL.pinned !== pinned) return;
-      var arr = view.slice();
+      if (!DRAG_COL || DRAG_COL.key === key) return;
+      var arr = COLS.slice();
       arr.splice(arr.indexOf(DRAG_COL.key), 1);
       arr.splice(arr.indexOf(key), 0, DRAG_COL.key);
       COLS = arr; save_cols(); route();
@@ -409,14 +412,17 @@ function view_search() {
 }
 var DRAG_COL = null;
 
-/* mark column `ci` (0-based, in render order) as sticky-left at `leftPx` */
-function apply_sticky_col(table, ci, leftPx) {
+/* pin column `ci` (0-based, render order): it stays in place until scrolled past,
+   then freezes to the left edge at `leftPx` or the right edge at `rightPx`,
+   stacking with the other pinned columns already frozen to that edge */
+function apply_sticky_col(table, ci, leftPx, rightPx) {
   table.querySelectorAll("tr").forEach(function (tr) {
     var cell = tr.children[ci];
     if (!cell) return;
     cell.classList.add("pincol");
     cell.style.position = "sticky";
     cell.style.left = leftPx + "px";
+    cell.style.right = rightPx + "px";
   });
 }
 
