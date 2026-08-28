@@ -25,8 +25,8 @@ var CORE = [
   "Density", "Melt Index", "Glass Transition Temperature", "Heat Deflection Temperature",
   "Tensile Strength (In-Plane)", "Tensile Strength (Interlayer)",
   "Young's Modulus (In-Plane)", "Young's Modulus (Interlayer)",
-  "Breaking Elongation Rate (In-Plane)", "Bending Strength (In-Plane)",
-  "Bending Modulus (In-Plane)", "Impact Strength (In-Plane)"
+  "Breaking Elongation Rate (In-Plane)", "Flexural Strength (In-Plane)",
+  "Flexural Modulus (In-Plane)", "Impact Strength (In-Plane)"
 ];
 var FACET_COLLAPSED = 5;
 

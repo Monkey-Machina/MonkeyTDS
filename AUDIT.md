@@ -50,7 +50,7 @@ number spelling is a valid unit any more (`g/10 min` stays as a parse alias).
 | Polymaker | HT-PLA & PolyLite ABS: X-Y tensile-strength tolerance is a verified misprint in the source TDS (`± 160.44`, `± 92.7` copied from the modulus row) — kept the mean, annotated the tolerance | 2 |
 | Polymaker | PolyLite ABS/PLA Pro/PC/LW-PLA/CosPLA A+B, PolyMax PC/PC-FR, Fiberon ASA-CF08/PET-GF15: flexural rows carried the tensile method (`ISO 527` / `ISO 306`) — set to `ISO 178` with a note that the TDS table misprints it | 10 |
 | Bambu Lab | PLA Aero Density `1.21 g/cm³(filament)` → value `1.21`, unit `g/cm^3` | 1 |
-| Bambu Lab | PLA Sparkle Bending Modulus (Interlayer) missing `MPa` | 1 |
+| Bambu Lab | PLA Sparkle Flexural Modulus (Interlayer) missing `MPa` | 1 |
 | Proto-pasta | Carbon Fiber HTPLA / Magnetic Iron PLA / Stainless Steel PLA: removed prose-only "mechanical" rows (`"Increased rigidity vs. standard PLA"` etc.) — no measured values at the source | 3 |
 | Prusament | `NB (no break)` / `no break` → `No break` | 2 |
 | NinjaTek | Armadillo / Cheetah / NinjaFlex Abrasion Resistance: `0.03 g` etc. → value `0.03`, units `g` | 3 |
