@@ -1,0 +1,122 @@
+# Specification
+
+> Manufacturer
+  <
+  < Overture
+  <
+
+> Product Name
+  <
+  < PLA Professional
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://wiki.overture3d.com/pla_professional_tds.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.27 | at 22.1 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 7.0 | 210 °C, 2.16 kg
+  < g/10 min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 150
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 63.9
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2679 ± 192
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 36.3 ± 0.8
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 29.7 ± 1.2
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 5.6 ± 0.9
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2694 ± 160
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 66.9 ± 2.4
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 12.8 ± 1.3
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 25 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s
+
+> Retraction Length
+  <
+  < 1 - 3
+  < mm
+
+> Retraction Speed
+  <
+  < 20 - 40
+  < mm/s
+
+> Max Overhang Angle
+  <
+  < 60
+  < °
