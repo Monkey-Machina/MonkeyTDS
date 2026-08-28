@@ -195,13 +195,13 @@
 
 > Nozzle Temperature
   <
-  < 190 - 210 °C
-  <
+  < 190 - 210
+  < °C
 
 > Bed Temperature
   <
-  < 25 - 60 °C
-  <
+  < 25 - 60
+  < °C
 
 > Build Plate Surface Preparation
   <
@@ -215,18 +215,18 @@
 
 > Print Speed
   <
-  < 50 - 100 mm/s
-  <
+  < 50 - 100
+  < mm/s
 
 > Retraction Length
   <
-  < 3 - 6 mm
-  <
+  < 3 - 6
+  < mm
 
 > Retraction Speed
   <
-  < 40 - 60 mm/s
-  <
+  < 40 - 60
+  < mm/s
 
 > Chamber Temperature
   <

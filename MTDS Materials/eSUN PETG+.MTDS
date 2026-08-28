@@ -103,18 +103,18 @@
 
 > Nozzle Temperature
   <
-  < 230 - 250 °C
-  <
+  < 230 - 250
+  < °C
 
 > Bed Temperature
   <
-  < 75 - 90 °C
-  <
+  < 75 - 90
+  < °C
 
 > Cooling Fan
   <
-  < 50 - 100%
-  <
+  < 50 - 100
+  < %
 
 > Print Speed
   <

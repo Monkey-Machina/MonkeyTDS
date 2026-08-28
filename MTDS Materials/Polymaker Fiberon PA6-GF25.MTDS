@@ -267,13 +267,13 @@
 
 > Nozzle Temperature
   <
-  < 280 - 300 °C
-  <
+  < 280 - 300
+  < °C
 
 > Bed Temperature
   <
-  < 40 - 50 °C
-  <
+  < 40 - 50
+  < °C
 
 > Chamber Temperature
   <

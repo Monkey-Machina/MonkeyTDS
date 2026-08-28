@@ -1,0 +1,36 @@
+name: Catalog coverage
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build coverage report
+        run: |
+          python scripts/coverage.py --out coverage.txt
+          python scripts/coverage.py --md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload coverage.txt artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage.txt
+
+      - name: Attach coverage.txt to the release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" coverage.txt --clobber

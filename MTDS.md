@@ -212,9 +212,10 @@ When the dataset is compiled, each numeric field is emitted with `valueNumber`
 Each subject has a **declared canonical unit** — the reference list lives in
 `SUBJECT_UNITS` in `scripts/compile_materials.py`. It is chosen for a coherent,
 comparable dataset, not to match what data sheets happen to print: e.g. melt
-mass-flow rate normalises to `g/s`, not the `g/10 min` reporting convention (the
-verbatim value and its original unit are always preserved on the field). Subjects
-not listed fall back to the most common recognised unit.
+mass-flow rate normalises to `dg/min` (numerically identical to the `g/10 min`
+reporting convention), and melt volume-flow rate to `mm^3/s`. The verbatim value
+and its original unit are always preserved on the field. Subjects not listed fall
+back to the most common recognised unit.
 
 A subject may declare more than one accepted unit when a property is genuinely
 reported in two non-interconvertible conventions (impact strength as `kJ/m^2`

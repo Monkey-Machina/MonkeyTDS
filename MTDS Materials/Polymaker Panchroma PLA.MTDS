@@ -153,13 +153,13 @@
 
 > Nozzle Temperature
   <
-  < 190 - 230 °C
-  <
+  < 190 - 230
+  < °C
 
 > Bed Temperature
   <
-  < 25 - 60 °C
-  <
+  < 25 - 60
+  < °C
 
 > Print Speed
   <

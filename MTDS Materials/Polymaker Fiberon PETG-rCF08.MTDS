@@ -157,13 +157,13 @@
 
 > Nozzle Temperature
   <
-  < 240 - 270 °C
-  <
+  < 240 - 270
+  < °C
 
 > Bed Temperature
   <
-  < 60 - 70 °C
-  <
+  < 60 - 70
+  < °C
 
 > Chamber Temperature
   <
@@ -172,8 +172,8 @@
 
 > Cooling Fan
   <
-  < 0 - 50%
-  <
+  < 0 - 50
+  < %
 
 > Print Speed
   <

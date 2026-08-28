@@ -235,13 +235,13 @@
 
 > Nozzle Size
   <
-  < 0.4, 0.6, 0.8 mm
-  <
+  < 0.4, 0.6, 0.8
+  < mm
 
 > Nozzle Temperature
   <
-  < 250 - 280 °C
-  <
+  < 250 - 280
+  < °C
 
 > Build Plate Type
   <
@@ -250,8 +250,8 @@
 
 > Bed Temperature
   <
-  < 80 - 100°C
-  <
+  < 80 - 100
+  < °C
 
 > Cooling Fan
   <
@@ -260,33 +260,33 @@
 
 > Print Speed
   <
-  < < 250 mm/s
-  <
+  < < 250
+  < mm/s
 
 > Retraction Length
   <
-  < 0.8 - 1.4 mm
-  <
+  < 0.8 - 1.4
+  < mm
 
 > Retraction Speed
   <
-  < 20 - 40 mm/s
-  <
+  < 20 - 40
+  < mm/s
 
 > Chamber Temperature
   <
-  < 45 - 60 °C
-  <
+  < 45 - 60
+  < °C
 
 > Max Overhang Angle
   <
-  < ~ 70°
-  <
+  < ~ 70
+  < °
 
 > Max Bridging Length
   <
-  < ~ 40 mm
-  <
+  < ~ 40
+  < mm
 
 # Specific
 

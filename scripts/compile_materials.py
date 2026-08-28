@@ -345,6 +345,14 @@ def audit(materials, canon):
                     and (has_unit[s] >= 2 or QUANTITY_RE.search(s)):
                 findings.append(("warn", "no-unit", mid, s, f"{val!r} has no unit"))
 
+            if not unit and val:
+                mv = re.match(r"^(.*\d\S*)\s+(\S+)$", val)
+                if mv and units.known(mv.group(2)) \
+                        and re.fullmatch(r"[\d.,\s<>~≤≥±–x*/^()-]+", mv.group(1)):
+                    findings.append(("warn", "unit-in-value", mid, s,
+                                     f"{val!r} carries the unit {mv.group(2)!r} in the "
+                                     f"value string; it belongs in the units slot"))
+
             if unit and not units.known(unit):
                 findings.append(("warn", "unknown-unit", mid, s,
                                  f"{unit!r} is not in the standard"))

@@ -12,10 +12,13 @@ corruption), so it is safe to gate CI on. See `.github/workflows/audit.yml`.
 | level | codes | gates `--check` |
 | --- | --- | --- |
 | error | `unexpected-unit` (unit dimensionally wrong for its subject), `tolerance>value` | yes |
-| warn | `no-unit`, `unknown-unit`, `unparsed-value` | no |
+| warn | `no-unit`, `unit-in-value`, `unknown-unit`, `unparsed-value` | no |
 | info | `name-prefix`, `method-mismatch`, `family-outlier` | no |
 
-Current: **0 error, 90 warn, 8 info** — most warnings are 3DXTECH mechanical rows
+`unit-in-value`: the value string carries a unit token (`240 - 280 °C`) while the
+units slot is empty — it belongs in the units slot.
+
+Current: **0 error, 87 warn, 8 info** — all 87 warnings are 3DXTECH mechanical rows
 missing units (#19, see below).
 
 ### Unit handling
@@ -50,6 +53,8 @@ number spelling is a valid unit any more (`g/10 min` stays as a parse alias).
 | Bambu Lab | PLA Sparkle Bending Modulus (Interlayer) missing `MPa` | 1 |
 | Proto-pasta | Carbon Fiber HTPLA / Magnetic Iron PLA / Stainless Steel PLA: removed prose-only "mechanical" rows (`"Increased rigidity vs. standard PLA"` etc.) — no measured values at the source | 3 |
 | Prusament | `NB (no break)` / `no break` → `No break` | 2 |
+| NinjaTek | Armadillo / Cheetah / NinjaFlex Abrasion Resistance: `0.03 g` etc. → value `0.03`, units `g` | 3 |
+| Bambu Lab / Polymaker / eSUN / colorFabb / Fillamentum / FormFutura | Print Setting rows carried the unit in the value string (`240 - 280 °C`, `20 - 40 mm/s`, `0 - 80%`) with an empty units slot — moved every unit into the units slot (Nozzle/Bed/Chamber temp, Print Speed, Retraction, Cooling Fan, Nozzle Size, Overhang, Bridging) | 160 |
 
 ## Still open
 

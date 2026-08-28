@@ -140,13 +140,13 @@
 
 > Nozzle Size
   <
-  < 0.4 mm
-  <
+  < 0.4
+  < mm
 
 > Nozzle Temperature
   <
-  < 215 - 235 °C
-  <
+  < 215 - 235
+  < °C
 
 > Build Plate Type
   <
@@ -160,8 +160,8 @@
 
 > Bed Temperature
   <
-  < 50 - 65 °C
-  <
+  < 50 - 65
+  < °C
 
 > Cooling Fan
   <
@@ -170,18 +170,18 @@
 
 > Print Speed
   <
-  < 20 - 40 mm/s
-  <
+  < 20 - 40
+  < mm/s
 
 > Retraction Length
   <
-  < 3 - 5 mm
-  <
+  < 3 - 5
+  < mm
 
 > Retraction Speed
   <
-  < 25 - 35 mm/s
-  <
+  < 25 - 35
+  < mm/s
 
 > Support Material
   <
