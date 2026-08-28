@@ -251,13 +251,18 @@ When the dataset is compiled, each numeric field is emitted with `valueNumber`
 `valueCanonical` / `canonicalUnit` pair.
 
 Each subject has a **declared canonical unit** — the reference list lives in
-`SUBJECT_UNITS` in `scripts/compile_materials.py`; subjects not listed fall back
-to the most common recognised unit. A subject may declare more than one accepted
-unit when a property is genuinely reported in two non-interconvertible
-conventions (impact strength as `kJ/m^2` *or* `J/m`; tear strength as `kN/m` *or*
-`N`; abrasion loss as `%`, `mm^3`, *or* `g`). The compiler converts each value to
-the first accepted unit it is dimensionally compatible with; a value already in
-an accepted-but-non-convertible unit is kept as-is.
+`SUBJECT_UNITS` in `scripts/compile_materials.py`. It is chosen for a coherent,
+comparable dataset, not to match what data sheets happen to print: e.g. melt
+mass-flow rate normalises to `g/s`, not the `g/10 min` reporting convention (the
+verbatim value and its original unit are always preserved on the field). Subjects
+not listed fall back to the most common recognised unit.
+
+A subject may declare more than one accepted unit when a property is genuinely
+reported in two non-interconvertible conventions (impact strength as `kJ/m^2`
+*or* `J/m`; tear strength as `kN/m` *or* `N`; abrasion loss as `%`, `mm^3`, *or*
+`g`). The compiler converts each value to the first accepted unit it is
+dimensionally compatible with; a value already in an accepted-but-non-convertible
+unit is kept as-is.
 
 Files may report a property in any dimensionally consistent unit; the compiler
 normalises it. A unit that is dimensionally wrong for its subject (and not one of

@@ -166,8 +166,8 @@ def compile_dir(root):
 # dimension check still enforced against that.
 SUBJECT_UNITS = {
     "Density": ["g/cm^3"],
-    "Melt Index": ["g/10 min"],
-    "Melt Volume Rate": ["cm^3/10 min"],
+    "Melt Index": ["g/s"],            # melt mass-flow rate, SI-coherent (source keeps g/10 min verbatim)
+    "Melt Volume Rate": ["mm^3/s"],
     "Melting Temperature": ["°C"],
     "Glass Transition Temperature": ["°C"],
     "Crystallization Temperature": ["°C"],

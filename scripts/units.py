@@ -64,7 +64,7 @@ REGISTRY = {
     "wt%": U(1e-2, DIMENSIONLESS),
     "ppm": U(1e-6, DIMENSIONLESS),
     "°": U(3.141592653589793 / 180, DIMENSIONLESS),   # angle
-    # mass flow rate — MFR is literally "grams through the die in 10 minutes"
+    # mass flow rate — MFR (ISO 1133) is "grams through the die in 10 minutes"
     "g/10 min": U(1e-3 / 600, _MASS_FLOW),            # 1 g per 600 s
     "g/min": U(1e-3 / 60, _MASS_FLOW),
     "dg/min": U(1e-4 / 60, _MASS_FLOW),               # decigram/min (== g/10 min)
