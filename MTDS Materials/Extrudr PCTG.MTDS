@@ -1,0 +1,129 @@
+# Specification
+
+> Manufacturer
+  <
+  < Extrudr
+  <
+
+> Product Name
+  <
+  < PCTG
+  <
+
+> Material
+  <
+  < PCTG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/pctg-TDS-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.23
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa
+  < 76
+  < °C
+
+> Vicat Softening Temperature
+  < ASTM D1525
+  < 88
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < ASTM D955
+  < 0.2 - 0.5
+  < %
+
+# Mechanical Property
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1650
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 62
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 43
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 45
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 4.3
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 215
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched, 23 °C
+  < 94
+  < kJ/m^2
+
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 105
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < V-2 | 3.2 mm
+  <
+
+> Flammability Rating
+  < UL 94
+  < HB | 1.5 mm
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C
+
+> Cooling Fan
+  <
+  < 20 - 50%
+  <
+
+> Print Speed
+  <
+  < 20 - 200
+  < mm/s
+
+> Maximum Volumetric Speed
+  <
+  < 9
+  < mm^3/s

@@ -1,0 +1,117 @@
+# Specification
+
+> Manufacturer
+  <
+  < Extrudr
+  <
+
+> Product Name
+  <
+  < GreenTEC Pro
+  <
+
+> Material
+  <
+  < Biopolymer
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/greentec-pro-TDS-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.35
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133
+  < 9
+  < g/10 min
+
+> Melting Temperature
+  < ISO 3146-C
+  < 180 - 200
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 160 | 4 mm wall
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa; 4 mm wall
+  < 115
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < ISO 294-4
+  < 0.4
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 4300
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 58
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | stress at break
+  < 53
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 2.8
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 1eA, notched Charpy
+  < 4
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 1eU, unnotched Charpy
+  < 71
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 20 - 90
+  < °C
+
+> Cooling Fan
+  <
+  < 30 - 80%
+  <
+
+> Print Speed
+  <
+  < 20 - 200
+  < mm/s
+
+> Maximum Volumetric Speed
+  <
+  < 16
+  < mm^3/s

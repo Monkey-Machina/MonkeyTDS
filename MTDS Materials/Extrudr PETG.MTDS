@@ -1,0 +1,134 @@
+# Specification
+
+> Manufacturer
+  <
+  < Extrudr
+  <
+
+> Product Name
+  <
+  < PETG
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/petg-TDS-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.29
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133
+  < 6
+  < g/10 min
+
+> Melting Temperature
+  < ISO 3146-C
+  < 180 - 200
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 78 | 4 mm wall
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < ISO 294-4
+  < 0.5
+  < %
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3100
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2100
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 68
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | yield stress
+  < 51
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 61
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527-2
+  < 4
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2
+  < 28 | nominal
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched
+  < 4.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180 | unnotched
+  < No break
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < V-2 | 3.2 mm
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 90
+  < °C
+
+> Cooling Fan
+  <
+  < 20 - 50%
+  <
+
+> Print Speed
+  <
+  < 20 - 200
+  < mm/s
+
+> Maximum Volumetric Speed
+  <
+  < 12
+  < mm^3/s
