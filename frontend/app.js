@@ -7,10 +7,20 @@
    Filter/sort state lives in the URL; column choice + facet expansion live in
    localStorage (per browser). */
 
+/* column keys: "@check" "@mfr" "@product" "@material" are the fixed columns;
+   anything else is a property subject */
 var DEFAULT_COLS = [
+  "@check", "@mfr", "@product", "@material",
   "Density", "Tensile Strength (In-Plane)", "Young's Modulus (In-Plane)",
   "Heat Deflection Temperature", "Breaking Elongation Rate (In-Plane)"
 ];
+var DEFAULT_PINS = ["@check", "@mfr", "@product", "@material"];
+var SPECIAL_COLS = {
+  "@check": { label: "", sort: null, num: false },
+  "@mfr": { label: "Manufacturer", sort: "manufacturer", num: false },
+  "@product": { label: "Product", sort: "productName", num: false },
+  "@material": { label: "Material", sort: "material", num: false }
+};
 var CORE = [
   "Density", "Melt Index", "Glass Transition Temperature", "Heat Deflection Temperature",
   "Tensile Strength (In-Plane)", "Tensile Strength (Interlayer)",
@@ -25,10 +35,9 @@ var BY_ID = {};
 var SUBJECTS = [];                  // property subjects that carry numbers, by frequency
 var UNIT_FOR = {};                  // subject -> most common unit
 var TRAY = load_set("mtds_tray");   // ids queued for compare
-var COLS = load_cols();             // chosen result columns
+var COLS = load_cols();             // ordered result-table column keys
+var COL_PINS = load_pins();         // subset of COLS that stay stuck to the left
 var FACET_OPEN = load_obj("mtds_facet_open");
-var CMP_ORDER = load_arr("mtds_cmp_order");   // compare-view row order ("cat||subject" keys)
-var CMP_PINS = load_arr("mtds_cmp_pins");     // compare-view pinned rows (top-to-bottom)
 var RESTORE_Q = null;               // caret position to restore after a text-search re-render
 
 /* ---------- data ---------- */
@@ -122,11 +131,25 @@ function save_json(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } c
 function load_cols() {
   try {
     var c = JSON.parse(localStorage.getItem("mtds_cols") || "null");
-    if (c && c.length) return c;
+    if (c && c.length) {
+      if (c[0].charAt(0) !== "@")                       // migrate legacy (property-only) column lists
+        c = ["@check", "@mfr", "@product", "@material"].concat(c);
+      return c;
+    }
   } catch (e) {}
   return DEFAULT_COLS.slice();
 }
-function save_cols() { save_json("mtds_cols", COLS); }
+function load_pins() {
+  try {
+    var p = JSON.parse(localStorage.getItem("mtds_col_pins") || "null");
+    if (Array.isArray(p)) return p;
+  } catch (e) {}
+  return DEFAULT_PINS.slice();
+}
+function save_cols() { save_json("mtds_cols", COLS); save_json("mtds_col_pins", COL_PINS); }
+function col_label(key) { return SPECIAL_COLS[key] ? SPECIAL_COLS[key].label : shortlabel(key); }
+function col_sortkey(key) { return SPECIAL_COLS[key] ? SPECIAL_COLS[key].sort : key; }
+function col_num(key) { return SPECIAL_COLS[key] ? SPECIAL_COLS[key].num : true; }
 function save_tray() { save_json("mtds_tray", Array.from(TRAY)); render_compare_bar(); }
 
 function render_compare_bar() {
@@ -258,24 +281,26 @@ function view_search() {
 
   /* ---- results table ---- */
   function sort_to(k) {
+    if (!k) return;
     var np = get_params();
     if (sortKey === k && sortDir === "asc") np.set("dir", "desc");
     else if (sortKey === k && sortDir === "desc") { np.delete("sort"); np.delete("dir"); }
     else { np.set("sort", k); np.set("dir", "asc"); }
     set_params(np);
   }
+
+  // pinned columns render first (contiguous left block); rest follow
+  var pinnedCols = COLS.filter(function (k) { return COL_PINS.indexOf(k) >= 0; });
+  var restCols = COLS.filter(function (k) { return COL_PINS.indexOf(k) < 0; });
+  var view = pinnedCols.concat(restCols);
+  var pinnedSet = {}; pinnedCols.forEach(function (k) { pinnedSet[k] = 1; });
+
   var wrap = el('<div class="wrap"></div>');
   var t = document.createElement("table");
-  t.className = "data";
+  t.className = "data cfg";
   var thead = document.createElement("thead");
   var htr = document.createElement("tr");
-  htr.appendChild(document.createElement("th"));
-  [["Manufacturer", "manufacturer"], ["Product", "productName"], ["Material", "material"]].forEach(function (c) {
-    htr.appendChild(head_cell(c[0], c[1], sortKey, sortDir, false, sort_to));
-  });
-  COLS.forEach(function (c, i) {
-    htr.appendChild(head_cell(shortlabel(c), c, sortKey, sortDir, true, sort_to, i));
-  });
+  view.forEach(function (key) { htr.appendChild(col_header(key, pinnedSet[key])); });
   htr.appendChild(add_col_cell());
   thead.appendChild(htr);
   t.appendChild(thead);
@@ -283,21 +308,25 @@ function view_search() {
   var tbody = document.createElement("tbody");
   hits.slice(0, 500).forEach(function (m) {
     var tr = document.createElement("tr");
-    tr.innerHTML = "<td><input type='checkbox'" + (TRAY.has(m.id) ? " checked" : "") + "></td>" +
-      "<td>" + esc(m.manufacturer) + "</td>" +
-      '<td><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.productName) + "</a></td>" +
-      "<td>" + esc(m.material) + "</td>" +
-      COLS.map(function (c) { return "<td class='num'>" + cell_val(m._raw[c]) + "</td>"; }).join("") +
-      "<td></td>";
-    tr.querySelector("input").onchange = function (e) {
-      e.target.checked ? TRAY.add(m.id) : TRAY.delete(m.id); save_tray();
-    };
+    tr.innerHTML = view.map(function (key) { return body_cell(key, m); }).join("") + "<td></td>";
+    var cb = tr.querySelector("input[type=checkbox]");
+    if (cb) cb.onchange = function (e) { e.target.checked ? TRAY.add(m.id) : TRAY.delete(m.id); save_tray(); };
     tbody.appendChild(tr);
   });
   t.appendChild(tbody);
   wrap.appendChild(t);
   R.appendChild(wrap);
   if (hits.length > 500) R.appendChild(el('<p class="small muted">showing first 500; narrow the filters to see the rest.</p>'));
+  R.appendChild(el('<p class="small muted">Drag a column header to reorder. <b>📍</b> pins it to the left (pinned columns stack and stay visible while scrolling sideways). <b>×</b> removes it; <b>+</b> adds one. Saved in this browser.</p>'));
+
+  /* stack pinned columns at the left edge */
+  var left = 0;
+  var ths = thead.querySelectorAll("th");
+  for (var pi = 0; pi < pinnedCols.length; pi++) {
+    var w = ths[pi].getBoundingClientRect().width;
+    apply_sticky_col(t, pi, left);
+    left += w;
+  }
 
   /* restore text-search caret after a re-render triggered by typing */
   if (RESTORE_Q != null) {
@@ -306,15 +335,70 @@ function view_search() {
     RESTORE_Q = null;
   }
 
+  function col_header(key, pinned) {
+    var th = document.createElement("th");
+    th.dataset.key = key;
+    th.draggable = true;
+    if (col_num(key)) th.className = "num";
+    if (pinned) th.classList.add("pincol");
+    var sk = col_sortkey(key);
+    var arrow = sk && sortKey === sk ? (sortDir === "desc" ? " ▼" : " ▲") : "";
+    var span = el("<span class='hl'>" + esc(col_label(key) || " ") + "<span class='ind'>" + arrow + "</span></span>");
+    if (sk) span.onclick = function () { sort_to(sk); }; else span.style.cursor = "default";
+    th.appendChild(span);
+    var ctl = el("<span class='colctl'>" +
+      "<button class='pin" + (pinned ? " on" : "") + "' title='" + (pinned ? "unpin" : "pin to left") + "'>" + (pinned ? "📌" : "📍") + "</button>" +
+      "<button class='rm' title='remove column'>×</button></span>");
+    ctl.querySelector(".pin").onclick = function (e) {
+      e.stopPropagation();
+      if (pinned) COL_PINS = COL_PINS.filter(function (x) { return x !== key; });
+      else COL_PINS.push(key);
+      save_cols(); route();
+    };
+    ctl.querySelector(".rm").onclick = function (e) {
+      e.stopPropagation();
+      COLS = COLS.filter(function (x) { return x !== key; });
+      COL_PINS = COL_PINS.filter(function (x) { return x !== key; });
+      save_cols(); route();
+    };
+    th.appendChild(ctl);
+
+    th.addEventListener("dragstart", function (e) {
+      DRAG_COL = { key: key, pinned: pinned };
+      e.dataTransfer.effectAllowed = "move";
+      try { e.dataTransfer.setData("text/plain", key); } catch (x) {}
+    });
+    th.addEventListener("dragover", function (e) { e.preventDefault(); th.classList.add("dropcol"); });
+    th.addEventListener("dragleave", function () { th.classList.remove("dropcol"); });
+    th.addEventListener("drop", function (e) {
+      e.preventDefault(); th.classList.remove("dropcol");
+      if (!DRAG_COL || DRAG_COL.key === key || DRAG_COL.pinned !== pinned) return;
+      var arr = view.slice();
+      arr.splice(arr.indexOf(DRAG_COL.key), 1);
+      arr.splice(arr.indexOf(key), 0, DRAG_COL.key);
+      COLS = arr; save_cols(); route();
+    });
+    return th;
+  }
+
+  function body_cell(key, m) {
+    if (key === "@check") return "<td class='chk'><input type='checkbox'" + (TRAY.has(m.id) ? " checked" : "") + "></td>";
+    if (key === "@mfr") return "<td>" + esc(m.manufacturer) + "</td>";
+    if (key === "@product") return '<td><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.productName) + "</a></td>";
+    if (key === "@material") return "<td>" + esc(m.material) + "</td>";
+    return "<td class='num'>" + cell_val(m._raw[key]) + "</td>";
+  }
+
   function add_col_cell() {
     var th = document.createElement("th");
     th.className = "nosort addcol";
     th.title = "add column";
     th.textContent = "+";
     th.onclick = function () {
-      var pool = SUBJECTS.filter(function (s) { return COLS.indexOf(s) < 0; });
+      var pool = ["@check", "@mfr", "@product", "@material"].filter(function (k) { return COLS.indexOf(k) < 0; })
+        .concat(SUBJECTS.filter(function (s) { return COLS.indexOf(s) < 0; }));
       var sel = el('<select><option value="">add column…</option>' +
-        pool.map(function (s) { return "<option>" + esc(s) + "</option>"; }).join("") + "</select>");
+        pool.map(function (s) { return '<option value="' + esc(s) + '">' + esc(col_label(s) || s) + "</option>"; }).join("") + "</select>");
       sel.onchange = function () { if (sel.value) { COLS.push(sel.value); save_cols(); route(); } };
       sel.onblur = function () { route(); };
       th.textContent = ""; th.appendChild(sel); sel.focus();
@@ -322,26 +406,18 @@ function view_search() {
     return th;
   }
 }
+var DRAG_COL = null;
 
-function head_cell(label, key, sortKey, sortDir, num, sort_to, colIdx) {
-  var th = document.createElement("th");
-  if (num) th.className = "num";
-  var arrow = sortKey === key ? (sortDir === "desc" ? " ▼" : " ▲") : "";
-  var span = el("<span class='hl'>" + esc(label) + "<span class='ind'>" + arrow + "</span></span>");
-  span.onclick = function () { sort_to(key); };
-  th.appendChild(span);
-  if (colIdx != null) {
-    var ctl = el("<span class='colctl'>" +
-      "<button title='move left'>‹</button><button title='move right'>›</button><button title='remove'>×</button></span>");
-    var bs = ctl.querySelectorAll("button");
-    bs[0].onclick = function (e) { e.stopPropagation(); if (colIdx > 0) { swap(COLS, colIdx, colIdx - 1); save_cols(); route(); } };
-    bs[1].onclick = function (e) { e.stopPropagation(); if (colIdx < COLS.length - 1) { swap(COLS, colIdx, colIdx + 1); save_cols(); route(); } };
-    bs[2].onclick = function (e) { e.stopPropagation(); COLS.splice(colIdx, 1); save_cols(); route(); };
-    th.appendChild(ctl);
-  }
-  return th;
+/* mark column `ci` (0-based, in render order) as sticky-left at `leftPx` */
+function apply_sticky_col(table, ci, leftPx) {
+  table.querySelectorAll("tr").forEach(function (tr) {
+    var cell = tr.children[ci];
+    if (!cell) return;
+    cell.classList.add("pincol");
+    cell.style.position = "sticky";
+    cell.style.left = leftPx + "px";
+  });
 }
-function swap(a, i, j) { var t = a[i]; a[i] = a[j]; a[j] = t; }
 
 /* facet block: collapsed = top N by count (+ any selected), expanded = all alphabetical */
 function facet_block(title, param, selected, counts) {
@@ -453,23 +529,29 @@ function view_compare() {
     return;
   }
 
-  var rowMap = {};
+  var order = [], seen = {};
   mats.forEach(function (m) {
     m.fields.forEach(function (f) {
       var k = f.category + "||" + f.subject;
-      if (!rowMap[k]) rowMap[k] = { cat: f.category, sub: f.subject, key: k };
+      if (!seen[k]) { seen[k] = 1; order.push({ cat: f.category, sub: f.subject }); }
     });
   });
-  var allKeys = Object.keys(rowMap);
 
-  var pinned = CMP_PINS.filter(function (k) { return rowMap[k]; });
-  var pinnedSet = {}; pinned.forEach(function (k) { pinnedSet[k] = 1; });
-  var mainKeys = [];
-  CMP_ORDER.forEach(function (k) { if (rowMap[k] && !pinnedSet[k] && mainKeys.indexOf(k) < 0) mainKeys.push(k); });
-  allKeys.forEach(function (k) { if (!pinnedSet[k] && mainKeys.indexOf(k) < 0) mainKeys.push(k); });
+  var html = '<p class="small"><a href="#/">&larr; search</a></p><h1>Compare (' + mats.length + ")</h1>" +
+    "<p>" + mats.map(function (m) {
+      return '<span class="pill">' + esc(m.manufacturer + " " + m.productName) +
+        ' <button data-id="' + esc(m.id) + '" title="remove">×</button></span>';
+    }).join(" ") + "</p>" +
+    '<div class="wrap"><table class="data compare"><thead><tr><th class="sticky nosort">Property</th>' +
+    mats.map(function (m) { return '<th class="nosort"><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.manufacturer + " " + m.productName) + "</a></th>"; }).join("") +
+    "</tr></thead><tbody>";
 
-  function row_html(k, isPinned) {
-    var o = rowMap[k];
+  var curCat = null;
+  order.forEach(function (o) {
+    if (o.cat !== curCat) {
+      curCat = o.cat;
+      html += '<tr class="catrow"><td class="sticky sub" colspan="' + (mats.length + 1) + '">' + esc(o.cat) + "</td></tr>";
+    }
     var cells = mats.map(function (m) {
       var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
       var n = f ? (f.valueCanonical != null ? f.valueCanonical : parse_num(f.value)) : null;
@@ -486,14 +568,8 @@ function view_compare() {
     var methods = cells.map(function (c) { return c.method || ""; }).filter(Boolean);
     var methodClash = methods.length > 1 && !methods.every(function (x) { return x === methods[0]; });
 
-    var tools = '<span class="rowtools">' +
-      '<button class="drag" title="drag to reorder">↕</button>' +
-      '<button class="pin' + (isPinned ? " on" : "") + '" data-key="' + esc(k) + '" title="' +
-      (isPinned ? "unpin" : "pin (stays visible while scrolling)") + '">' + (isPinned ? "📌" : "📍") + "</button></span>";
-
-    return '<tr data-key="' + esc(k) + '" draggable="true" class="' + (isPinned ? "pinned " : "") + (methodClash ? "warn" : "") + '">' +
-      '<td class="sticky sub" title="' + esc(o.cat) + '">' + tools + esc(o.sub) +
-        (methodClash ? ' <span class="annot small">⚠ method differs</span>' : "") + "</td>" +
+    html += "<tr" + (methodClash ? ' class="warn"' : "") + ">" +
+      '<td class="sticky sub">' + esc(o.sub) + (methodClash ? ' <span class="annot small">⚠ method differs</span>' : "") + "</td>" +
       cells.map(function (c) {
         var cls = [];
         if (best != null && c.n === best) cls.push("hit");
@@ -504,37 +580,13 @@ function view_compare() {
           : "<span class='muted'>&mdash;</span>";
         return "<td class='" + cls.join(" ") + "'>" + txt + "</td>";
       }).join("") + "</tr>";
-  }
-
-  var html = '<p class="small"><a href="#/">&larr; search</a></p><h1>Compare (' + mats.length + ")</h1>" +
-    "<p>" + mats.map(function (m) {
-      return '<span class="pill">' + esc(m.manufacturer + " " + m.productName) +
-        ' <button data-id="' + esc(m.id) + '" title="remove">×</button></span>';
-    }).join(" ") + "</p>" +
-    '<div class="wrap"><table class="data compare"><thead><tr><th class="sticky nosort">Property</th>' +
-    mats.map(function (m) { return '<th class="nosort"><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.manufacturer + " " + m.productName) + "</a></th>"; }).join("") +
-    "</tr></thead><tbody>";
-
-  pinned.forEach(function (k) { html += row_html(k, true); });
-  if (pinned.length) html += '<tr class="pinsep"><td colspan="' + (mats.length + 1) + '"></td></tr>';
-  var grouped = CMP_ORDER.length === 0;   // show category headers only in the default order
-  var curCat = null;
-  mainKeys.forEach(function (k) {
-    var o = rowMap[k];
-    if (grouped && o.cat !== curCat) {
-      curCat = o.cat;
-      html += '<tr class="catrow"><td class="sticky sub" colspan="' + (mats.length + 1) + '">' + esc(o.cat) + "</td></tr>";
-    }
-    html += row_html(k, false);
   });
   html += "</tbody></table></div>" +
-    '<p class="small"><button class="linkish" id="cmp-csv">export CSV</button>' +
-    (CMP_PINS.length || CMP_ORDER.length ? ' &middot; <button class="linkish" id="cmp-reset">reset layout</button>' : "") + "</p>" +
-    '<p class="small muted">Drag <b>↕</b> to reorder rows. <b>📍</b> pins a row so it stays visible while you scroll ' +
-    "(pinned rows stack under the header). Highlight = best in row; grey = identical; yellow = different test methods.</p>";
+    '<p class="small"><button class="linkish" id="cmp-csv">export CSV</button></p>' +
+    '<p class="small muted">Highlight = best in row (max for strength / stiffness / temperature, min otherwise). ' +
+    "Grey = identical. Yellow row = the materials cite different test methods.</p>";
 
   A.innerHTML = html;
-
   A.querySelectorAll(".pill button").forEach(function (b) {
     b.onclick = function () {
       var keep = mats.map(function (m) { return m.id; }).filter(function (x) { return x !== b.dataset.id; });
@@ -543,21 +595,9 @@ function view_compare() {
       set_params(np, "/compare");
     };
   });
-  A.querySelectorAll("button.pin").forEach(function (b) {
-    b.onclick = function () {
-      var k = b.dataset.key;
-      if (pinnedSet[k]) CMP_PINS = CMP_PINS.filter(function (x) { return x !== k; });
-      else CMP_PINS.push(k);
-      save_json("mtds_cmp_pins", CMP_PINS);
-      view_compare();
-    };
-  });
-  var rst = document.getElementById("cmp-reset");
-  if (rst) rst.onclick = function () { CMP_PINS = []; CMP_ORDER = []; save_json("mtds_cmp_pins", CMP_PINS); save_json("mtds_cmp_order", CMP_ORDER); view_compare(); };
   document.getElementById("cmp-csv").onclick = function () {
     var rows = [["Category", "Property"].concat(mats.map(function (m) { return m.manufacturer + " " + m.productName; }))];
-    pinned.concat(mainKeys).forEach(function (k) {
-      var o = rowMap[k];
+    order.forEach(function (o) {
       rows.push([o.cat, o.sub].concat(mats.map(function (m) {
         var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
         return f ? (f.value || "") + (f.units ? " " + f.units : "") : "";
@@ -565,41 +605,6 @@ function view_compare() {
     });
     download("compare.csv", to_csv(rows), "text/csv");
   };
-
-  /* drag-to-reorder */
-  var dragKey = null, dragPinned = false;
-  A.querySelectorAll("tbody tr[data-key]").forEach(function (tr) {
-    tr.addEventListener("dragstart", function (e) {
-      dragKey = tr.dataset.key; dragPinned = tr.classList.contains("pinned");
-      e.dataTransfer.effectAllowed = "move";
-      try { e.dataTransfer.setData("text/plain", dragKey); } catch (x) {}
-    });
-    tr.addEventListener("dragover", function (e) { e.preventDefault(); tr.classList.add("dragover"); });
-    tr.addEventListener("dragleave", function () { tr.classList.remove("dragover"); });
-    tr.addEventListener("drop", function (e) {
-      e.preventDefault(); tr.classList.remove("dragover");
-      var tgt = tr.dataset.key, tgtPinned = tr.classList.contains("pinned");
-      if (!dragKey || dragKey === tgt) return;
-      var arr = (dragPinned && tgtPinned) ? CMP_PINS.slice() : (!dragPinned && !tgtPinned) ? mainKeys.slice() : null;
-      if (!arr) return;
-      arr.splice(arr.indexOf(dragKey), 1);
-      arr.splice(arr.indexOf(tgt), 0, dragKey);
-      if (dragPinned) { CMP_PINS = arr; save_json("mtds_cmp_pins", CMP_PINS); }
-      else { CMP_ORDER = arr; save_json("mtds_cmp_order", CMP_ORDER); }
-      view_compare();
-    });
-  });
-
-  /* stack pinned rows under the sticky header */
-  var thead = A.querySelector("thead");
-  var top = thead ? thead.offsetHeight : 0;
-  var prows = A.querySelectorAll("tbody tr.pinned");
-  var heights = [];
-  prows.forEach(function (tr) { heights.push(tr.getBoundingClientRect().height); });
-  prows.forEach(function (tr, i) {
-    tr.querySelectorAll("td").forEach(function (td) { td.style.position = "sticky"; td.style.top = top + "px"; });
-    top += heights[i];
-  });
 }
 
 /* ---------- export / util ---------- */
@@ -610,12 +615,19 @@ function export_rows(mats, kind) {
     }), null, 2), "application/json");
     return;
   }
-  var header = ["Manufacturer", "Product", "Material"].concat(COLS.map(function (c) { return c + (UNIT_FOR[c] ? " (" + UNIT_FOR[c] + ")" : ""); }));
+  var cols = COLS.filter(function (k) { return k !== "@check"; });
+  var header = cols.map(function (k) {
+    if (SPECIAL_COLS[k]) return SPECIAL_COLS[k].label;
+    return k + (UNIT_FOR[k] ? " (" + UNIT_FOR[k] + ")" : "");
+  });
   var rows = [header];
   mats.forEach(function (m) {
-    rows.push([m.manufacturer, m.productName, m.material].concat(COLS.map(function (c) {
-      return m._raw[c] ? (m._raw[c].value || "") : "";
-    })));
+    rows.push(cols.map(function (k) {
+      if (k === "@mfr") return m.manufacturer;
+      if (k === "@product") return m.productName;
+      if (k === "@material") return m.material;
+      return m._raw[k] ? (m._raw[k].value || "") : "";
+    }));
   });
   download("materials.csv", to_csv(rows), "text/csv");
 }

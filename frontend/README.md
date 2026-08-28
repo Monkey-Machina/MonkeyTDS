@@ -41,8 +41,11 @@ python ../scripts/compile_materials.py --out data/materials.json
 - **Property range filters**: add any measured property, set min / max; an empty
   range just means "has a value for this property". Multiple ranges are AND-ed.
   Live result count.
-- **Result columns are configurable**: `+` adds a property column, `‹ › ×` on
-  each header reorder / remove it. Choice is saved in `localStorage`.
+- **Result columns are configurable**: drag a header to reorder; `📍` pins a
+  column to the left (pinned columns stack and stay visible while scrolling
+  sideways); `×` removes; `+` adds one (any property, or a removed fixed column).
+  Manufacturer / Product / Material / the checkbox are pinned by default. Column
+  order + pins are saved in `localStorage`.
 - **Sortable columns** (click header label; again for desc; third click clears).
 - **Units** are shown in grey after each value (values across a column may carry
   different units, so there is no single column-level unit).
@@ -50,9 +53,7 @@ python ../scripts/compile_materials.py --out data/materials.json
   matrix from the masthead.
 - **Compare matrix**: sticky property column, grouped by MTDS category, best value
   per row highlighted, identical values greyed, a row flagged when the materials
-  cite different test methods. Rows are **drag-reorderable** (↕ handle) and
-  **pinnable** (📍) — pinned rows stack under the header and stay visible while you
-  scroll. Row order + pins persist in `localStorage`.
+  cite different test methods.
 - **Export**: CSV or JSON of the current result set / the current comparison.
 - **Detail page**: every MTDS field with its method, value, units, annotation and
   source-document links; a core-data completeness bar; per-material JSON download.
