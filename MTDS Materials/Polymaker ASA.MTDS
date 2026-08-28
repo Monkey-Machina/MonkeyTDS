@@ -1,0 +1,154 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Polymaker ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Source
+  <
+  < TDS | https://wiki.polymaker.com/polymaker-products/more-about-our-products/documents/technical-data-sheets/abs-asa/polymaker-tm-asa
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.13 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 25 | 220 °C, 10 kg
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 98
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 105
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 100
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 103
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2379 ± 157
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1965 ± 136
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 43.8 ± 0.8
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 32 ± 1.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 6.7 ± 0.6
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.65 ± 0.2
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3206 ± 108
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 73.4 ± 2.1
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 10.3 ± 0.4
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 6.7 ± 1.4
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ASA
+  <
+
+> Resistance to Acid
+  <
+  < Good | weak acids
+  <
+
+> Resistance to Acid
+  <
+  < Poor | strong acids
+  <
+
+> Resistance to Alkali
+  <
+  < Good | weak alkalis
+  <
+
+> Resistance to Alkali
+  <
+  < Fair | strong alkalis
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 75 - 95
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < PC and Textured PEI (glue when needed)
+  <
