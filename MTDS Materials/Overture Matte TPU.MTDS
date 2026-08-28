@@ -1,0 +1,92 @@
+# Specification
+
+> Manufacturer
+  <
+  < Overture
+  <
+
+> Product Name
+  <
+  < Matte TPU
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://overture3d.com/cdn/shop/files/OVERTURE_MATTE_TPU_TECHNICAL_DATA_SHEET.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.170
+  < g/cm^3
+
+> Melt Index
+  <
+  < 25.36 | 200 °C, 2.16 kg
+  < g/10 min
+
+# Mechanical Property
+
+> Tensile Stress (In-Plane)
+  < ISO 527 | GB/T 1040, at 100% elongation
+  < 11.3 ± 0.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 19.5 ± 0.3
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 37 | GB/T 528
+  < 510 ± 20
+  < %
+
+> Shore Hardness
+  < ISO 7619 | GB/T 531.1
+  < 95A
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 35 - 50
+  < °C
+
+> Cooling Fan
+  <
+  < 100%
+  <
+
+> Print Speed
+  <
+  < < 250
+  < mm/s
+
+> Drying Condition
+  <
+  < 70 °C / 6 h
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Textured PEI or Blue Tape; PVA glue optional
+  <
