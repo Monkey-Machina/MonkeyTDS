@@ -1,0 +1,75 @@
+# Specification
+
+> Manufacturer
+  <
+  < NinjaTek
+  <
+
+> Product Name
+  <
+  < Chinchilla
+  <
+
+> Material
+  <
+  < TPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://ninjatek.com/wp-content/uploads/Chinchilla-TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.13
+  < g/cm^3
+
+> Moisture Absorption
+  < ASTM D570 | 24 h
+  < 0.8
+  < %
+
+> Melting Temperature
+  < DSC
+  < 180
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield
+  < 5
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | ultimate
+  < 22
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 34
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638
+  < 20
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 600
+  < %
+
+> Shore Hardness
+  < ASTM D2240
+  < 75A
+  <

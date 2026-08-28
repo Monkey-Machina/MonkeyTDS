@@ -1,0 +1,100 @@
+# Specification
+
+> Manufacturer
+  <
+  < NinjaTek
+  <
+
+> Product Name
+  <
+  < NinjaFlex
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://ninjatek.com/wp-content/uploads/NinjaFlex-TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.19
+  < g/cm^3
+
+> Moisture Absorption
+  < ASTM D570 | 24 h
+  < 0.22
+  < %
+
+> Melting Temperature
+  < DSC
+  < 216
+  < °C
+
+> Glass Transition Temperature
+  < DSC
+  < -35
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.07 MPa
+  < 60
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa
+  < 44
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield
+  < 4
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | ultimate
+  < 26
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 12
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638
+  < 65
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 660
+  < %
+
+> Shore Hardness
+  < ASTM D2240
+  < 85A
+  <
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, 23 °C
+  < 4.2
+  < kJ/m^2
+
+> Abrasion Resistance
+  < ASTM D4060
+  < 0.08 g | Taber, mass loss over 10000 cycles
+  <

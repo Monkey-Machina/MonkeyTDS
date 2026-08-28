@@ -1,0 +1,82 @@
+# Specification
+
+> Manufacturer
+  <
+  < NinjaTek
+  <
+
+> Product Name
+  <
+  < Eel
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://ninjatek.com/wp-content/uploads/Eel-TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 2781
+  < 1.18
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 12
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 355
+  < %
+
+> Stress at 50% Strain (In-Plane)
+  < ISO 527
+  < 8
+  < MPa
+
+> Stress at 100% Strain (In-Plane)
+  < ISO 527
+  < 9
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < ISO 527
+  < 11
+  < MPa
+
+> Tear Strength
+  < ISO 34-1B | nicked
+  < 84
+  < kN/m
+
+> Shore Hardness
+  < ISO 868
+  < 90A
+  <
+
+# Electrical Property
+
+> Volume Resistance
+  < ANSI/ESD STM 11.12
+  < 1.5 x 10^3
+  < ohm
+
+> Surface Resistance
+  < ANSI/ESD STM 11.11
+  < 1.5 x 10^3
+  < ohm
