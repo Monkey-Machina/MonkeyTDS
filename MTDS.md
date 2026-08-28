@@ -187,62 +187,21 @@ A field contains at most one method. To record a property measured by more than 
 | BuildTak | Proprietary textured build-plate surface |
 
 ## Standard Units
-Every unit is defined over the seven SI base units (kg, m, s, A, K, mol, cd) as a
-scale factor times a product of base-unit powers, so any two units of the same
-dimension can be converted programmatically. `scripts/units.py` is the reference
-implementation; tooling normalises each numeric field to a single canonical unit
-per subject (see below) when compiling the dataset.
+A unit is **any expression the MTDS unit engine can parse** — an SI base unit
+(`kg m s A K mol cd`), optionally SI-prefixed, or a named derived unit (`Pa N J W
+V ohm S F H Wb T Hz`), combined with `·` / `*` / space (multiply), `/` (divide),
+and `^n` powers. So `MPa`, `mm^3/s`, `W/m·K`, `dg/min`, `µS/cm`, `MΩ·cm`,
+`kV/mm`, `g/cm^3`, `kJ/m^2` are all valid without being enumerated anywhere.
 
-| Unit | SI definition | Meaning |
-| ---- | ------------- | ------- |
-| m | 1 · m | Meter |
-| cm | 1e-2 · m | Centimeter |
-| mm | 1e-3 · m | Millimeter |
-| g | 1e-3 · kg | Gram |
-| kg | 1 · kg | Kilogram |
-| s | 1 · s | Second |
-| min | 60 · s | Minute |
-| h | 3600 · s | Hour |
-| K | 1 · K | Kelvin |
-| °C | 1 · K + 273.15 | Degrees Celsius (affine) |
-| g/cm^3 | 1e3 · kg·m⁻³ | Grams per cubic centimeter |
-| MPa | 1e6 · kg·m⁻¹·s⁻² | Megapascal |
-| GPa | 1e9 · kg·m⁻¹·s⁻² | Gigapascal |
-| N | 1 · kg·m·s⁻² | Newton (also Graves tear force, ASTM D1004) |
-| J/m | 1 · kg·m·s⁻² | Joules per meter (impact energy per specimen width, ASTM Izod) |
-| kJ/m | 1e3 · kg·m·s⁻² | Kilojoules per meter |
-| kg·cm/cm | 9.80665 · kg·m·s⁻² | Kilogram-force·centimeter per centimeter of width (Izod, older TDS) |
-| kJ/m^2 | 1e3 · kg·s⁻² | Kilojoules per square meter (impact energy per area, ISO Charpy) |
-| J/m^2 | 1 · kg·s⁻² | Joules per square meter |
-| N/m | 1 · kg·s⁻² | Newton per meter (tear strength, ISO 34) |
-| kN/m | 1e3 · kg·s⁻² | Kilonewton per meter |
-| N/mm | 1e3 · kg·s⁻² | Newton per millimeter |
-| m^3 | 1 · m³ | Cubic meter |
-| cm^3 | 1e-6 · m³ | Cubic centimeter |
-| mm^3 | 1e-9 · m³ | Cubic millimeter (abrasion volume loss, ISO 4649) |
-| % | 1e-2 · (dimensionless) | Percent |
-| % RH | 1e-2 · (dimensionless) | Percent relative humidity |
-| wt% | 1e-2 · (dimensionless) | Percent by weight |
-| ° | π/180 · (dimensionless) | Degree of angle |
-| mm/s | 1e-3 · m·s⁻¹ | Millimeters per second |
-| mm^3/s | 1e-9 · m³·s⁻¹ | Cubic millimeters per second (volumetric print speed) |
-| cm^3/s | 1e-6 · m³·s⁻¹ | Cubic centimeters per second |
-| g/10 min | 1.667e-6 · kg·s⁻¹ | Melt mass-flow rate — grams through the die per 600 s (ISO 1133) |
-| g/min | 1.667e-5 · kg·s⁻¹ | Grams per minute |
-| dg/min | 1.667e-6 · kg·s⁻¹ | Decigrams per minute (numerically equal to g/10 min) |
-| g/s | 1e-3 · kg·s⁻¹ | Grams per second |
-| kg/h | 2.778e-4 · kg·s⁻¹ | Kilograms per hour |
-| cm^3/10 min | 1.667e-9 · m³·s⁻¹ | Melt volume-flow rate — cm³ through the die per 600 s (ISO 1133) |
-| ohm | 1 · kg·m²·s⁻³·A⁻² | Ohm |
-| kohm | 1e3 · kg·m²·s⁻³·A⁻² | Kilohm |
-| Mohm | 1e6 · kg·m²·s⁻³·A⁻² | Megohm |
-| ohm-cm | 1e-2 · kg·m³·s⁻³·A⁻² | Ohm-centimeter (volume resistivity) |
-| ohm-m | 1 · kg·m³·s⁻³·A⁻² | Ohm-meter (volume resistivity) |
-| ohm/sq | 1 · kg·m²·s⁻³·A⁻² | Ohm per square (surface resistivity) |
-| kV/mm | 1e6 · kg·m·s⁻³·A⁻¹ | Kilovolt per millimeter (dielectric strength) |
-| T | 1 · kg·s⁻²·A⁻¹ | Tesla (magnetic flux density) |
-| W/m·K | 1 · kg·m·s⁻³·K⁻¹ | Watt per meter-kelvin (thermal conductivity) |
-| ppm/°C | 1e-6 · K⁻¹ | Parts per million per degree Celsius (thermal expansion) |
+**[UNITS.md](UNITS.md) is the full reference** — the grammar, the prefix table,
+the named units, the accepted non-SI units (`min h L bar in psi kgf °` …), the
+affine handling of `°C` / `°F`, and what is deliberately unsupported.
+`scripts/units.py` is the implementation; `python scripts/units.py` self-tests it.
+
+A property reported in any dimensionally-consistent unit is accepted and
+normalised on compile. Reporting conventions that embed a number — `g/10 min`,
+`cm^3/10 min` — are **not** valid units: use `dg/min` (identical value) and
+`mm^3/min` respectively.
 
 ### Canonical units
 When the dataset is compiled, each numeric field is emitted with `valueNumber`

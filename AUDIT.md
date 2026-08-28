@@ -20,16 +20,22 @@ missing units (#19, see below).
 
 ### Unit handling
 
+`scripts/units.py` is a compositional dimensional-analysis engine — it parses
+`mm^3/s`, `W/m·K`, `dg/min`, `MΩ·cm` from SI base units + prefixes + named units,
+rather than a fixed list. Full reference: [UNITS.md](UNITS.md).
+
 Canonical unit per subject is **declared** in `SUBJECT_UNITS`
-(`scripts/compile_materials.py`), not inferred. A subject can list more than one
-accepted unit for genuinely non-interconvertible test conventions — impact as
-`kJ/m^2` (ISO Charpy) *or* `J/m` (ASTM Izod); tear as `kN/m` (ISO 34) *or* `N`
-(ASTM D1004 Graves); abrasion loss as `%` / `mm^3` / `g`. `units.py` now knows
-`N`, `J/m`, `kJ/m`, `kg·cm/cm` (= kgf·cm/cm Izod), `N/m`, `kN/m`, `N/mm`, `m^3`,
-`cm^3`, `mm^3`, so these no longer have to hide in the value string. A unit that
-is neither a declared alternate nor dimensionally compatible with the canonical
-is an `unexpected-unit` **error**. `python scripts/units.py` self-tests the
-engine and runs in CI.
+(`scripts/compile_materials.py`), chosen for a comparable dataset (melt mass-flow
+→ `dg/min`, melt volume-flow → `mm^3/s`), not to match TDS spelling. A subject
+can list more than one accepted unit for genuinely non-interconvertible test
+conventions — impact as `kJ/m^2` (ISO Charpy) *or* `J/m` (ASTM Izod); tear as
+`kN/m` *or* `N`; abrasion loss as `%` / `mm^3` / `g`. A unit that is neither a
+declared alternate nor dimensionally compatible with the canonical is an
+`unexpected-unit` **error**. `python scripts/units.py` self-tests and runs in CI.
+
+Data migrated for this: `g/10 min` → `dg/min` (identical value, 174 files),
+`cm^3/10 min` → `mm^3/min` (value ×100, 21 Prusament files) — neither embedded-
+number spelling is a valid unit any more (`g/10 min` stays as a parse alias).
 
 ## Fixed in this pass
 

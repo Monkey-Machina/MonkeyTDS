@@ -166,8 +166,8 @@ def compile_dir(root):
 # dimension check still enforced against that.
 SUBJECT_UNITS = {
     "Density": ["g/cm^3"],
-    "Melt Index": ["g/s"],            # melt mass-flow rate, SI-coherent (source keeps g/10 min verbatim)
-    "Melt Volume Rate": ["mm^3/s"],
+    "Melt Index": ["dg/min"],         # MFR — dg/min is numerically identical to the g/10 min convention
+    "Melt Volume Rate": ["mm^3/s"],   # comparable with Maximum Volumetric Speed
     "Melting Temperature": ["°C"],
     "Glass Transition Temperature": ["°C"],
     "Crystallization Temperature": ["°C"],
@@ -222,17 +222,14 @@ SUBJECT_UNITS = {
 
 
 def _accepted_units(subject, fallback_canon):
-    """Ordered list of units allowed for a subject. Explicit table wins; otherwise
-    every registry unit sharing the fallback canonical's dimension."""
+    """Units allowed for a subject: the explicit table if present, else just the
+    fallback canonical (any dimensionally-compatible unit still passes the audit
+    check and still normalises — see below)."""
     if subject in SUBJECT_UNITS:
         return SUBJECT_UNITS[subject]
     if subject.startswith("Stress at ") and subject.endswith("Strain (In-Plane)"):
         return ["MPa"]
-    dim = units.dimension(fallback_canon)
-    if dim is None:
-        return [fallback_canon]
-    return [fallback_canon] + [u for u in units.names()
-                               if u != fallback_canon and units.dimension(u) == dim]
+    return [fallback_canon]
 
 
 def normalize_units(materials):
