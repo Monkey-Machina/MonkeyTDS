@@ -50,7 +50,9 @@ python ../scripts/compile_materials.py --out data/materials.json
   matrix from the masthead.
 - **Compare matrix**: sticky property column, grouped by MTDS category, best value
   per row highlighted, identical values greyed, a row flagged when the materials
-  cite different test methods.
+  cite different test methods. Rows are **drag-reorderable** (↕ handle) and
+  **pinnable** (📍) — pinned rows stack under the header and stay visible while you
+  scroll. Row order + pins persist in `localStorage`.
 - **Export**: CSV or JSON of the current result set / the current comparison.
 - **Detail page**: every MTDS field with its method, value, units, annotation and
   source-document links; a core-data completeness bar; per-material JSON download.

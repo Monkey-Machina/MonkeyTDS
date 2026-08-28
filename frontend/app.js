@@ -27,6 +27,8 @@ var UNIT_FOR = {};                  // subject -> most common unit
 var TRAY = load_set("mtds_tray");   // ids queued for compare
 var COLS = load_cols();             // chosen result columns
 var FACET_OPEN = load_obj("mtds_facet_open");
+var CMP_ORDER = load_arr("mtds_cmp_order");   // compare-view row order ("cat||subject" keys)
+var CMP_PINS = load_arr("mtds_cmp_pins");     // compare-view pinned rows (top-to-bottom)
 var RESTORE_Q = null;               // caret position to restore after a text-search re-render
 
 /* ---------- data ---------- */
@@ -114,6 +116,7 @@ function set_params(p, base) {
 
 /* localStorage-backed state */
 function load_set(k) { try { return new Set(JSON.parse(localStorage.getItem(k) || "[]")); } catch (e) { return new Set(); } }
+function load_arr(k) { try { var a = JSON.parse(localStorage.getItem(k) || "[]"); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
 function load_obj(k) { try { return JSON.parse(localStorage.getItem(k) || "{}") || {}; } catch (e) { return {}; } }
 function save_json(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 function load_cols() {
@@ -450,29 +453,23 @@ function view_compare() {
     return;
   }
 
-  var order = [], seen = {};
+  var rowMap = {};
   mats.forEach(function (m) {
     m.fields.forEach(function (f) {
       var k = f.category + "||" + f.subject;
-      if (!seen[k]) { seen[k] = 1; order.push({ cat: f.category, sub: f.subject }); }
+      if (!rowMap[k]) rowMap[k] = { cat: f.category, sub: f.subject, key: k };
     });
   });
+  var allKeys = Object.keys(rowMap);
 
-  var html = '<p class="small"><a href="#/">&larr; search</a></p><h1>Compare (' + mats.length + ")</h1>" +
-    "<p>" + mats.map(function (m) {
-      return '<span class="pill">' + esc(m.manufacturer + " " + m.productName) +
-        ' <button data-id="' + esc(m.id) + '" title="remove">×</button></span>';
-    }).join(" ") + "</p>" +
-    '<div class="wrap"><table class="data compare"><thead><tr><th class="sticky nosort">Property</th>' +
-    mats.map(function (m) { return '<th class="nosort"><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.manufacturer + " " + m.productName) + "</a></th>"; }).join("") +
-    "</tr></thead><tbody>";
+  var pinned = CMP_PINS.filter(function (k) { return rowMap[k]; });
+  var pinnedSet = {}; pinned.forEach(function (k) { pinnedSet[k] = 1; });
+  var mainKeys = [];
+  CMP_ORDER.forEach(function (k) { if (rowMap[k] && !pinnedSet[k] && mainKeys.indexOf(k) < 0) mainKeys.push(k); });
+  allKeys.forEach(function (k) { if (!pinnedSet[k] && mainKeys.indexOf(k) < 0) mainKeys.push(k); });
 
-  var curCat = null;
-  order.forEach(function (o) {
-    if (o.cat !== curCat) {
-      curCat = o.cat;
-      html += '<tr class="catrow"><td class="sticky sub" colspan="' + (mats.length + 1) + '">' + esc(o.cat) + "</td></tr>";
-    }
+  function row_html(k, isPinned) {
+    var o = rowMap[k];
     var cells = mats.map(function (m) {
       var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
       var n = f ? (f.valueCanonical != null ? f.valueCanonical : parse_num(f.value)) : null;
@@ -489,8 +486,14 @@ function view_compare() {
     var methods = cells.map(function (c) { return c.method || ""; }).filter(Boolean);
     var methodClash = methods.length > 1 && !methods.every(function (x) { return x === methods[0]; });
 
-    html += "<tr" + (methodClash ? ' class="warn"' : "") + ">" +
-      '<td class="sticky sub">' + esc(o.sub) + (methodClash ? ' <span class="annot small">⚠ method differs</span>' : "") + "</td>" +
+    var tools = '<span class="rowtools">' +
+      '<button class="drag" title="drag to reorder">↕</button>' +
+      '<button class="pin' + (isPinned ? " on" : "") + '" data-key="' + esc(k) + '" title="' +
+      (isPinned ? "unpin" : "pin (stays visible while scrolling)") + '">' + (isPinned ? "📌" : "📍") + "</button></span>";
+
+    return '<tr data-key="' + esc(k) + '" draggable="true" class="' + (isPinned ? "pinned " : "") + (methodClash ? "warn" : "") + '">' +
+      '<td class="sticky sub" title="' + esc(o.cat) + '">' + tools + esc(o.sub) +
+        (methodClash ? ' <span class="annot small">⚠ method differs</span>' : "") + "</td>" +
       cells.map(function (c) {
         var cls = [];
         if (best != null && c.n === best) cls.push("hit");
@@ -501,13 +504,37 @@ function view_compare() {
           : "<span class='muted'>&mdash;</span>";
         return "<td class='" + cls.join(" ") + "'>" + txt + "</td>";
       }).join("") + "</tr>";
+  }
+
+  var html = '<p class="small"><a href="#/">&larr; search</a></p><h1>Compare (' + mats.length + ")</h1>" +
+    "<p>" + mats.map(function (m) {
+      return '<span class="pill">' + esc(m.manufacturer + " " + m.productName) +
+        ' <button data-id="' + esc(m.id) + '" title="remove">×</button></span>';
+    }).join(" ") + "</p>" +
+    '<div class="wrap"><table class="data compare"><thead><tr><th class="sticky nosort">Property</th>' +
+    mats.map(function (m) { return '<th class="nosort"><a href="#/m/' + encodeURIComponent(m.id) + '">' + esc(m.manufacturer + " " + m.productName) + "</a></th>"; }).join("") +
+    "</tr></thead><tbody>";
+
+  pinned.forEach(function (k) { html += row_html(k, true); });
+  if (pinned.length) html += '<tr class="pinsep"><td colspan="' + (mats.length + 1) + '"></td></tr>';
+  var grouped = CMP_ORDER.length === 0;   // show category headers only in the default order
+  var curCat = null;
+  mainKeys.forEach(function (k) {
+    var o = rowMap[k];
+    if (grouped && o.cat !== curCat) {
+      curCat = o.cat;
+      html += '<tr class="catrow"><td class="sticky sub" colspan="' + (mats.length + 1) + '">' + esc(o.cat) + "</td></tr>";
+    }
+    html += row_html(k, false);
   });
   html += "</tbody></table></div>" +
-    '<p class="small"><button class="linkish" id="cmp-csv">export CSV</button></p>' +
-    '<p class="small muted">Highlight = best in row (max for strength / stiffness / temperature, min otherwise). ' +
-    "Grey = identical. Yellow row = the materials cite different test methods.</p>";
+    '<p class="small"><button class="linkish" id="cmp-csv">export CSV</button>' +
+    (CMP_PINS.length || CMP_ORDER.length ? ' &middot; <button class="linkish" id="cmp-reset">reset layout</button>' : "") + "</p>" +
+    '<p class="small muted">Drag <b>↕</b> to reorder rows. <b>📍</b> pins a row so it stays visible while you scroll ' +
+    "(pinned rows stack under the header). Highlight = best in row; grey = identical; yellow = different test methods.</p>";
 
   A.innerHTML = html;
+
   A.querySelectorAll(".pill button").forEach(function (b) {
     b.onclick = function () {
       var keep = mats.map(function (m) { return m.id; }).filter(function (x) { return x !== b.dataset.id; });
@@ -516,9 +543,21 @@ function view_compare() {
       set_params(np, "/compare");
     };
   });
+  A.querySelectorAll("button.pin").forEach(function (b) {
+    b.onclick = function () {
+      var k = b.dataset.key;
+      if (pinnedSet[k]) CMP_PINS = CMP_PINS.filter(function (x) { return x !== k; });
+      else CMP_PINS.push(k);
+      save_json("mtds_cmp_pins", CMP_PINS);
+      view_compare();
+    };
+  });
+  var rst = document.getElementById("cmp-reset");
+  if (rst) rst.onclick = function () { CMP_PINS = []; CMP_ORDER = []; save_json("mtds_cmp_pins", CMP_PINS); save_json("mtds_cmp_order", CMP_ORDER); view_compare(); };
   document.getElementById("cmp-csv").onclick = function () {
     var rows = [["Category", "Property"].concat(mats.map(function (m) { return m.manufacturer + " " + m.productName; }))];
-    order.forEach(function (o) {
+    pinned.concat(mainKeys).forEach(function (k) {
+      var o = rowMap[k];
       rows.push([o.cat, o.sub].concat(mats.map(function (m) {
         var f = m.fields.find(function (x) { return x.category === o.cat && x.subject === o.sub; });
         return f ? (f.value || "") + (f.units ? " " + f.units : "") : "";
@@ -526,6 +565,41 @@ function view_compare() {
     });
     download("compare.csv", to_csv(rows), "text/csv");
   };
+
+  /* drag-to-reorder */
+  var dragKey = null, dragPinned = false;
+  A.querySelectorAll("tbody tr[data-key]").forEach(function (tr) {
+    tr.addEventListener("dragstart", function (e) {
+      dragKey = tr.dataset.key; dragPinned = tr.classList.contains("pinned");
+      e.dataTransfer.effectAllowed = "move";
+      try { e.dataTransfer.setData("text/plain", dragKey); } catch (x) {}
+    });
+    tr.addEventListener("dragover", function (e) { e.preventDefault(); tr.classList.add("dragover"); });
+    tr.addEventListener("dragleave", function () { tr.classList.remove("dragover"); });
+    tr.addEventListener("drop", function (e) {
+      e.preventDefault(); tr.classList.remove("dragover");
+      var tgt = tr.dataset.key, tgtPinned = tr.classList.contains("pinned");
+      if (!dragKey || dragKey === tgt) return;
+      var arr = (dragPinned && tgtPinned) ? CMP_PINS.slice() : (!dragPinned && !tgtPinned) ? mainKeys.slice() : null;
+      if (!arr) return;
+      arr.splice(arr.indexOf(dragKey), 1);
+      arr.splice(arr.indexOf(tgt), 0, dragKey);
+      if (dragPinned) { CMP_PINS = arr; save_json("mtds_cmp_pins", CMP_PINS); }
+      else { CMP_ORDER = arr; save_json("mtds_cmp_order", CMP_ORDER); }
+      view_compare();
+    });
+  });
+
+  /* stack pinned rows under the sticky header */
+  var thead = A.querySelector("thead");
+  var top = thead ? thead.offsetHeight : 0;
+  var prows = A.querySelectorAll("tbody tr.pinned");
+  var heights = [];
+  prows.forEach(function (tr) { heights.push(tr.getBoundingClientRect().height); });
+  prows.forEach(function (tr, i) {
+    tr.querySelectorAll("td").forEach(function (td) { td.style.position = "sticky"; td.style.top = top + "px"; });
+    top += heights[i];
+  });
 }
 
 /* ---------- export / util ---------- */
