@@ -272,9 +272,10 @@ function view_search() {
 
   /* ---- results toolbar ---- */
   var tb = el('<div class="toolbar"><span class="count">' + hits.length + " material" + (hits.length === 1 ? "" : "s") + "</span>" +
+    '<span class="small muted">current results</span>' +
+    '<span class="spacer"></span>' +
     '<button class="linkish" id="exp-csv">export CSV</button>' +
-    '<button class="linkish" id="exp-json">export JSON</button>' +
-    '<span class="small muted">(current results)</span></div>');
+    '<button class="linkish" id="exp-json">export JSON</button></div>');
   R.appendChild(tb);
   tb.querySelector("#exp-csv").onclick = function () { export_rows(hits, "csv"); };
   tb.querySelector("#exp-json").onclick = function () { export_rows(hits, "json"); };
@@ -317,7 +318,7 @@ function view_search() {
   wrap.appendChild(t);
   R.appendChild(wrap);
   if (hits.length > 500) R.appendChild(el('<p class="small muted">showing first 500; narrow the filters to see the rest.</p>'));
-  R.appendChild(el('<p class="small muted">Drag a column header to reorder. <b>📍</b> pins it to the left (pinned columns stack and stay visible while scrolling sideways). <b>×</b> removes it; <b>+</b> adds one. Saved in this browser.</p>'));
+  R.appendChild(el('<p class="small muted">Drag a header to reorder &middot; <b>📍</b> pin to left &middot; <b>×</b> remove &middot; <b>+</b> add. Saved in this browser.</p>'));
 
   /* stack pinned columns at the left edge */
   var left = 0;

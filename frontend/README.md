@@ -25,6 +25,14 @@ python ../scripts/compile_materials.py --out data/materials.json
 { printf 'window.__MTDS_DATA__ = '; cat data/materials.json; printf ';\n'; } > data/materials.js
 ```
 
+## Layout
+
+The search view is split into two independently-scrolling panes: a fixed-width
+filter column on the left and the results table on the right. The page itself
+never scrolls — scroll the filter column and the results table separately. The
+results header bar (count, "current results", CSV / JSON export) and the table's
+column-header row both stay pinned while you scroll the results.
+
 ## Views (all state in the URL — every view is a shareable link)
 
 | Route | |
