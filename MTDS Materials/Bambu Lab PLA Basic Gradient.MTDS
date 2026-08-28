@@ -235,8 +235,8 @@
 
 > Print & Storage Humidity
   <
-  < < 20% RH (Sealed with desiccant)
-  <
+  < < 20 | RH, sealed with desiccant
+  < %
 
 > Nozzle Temperature
   <

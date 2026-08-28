@@ -135,8 +135,8 @@
 
 > Print & Storage Humidity
   <
-  < < 10% RH
-  <
+  < < 10 | RH
+  < %
 
 > Nozzle Size
   <
