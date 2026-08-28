@@ -1,0 +1,92 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < eTPU-95A
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/TPU-95A/eSUN_TPU-95A_Filament_TDS_V4.0.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/etpu-95a-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.21 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 1.2 | 190 °C, 2.16 kg
+  < g/10 min
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 29.63
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 4.43
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < > 400
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 35.66
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 250 °C
+  <
+
+> Bed Temperature
+  <
+  < 45 - 60 °C
+  <
+
+> Cooling Fan
+  <
+  < 100%
+  <
+
+> Print Speed
+  <
+  < < 100 mm/s
+  <
+
+> Drying Condition
+  <
+  < 55 °C / > 4 h
+  <

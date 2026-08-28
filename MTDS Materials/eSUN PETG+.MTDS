@@ -1,0 +1,127 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PETG+
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PETG/PETG_-TDS-en.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/petg-pro-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.27 ± 0.01 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 15 | 250 °C, 2.16 kg
+  < g/10 min
+
+> Heat Deflection Temperature
+  < ISO 75 | GB/T 1634
+  < 70 | 0.45 MPa
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 48 ± 10
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 26 ± 5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 5.56 ± 0.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 3.31 ± 0.2
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 83.2 ± 10
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 53.2 ± 10
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 1993.64 ± 300
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1687.64 ± 100
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | GB/T 1843, Izod
+  < 2.21 ± 0.2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | GB/T 1843, Izod
+  < 2.02 ± 0.2
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 250 °C
+  <
+
+> Bed Temperature
+  <
+  < 75 - 90 °C
+  <
+
+> Cooling Fan
+  <
+  < 50 - 100%
+  <
+
+> Print Speed
+  <
+  < <= 250 mm/s
+  <
+
+> Drying Condition
+  <
+  < 60 °C / > 8 h
+  <
