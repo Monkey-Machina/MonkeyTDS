@@ -1,0 +1,199 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < PolyLite PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_PLA_TDS_EN_V5.4.pdf?v=1731949179
+  <
+
+> Source
+  <
+  < TDS | https://wiki.polymaker.com/polymaker-products/more-about-our-products/documents/technical-data-sheets/pla/polylite-tm-pla
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.17 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 7 - 11 | 210 °C, 2.16 kg
+  < g/10 min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 61
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 150
+  < °C
+
+> Crystallization Temperature
+  < DSC | 10 °C/min
+  < 114
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < 325
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 63
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 58
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 60
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 3426.9 ± 64.8
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 3064.9 ± 83.4
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 52.3 ± 0.3
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 40.5 ± 0.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 6.3 ± 0.6
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.8 ± 0.1
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3230.9 ± 55.3
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 86.9 ± 1.2
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 3.3 ± 0.2
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA
+  <
+
+> Resistance to Acid
+  <
+  < Good | weak acids
+  <
+
+> Resistance to Acid
+  <
+  < Poor | strong acids
+  <
+
+> Resistance to Alkali
+  <
+  < Fair | weak alkalis
+  <
+
+> Resistance to Alkali
+  <
+  < Poor | strong alkalis
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 230 °C
+  <
+
+> Bed Temperature
+  <
+  < 25 - 60 °C
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PC and Textured PEI (glue when needed)
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < 50 - 200 mm/s
+  <
+
+> Retraction Length
+  <
+  < 1 - 3 mm
+  <
+
+> Retraction Speed
+  <
+  < 20 - 40 mm/s
+  <
+
+> Support Material
+  <
+  < PolySupport and PolyDissolve S1
+  <
+
+> Drying Condition
+  <
+  < 55 °C / 6 h
+  <
