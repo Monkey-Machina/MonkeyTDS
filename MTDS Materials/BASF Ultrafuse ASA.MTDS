@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/engineering-filaments/ultrafuse-asa/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 34.6
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 12.0
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1733
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1041
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 4.5
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 1.0
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, notched
+  < 8.7
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, notched
+  < 1.9
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched
+  < 36.8
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched
+  < 6.8
+  < kJ/m^2
+
+# Physical Property
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa
+  < 101
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 280
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 120
+  < °C
+
+> Print Speed
+  <
+  < 30 - 60
+  < mm/s
