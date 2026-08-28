@@ -208,7 +208,18 @@ per subject (see below) when compiling the dataset.
 | g/cm^3 | 1e3 · kg·m⁻³ | Grams per cubic centimeter |
 | MPa | 1e6 · kg·m⁻¹·s⁻² | Megapascal |
 | GPa | 1e9 · kg·m⁻¹·s⁻² | Gigapascal |
-| kJ/m^2 | 1e3 · kg·s⁻² | Kilojoules per square meter |
+| N | 1 · kg·m·s⁻² | Newton (also Graves tear force, ASTM D1004) |
+| J/m | 1 · kg·m·s⁻² | Joules per meter (impact energy per specimen width, ASTM Izod) |
+| kJ/m | 1e3 · kg·m·s⁻² | Kilojoules per meter |
+| kg·cm/cm | 9.80665 · kg·m·s⁻² | Kilogram-force·centimeter per centimeter of width (Izod, older TDS) |
+| kJ/m^2 | 1e3 · kg·s⁻² | Kilojoules per square meter (impact energy per area, ISO Charpy) |
+| J/m^2 | 1 · kg·s⁻² | Joules per square meter |
+| N/m | 1 · kg·s⁻² | Newton per meter (tear strength, ISO 34) |
+| kN/m | 1e3 · kg·s⁻² | Kilonewton per meter |
+| N/mm | 1e3 · kg·s⁻² | Newton per millimeter |
+| m^3 | 1 · m³ | Cubic meter |
+| cm^3 | 1e-6 · m³ | Cubic centimeter |
+| mm^3 | 1e-9 · m³ | Cubic millimeter (abrasion volume loss, ISO 4649) |
 | % | 1e-2 · (dimensionless) | Percent |
 | % RH | 1e-2 · (dimensionless) | Percent relative humidity |
 | wt% | 1e-2 · (dimensionless) | Percent by weight |
@@ -229,12 +240,24 @@ per subject (see below) when compiling the dataset.
 | ppm/°C | 1e-6 · K⁻¹ | Parts per million per degree Celsius (thermal expansion) |
 
 ### Canonical units
-When the dataset is compiled, each numeric field is converted to one canonical
-unit per subject — chosen automatically as the most common SI-recognised unit
-that subject appears in — and emitted as `valueCanonical` / `canonicalUnit`
-alongside the verbatim value. Files may report a property in any dimensionally
-consistent unit; the compiler normalises it. A unit that is dimensionally wrong
-for its subject is flagged (`compile_materials.py --check` exits non-zero).
+When the dataset is compiled, each numeric field is emitted with `valueNumber`
+(a representative number parsed from the value string), `valueRange` /
+`valueUncertainty` (when the value is a range, ± spread, or inequality), and a
+`valueCanonical` / `canonicalUnit` pair.
+
+Each subject has a **declared canonical unit** — the reference list lives in
+`SUBJECT_UNITS` in `scripts/compile_materials.py`; subjects not listed fall back
+to the most common recognised unit. A subject may declare more than one accepted
+unit when a property is genuinely reported in two non-interconvertible
+conventions (impact strength as `kJ/m^2` *or* `J/m`; tear strength as `kN/m` *or*
+`N`; abrasion loss as `%`, `mm^3`, *or* `g`). The compiler converts each value to
+the first accepted unit it is dimensionally compatible with; a value already in
+an accepted-but-non-convertible unit is kept as-is.
+
+Files may report a property in any dimensionally consistent unit; the compiler
+normalises it. A unit that is dimensionally wrong for its subject (and not one of
+that subject's declared alternates) is an error — `compile_materials.py --check`
+exits non-zero.
 
 ### .MTDS File Format
 The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.

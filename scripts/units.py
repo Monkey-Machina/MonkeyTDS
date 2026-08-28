@@ -33,6 +33,9 @@ class U:
 DIMENSIONLESS = _d()
 _PA = _d(kg=1, m=-1, s=-2)
 _OHM = _d(kg=1, m=2, s=-3, A=-2)
+_FORCE = _d(kg=1, m=1, s=-2)          # N — also energy per unit width (J/m, ASTM Izod)
+_FORCE_PER_LEN = _d(kg=1, s=-2)       # N/m — also energy per unit area (kJ/m^2, ISO Charpy)
+_VOL = _d(m=3)
 
 REGISTRY = {
     # base / plain
@@ -64,9 +67,21 @@ REGISTRY = {
     "cm^3/10 min": U(1, _d(m=3)),
     "mm/s": U(1e-3, _d(m=1, s=-1)),
     "mm^3/s": U(1e-9, _d(m=3, s=-1)),
-    # energy density / impact
-    "kJ/m^2": U(1e3, _d(kg=1, s=-2)),
-    "J/m^2": U(1, _d(kg=1, s=-2)),
+    # force / energy per unit width (ASTM Izod family)
+    "N": U(1, _FORCE),
+    "J/m": U(1, _FORCE),
+    "kJ/m": U(1e3, _FORCE),
+    "kg·cm/cm": U(9.80665, _FORCE),          # kgf·cm per cm width = kgf ≈ 9.80665 N
+    # force per unit length / energy per unit area (ISO Charpy & tear families)
+    "kJ/m^2": U(1e3, _FORCE_PER_LEN),
+    "J/m^2": U(1, _FORCE_PER_LEN),
+    "N/m": U(1, _FORCE_PER_LEN),
+    "kN/m": U(1e3, _FORCE_PER_LEN),
+    "N/mm": U(1e3, _FORCE_PER_LEN),
+    # volume
+    "m^3": U(1, _VOL),
+    "cm^3": U(1e-6, _VOL),
+    "mm^3": U(1e-9, _VOL),
     # thermal
     "W/m·K": U(1, _d(kg=1, m=1, s=-3, K=-1)),
     "ppm/°C": U(1e-6, _d(K=-1)),
@@ -86,8 +101,14 @@ REGISTRY = {
 ALIAS = {
     "g/cm3": "g/cm^3", "g/cm³": "g/cm^3",
     "kJ/m2": "kJ/m^2", "kJ/m²": "kJ/m^2",
+    "J/m2": "J/m^2", "J/m²": "J/m^2",
     "cm3/10 min": "cm^3/10 min", "cm_3_/10 min": "cm^3/10 min",
-    "mm3/s": "mm^3/s",
+    "mm3/s": "mm^3/s", "mm³/s": "mm^3/s",
+    "mm3": "mm^3", "mm³": "mm^3", "cm3": "cm^3", "cm³": "cm^3", "m3": "m^3", "m³": "m^3",
+    "kgf·cm/cm": "kg·cm/cm", "kgf.cm/cm": "kg·cm/cm", "kg*cm/cm": "kg·cm/cm",
+    "kgf cm/cm": "kg·cm/cm", "kg.cm/cm": "kg·cm/cm",
+    "N·m/m": "N", "N.m/m": "N",
+    "kN/m·": "kN/m",
     "C": "°C", "degC": "°C", "℃": "°C",
     "meters": "m", "meter": "m",
     "% by weight": "wt%", "wt %": "wt%",
@@ -136,6 +157,20 @@ def known(name):
     return _lookup(name) is not None
 
 
+def canonical_name(name):
+    """Resolve aliases to the registry spelling (unchanged if already canonical
+    or unknown)."""
+    if name is None:
+        return None
+    name = name.strip()
+    return ALIAS.get(name, name)
+
+
+def names():
+    """Every canonical unit spelling in the registry."""
+    return sorted(REGISTRY)
+
+
 if __name__ == "__main__":
     tests = [
         (2.33, "GPa", "MPa", 2330.0),
@@ -143,7 +178,20 @@ if __name__ == "__main__":
         (100.0, "°C", "K", 373.15),
         (1.24, "g/cm^3", "g/cm^3", 1.24),
         (5.0, "%", "%", 5.0),
+        (23.0, "kg·cm/cm", "J/m", 225.55295),          # kgf·cm/cm Izod -> J/m
+        (1.0, "kN/m", "N/mm", 1.0),
+        (2500.0, "mm^3", "cm^3", 2.5),
     ]
+    ok = True
     for v, f, t, exp in tests:
         got = convert(v, f, t)
-        print(f"{v} {f} -> {t} = {got}  (expect {exp})  {'OK' if abs(got - exp) < 1e-9 else 'FAIL'}")
+        good = got is not None and abs(got - exp) < 1e-4
+        ok &= good
+        print(f"{v} {f} -> {t} = {got}  (expect {exp})  {'OK' if good else 'FAIL'}")
+    # J/m (per-width) and kJ/m^2 (per-area) are deliberately NOT interconvertible
+    ok &= convert(1.0, "J/m", "kJ/m^2") is None
+    ok &= not compatible("ohm-m", "ohm/sq")
+    if not ok:
+        import sys
+        sys.exit("SOME TESTS FAILED")
+    print("all unit tests OK")

@@ -11,12 +11,25 @@ corruption), so it is safe to gate CI on. See `.github/workflows/audit.yml`.
 
 | level | codes | gates `--check` |
 | --- | --- | --- |
-| error | `unit-convert`, `tolerance>value` | yes |
+| error | `unexpected-unit` (unit dimensionally wrong for its subject), `tolerance>value` | yes |
 | warn | `no-unit`, `unknown-unit`, `unparsed-value` | no |
 | info | `name-prefix`, `method-mismatch`, `family-outlier` | no |
 
-Current: **0 error, 87 warn, 3 info** — the 87 warnings are all 3DXTECH
-mechanical rows missing units (see below).
+Current: **0 error, 90 warn, 8 info** — most warnings are 3DXTECH mechanical rows
+missing units (#19, see below).
+
+### Unit handling
+
+Canonical unit per subject is **declared** in `SUBJECT_UNITS`
+(`scripts/compile_materials.py`), not inferred. A subject can list more than one
+accepted unit for genuinely non-interconvertible test conventions — impact as
+`kJ/m^2` (ISO Charpy) *or* `J/m` (ASTM Izod); tear as `kN/m` (ISO 34) *or* `N`
+(ASTM D1004 Graves); abrasion loss as `%` / `mm^3` / `g`. `units.py` now knows
+`N`, `J/m`, `kJ/m`, `kg·cm/cm` (= kgf·cm/cm Izod), `N/m`, `kN/m`, `N/mm`, `m^3`,
+`cm^3`, `mm^3`, so these no longer have to hide in the value string. A unit that
+is neither a declared alternate nor dimensionally compatible with the canonical
+is an `unexpected-unit` **error**. `python scripts/units.py` self-tests the
+engine and runs in CI.
 
 ## Fixed in this pass
 
