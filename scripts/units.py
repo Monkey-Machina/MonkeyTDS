@@ -36,6 +36,8 @@ _OHM = _d(kg=1, m=2, s=-3, A=-2)
 _FORCE = _d(kg=1, m=1, s=-2)          # N — also energy per unit width (J/m, ASTM Izod)
 _FORCE_PER_LEN = _d(kg=1, s=-2)       # N/m — also energy per unit area (kJ/m^2, ISO Charpy)
 _VOL = _d(m=3)
+_MASS_FLOW = _d(kg=1, s=-1)           # mass flow rate (melt mass-flow rate / MFR)
+_VOL_FLOW = _d(m=3, s=-1)             # volume flow rate (melt volume-flow rate / MVR, print speed)
 
 REGISTRY = {
     # base / plain
@@ -62,11 +64,17 @@ REGISTRY = {
     "wt%": U(1e-2, DIMENSIONLESS),
     "ppm": U(1e-6, DIMENSIONLESS),
     "°": U(3.141592653589793 / 180, DIMENSIONLESS),   # angle
-    # flow-rate style (kept atomic; "per 10 min" is a reporting convention)
-    "g/10 min": U(1, _d(kg=1)),                       # 1 g / 10 min  (compared like-for-like)
-    "cm^3/10 min": U(1, _d(m=3)),
+    # mass flow rate — MFR is literally "grams through the die in 10 minutes"
+    "g/10 min": U(1e-3 / 600, _MASS_FLOW),            # 1 g per 600 s
+    "g/min": U(1e-3 / 60, _MASS_FLOW),
+    "dg/min": U(1e-4 / 60, _MASS_FLOW),               # decigram/min (== g/10 min)
+    "g/s": U(1e-3, _MASS_FLOW),
+    "kg/h": U(1 / 3600, _MASS_FLOW),
+    # volume flow rate
+    "cm^3/10 min": U(1e-6 / 600, _VOL_FLOW),
+    "mm^3/s": U(1e-9, _VOL_FLOW),
+    "cm^3/s": U(1e-6, _VOL_FLOW),
     "mm/s": U(1e-3, _d(m=1, s=-1)),
-    "mm^3/s": U(1e-9, _d(m=3, s=-1)),
     # force / energy per unit width (ASTM Izod family)
     "N": U(1, _FORCE),
     "J/m": U(1, _FORCE),
@@ -103,7 +111,9 @@ ALIAS = {
     "kJ/m2": "kJ/m^2", "kJ/m²": "kJ/m^2",
     "J/m2": "J/m^2", "J/m²": "J/m^2",
     "cm3/10 min": "cm^3/10 min", "cm_3_/10 min": "cm^3/10 min",
-    "mm3/s": "mm^3/s", "mm³/s": "mm^3/s",
+    "g/10min": "g/10 min", "g/10 mins": "g/10 min", "g/10min.": "g/10 min",
+    "cm3/10min": "cm^3/10 min", "cm^3/10min": "cm^3/10 min",
+    "mm3/s": "mm^3/s", "mm³/s": "mm^3/s", "cm3/s": "cm^3/s", "cm³/s": "cm^3/s",
     "mm3": "mm^3", "mm³": "mm^3", "cm3": "cm^3", "cm³": "cm^3", "m3": "m^3", "m³": "m^3",
     "kgf·cm/cm": "kg·cm/cm", "kgf.cm/cm": "kg·cm/cm", "kg*cm/cm": "kg·cm/cm",
     "kgf cm/cm": "kg·cm/cm", "kg.cm/cm": "kg·cm/cm",
@@ -181,6 +191,9 @@ if __name__ == "__main__":
         (23.0, "kg·cm/cm", "J/m", 225.55295),          # kgf·cm/cm Izod -> J/m
         (1.0, "kN/m", "N/mm", 1.0),
         (2500.0, "mm^3", "cm^3", 2.5),
+        (9.0, "g/10 min", "g/s", 0.015),               # MFR is a real mass flow rate
+        (1.0, "dg/min", "g/10 min", 1.0),              # decigram/min == g/10 min
+        (12.0, "cm^3/10 min", "mm^3/s", 20.0),         # MVR -> volumetric speed units
     ]
     ok = True
     for v, f, t, exp in tests:

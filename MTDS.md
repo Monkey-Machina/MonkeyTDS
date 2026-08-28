@@ -225,9 +225,14 @@ per subject (see below) when compiling the dataset.
 | wt% | 1e-2 · (dimensionless) | Percent by weight |
 | ° | π/180 · (dimensionless) | Degree of angle |
 | mm/s | 1e-3 · m·s⁻¹ | Millimeters per second |
-| mm^3/s | 1e-9 · m³·s⁻¹ | Cubic millimeters per second (volumetric flow) |
-| g/10 min | 1 · kg (per 10 min, reporting convention) | Melt mass-flow rate |
-| cm^3/10 min | 1 · m³ (per 10 min, reporting convention) | Melt volume-flow rate |
+| mm^3/s | 1e-9 · m³·s⁻¹ | Cubic millimeters per second (volumetric print speed) |
+| cm^3/s | 1e-6 · m³·s⁻¹ | Cubic centimeters per second |
+| g/10 min | 1.667e-6 · kg·s⁻¹ | Melt mass-flow rate — grams through the die per 600 s (ISO 1133) |
+| g/min | 1.667e-5 · kg·s⁻¹ | Grams per minute |
+| dg/min | 1.667e-6 · kg·s⁻¹ | Decigrams per minute (numerically equal to g/10 min) |
+| g/s | 1e-3 · kg·s⁻¹ | Grams per second |
+| kg/h | 2.778e-4 · kg·s⁻¹ | Kilograms per hour |
+| cm^3/10 min | 1.667e-9 · m³·s⁻¹ | Melt volume-flow rate — cm³ through the die per 600 s (ISO 1133) |
 | ohm | 1 · kg·m²·s⁻³·A⁻² | Ohm |
 | kohm | 1e3 · kg·m²·s⁻³·A⁻² | Kilohm |
 | Mohm | 1e6 · kg·m²·s⁻³·A⁻² | Megohm |
