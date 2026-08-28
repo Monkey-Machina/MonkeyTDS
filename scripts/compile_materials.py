@@ -4,11 +4,16 @@
 Run on release. Output feeds the frontend, so the shape is stable and flat.
 
 Each field also gets machine-readable numbers:
-  valueNumber    - a representative float pulled from the value string
-                   ("35 ± 4" -> 35, "9 - 11" -> 10, "> 700" -> 700), or null
-  canonicalUnit  - the unit this subject is normalised to across the dataset
-  valueCanonical - valueNumber converted into canonicalUnit (see scripts/units.py),
-                   or valueNumber unchanged when no conversion is possible
+  valueNumber      - a representative float pulled from the value string
+                     ("35 ± 4" -> 35, "9 - 11" -> 10, "> 700" -> 700), or null
+  valueRange       - [low, high] when the value is a range / ± / inequality, else null
+  valueUncertainty - the ± half-width when present, else null
+  canonicalUnit    - the unit this field's value was normalised to
+  valueCanonical   - valueNumber converted into canonicalUnit (see scripts/units.py)
+
+Canonical unit per subject comes from the declared SUBJECT_UNITS table (falling
+back to the most common recognised unit). A field whose unit is dimensionally
+wrong for its subject is an error: `--check` exits non-zero.
 """
 import argparse
 import collections
@@ -67,6 +72,26 @@ def rep_num(s):
         return None
 
 
+def value_spread(s):
+    """Extract (low, high, plusminus) from a value string, or (None, None, None).
+    "35 ± 4" -> (31, 39, 4);  "9 - 11" -> (9, 11, None);  "> 700" -> (700, None, None)."""
+    if s is None:
+        return (None, None, None)
+    s = str(s).strip().replace(",", "")
+    m = re.search(r"(" + _FLOAT + r")\s*±\s*(" + _FLOAT + r")", s)
+    if m:
+        a, b = float(m.group(1)), float(m.group(2))
+        return (a - b, a + b, b)
+    m = re.search(r"(" + _FLOAT + r")\s*[-–]\s*(" + _FLOAT + r")", s)
+    if m and "±" not in s and "e" not in s.lower():
+        return (float(m.group(1)), float(m.group(2)), None)
+    m = re.match(r"\s*(<|>|≤|≥|<=|>=)\s*(" + _FLOAT + r")", s)
+    if m:
+        n = float(m.group(2))
+        return (n, None, None) if m.group(1) in (">", "≥", ">=") else (None, n, None)
+    return (None, None, None)
+
+
 def parse_mtds(path):
     category = None
     field = None
@@ -94,7 +119,8 @@ def parse_mtds(path):
             category = s.lstrip("#").strip()
         elif s.startswith(">"):
             close()
-            field = {"category": category, "subject": s[1:].strip(), "_slots": []}
+            subject = s[1:].strip().replace("’", "'").replace("‘", "'")
+            field = {"category": category, "subject": subject, "_slots": []}
         elif s.startswith("<"):
             if field is not None:
                 field["_slots"].append(s[1:].strip())
@@ -130,27 +156,107 @@ def compile_dir(root):
     return materials
 
 
+# Declared units per subject. The first entry is the canonical target that
+# valueCanonical is normalised to; later entries are *also* accepted because they
+# are a different, non-interconvertible test convention (ASTM Izod J/m vs ISO
+# Charpy kJ/m^2; Graves tear N vs ISO tear kN/m; Taber % vs volume-loss mm^3).
+# A field whose unit is known to units.py but is neither an accepted unit here
+# nor dimensionally compatible with the canonical is a hard error (see audit()).
+# Subjects not listed fall back to "most common recognised unit", with the
+# dimension check still enforced against that.
+SUBJECT_UNITS = {
+    "Density": ["g/cm^3"],
+    "Melt Index": ["dg/min"],         # MFR — dg/min is numerically identical to the g/10 min convention
+    "Melt Volume Rate": ["mm^3/s"],   # comparable with Maximum Volumetric Speed
+    "Melting Temperature": ["°C"],
+    "Glass Transition Temperature": ["°C"],
+    "Crystallization Temperature": ["°C"],
+    "Vicat Softening Temperature": ["°C"],
+    "Heat Deflection Temperature": ["°C"],
+    "Decomposition Temperature": ["°C"],
+    "Coefficient of Thermal Expansion": ["ppm/°C"],
+    "Thermal Conductivity": ["W/m·K"],
+    "Moisture Absorption": ["%"],
+    "Saturated Water Absorption Rate": ["%"],
+    "Young's Modulus (In-Plane)": ["MPa"],
+    "Young's Modulus (Interlayer)": ["MPa"],
+    "Bending Modulus (In-Plane)": ["MPa"],
+    "Bending Modulus (Interlayer)": ["MPa"],
+    "Tensile Strength (In-Plane)": ["MPa"],
+    "Tensile Strength (Interlayer)": ["MPa"],
+    "Bending Strength (In-Plane)": ["MPa"],
+    "Bending Strength (Interlayer)": ["MPa"],
+    "Interlayer Adhesion": ["MPa"],
+    "Breaking Elongation Rate (In-Plane)": ["%"],
+    "Breaking Elongation Rate (Interlayer)": ["%"],
+    "Elongation at Yield (In-Plane)": ["%"],
+    "Elongation at Yield (Interlayer)": ["%"],
+    "Maximum Elongation": ["%"],
+    "Impact Strength (In-Plane)": ["kJ/m^2", "J/m"],
+    "Impact Strength (Interlayer)": ["kJ/m^2", "J/m"],
+    "Tear Strength": ["kN/m", "N"],
+    "Tear Strength (In-Plane)": ["kN/m", "N"],
+    "Tear Strength (Interlayer)": ["kN/m", "N"],
+    "Abrasion Resistance": ["%", "mm^3", "g"],
+    "Compression Set": ["%"],
+    "Post-Treatment Shrinkage (In-Plane)": ["%"],
+    "Post-Treatment Shrinkage (Interlayer)": ["%"],
+    "Volume Resistivity": ["ohm-m", "ohm-cm"],
+    "Surface Resistivity": ["ohm/sq", "ohm"],
+    "Volume Resistance": ["ohm"],
+    "Surface Resistance": ["ohm"],
+    "Dielectric Strength": ["kV/mm"],
+    "Magnetic Induction at Saturation": ["T"],
+    "Diameter": ["mm"],
+    "Diameter Tolerance": ["mm"],
+    "Nozzle Temperature": ["°C"],
+    "Bed Temperature": ["°C"],
+    "Chamber Temperature": ["°C"],
+    "Print Speed": ["mm/s"],
+    "Retraction Length": ["mm"],
+    "Retraction Speed": ["mm/s"],
+    "Maximum Volumetric Speed": ["mm^3/s"],
+    "Max Overhang Angle": ["°"],
+    "Cooling Fan": ["%"],
+}
+
+
+def _accepted_units(subject, fallback_canon):
+    """Units allowed for a subject: the explicit table if present, else just the
+    fallback canonical (any dimensionally-compatible unit still passes the audit
+    check and still normalises — see below)."""
+    if subject in SUBJECT_UNITS:
+        return SUBJECT_UNITS[subject]
+    if subject.startswith("Stress at ") and subject.endswith("Strain (In-Plane)"):
+        return ["MPa"]
+    return [fallback_canon]
+
+
 def normalize_units(materials):
-    """Pick a canonical unit per subject (the most common one that units.py
-    understands) and convert every numeric field into it."""
+    """Attach valueNumber / valueRange / canonicalUnit / valueCanonical to every
+    field. Canonical unit per subject is the declared one (SUBJECT_UNITS) or the
+    most common recognised unit. Each numeric field is converted to the first
+    accepted unit it is dimensionally compatible with; an incompatible-but-known
+    unit is left in place here and reported by audit()."""
     seen = collections.defaultdict(collections.Counter)
     for m in materials:
         for f in m["fields"]:
             n = rep_num(f["value"])
             f["valueNumber"] = n
+            lo, hi, pm = value_spread(f["value"])
+            f["valueRange"] = [lo, hi] if (lo is not None or hi is not None) else None
+            f["valueUncertainty"] = pm
             if n is not None and f["units"]:
-                seen[f["subject"]][f["units"]] += 1
+                seen[f["subject"]][units.canonical_name(f["units"])] += 1
 
     canon = {}
-    for subj, counter in seen.items():
-        best = None
-        for u, _ in counter.most_common():
-            if units.known(u):
-                best = u
-                break
-        canon[subj] = best or counter.most_common(1)[0][0]
+    for subj in set(seen) | set(SUBJECT_UNITS):
+        if subj in SUBJECT_UNITS:
+            canon[subj] = SUBJECT_UNITS[subj][0]
+            continue
+        best = next((u for u, _ in seen[subj].most_common() if units.known(u)), None)
+        canon[subj] = best or (seen[subj].most_common(1)[0][0] if seen[subj] else None)
 
-    warnings = []
     for m in materials:
         for f in m["fields"]:
             f["valueCanonical"] = None
@@ -162,19 +268,19 @@ def normalize_units(materials):
             if not u:
                 f["valueCanonical"] = n
                 continue
-            cu = canon.get(f["subject"], u)
-            f["canonicalUnit"] = cu
-            if cu == u or not units.known(u):
-                f["valueCanonical"] = n
-                continue
-            c = units.convert(n, u, cu)
-            if c is None:
-                f["valueCanonical"] = n
-                f["canonicalUnit"] = u
-                warnings.append(f"{m['id']} / {f['subject']}: {u!r} not convertible to canonical {cu!r}")
+            cu = canon.get(f["subject"]) or u
+            accepted = _accepted_units(f["subject"], cu)
+            for target in accepted:
+                c = units.convert(n, u, target)
+                if c is not None:
+                    f["valueCanonical"] = round(c, 6)
+                    f["canonicalUnit"] = target
+                    break
             else:
-                f["valueCanonical"] = round(c, 6)
-    return canon, warnings
+                # known unit that doesn't fit any accepted dimension, or unknown unit
+                f["valueCanonical"] = n
+                f["canonicalUnit"] = units.canonical_name(u)
+    return canon, []
 
 
 PROP_CATS = {"Physical Property", "Mechanical Property", "Chemical Property",
@@ -239,9 +345,25 @@ def audit(materials, canon):
                     and (has_unit[s] >= 2 or QUANTITY_RE.search(s)):
                 findings.append(("warn", "no-unit", mid, s, f"{val!r} has no unit"))
 
+            if not unit and val:
+                mv = re.match(r"^(.*\d\S*)\s+(\S+)$", val)
+                if mv and units.known(mv.group(2)) \
+                        and re.fullmatch(r"[\d.,\s<>~≤≥±–x*/^()-]+", mv.group(1)):
+                    findings.append(("warn", "unit-in-value", mid, s,
+                                     f"{val!r} carries the unit {mv.group(2)!r} in the "
+                                     f"value string; it belongs in the units slot"))
+
             if unit and not units.known(unit):
                 findings.append(("warn", "unknown-unit", mid, s,
                                  f"{unit!r} is not in the standard"))
+            elif unit:
+                cu = canon.get(s) or unit
+                accepted = _accepted_units(s, cu)
+                if units.canonical_name(unit) not in accepted \
+                        and not any(units.compatible(unit, a) for a in accepted):
+                    findings.append(("error", "unexpected-unit", mid, s,
+                                     f"{unit!r} is not a valid unit for this subject "
+                                     f"(expected {' / '.join(accepted[:3])})"))
 
             if cat in PROP_CATS and val and n is None \
                     and val.lower() not in VALUE_OK_NON_NUMERIC \
@@ -289,7 +411,7 @@ def main(argv=None):
     ap.add_argument("--materials-dir", default="MTDS Materials")
     ap.add_argument("--out", default="materials.json")
     ap.add_argument("--check", action="store_true",
-                    help="exit non-zero on unit-conversion or data-corruption findings")
+                    help="exit non-zero on error-level findings (wrong-dimension units, impossible tolerances)")
     ap.add_argument("--audit", action="store_true",
                     help="print the full data-quality report and exit")
     args = ap.parse_args(argv)
@@ -302,12 +424,8 @@ def main(argv=None):
     if not materials:
         sys.exit(f"no .MTDS files found in {root}")
 
-    canon, warnings = normalize_units(materials)
-
-    findings = [("error", "unit-convert", w.split(" / ")[0].strip(),
-                 w.split(" / ", 1)[1].split(":", 1)[0].strip(),
-                 w.split(":", 1)[1].strip()) for w in warnings]
-    findings += audit(materials, canon)
+    canon, _ = normalize_units(materials)
+    findings = audit(materials, canon)
 
     if args.audit or args.check:
         by_code = collections.defaultdict(list)

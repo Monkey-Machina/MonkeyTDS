@@ -1,0 +1,87 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < Matte PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.85
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_MATTEPLA_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.24
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM E2092 | 0.45 MPa
+  < 55
+  < °C
+
+> Glass Transition Temperature
+  < ASTM D3418
+  < 55 - 60
+  < °C
+
+> Melting Temperature
+  < ASTM D3418
+  < 145 - 160
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D882 | at yield
+  < 41
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D882
+  < 4
+  < %
+
+> Bending Strength (In-Plane)
+  < ASTM D790
+  < 48
+  < MPa
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C

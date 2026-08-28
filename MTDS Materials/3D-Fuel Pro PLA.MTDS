@@ -1,0 +1,139 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D-Fuel
+  <
+
+> Product Name
+  <
+  < Pro PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://nexa3d.com/wp-content/uploads/2024/07/TDS-3DFuel-Pro-PLA.pdf
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA (NatureWorks Ingeo 3D870)
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.22
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238
+  < 9 - 15 | 210 °C, 2.16 kg
+  < dg/min
+
+> Melting Temperature
+  < ASTM D3418
+  < 165 - 180
+  < °C
+
+> Glass Transition Temperature
+  < ASTM D3418
+  < 55 - 60
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM E2092 | 0.45 MPa; annealed
+  < 75 - 85
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 40
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ASTM D638
+  < 24
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2865
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ASTM D638
+  < 2477
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ASTM D790
+  < 73
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ASTM D790
+  < 46
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 2414
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ASTM D790
+  < 2352
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, amorphous
+  < 160
+  < J/m
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | notched Izod, amorphous
+  < 109
+  < J/m
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, annealed
+  < 233
+  < J/m
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | notched Izod, annealed
+  < 64
+  < J/m
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C
+
+> Annealing Condition
+  <
+  < 110 - 120 °C / 20 min
+  <

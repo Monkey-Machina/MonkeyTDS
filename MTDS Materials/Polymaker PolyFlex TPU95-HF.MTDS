@@ -35,7 +35,7 @@
 > Melt Index
   < | 210 °C, 2.16 kg
   < 9.3
-  < g/10 min
+  < dg/min
 
 > Saturated Water Absorption Rate
   < | equilibrium
@@ -150,13 +150,13 @@
 
 > Nozzle Temperature
   <
-  < 200 - 230 °C
-  <
+  < 200 - 230
+  < °C
 
 > Bed Temperature
   <
-  < 25 - 50 °C
-  <
+  < 25 - 50
+  < °C
 
 > Build Plate Surface Preparation
   <
@@ -170,18 +170,18 @@
 
 > Print Speed
   <
-  < 30 - 100 mm/s
-  <
+  < 30 - 100
+  < mm/s
 
 > Retraction Length
   <
-  < 3 - 6 mm
-  <
+  < 3 - 6
+  < mm
 
 > Retraction Speed
   <
-  < 40 - 60 mm/s
-  <
+  < 40 - 60
+  < mm/s
 
 > Chamber Temperature
   <

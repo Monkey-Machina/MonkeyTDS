@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < EasyFil ABS
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256508?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/easyfil-abs
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.05
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238
+  < 21 | 220 °C, 10 kg
+  < dg/min
+
+> Heat Deflection Temperature
+  < ASTM D648 | HDT A
+  < 85
+  < °C
+
+> Vicat Softening Temperature
+  < ASTM D1525
+  < 93
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield; converted from 460 kgf/cm^2
+  < 45.1
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 10
+  < %
+
+> Bending Strength (In-Plane)
+  < ASTM D790 | converted from 740 kgf/cm^2
+  < 72.6
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ASTM D790 | converted from 25000 kgf/cm^2
+  < 2452
+  < MPa
+
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 108
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < HB
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 255
+  < °C
+
+> Bed Temperature
+  <
+  < 100
+  < °C
+
+> Print Speed
+  <
+  < 25 - 100
+  < mm/s
+
+> Cooling Fan
+  <
+  < 0 - 35
+  < %

@@ -1,0 +1,87 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < Easy ABS
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_EASYABS_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.09
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 70
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 44
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 45
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 64
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2000
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched Izod, 23 °C
+  < 16
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235 - 255
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C

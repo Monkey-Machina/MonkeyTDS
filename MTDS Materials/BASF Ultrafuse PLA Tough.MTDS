@@ -1,0 +1,85 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse PLA Tough
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/engineering-filaments/ultrafuse-pla-tough/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 40
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 28
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2672
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527
+  < 2576
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 7.4
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 2.2
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched
+  < 33
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched
+  < 10
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C
+
+> Print Speed
+  <
+  < 40 - 300
+  < mm/s

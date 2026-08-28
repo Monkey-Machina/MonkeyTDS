@@ -1,0 +1,92 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse TPU 64D
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/flexible-filaments/ultrafuse-tpu-64d/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | stress at break
+  < 37
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | stress at break
+  < 19
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 399
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 115
+  < %
+
+> Shore Hardness
+  < ISO 868
+  < 58D
+  <
+
+> Tear Strength (In-Plane)
+  < ISO 34-1
+  < 66
+  < kN/m
+
+> Tear Strength (Interlayer)
+  < ISO 34-1
+  < 79
+  < kN/m
+
+> Compression Set
+  < ISO 815 | 23 °C, 72 h
+  < 25
+  < %
+
+# Physical Property
+
+> Abrasion Resistance
+  < ISO 4649 | volume loss
+  < 43
+  < mm^3
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 255
+  < °C
+
+> Bed Temperature
+  <
+  < 40 - 60
+  < °C
+
+> Print Speed
+  <
+  < 30 - 112
+  < mm/s

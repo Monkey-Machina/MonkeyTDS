@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < XT
+  <
+
+> Material
+  <
+  < Copolyester
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_XT.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | injection moulded, from the raw-material supplier
+  < 1.3
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.455 MPa, injection moulded, from the raw-material supplier
+  < 70
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.82 MPa, injection moulded, from the raw-material supplier
+  < 62
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 1850
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 55
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 6.2
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy
+  < 5.0
+  < kJ/m^2
+
+> Bending Modulus (In-Plane)
+  < ASTM D790 | injection moulded, from the raw-material supplier
+  < 2100
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, injection moulded, from the raw-material supplier
+  < 95
+  < J/m
+
+# Chemical Property
+
+> Composition
+  <
+  < Eastman Amphora AM1800 copolyester
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 70
+  < °C
+
+> Cooling Fan
+  <
+  < 50
+  < %
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s

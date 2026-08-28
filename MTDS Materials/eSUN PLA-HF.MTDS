@@ -1,0 +1,122 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PLA-HF
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-HF/PLA-HF-TDS--_2026.2.2.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/pla-hf-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.24 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 5.37 | 190 °C, 2.16 kg
+  < dg/min
+
+> Heat Deflection Temperature
+  < ISO 75 | GB/T 1634
+  < 52.45 | 0.45 MPa
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 64.28
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 33.9
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 5.19
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 2.8
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 100
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 65.3
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3403.33
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 3152.18
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | GB/T 1843, Izod
+  < 5.33
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | GB/T 1843, Izod
+  < 2.02
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 45 - 65
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < < 600
+  < mm/s

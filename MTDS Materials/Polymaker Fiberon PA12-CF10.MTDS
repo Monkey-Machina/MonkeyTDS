@@ -35,7 +35,7 @@
 > Melt Index
   < | 280 °C, 2.16 kg
   < 25.0
-  < g/10 min
+  < dg/min
 
 > Glass Transition Temperature
   < DSC | 10 °C/min
@@ -267,13 +267,13 @@
 
 > Nozzle Temperature
   <
-  < 280 - 300 °C
-  <
+  < 280 - 300
+  < °C
 
 > Bed Temperature
   <
-  < 40 - 50 °C
-  <
+  < 40 - 50
+  < °C
 
 > Chamber Temperature
   <

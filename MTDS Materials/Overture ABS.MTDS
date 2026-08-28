@@ -1,0 +1,107 @@
+# Specification
+
+> Manufacturer
+  <
+  < Overture
+  <
+
+> Product Name
+  <
+  < ABS
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://wiki.overture3d.com/abs_tds.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.15 | at 21.4 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 13.8 | 220 °C, 2.16 kg
+  < dg/min
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 103.4
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 1685 ± 81
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 25.1 ± 0.5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 21.3 ± 0.6
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 8.2 ± 0.4
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 1965 ± 72
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 52.1 ± 2.5
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 2.6 ± 0.4
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 245 - 265
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 100
+  < °C
+
+> Cooling Fan
+  <
+  < OFF
+  <
+
+> Print Speed
+  <
+  < 30 - 70
+  < mm/s
+
+> Max Overhang Angle
+  <
+  < 50
+  < °

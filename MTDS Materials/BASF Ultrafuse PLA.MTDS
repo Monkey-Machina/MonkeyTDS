@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/standard-filaments/ultrafuse-pla/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 34.7
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 21.2
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1860
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1715
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 4.2
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 1.2
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, notched
+  < 3.3
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, notched
+  < 1.6
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched
+  < 11.0
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched
+  < 4.7
+  < kJ/m^2
+
+# Physical Property
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa
+  < 65
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C
+
+> Print Speed
+  <
+  < 40 - 80
+  < mm/s

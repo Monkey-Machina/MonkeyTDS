@@ -1,0 +1,92 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse TPU 85A
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/flexible-filaments/ultrafuse-tpu-85a/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | stress at break
+  < 34
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | stress at break
+  < 10
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 600
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 320
+  < %
+
+> Shore Hardness
+  < ISO 868
+  < 85A
+  <
+
+> Tear Strength (In-Plane)
+  < ISO 34-1
+  < 80
+  < kN/m
+
+> Tear Strength (Interlayer)
+  < ISO 34-1
+  < 30
+  < kN/m
+
+> Compression Set
+  < ISO 815 | 23 °C, 72 h
+  < 26
+  < %
+
+# Physical Property
+
+> Abrasion Resistance
+  < ISO 4649 | volume loss
+  < 82
+  < mm^3
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 40
+  < °C
+
+> Print Speed
+  <
+  < 15 - 168
+  < mm/s

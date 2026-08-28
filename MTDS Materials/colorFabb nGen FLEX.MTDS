@@ -1,0 +1,104 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < nGen FLEX
+  <
+
+> Material
+  <
+  < TPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_nGen_FLEX.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.13
+  < g/cm^3
+
+# Mechanical Property
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 150
+  < MPa
+
+> Tear Strength
+  < ASTM D1004
+  < 350
+  < N
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield
+  < 14
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at break
+  < 22
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638
+  < 38
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 400
+  < %
+
+> Shore Hardness
+  < ASTM D2240
+  < 95A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < Eastman Amphora FL6000 flexible copolyester
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 80 °C (BuildTak)
+  <
+
+> Cooling Fan
+  <
+  < 0 - 50
+  < %
+
+> Print Speed
+  <
+  < 40 - 60
+  < mm/s

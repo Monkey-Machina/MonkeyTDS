@@ -1,0 +1,122 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PLA-Wood
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Wood/eSUN_Wood_Filament_TDS_V4.0.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/wood-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.2 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 1.9 | 190 °C, 2.16 kg
+  < dg/min
+
+> Heat Deflection Temperature
+  < ISO 75 | GB/T 1634
+  < 50.4 | 0.45 MPa
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 39.71
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 13.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 5.97
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1.97
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 67.3
+  < MPa
+
+> Bending Strength (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 23.7
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2855.8
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178 | GB/T 9341
+  < 1814.31
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | GB/T 1843, Izod
+  < 15.92
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | GB/T 1843, Izod
+  < 1.97
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 235
+  < °C
+
+> Bed Temperature
+  <
+  < 45 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < < 150
+  < mm/s

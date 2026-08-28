@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < PCTG
+  <
+
+> Material
+  <
+  < PCTG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_PCTG_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.23
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 76
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 64
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 43
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 45
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 4
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 220
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 60
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1600
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched Izod, 23 °C
+  < 92
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C

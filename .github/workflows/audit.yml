@@ -13,5 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Unit-engine self-test
+        run: python scripts/units.py
       - name: Lint the .MTDS dataset
         run: python scripts/compile_materials.py --check --out /tmp/materials.json

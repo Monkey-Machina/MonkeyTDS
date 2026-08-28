@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse PET
+  <
+
+> Material
+  <
+  < PET
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/standard-filaments/ultrafuse-pet/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 33.4
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 17.2
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2063
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1826
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 2.7
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 1.1
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, notched
+  < 2.1
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, notched
+  < 1.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched
+  < 12.3
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched
+  < 4.1
+  < kJ/m^2
+
+# Physical Property
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa
+  < 63
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 80
+  < °C
+
+> Print Speed
+  <
+  < 40 - 150
+  < mm/s

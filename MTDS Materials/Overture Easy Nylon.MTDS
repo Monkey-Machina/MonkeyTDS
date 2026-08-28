@@ -1,0 +1,174 @@
+# Specification
+
+> Manufacturer
+  <
+  < Overture
+  <
+
+> Product Name
+  <
+  < Easy Nylon
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://wiki.overture3d.com/easy_nylon_tds.pdf
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < Nylon 6 / Nylon 6,6 copolymer
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.12 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 13.0 | 260 °C, 1.2 kg
+  < dg/min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 187.7
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 181.2
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 2349 ± 182
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040, conditioned 15 d at 50% RH
+  < 1162 ± 274
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 71.3 ± 2.1
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040, conditioned 15 d at 50% RH
+  < 26.3 ± 2.1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, dry
+  < 50.3 ± 1.4
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040, conditioned 15 d at 50% RH
+  < 14.4 ± 1.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, dry
+  < 8.4 ± 0.9
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040, conditioned 15 d at 50% RH
+  < 245.3 ± 22.5
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 1598 ± 201
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341, conditioned 15 d at 50% RH
+  < 769 ± 88
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, dry
+  < 85.0 ± 2.7
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341, conditioned 15 d at 50% RH
+  < 37.6 ± 8.1
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, Charpy, dry
+  < 7.9 ± 2.6
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, Charpy, conditioned 15 d at 50% RH
+  < 21.1 ± 2.7
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 245 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 50
+  < °C
+
+> Cooling Fan
+  <
+  < OFF
+  <
+
+> Print Speed
+  <
+  < 30 - 70
+  < mm/s
+
+> Retraction Length
+  <
+  < 3 - 6
+  < mm
+
+> Retraction Speed
+  <
+  < 40 - 60
+  < mm/s
+
+> Max Overhang Angle
+  <
+  < 55
+  < °
+
+> Drying Condition
+  <
+  < anneal 70 °C / 2 h after printing
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PA film, PI film, or Textured PEI; PVP glue
+  <

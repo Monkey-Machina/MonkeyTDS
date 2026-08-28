@@ -1,0 +1,70 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < eTPU-LW
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/TPU-LW/TPU-LW_TDS_V1_.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/etpu-lw-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.15 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 5 | 190 °C, 10 kg
+  < dg/min
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 40 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < < 100
+  < mm/s
+
+> Drying Condition
+  <
+  < 55 °C / > 4 h
+  <

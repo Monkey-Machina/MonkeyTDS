@@ -1,0 +1,117 @@
+# Specification
+
+> Manufacturer
+  <
+  < Extrudr
+  <
+
+> Product Name
+  <
+  < Flex Hard
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/flex-hard-TDS-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 2781
+  < 1.2
+  < g/cm^3
+
+> Melting Temperature
+  < ISO 3146-C
+  < 190 - 210
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | VICAT A
+  < 140 | 4 mm wall
+  < °C
+
+> Glass Transition Temperature
+  <
+  < -24
+  < °C
+
+> Abrasion Resistance
+  < ISO 4649-A
+  < 26
+  < mm^3
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 40
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 490
+  < %
+
+> Stress at 50% Strain (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 16
+  < MPa
+
+> Stress at 100% Strain (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 16
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 29
+  < MPa
+
+> Shore Hardness
+  < ISO 868
+  < 58D
+  <
+
+> Tear Strength
+  < ISO 34-1B
+  < 175
+  < kN/m
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 90
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 30
+  < %
+
+> Print Speed
+  <
+  < 20 - 100
+  < mm/s
+
+> Maximum Volumetric Speed
+  <
+  < 4.6
+  < mm^3/s

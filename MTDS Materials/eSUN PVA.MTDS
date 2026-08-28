@@ -1,0 +1,65 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PVA
+  <
+
+> Material
+  <
+  < PVA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PVA/eSUN_PVA_Filament_TDS_V4.0.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/pva-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.25 | unit to be confirmed per source
+  < g/cm^3
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 180 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 45 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < < 150
+  < mm/s
+
+> Drying Condition
+  <
+  < 45 °C / > 10 h
+  <

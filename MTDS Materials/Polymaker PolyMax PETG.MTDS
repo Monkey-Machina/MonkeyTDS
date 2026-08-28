@@ -35,7 +35,7 @@
 > Melt Index
   < | 210 °C, 2.16 kg
   < 9
-  < g/10 min
+  < dg/min
 
 > Glass Transition Temperature
   < DSC | 10 °C/min
@@ -170,13 +170,13 @@
 
 > Nozzle Temperature
   <
-  < 230 - 260 °C
-  <
+  < 230 - 260
+  < °C
 
 > Bed Temperature
   <
-  < 70 - 80 °C
-  <
+  < 70 - 80
+  < °C
 
 > Build Plate Surface Preparation
   <
@@ -190,18 +190,18 @@
 
 > Print Speed
   <
-  < 50 - 100 mm/s
-  <
+  < 50 - 100
+  < mm/s
 
 > Retraction Length
   <
-  < 1 - 3 mm
-  <
+  < 1 - 3
+  < mm
 
 > Retraction Speed
   <
-  < 20 - 40 mm/s
-  <
+  < 20 - 40
+  < mm/s
 
 > Chamber Temperature
   <

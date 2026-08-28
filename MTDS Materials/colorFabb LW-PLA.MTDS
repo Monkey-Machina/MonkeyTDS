@@ -1,0 +1,107 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < LW-PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_LW-PLA.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | injection moulded, from the raw-material supplier, 0.40 foamed to 1.24 solid
+  < 0.40 - 1.24
+  < g/cm^3
+
+> Glass Transition Temperature
+  < DSC | injection moulded, from the raw-material supplier
+  < 55 - 60
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 200 °C at 100% flow
+  < 3333.76
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 200 °C at 100% flow
+  < 43.07
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 200 °C at 100% flow
+  < 8.08
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | foamed, 250 °C at 45% flow
+  < 864.25
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | foamed, 250 °C at 45% flow
+  < 10.83
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | foamed, 250 °C at 45% flow
+  < 12.78
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | unnotched Charpy, foamed 250 °C at 45% flow
+  < 5.46
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, foamed 250 °C at 45% flow
+  < 3.67
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < off
+  <
+
+> Print Speed
+  <
+  < 40 - 100
+  < mm/s

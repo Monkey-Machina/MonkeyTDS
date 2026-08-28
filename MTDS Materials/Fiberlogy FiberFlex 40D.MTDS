@@ -1,0 +1,112 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < FiberFlex 40D
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.85
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_FIBERFLEX40D_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.16
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa
+  < 70
+  < °C
+
+> Melting Temperature
+  < ASTM D3418
+  < 157
+  < °C
+
+# Mechanical Property
+
+> Shore Hardness
+  < ASTM D2240
+  < 91A
+  <
+
+> Shore Hardness
+  < ASTM D2240
+  < 40D
+  <
+
+> Shore Hardness
+  < ASTM D2240 | 15 s
+  < 37D
+  <
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at break
+  < 28
+  < MPa
+
+> Stress at 5% Strain (In-Plane)
+  < ASTM D638
+  < 2
+  < MPa
+
+> Stress at 10% Strain (In-Plane)
+  < ASTM D638
+  < 4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 700
+  < %
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 67
+  < MPa
+
+> Tear Strength
+  < ASTM D1004
+  < 115
+  < kN/m
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C

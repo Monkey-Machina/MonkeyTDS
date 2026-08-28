@@ -1,0 +1,112 @@
+# Specification
+
+> Manufacturer
+  <
+  < Overture
+  <
+
+> Product Name
+  <
+  < PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://wiki.overture3d.com/pla_tds.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.21 | at 21.5 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 9.0 | 210 °C, 2.16 kg
+  < dg/min
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 148
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 64.2
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2641 ± 328
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 47.1 ± 1.2
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 38.9 ± 0.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 5.1 ± 0.3
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 3279 ± 134
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 84.9 ± 3.1
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 3.1 ± 0.3
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 25 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < ON
+  <
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < Textured PEI; PVA glue optional
+  <

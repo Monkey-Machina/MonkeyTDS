@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < PC/ABS
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_PCABS_TDS.pdf
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PC/ABS blend
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.07
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306 | B50, 50 °C/h
+  < 113
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | B120, 120 °C/h
+  < 115
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 42
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2000
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 7
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 68
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2000
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched Izod, 23 °C
+  < 55
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, 23 °C
+  < 53
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 280
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 100
+  < °C

@@ -187,54 +187,47 @@ A field contains at most one method. To record a property measured by more than 
 | BuildTak | Proprietary textured build-plate surface |
 
 ## Standard Units
-Every unit is defined over the seven SI base units (kg, m, s, A, K, mol, cd) as a
-scale factor times a product of base-unit powers, so any two units of the same
-dimension can be converted programmatically. `scripts/units.py` is the reference
-implementation; tooling normalises each numeric field to a single canonical unit
-per subject (see below) when compiling the dataset.
+A unit is **any expression the MTDS unit engine can parse** — an SI base unit
+(`kg m s A K mol cd`), optionally SI-prefixed, or a named derived unit (`Pa N J W
+V ohm S F H Wb T Hz`), combined with `·` / `*` / space (multiply), `/` (divide),
+and `^n` powers. So `MPa`, `mm^3/s`, `W/m·K`, `dg/min`, `µS/cm`, `MΩ·cm`,
+`kV/mm`, `g/cm^3`, `kJ/m^2` are all valid without being enumerated anywhere.
 
-| Unit | SI definition | Meaning |
-| ---- | ------------- | ------- |
-| m | 1 · m | Meter |
-| cm | 1e-2 · m | Centimeter |
-| mm | 1e-3 · m | Millimeter |
-| g | 1e-3 · kg | Gram |
-| kg | 1 · kg | Kilogram |
-| s | 1 · s | Second |
-| min | 60 · s | Minute |
-| h | 3600 · s | Hour |
-| K | 1 · K | Kelvin |
-| °C | 1 · K + 273.15 | Degrees Celsius (affine) |
-| g/cm^3 | 1e3 · kg·m⁻³ | Grams per cubic centimeter |
-| MPa | 1e6 · kg·m⁻¹·s⁻² | Megapascal |
-| GPa | 1e9 · kg·m⁻¹·s⁻² | Gigapascal |
-| kJ/m^2 | 1e3 · kg·s⁻² | Kilojoules per square meter |
-| % | 1e-2 · (dimensionless) | Percent |
-| % RH | 1e-2 · (dimensionless) | Percent relative humidity |
-| wt% | 1e-2 · (dimensionless) | Percent by weight |
-| ° | π/180 · (dimensionless) | Degree of angle |
-| mm/s | 1e-3 · m·s⁻¹ | Millimeters per second |
-| mm^3/s | 1e-9 · m³·s⁻¹ | Cubic millimeters per second (volumetric flow) |
-| g/10 min | 1 · kg (per 10 min, reporting convention) | Melt mass-flow rate |
-| cm^3/10 min | 1 · m³ (per 10 min, reporting convention) | Melt volume-flow rate |
-| ohm | 1 · kg·m²·s⁻³·A⁻² | Ohm |
-| kohm | 1e3 · kg·m²·s⁻³·A⁻² | Kilohm |
-| Mohm | 1e6 · kg·m²·s⁻³·A⁻² | Megohm |
-| ohm-cm | 1e-2 · kg·m³·s⁻³·A⁻² | Ohm-centimeter (volume resistivity) |
-| ohm-m | 1 · kg·m³·s⁻³·A⁻² | Ohm-meter (volume resistivity) |
-| ohm/sq | 1 · kg·m²·s⁻³·A⁻² | Ohm per square (surface resistivity) |
-| kV/mm | 1e6 · kg·m·s⁻³·A⁻¹ | Kilovolt per millimeter (dielectric strength) |
-| T | 1 · kg·s⁻²·A⁻¹ | Tesla (magnetic flux density) |
-| W/m·K | 1 · kg·m·s⁻³·K⁻¹ | Watt per meter-kelvin (thermal conductivity) |
-| ppm/°C | 1e-6 · K⁻¹ | Parts per million per degree Celsius (thermal expansion) |
+**[UNITS.md](UNITS.md) is the full reference** — the grammar, the prefix table,
+the named units, the accepted non-SI units (`min h L bar in psi kgf °` …), the
+affine handling of `°C` / `°F`, and what is deliberately unsupported.
+`scripts/units.py` is the implementation; `python scripts/units.py` self-tests it.
+
+A property reported in any dimensionally-consistent unit is accepted and
+normalised on compile. Reporting conventions that embed a number — `g/10 min`,
+`cm^3/10 min` — are **not** valid units: use `dg/min` (identical value) and
+`mm^3/min` respectively.
 
 ### Canonical units
-When the dataset is compiled, each numeric field is converted to one canonical
-unit per subject — chosen automatically as the most common SI-recognised unit
-that subject appears in — and emitted as `valueCanonical` / `canonicalUnit`
-alongside the verbatim value. Files may report a property in any dimensionally
-consistent unit; the compiler normalises it. A unit that is dimensionally wrong
-for its subject is flagged (`compile_materials.py --check` exits non-zero).
+When the dataset is compiled, each numeric field is emitted with `valueNumber`
+(a representative number parsed from the value string), `valueRange` /
+`valueUncertainty` (when the value is a range, ± spread, or inequality), and a
+`valueCanonical` / `canonicalUnit` pair.
+
+Each subject has a **declared canonical unit** — the reference list lives in
+`SUBJECT_UNITS` in `scripts/compile_materials.py`. It is chosen for a coherent,
+comparable dataset, not to match what data sheets happen to print: e.g. melt
+mass-flow rate normalises to `dg/min` (numerically identical to the `g/10 min`
+reporting convention), and melt volume-flow rate to `mm^3/s`. The verbatim value
+and its original unit are always preserved on the field. Subjects not listed fall
+back to the most common recognised unit.
+
+A subject may declare more than one accepted unit when a property is genuinely
+reported in two non-interconvertible conventions (impact strength as `kJ/m^2`
+*or* `J/m`; tear strength as `kN/m` *or* `N`; abrasion loss as `%`, `mm^3`, *or*
+`g`). The compiler converts each value to the first accepted unit it is
+dimensionally compatible with; a value already in an accepted-but-non-convertible
+unit is kept as-is.
+
+Files may report a property in any dimensionally consistent unit; the compiler
+normalises it. A unit that is dimensionally wrong for its subject (and not one of
+that subject's declared alternates) is an error — `compile_materials.py --check`
+exits non-zero.
 
 ### .MTDS File Format
 The .MTDS file format is a standard for storing MTDS material information in a plain text file that is distinct from other plan text files. MTDS compliant information could be stored in other formats, but databases or systems must follow this format to be considered compliant. The purposes of this is to allow for future feature growth and expansion into more complex data storage.

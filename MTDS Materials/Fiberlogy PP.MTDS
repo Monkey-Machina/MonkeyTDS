@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < PP
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/01/FIBERLOGY_PP_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.05 | high for PP; verify against source
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 51
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | method A, 120 °C/h
+  < 110
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | method B, 120 °C/h
+  < 49
+  < °C
+
+> Glass Transition Temperature
+  < ISO 11357
+  < -31
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 14
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 700
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < > 100
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, 23 °C
+  < 30
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < not required with packing tape
+  <

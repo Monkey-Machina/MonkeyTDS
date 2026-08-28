@@ -40,7 +40,7 @@
 > Melt Index
   < ISO 1133 | 210 °C, 2.16 kg
   < 6
-  < g/10 min
+  < dg/min
 
 > Melting Temperature
   < DSC | 10 °C/min
@@ -135,18 +135,18 @@
 
 > Print & Storage Humidity
   <
-  < < 10% RH
-  <
+  < < 10 | RH
+  < %
 
 > Nozzle Size
   <
-  < 0.4 mm
-  <
+  < 0.4
+  < mm
 
 > Nozzle Temperature
   <
-  < 210 - 230 °C
-  <
+  < 210 - 230
+  < °C
 
 > Build Plate Type
   <
@@ -160,8 +160,8 @@
 
 > Bed Temperature
   <
-  < 45 - 60 °C
-  <
+  < 45 - 60
+  < °C
 
 > Cooling Fan
   <
@@ -170,18 +170,18 @@
 
 > Print Speed
   <
-  < 15 - 35 mm/s
-  <
+  < 15 - 35
+  < mm/s
 
 > Retraction Length
   <
-  < 2 - 4 mm
-  <
+  < 2 - 4
+  < mm
 
 > Retraction Speed
   <
-  < 20 - 30 mm/s
-  <
+  < 20 - 30
+  < mm/s
 
 > Support Material
   <

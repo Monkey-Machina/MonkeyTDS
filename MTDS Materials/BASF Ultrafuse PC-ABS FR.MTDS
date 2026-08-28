@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse PC-ABS FR
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/engineering-filaments/ultrafuse-pc-abs-fr/
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PC/ABS, flame retardant
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 50.1
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 17.3
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2550
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 1810
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 10.7
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 0.8
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, notched
+  < 16.8
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, notched
+  < 1.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched
+  < 57.0
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched
+  < 3.0
+  < kJ/m^2
+
+# Physical Property
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa
+  < 86
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 280
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C
+
+> Print Speed
+  <
+  < 30 - 350
+  < mm/s

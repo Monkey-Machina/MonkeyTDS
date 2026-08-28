@@ -1,0 +1,107 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < HDglass
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256561?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/hdglass
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.27
+  < g/cm^3
+
+> Moisture Absorption
+  < ASTM D570
+  < 0.13
+  < %
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.455 MPa; TDS labels this Vicat
+  < 70
+  < °C
+
+> Light Transmission
+  < ASTM D1003
+  < 90
+  < %
+
+> Haze
+  < ASTM D1003
+  < < 1.0
+  < %
+
+# Mechanical Property
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched 23 °C
+  < 7.2
+  < kJ/m^2
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield
+  < 50
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1940
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 120
+  < %
+
+> Bending Strength (In-Plane)
+  < ASTM D790
+  < 70.6
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 2147.6
+  < MPa
+
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 105
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 225
+  < °C

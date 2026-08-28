@@ -1,0 +1,164 @@
+# Specification
+
+> Manufacturer
+  <
+  < Polymaker
+  <
+
+> Product Name
+  <
+  < Draft PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Source
+  <
+  < TDS | https://wiki.polymaker.com/polymaker-products/more-about-our-products/documents/technical-data-sheets/pla/draft-pla
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.31 | at 23 °C
+  < g/cm^3
+
+> Melt Index
+  <
+  < 20 | 210 °C, 2.16 kg
+  < dg/min
+
+> Glass Transition Temperature
+  < DSC | 10 °C/min
+  < 62
+  < °C
+
+> Melting Temperature
+  < DSC | 10 °C/min
+  < 162
+  < °C
+
+> Decomposition Temperature
+  < TGA | 20 °C/min
+  < N/A
+  <
+
+> Vicat Softening Temperature
+  < ISO 306 | GB/T 1633
+  < 63
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 53
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 59
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 2190 ± 78
+  < MPa
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 1586 ± 84
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 24.0 ± 0.5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 12.0 ± 0.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 23.9 ± 6.0
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 0.9 ± 0.1
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 2707 ± 229
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 39.3 ± 0.6
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | GB/T 1043, notched Charpy
+  < 6.0 ± 0.5
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA
+  <
+
+> Resistance to Acid
+  <
+  < Good | weak acids
+  <
+
+> Resistance to Acid
+  <
+  < Poor | strong acids
+  <
+
+> Resistance to Alkali
+  <
+  < Fair | weak alkalis
+  <
+
+> Resistance to Alkali
+  <
+  < Poor | strong alkalis
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Good
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 25 - 60
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < PC and Textured PEI (glue when needed)
+  <
+
+> Cooling Fan
+  <
+  < ON
+  <

@@ -1,0 +1,87 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < HS PLA Clear
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.85
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_HSPLACLEAR_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.24
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 60
+  < °C
+
+> Glass Transition Temperature
+  < DSC
+  < 60
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 50
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3500
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < < 5
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, 23 °C
+  < < 5
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C

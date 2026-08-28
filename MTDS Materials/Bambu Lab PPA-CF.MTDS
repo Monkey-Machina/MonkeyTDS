@@ -65,7 +65,7 @@
 > Melt Index
   < ISO 1133 | 280 °C, 2.16 kg
   < 8.4 ± 0.7
-  < g/10 min
+  < dg/min
 
 > Melting Temperature
   < DSC | 10 °C/min
@@ -235,8 +235,8 @@
 
 > Print & Storage Humidity
   <
-  < < 20% RH (Sealed, with desiccant)
-  <
+  < < 20 | RH, sealed with desiccant
+  < %
 
 > Nozzle Size
   <
@@ -245,8 +245,8 @@
 
 > Nozzle Temperature
   <
-  < 280 - 310 °C
-  <
+  < 280 - 310
+  < °C
 
 > Build Plate Type
   <
@@ -260,8 +260,8 @@
 
 > Bed Temperature
   <
-  < 100 - 120°C
-  <
+  < 100 - 120
+  < °C
 
 > Cooling Fan
   <
@@ -270,33 +270,33 @@
 
 > Print Speed
   <
-  < < 100 mm/s
-  <
+  < < 100
+  < mm/s
 
 > Retraction Length
   <
-  < 0.8 - 1.4 mm
-  <
+  < 0.8 - 1.4
+  < mm
 
 > Retraction Speed
   <
-  < 20 - 40 mm/s
-  <
+  < 20 - 40
+  < mm/s
 
 > Chamber Temperature
   <
-  < 50 - 80 °C
-  <
+  < 50 - 80
+  < °C
 
 > Max Overhang Angle
   <
-  < ~ 70°
-  <
+  < ~ 70
+  < °
 
 > Max Bridging Length
   <
-  < ~ 40 mm
-  <
+  < ~ 40
+  < mm
 
 > Support Material
   <

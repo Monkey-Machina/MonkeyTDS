@@ -1,0 +1,112 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < R PET-G
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.85
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_RPETG_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.29
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 68
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 62
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 78
+  < °C
+
+> Glass Transition Temperature
+  < ASTM D3418
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 51
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2800
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 4
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 29
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 70
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 2000
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180 | notched Izod, 23 °C
+  < 5
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 90
+  < °C

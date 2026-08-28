@@ -1,0 +1,65 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < eTwinkling
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/etwinkling-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.41 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 2.5 | 190 °C, 2.16 kg
+  < dg/min
+
+> Heat Deflection Temperature
+  < ISO 75 | GB/T 1634
+  < 67 | 0.45 MPa
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 45 - 60
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < < 200
+  < mm/s

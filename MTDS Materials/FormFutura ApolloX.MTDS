@@ -1,0 +1,87 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < ApolloX
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256142?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/apollox
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.11
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133
+  < 45 | 260 °C, 5 kg
+  < dg/min
+
+> Melting Temperature
+  < ISO 294
+  < 230 ± 10
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | VST/A/50
+  < 98
+  < °C
+
+# Mechanical Property
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy notched 23 °C
+  < 18
+  < kJ/m^2
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 47.5
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2020
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 15
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235 - 255
+  < °C

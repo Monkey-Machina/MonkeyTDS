@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse PP
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/standard-filaments/ultrafuse-pp/
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 15.5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 9.0
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 575
+  < MPa
+
+> Bending Modulus (Interlayer)
+  < ISO 178
+  < 380
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 118.6
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 5.4
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, notched
+  < 5.3
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, notched
+  < 2.3
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched
+  < 37.7
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched
+  < 11.6
+  < kJ/m^2
+
+# Physical Property
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa
+  < 54
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 80
+  < °C
+
+> Print Speed
+  <
+  < 20 - 300
+  < mm/s

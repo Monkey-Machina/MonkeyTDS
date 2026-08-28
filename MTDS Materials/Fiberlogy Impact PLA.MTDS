@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fiberlogy
+  <
+
+> Product Name
+  <
+  < Impact PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.02
+  < mm
+
+> Net Weight
+  <
+  < 0.85
+  < kg
+
+> Source
+  <
+  < TDS | https://fiberlogy.com/app/uploads/2026/05/FIBERLOGY_IMPACTPLA_TDS.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.22
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM E2092 | 0.45 MPa, annealed 110 °C/15 min
+  < 75 - 85
+  < °C
+
+> Glass Transition Temperature
+  < ASTM D3418
+  < 55 - 60
+  < °C
+
+> Melting Temperature
+  < ASTM D3418
+  < 165 - 180
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | annealed 110 °C/15 min
+  < 40
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2870
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ASTM D790
+  < 73
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 2410
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, 23 °C
+  < 160 | sheet unit misprint 'kJ/m'
+  < J/m
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 245
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C

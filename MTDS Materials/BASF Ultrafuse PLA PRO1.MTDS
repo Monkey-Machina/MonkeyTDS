@@ -1,0 +1,45 @@
+# Specification
+
+> Manufacturer
+  <
+  < BASF Forward AM
+  <
+
+> Product Name
+  <
+  < Ultrafuse PLA PRO1
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/engineering-filaments/ultrafuse-pla-pro1/
+  <
+
+# Mechanical Property
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C
+
+> Print Speed
+  <
+  < 40 - 300
+  < mm/s

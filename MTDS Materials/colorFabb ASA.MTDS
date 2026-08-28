@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_ASA.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.07 | injection moulded, from the raw-material supplier
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT-B, 0.45 MPa
+  < 87
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2100
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 45
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 6.5
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | injection moulded, from the raw-material supplier
+  < 2300
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178 | injection moulded, from the raw-material supplier
+  < 80
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy
+  < 10.5
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 100
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 50
+  < %
+
+> Print Speed
+  <
+  < 30 - 50
+  < mm/s
