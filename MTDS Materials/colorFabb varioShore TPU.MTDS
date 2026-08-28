@@ -1,0 +1,117 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < varioShore TPU
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_varioShore_TPU.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | injection moulded, from the raw-material supplier
+  < 1.2
+  < g/cm^3
+
+> Glass Transition Temperature
+  < DSC | ISO 11357, injection moulded, from the raw-material supplier
+  < -20
+  < °C
+
+> Melting Temperature
+  < DSC | ISO 11357, injection moulded, from the raw-material supplier
+  < 130
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A | 210 °C at 100% flow
+  < 50
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A | 210 °C at 100% flow
+  < 24
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A | 210 °C at 100% flow
+  < 465
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178 | 210 °C at 100% flow
+  < 3
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, 210 °C at 100% flow
+  < 40
+  < kJ/m^2
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A | foamed, 230 °C at 70% flow
+  < 40
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A | foamed, 230 °C at 70% flow
+  < 12
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A | foamed, 230 °C at 70% flow
+  < 450
+  < %
+
+> Shore Hardness
+  < ASTM D2240
+  < 92A
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 260 °C
+  <
+
+> Bed Temperature
+  <
+  < 50 - 60 °C
+  <
+
+> Cooling Fan
+  <
+  < off
+  <
+
+> Print Speed
+  <
+  < 40 - 100 mm/s
+  <

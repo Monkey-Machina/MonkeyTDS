@@ -1,0 +1,107 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < PETG Economy
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_PETG_Economy.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | injection moulded, from the raw-material supplier
+  < 1.28
+  < g/cm^3
+
+> Glass Transition Temperature
+  < DSC | ISO 11357, injection moulded, from the raw-material supplier
+  < 70
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT-B, injection moulded, from the raw-material supplier
+  < 65
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 1900
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 50
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 90
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 1000
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 70
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy
+  < 4.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Izod, injection moulded, from the raw-material supplier
+  < 107 J/m | as published
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235 - 255 °C
+  <
+
+> Bed Temperature
+  <
+  < 70 - 80 °C
+  <
+
+> Cooling Fan
+  <
+  < 75 - 100%
+  <
+
+> Print Speed
+  <
+  < 30 - 50 mm/s
+  <
