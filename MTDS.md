@@ -41,6 +41,8 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Physical Property | Moisture Absorption | *Opt.* | *Req.* | *Req.* |
 | Physical Property | Coefficient of Thermal Expansion | *Req.* | *Req.* | *Req.* |
 | Physical Property | Thermal Conductivity | *Req.* | *Req.* | *Req.* |
+| Physical Property | Decomposition Temperature | *Opt.* | *Req.* | *Req.* |
+| Physical Property | Light Transmission | *Opt.* | *Req.* | *Req.* |
 | Physical Property | Odor | *Opt.* | *Req.* | *Opt.* |
 | Physical Property | Color | *Opt.* | *Req.* | *Opt.* |
 | Mechanical Property | Young's Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
@@ -51,10 +53,10 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Mechanical Property | Breaking Elongation Rate (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Elongation at Yield (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Elongation at Yield (Interlayer) | *Req.* | *Req.* | *Req.* |
-| Mechanical Property | Bending Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
-| Mechanical Property | Bending Modulus (Interlayer) | *Req.* | *Req.* | *Req.* |
-| Mechanical Property | Bending Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
-| Mechanical Property | Bending Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Flexural Modulus (In-Plane) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Flexural Modulus (Interlayer) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Flexural Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
+| Mechanical Property | Flexural Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Impact Strength (In-Plane) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Impact Strength (Interlayer) | *Req.* | *Req.* | *Req.* |
 | Mechanical Property | Interlayer Adhesion | *Opt.* | *Req.* | *Req.* |
@@ -96,7 +98,7 @@ MTDS defines a number of standard field Subjects. MTDS also recognizes field cat
 | Print Setting | Support Material | N/A | *Opt.* | N/A |
 | Print Setting | Annealing Condition | N/A | *Opt.* | N/A |
 
-`Elongation at Yield` is the strain at the yield point, distinct from `Breaking Elongation Rate` (strain at break). `Interlayer Adhesion` is a single bond-strength value between deposited layers, reported by some manufacturers separately from the direction-resolved mechanical subjects. `Moisture Absorption` is measured at a stated time (annotate the duration), distinct from `Saturated Water Absorption Rate` (equilibrium). `Shore Hardness` carries its scale in the value, e.g. `95A` or `81D`.
+`Elongation at Yield` is the strain at the yield point, distinct from `Breaking Elongation Rate` (strain at break). `Interlayer Adhesion` is a single bond-strength value between deposited layers, reported by some manufacturers separately from the direction-resolved mechanical subjects. `Moisture Absorption` is measured at a stated time (annotate the duration), distinct from `Saturated Water Absorption Rate` (equilibrium). `Shore Hardness` carries its scale in the value, e.g. `95A` or `81D`. `Decomposition Temperature` is the onset / mass-loss temperature from thermogravimetry (annotate the heating rate, e.g. `TGA | 20 °C/min`), distinct from the `Melting`, `Glass Transition`, and softening temperatures. `Light Transmission` is luminous transmittance as a percentage, for translucent and transparent grades (annotate sample thickness where the source gives it).
 
 ## MTDS Standard Field Methods, Values, and Units
 In addition to standard fields MTDS outlines standard methods, values and units. Standard methods, values, and units are separate from standard field subjects. Applicable field standard methods, values, and units must still be used outside of standard subject fields to be considered compliant. Standard subject fields can use non-standard methods, values, and units. The purpose of these method, value, and unit standards is to maximize user ability to search and filter MTDS files.
@@ -118,14 +120,18 @@ Any part of a field (subject, method, value, or units) may be followed by ` | ` 
 | GB/T 9341 | Chinese standard for flexural properties, equivalent to ISO 178 |
 | GB/T 1043 | Chinese standard for Charpy impact strength, equivalent to ISO 179 |
 | GB/T 1633 | Chinese standard for Vicat softening temperature, equivalent to ISO 306 |
+| GB/T 2410 | Chinese standard for luminous transmittance and haze of transparent plastics, equivalent to ASTM D1003 |
 | DSC | Differential scanning calorimetry |
+| TGA | Thermogravimetric analysis |
 | ASTM D638 | Determination of tensile properties, US equivalent of ISO 527 |
 | ASTM D790 | Determination of flexural properties, US equivalent of ISO 178 |
 | ASTM D648 | Determination of deflection temperature under load, US equivalent of ISO 75 |
 | ASTM D256 | Determination of Izod pendulum impact resistance |
 | ASTM D257 | Determination of DC resistance or conductance of insulating materials |
+| ASTM D1003 | Determination of haze and luminous transmittance of transparent plastics |
 | ASTM E831 | Linear thermal expansion by thermomechanical analysis |
 | ISO 11359 | Thermomechanical analysis, coefficient of linear thermal expansion |
+| ISO 11358 | Thermogravimetry (TG) of polymers, decomposition/mass-loss temperature |
 | ISO 22007 | Determination of thermal conductivity and thermal diffusivity |
 | IEC 60243 | Electric strength of insulating materials |
 | UL 94 | Flammability classification of plastic materials |

@@ -79,12 +79,12 @@
   < 6
   < %
 
-> Bending Strength (In-Plane)
+> Flexural Strength (In-Plane)
   < ASTM D790
   < 81
   < MPa
 
-> Bending Modulus (In-Plane)
+> Flexural Modulus (In-Plane)
   < ASTM D790
   < 3800
   < MPa

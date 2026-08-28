@@ -69,22 +69,22 @@
   < 3.91
   < %
 
-> Bending Strength (In-Plane)
+> Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341
   < 41.9
   < MPa
 
-> Bending Strength (Interlayer)
+> Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341
   < 39.9
   < MPa
 
-> Bending Modulus (In-Plane)
+> Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
   < 1228.33
   < MPa
 
-> Bending Modulus (Interlayer)
+> Flexural Modulus (Interlayer)
   < ISO 178 | GB/T 9341
   < 1276.45
   < MPa

@@ -79,12 +79,12 @@
   < 6
   < %
 
-> Bending Strength (In-Plane)
+> Flexural Strength (In-Plane)
   < ASTM D790
   < 83
   < MPa
 
-> Bending Modulus (In-Plane)
+> Flexural Modulus (In-Plane)
   < ASTM D790 | TDS labels GPa as MPa
   < 3.8
   < GPa

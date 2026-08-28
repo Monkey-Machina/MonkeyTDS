@@ -119,22 +119,22 @@
   < 2.6 ± 0.1
   < %
 
-> Bending Modulus (In-Plane)
+> Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
   < 3705.4 ± 84.5
   < MPa
 
-> Bending Modulus (Interlayer)
+> Flexural Modulus (Interlayer)
   < ISO 178 | GB/T 9341
   < 2998.4 ± 92.3
   < MPa
 
-> Bending Strength (In-Plane)
+> Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341; source TDS mechanical table misprints the tensile method
   < 104.2 ± 2.4
   < MPa
 
-> Bending Strength (Interlayer)
+> Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341; source TDS mechanical table misprints the tensile method
   < 80.3 ± 2.5
   < MPa

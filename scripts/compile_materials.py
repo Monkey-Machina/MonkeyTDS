@@ -176,16 +176,17 @@ SUBJECT_UNITS = {
     "Decomposition Temperature": ["°C"],
     "Coefficient of Thermal Expansion": ["ppm/°C"],
     "Thermal Conductivity": ["W/m·K"],
+    "Light Transmission": ["%"],
     "Moisture Absorption": ["%"],
     "Saturated Water Absorption Rate": ["%"],
     "Young's Modulus (In-Plane)": ["MPa"],
     "Young's Modulus (Interlayer)": ["MPa"],
-    "Bending Modulus (In-Plane)": ["MPa"],
-    "Bending Modulus (Interlayer)": ["MPa"],
+    "Flexural Modulus (In-Plane)": ["MPa"],
+    "Flexural Modulus (Interlayer)": ["MPa"],
     "Tensile Strength (In-Plane)": ["MPa"],
     "Tensile Strength (Interlayer)": ["MPa"],
-    "Bending Strength (In-Plane)": ["MPa"],
-    "Bending Strength (Interlayer)": ["MPa"],
+    "Flexural Strength (In-Plane)": ["MPa"],
+    "Flexural Strength (Interlayer)": ["MPa"],
     "Interlayer Adhesion": ["MPa"],
     "Breaking Elongation Rate (In-Plane)": ["%"],
     "Breaking Elongation Rate (Interlayer)": ["%"],
@@ -381,7 +382,7 @@ def audit(materials, canon):
             meth = f.get("method") or ""
             low = s.lower()
             if meth:
-                if ("bending" in low or "flexural" in low) and re.search(r"\b527\b|D ?638", meth):
+                if "flexural" in low and re.search(r"\b527\b|D ?638", meth):
                     findings.append(("info", "method-mismatch", mid, s,
                                      f"flexural subject with tensile method {meth!r}"))
                 if "tensile" in low and re.search(r"\b178\b|D ?790", meth):
