@@ -1,0 +1,77 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D-Fuel
+  <
+
+> Product Name
+  <
+  < Standard PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://nexa3d.com/wp-content/uploads/2024/07/TDS-3DFuel-Standard-PLA.pdf
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA (NatureWorks Ingeo)
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 41 | maximum
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield
+  < 37
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 3.2
+  < GPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 1.8
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod
+  < 26 J/m | as published
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 185 - 205
+  < °C
+
+> Bed Temperature
+  <
+  < 45
+  < °C
+
+> Print Speed
+  <
+  < 50 - 100
+  < mm/s

@@ -1,0 +1,129 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D-Fuel
+  <
+
+> Product Name
+  <
+  < Workday ABS
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://nexa3d.com/wp-content/uploads/2024/07/TDS-3DFuel-Workday-ABS.pdf
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < HB
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.04
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238
+  < 23 | 220 °C, 10 kg
+  < g/10 min
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.82 MPa, unannealed
+  < 86
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa, unannealed
+  < 90
+  < °C
+
+> Vicat Softening Temperature
+  < ASTM D1525
+  < 94
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < ASTM D955
+  < 0.4 - 0.7
+  < %
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield; converted from 520 kg/cm^2
+  < 51.0
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 30
+  < %
+
+> Young's Modulus (In-Plane)
+  < ASTM D638 | converted from 22600 kg/cm^2
+  < 2216
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ASTM D790 | converted from 800 kg/cm^2
+  < 78.5
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ASTM D790 | converted from 28000 kg/cm^2
+  < 2746
+  < MPa
+
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 110
+  <
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, 23 °C
+  < 23 kg·cm/cm | as published
+  <
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, -30 °C
+  < 8 kg·cm/cm | as published
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 110
+  < °C
+
+> Cooling Fan
+  <
+  < 10%
+  <
+
+> Drying Condition
+  <
+  < 80 °C / 2 - 4 h
+  <
