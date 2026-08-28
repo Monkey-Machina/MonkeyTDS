@@ -25,7 +25,7 @@ SLOTS = ("method", "value", "units")
 
 
 def slugify(text):
-    text = text.lower()
+    text = text.lower().replace("+", " plus ")   # keep "PLA" and "PLA+" distinct
     text = re.sub(r"[^a-z0-9]+", "-", text)
     return text.strip("-")
 
@@ -124,6 +124,7 @@ def compile_dir(root):
             "productName": first_value(fields, "Product Name"),
             "material": first_value(fields, "Material"),
             "sources": sources,
+            "mtds": path.read_text(encoding="utf-8"),
             "fields": [f for f in fields if f["subject"] != "Source"],
         })
     return materials

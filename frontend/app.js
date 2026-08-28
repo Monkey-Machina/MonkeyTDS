@@ -484,7 +484,8 @@ function view_detail(id) {
     '<p class="kv"><b>Core data</b> <span class="completeness"><i style="width:' + pct + '%"></i></span> ' +
     have + " of " + CORE.length + " core properties</p>" +
     '<p><button class="btn" id="tray-toggle">' + (inTray ? "Remove from compare" : "Add to compare") + "</button> " +
-    '<button class="linkish" id="dl-json">download this material as JSON</button></p>';
+    (m.mtds ? '<button class="linkish" id="dl-mtds">download .MTDS</button> &middot; ' : "") +
+    '<button class="linkish" id="dl-json">download JSON</button></p>';
 
   cats.forEach(function (cat) {
     html += "<h2>" + esc(cat) + "</h2>" +
@@ -522,6 +523,8 @@ function view_detail(id) {
   document.getElementById("dl-json").onclick = function () {
     download(m.manufacturer + " " + m.productName + ".json", JSON.stringify(m, null, 2), "application/json");
   };
+  var dlm = document.getElementById("dl-mtds");
+  if (dlm) dlm.onclick = function () { download(m.file || (m.manufacturer + " " + m.productName + ".MTDS"), m.mtds, "text/plain"); };
 }
 
 /* ================= COMPARE ================= */
