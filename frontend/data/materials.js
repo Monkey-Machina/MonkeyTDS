@@ -1,6 +1,6 @@
 window.__MTDS_DATA__ = {
   "schema": "mtds-compiled/2",
-  "generatedAt": "2026-08-28T00:08:06Z",
+  "generatedAt": "2026-08-28T00:42:40Z",
   "materialCount": 163,
   "canonicalUnits": {
     "Abrasion Resistance": "%",
@@ -151,11 +151,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "110",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 110.0,
           "valueCanonical": 110.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Physical Property",
@@ -164,11 +164,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.4",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.4,
           "valueCanonical": 1.4,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -291,11 +291,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "109",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 109.0,
           "valueCanonical": 109.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Physical Property",
@@ -304,11 +304,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.27",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.27,
           "valueCanonical": 1.27,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -431,11 +431,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "50",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 50.0,
           "valueCanonical": 50.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Physical Property",
@@ -444,11 +444,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.01",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.01,
           "valueCanonical": 1.01,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Chemical Property",
@@ -536,11 +536,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.07",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.07,
           "valueCanonical": 1.07,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -549,11 +549,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -676,11 +676,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.04",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.04,
           "valueCanonical": 1.04,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -689,18 +689,18 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "100",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 100.0,
           "valueCanonical": 100.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
           "subject": "Tensile Strength",
           "method": "ISO 527",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -713,7 +713,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Strength",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -726,7 +726,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Modulus",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -820,11 +820,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.09",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.09,
           "valueCanonical": 1.09,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -833,11 +833,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -964,11 +964,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.28",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.28,
           "valueCanonical": 1.28,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -977,11 +977,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "80",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 80.0,
           "valueCanonical": 80.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -1108,11 +1108,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "60",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 60.0,
           "valueCanonical": 60.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Physical Property",
@@ -1121,11 +1121,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.26",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.26,
           "valueCanonical": 1.26,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -1252,11 +1252,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.05",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.05,
           "valueCanonical": 1.05,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -1265,11 +1265,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -1392,11 +1392,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "0.6-0.9",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 0.75,
           "valueCanonical": 0.75,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -1405,18 +1405,18 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "60",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 60.0,
           "valueCanonical": 60.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
           "subject": "Tensile Strength",
           "method": "ISO 527",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -1429,7 +1429,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Strength",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -1442,7 +1442,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Modulus",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -1536,11 +1536,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.11",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.11,
           "valueCanonical": 1.11,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -1549,11 +1549,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -1680,11 +1680,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.11",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.11,
           "valueCanonical": 1.11,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -1693,11 +1693,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -1824,11 +1824,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.25",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.25,
           "valueCanonical": 1.25,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -1955,11 +1955,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.16",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.16,
           "valueCanonical": 1.16,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -1968,11 +1968,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "158",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 158.0,
           "valueCanonical": 158.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -2099,11 +2099,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.17",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.17,
           "valueCanonical": 1.17,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -2112,11 +2112,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "70",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 70.0,
           "valueCanonical": 70.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -2243,11 +2243,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.29",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.29,
           "valueCanonical": 1.29,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -2256,11 +2256,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "60",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 60.0,
           "valueCanonical": 60.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -2387,11 +2387,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.0",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.0,
           "valueCanonical": 1.0,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -2400,11 +2400,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "80",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 80.0,
           "valueCanonical": 80.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -2544,11 +2544,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.18",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.18,
           "valueCanonical": 1.18,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -2557,11 +2557,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -2688,11 +2688,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.71",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.71,
           "valueCanonical": 1.71,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -2819,11 +2819,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.23",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.23,
           "valueCanonical": 1.23,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -2832,11 +2832,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "78",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 78.0,
           "valueCanonical": 78.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -2963,11 +2963,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.2",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.2,
           "valueCanonical": 1.2,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -2976,11 +2976,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "164",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 164.0,
           "valueCanonical": 164.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -3094,11 +3094,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.2",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.2,
           "valueCanonical": 1.2,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -3221,11 +3221,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.29",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.29,
           "valueCanonical": 1.29,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -3234,11 +3234,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "165",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 165.0,
           "valueCanonical": 165.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -3365,11 +3365,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.34",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.34,
           "valueCanonical": 1.34,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -3378,11 +3378,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "55",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 55.0,
           "valueCanonical": 55.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -3509,11 +3509,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.37",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.37,
           "valueCanonical": 1.37,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -3522,18 +3522,18 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "225",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 225.0,
           "valueCanonical": 225.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
           "subject": "Tensile Strength",
           "method": "ISO 527",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3546,7 +3546,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Strength",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3559,7 +3559,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Modulus",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3653,11 +3653,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.24",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.24,
           "valueCanonical": 1.24,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -3666,18 +3666,18 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "187",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 187.0,
           "valueCanonical": 187.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
           "subject": "Tensile Strength",
           "method": "ISO 527",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3690,7 +3690,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Strength",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3703,7 +3703,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Modulus",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3797,11 +3797,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.10",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.1,
           "valueCanonical": 1.1,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -3810,18 +3810,18 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "128",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 128.0,
           "valueCanonical": 128.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
           "subject": "Tensile Strength",
           "method": "ISO 527",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3834,7 +3834,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Strength",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3847,7 +3847,7 @@ window.__MTDS_DATA__ = {
           "subject": "Flexural Modulus",
           "method": "ISO 178",
           "methodNote": null,
-          "value": "Not Applicable",
+          "value": "N/A",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -3937,11 +3937,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.30",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.3,
           "valueCanonical": 1.3,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -3950,11 +3950,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "143",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 143.0,
           "valueCanonical": 143.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -4081,11 +4081,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.27",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.27,
           "valueCanonical": 1.27,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -4094,11 +4094,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "217",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 217.0,
           "valueCanonical": 217.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -4225,11 +4225,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.34",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.34,
           "valueCanonical": 1.34,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -4238,11 +4238,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "186",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 186.0,
           "valueCanonical": 186.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -4365,11 +4365,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.10",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.1,
           "valueCanonical": 1.1,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -4378,11 +4378,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "128",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 128.0,
           "valueCanonical": 128.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -4509,11 +4509,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.28",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.28,
           "valueCanonical": 1.28,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Mechanical Property",
@@ -4640,11 +4640,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.05",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.05,
           "valueCanonical": 1.05,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -4653,11 +4653,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "104",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 104.0,
           "valueCanonical": 104.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -4784,11 +4784,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.07",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.07,
           "valueCanonical": 1.07,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -4797,11 +4797,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "105",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 105.0,
           "valueCanonical": 105.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -4928,11 +4928,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "1.34",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.34,
           "valueCanonical": 1.34,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -4941,11 +4941,11 @@ window.__MTDS_DATA__ = {
           "methodNote": null,
           "value": "186",
           "valueNote": null,
-          "units": null,
+          "units": "°C",
           "unitsNote": null,
           "valueNumber": 186.0,
           "valueCanonical": 186.0,
-          "canonicalUnit": null
+          "canonicalUnit": "°C"
         },
         {
           "category": "Mechanical Property",
@@ -16932,13 +16932,13 @@ window.__MTDS_DATA__ = {
           "subject": "Density",
           "method": "ISO 1183",
           "methodNote": null,
-          "value": "1.21 g/cm³(filament)",
+          "value": "1.21",
           "valueNote": null,
-          "units": null,
+          "units": "g/cm^3",
           "unitsNote": null,
           "valueNumber": 1.21,
           "valueCanonical": 1.21,
-          "canonicalUnit": null
+          "canonicalUnit": "g/cm^3"
         },
         {
           "category": "Physical Property",
@@ -25826,13 +25826,13 @@ window.__MTDS_DATA__ = {
           "subject": "Bending Modulus (Interlayer)",
           "method": "ISO 178",
           "methodNote": "GB/T 9341",
-          "value": "2150±110",
+          "value": "2150 ± 110",
           "valueNote": null,
-          "units": null,
+          "units": "MPa",
           "unitsNote": null,
           "valueNumber": 2150.0,
           "valueCanonical": 2150.0,
-          "canonicalUnit": null
+          "canonicalUnit": "MPa"
         },
         {
           "category": "Mechanical Property",
@@ -42084,7 +42084,7 @@ window.__MTDS_DATA__ = {
       "id": "polymaker-abs-max",
       "file": "Polymaker ABS Max.MTDS",
       "manufacturer": "Polymaker",
-      "productName": "Polymaker ABS Max",
+      "productName": "ABS Max",
       "material": "ABS",
       "sources": [
         {
@@ -42115,7 +42115,7 @@ window.__MTDS_DATA__ = {
           "subject": "Product Name",
           "method": null,
           "methodNote": null,
-          "value": "Polymaker ABS Max",
+          "value": "ABS Max",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -42649,7 +42649,7 @@ window.__MTDS_DATA__ = {
       "id": "polymaker-abs-pro",
       "file": "Polymaker ABS Pro.MTDS",
       "manufacturer": "Polymaker",
-      "productName": "Polymaker ABS Pro",
+      "productName": "ABS Pro",
       "material": "ABS",
       "sources": [
         {
@@ -42680,7 +42680,7 @@ window.__MTDS_DATA__ = {
           "subject": "Product Name",
           "method": null,
           "methodNote": null,
-          "value": "Polymaker ABS Pro",
+          "value": "ABS Pro",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -43490,8 +43490,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 306",
-          "methodNote": "GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "69.1 ± 1.62",
           "valueNote": null,
           "units": "MPa",
@@ -43503,8 +43503,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 306",
-          "methodNote": "GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "46.5 ± 0.8",
           "valueNote": null,
           "units": "MPa",
@@ -48238,8 +48238,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 306",
-          "methodNote": "GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "104.2 ± 2.4",
           "valueNote": null,
           "units": "MPa",
@@ -48251,8 +48251,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 306",
-          "methodNote": "GB/T 1633 (as printed in TDS mechanical table; specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "80.3 ± 2.5",
           "valueNote": null,
           "units": "MPa",
@@ -52572,8 +52572,8 @@ window.__MTDS_DATA__ = {
           "subject": "Tensile Strength (In-Plane)",
           "method": "ISO 527",
           "methodNote": "GB/T 1040, after annealing",
-          "value": "42.86 ± 160.44",
-          "valueNote": null,
+          "value": "42.86",
+          "valueNote": "± tolerance misprinted in source TDS",
           "units": "MPa",
           "unitsNote": null,
           "valueNumber": 42.86,
@@ -53751,7 +53751,7 @@ window.__MTDS_DATA__ = {
       "id": "polymaker-pc-abs",
       "file": "Polymaker PC-ABS.MTDS",
       "manufacturer": "Polymaker",
-      "productName": "Polymaker PC-ABS",
+      "productName": "PC-ABS",
       "material": "PC",
       "sources": [
         {
@@ -53782,7 +53782,7 @@ window.__MTDS_DATA__ = {
           "subject": "Product Name",
           "method": null,
           "methodNote": null,
-          "value": "Polymaker PC-ABS",
+          "value": "PC-ABS",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -54316,7 +54316,7 @@ window.__MTDS_DATA__ = {
       "id": "polymaker-pc-pbt",
       "file": "Polymaker PC-PBT.MTDS",
       "manufacturer": "Polymaker",
-      "productName": "Polymaker PC-PBT",
+      "productName": "PC-PBT",
       "material": "PC",
       "sources": [
         {
@@ -54347,7 +54347,7 @@ window.__MTDS_DATA__ = {
           "subject": "Product Name",
           "method": null,
           "methodNote": null,
-          "value": "Polymaker PC-PBT",
+          "value": "PC-PBT",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -54907,7 +54907,7 @@ window.__MTDS_DATA__ = {
       "id": "polymaker-petg",
       "file": "Polymaker PETG.MTDS",
       "manufacturer": "Polymaker",
-      "productName": "Polymaker PETG",
+      "productName": "PETG",
       "material": "PETG",
       "sources": [
         {
@@ -54938,7 +54938,7 @@ window.__MTDS_DATA__ = {
           "subject": "Product Name",
           "method": null,
           "methodNote": null,
-          "value": "Polymaker PETG",
+          "value": "PETG",
           "valueNote": null,
           "units": null,
           "unitsNote": null,
@@ -58490,8 +58490,8 @@ window.__MTDS_DATA__ = {
           "subject": "Tensile Strength (In-Plane)",
           "method": "ISO 527",
           "methodNote": "GB/T 1040",
-          "value": "33.4 ± 92.7",
-          "valueNote": "tolerance as printed in TDS",
+          "value": "33.4",
+          "valueNote": "± tolerance misprinted in source TDS",
           "units": "MPa",
           "unitsNote": null,
           "valueNumber": 33.4,
@@ -58540,8 +58540,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2127.2 ± 29.9",
           "valueNote": null,
           "units": "MPa",
@@ -58553,8 +58553,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -58566,8 +58566,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "56.2 ± 0.3",
           "valueNote": null,
           "units": "MPa",
@@ -58579,8 +58579,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -59683,8 +59683,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2441.9 ± 77.5",
           "valueNote": null,
           "units": "MPa",
@@ -59696,8 +59696,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -59709,8 +59709,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "58.7 ± 1.0",
           "valueNote": null,
           "units": "MPa",
@@ -59722,8 +59722,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -60248,8 +60248,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2933.8 ± 78.3",
           "valueNote": null,
           "units": "MPa",
@@ -60261,8 +60261,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -60274,8 +60274,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "77.9 ± 0.4",
           "valueNote": null,
           "units": "MPa",
@@ -60287,8 +60287,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -60800,8 +60800,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "1958.9 ± 72.6",
           "valueNote": null,
           "units": "MPa",
@@ -60813,8 +60813,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -60826,8 +60826,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "50.2 ± 1.6",
           "valueNote": null,
           "units": "MPa",
@@ -60839,8 +60839,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -61404,8 +61404,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2640 ± 47",
           "valueNote": null,
           "units": "MPa",
@@ -61417,8 +61417,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -61430,8 +61430,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "106.1 ± 1.6",
           "valueNote": null,
           "units": "MPa",
@@ -61443,8 +61443,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -62586,8 +62586,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2933.8 ± 78.3",
           "valueNote": null,
           "units": "MPa",
@@ -62599,8 +62599,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -62612,8 +62612,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "77.9 ± 0.4",
           "valueNote": null,
           "units": "MPa",
@@ -62625,8 +62625,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (TDS table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -63755,8 +63755,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2518 ± 53",
           "valueNote": null,
           "units": "MPa",
@@ -63768,8 +63768,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -63781,8 +63781,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "96.6 ± 1.3",
           "valueNote": null,
           "units": "MPa",
@@ -63794,8 +63794,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -64333,8 +64333,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "2050 ± 79",
           "valueNote": null,
           "units": "MPa",
@@ -64346,8 +64346,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Modulus (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -64359,8 +64359,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (In-Plane)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "81.29 ± 1.53",
           "valueNote": null,
           "units": "MPa",
@@ -64372,8 +64372,8 @@ window.__MTDS_DATA__ = {
         {
           "category": "Mechanical Property",
           "subject": "Bending Strength (Interlayer)",
-          "method": "ISO 527",
-          "methodNote": "GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)",
+          "method": "ISO 178",
+          "methodNote": "GB/T 9341; source TDS mechanical table misprints the tensile method",
           "value": "N/A",
           "valueNote": null,
           "units": null,
@@ -70750,32 +70750,6 @@ window.__MTDS_DATA__ = {
           "canonicalUnit": "°C"
         },
         {
-          "category": "Mechanical Property",
-          "subject": "Young's Modulus (In-Plane)",
-          "method": null,
-          "methodNote": null,
-          "value": "Increased rigidity vs. standard PLA",
-          "valueNote": null,
-          "units": null,
-          "unitsNote": null,
-          "valueNumber": null,
-          "valueCanonical": null,
-          "canonicalUnit": null
-        },
-        {
-          "category": "Mechanical Property",
-          "subject": "Young's Modulus (Interlayer)",
-          "method": null,
-          "methodNote": null,
-          "value": "Increased rigidity vs. standard PLA",
-          "valueNote": null,
-          "units": null,
-          "unitsNote": null,
-          "valueNumber": null,
-          "valueCanonical": null,
-          "canonicalUnit": null
-        },
-        {
           "category": "Print Setting",
           "subject": "Nozzle Temperature",
           "method": null,
@@ -71577,32 +71551,6 @@ window.__MTDS_DATA__ = {
           "canonicalUnit": "g/cm^3"
         },
         {
-          "category": "Mechanical Property",
-          "subject": "Tensile Strength (In-Plane)",
-          "method": null,
-          "methodNote": null,
-          "value": "Similar to standard PLA, possibly less",
-          "valueNote": null,
-          "units": null,
-          "unitsNote": null,
-          "valueNumber": null,
-          "valueCanonical": null,
-          "canonicalUnit": null
-        },
-        {
-          "category": "Mechanical Property",
-          "subject": "Tensile Strength (Interlayer)",
-          "method": null,
-          "methodNote": null,
-          "value": "Similar to standard PLA, possibly less",
-          "valueNote": null,
-          "units": null,
-          "unitsNote": null,
-          "valueNumber": null,
-          "valueCanonical": null,
-          "canonicalUnit": null
-        },
-        {
           "category": "Print Setting",
           "subject": "Nozzle Temperature",
           "method": null,
@@ -71798,32 +71746,6 @@ window.__MTDS_DATA__ = {
           "valueNumber": 2.4,
           "valueCanonical": 2.4,
           "canonicalUnit": "g/cm^3"
-        },
-        {
-          "category": "Mechanical Property",
-          "subject": "Tensile Strength (In-Plane)",
-          "method": null,
-          "methodNote": null,
-          "value": "Not stronger than standard PLA",
-          "valueNote": null,
-          "units": null,
-          "unitsNote": null,
-          "valueNumber": null,
-          "valueCanonical": null,
-          "canonicalUnit": null
-        },
-        {
-          "category": "Mechanical Property",
-          "subject": "Tensile Strength (Interlayer)",
-          "method": null,
-          "methodNote": null,
-          "value": "Not stronger than standard PLA",
-          "valueNote": null,
-          "units": null,
-          "unitsNote": null,
-          "valueNumber": null,
-          "valueCanonical": null,
-          "canonicalUnit": null
         },
         {
           "category": "Print Setting",
@@ -74265,7 +74187,7 @@ window.__MTDS_DATA__ = {
           "subject": "Impact Strength (In-Plane)",
           "method": "ISO 179-1",
           "methodNote": "unnotched Charpy",
-          "value": "no break",
+          "value": "No break",
           "valueNote": null,
           "units": "kJ/m^2",
           "unitsNote": null,
@@ -74278,7 +74200,7 @@ window.__MTDS_DATA__ = {
           "subject": "Impact Strength (Interlayer)",
           "method": "ISO 179-1",
           "methodNote": "unnotched Charpy",
-          "value": "no break",
+          "value": "No break",
           "valueNote": null,
           "units": "kJ/m^2",
           "unitsNote": null,
@@ -78683,7 +78605,7 @@ window.__MTDS_DATA__ = {
           "subject": "Impact Strength (In-Plane)",
           "method": "ISO 179-1",
           "methodNote": "unnotched Charpy",
-          "value": "NB (no break)",
+          "value": "No break",
           "valueNote": null,
           "units": "kJ/m^2",
           "unitsNote": null,
@@ -78696,7 +78618,7 @@ window.__MTDS_DATA__ = {
           "subject": "Impact Strength (Interlayer)",
           "method": "ISO 179-1",
           "methodNote": "unnotched Charpy",
-          "value": "NB (no break)",
+          "value": "No break",
           "valueNote": null,
           "units": "kJ/m^2",
           "unitsNote": null,

@@ -37,18 +37,6 @@
   < 2.4
   < g/cm^3
 
-# Mechanical Property
-
-> Tensile Strength (In-Plane)
-  <
-  < Not stronger than standard PLA
-  <
-
-> Tensile Strength (Interlayer)
-  <
-  < Not stronger than standard PLA
-  <
-
 # Print Setting
 
 > Nozzle Temperature

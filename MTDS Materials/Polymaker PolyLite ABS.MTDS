@@ -81,7 +81,7 @@
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 33.4 ± 92.7 | tolerance as printed in TDS
+  < 33.4 | ± tolerance misprinted in source TDS
   < MPa
 
 > Tensile Strength (Interlayer)
@@ -100,22 +100,22 @@
   < %
 
 > Bending Modulus (In-Plane)
-  < ISO 527 | GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)
+  < ISO 178 | GB/T 9341; source TDS mechanical table misprints the tensile method
   < 2127.2 ± 29.9
   < MPa
 
 > Bending Modulus (Interlayer)
-  < ISO 527 | GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)
+  < ISO 178 | GB/T 9341; source TDS mechanical table misprints the tensile method
   < N/A
   <
 
 > Bending Strength (In-Plane)
-  < ISO 527 | GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)
+  < ISO 178 | GB/T 9341; source TDS mechanical table misprints the tensile method
   < 56.2 ± 0.3
   < MPa
 
 > Bending Strength (Interlayer)
-  < ISO 527 | GB/T 1040 (as printed in TDS mechanical table; flexural specimen diagram cites ISO 178, GB/T 9341)
+  < ISO 178 | GB/T 9341; source TDS mechanical table misprints the tensile method
   < N/A
   <
 

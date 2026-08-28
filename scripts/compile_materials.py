@@ -176,11 +176,121 @@ def normalize_units(materials):
     return canon, warnings
 
 
+PROP_CATS = {"Physical Property", "Mechanical Property", "Chemical Property",
+             "Electrical Property", "Magnetic Property"}
+
+# categories whose numeric values are expected to carry a unit
+QUANTITY_CATS = {"Physical Property", "Mechanical Property",
+                 "Electrical Property", "Magnetic Property"}
+# subject names that denote a measured physical quantity (so a bare number needs a unit)
+QUANTITY_RE = re.compile(
+    r"strength|modulus|elongation|density|temperature|conductivity|resistivity|"
+    r"resistance|expansion|adhesion|induction|\bindex\b|deflection|shrinkage|"
+    r"toughness|viscosity|\brate\b",
+    re.I,
+)
+# subjects that legitimately carry no unit (scale encoded in the value, or a pure ratio)
+UNITLESS_OK_RE = re.compile(r"shore hardness|coefficient|\bratio\b|anisotropy", re.I)
+# non-numeric field values that are legitimate results, not data-entry noise
+VALUE_OK_NON_NUMERIC = {
+    "n/a", "na", "none", "no break", "pass", "fail", "stable", "insoluble",
+    "not tested", "not measured", "-", "--", "tbd", "n.d.",
+}
+
+
+def audit(materials, canon):
+    """Data-quality lint. Returns [(level, code, material_id, subject, detail)].
+    level is 'error' (corruption -> fails --check), 'warn' or 'info' (advisory)."""
+    findings = []
+
+    # which subjects ever carry a unit / a number
+    has_unit = collections.Counter()
+    num_hits = collections.Counter()
+    total = collections.Counter()
+    fam = collections.defaultdict(list)
+    for m in materials:
+        for f in m["fields"]:
+            s = f["subject"]
+            total[s] += 1
+            if f.get("valueNumber") is not None:
+                num_hits[s] += 1
+            if f.get("units"):
+                has_unit[s] += 1
+            if f.get("valueCanonical") is not None and f["category"] in PROP_CATS:
+                fam[(s, m["material"] or "?")].append((m["id"], f["valueCanonical"]))
+
+    for m in materials:
+        mid = m["id"]
+
+        if m["productName"] and m["manufacturer"] \
+                and m["productName"].lower().startswith(m["manufacturer"].lower() + " "):
+            findings.append(("info", "name-prefix", mid, "Product Name",
+                             f"{m['productName']!r} repeats the manufacturer"))
+
+        for f in m["fields"]:
+            s, cat = f["subject"], f["category"]
+            val = (f.get("value") or "").strip()
+            unit = f.get("units")
+            n = f.get("valueNumber")
+
+            if cat in QUANTITY_CATS and n is not None and not unit \
+                    and not UNITLESS_OK_RE.search(s) \
+                    and (has_unit[s] >= 2 or QUANTITY_RE.search(s)):
+                findings.append(("warn", "no-unit", mid, s, f"{val!r} has no unit"))
+
+            if unit and not units.known(unit):
+                findings.append(("warn", "unknown-unit", mid, s,
+                                 f"{unit!r} is not in the standard"))
+
+            if cat in PROP_CATS and val and n is None \
+                    and val.lower() not in VALUE_OK_NON_NUMERIC \
+                    and num_hits[s] >= max(3, 0.6 * total[s]):
+                findings.append(("warn", "unparsed-value", mid, s,
+                                 f"{val!r} does not read as a number"))
+
+            mt = re.search(r"([\d.]+)\s*±\s*([\d.]+)", val)
+            if mt:
+                a, b = float(mt.group(1)), float(mt.group(2))
+                if a > 0 and b >= a:
+                    findings.append(("error", "tolerance>value", mid, s,
+                                     f"{val!r}: ± spread exceeds the value"))
+
+            meth = f.get("method") or ""
+            low = s.lower()
+            if meth:
+                if ("bending" in low or "flexural" in low) and re.search(r"\b527\b|D ?638", meth):
+                    findings.append(("info", "method-mismatch", mid, s,
+                                     f"flexural subject with tensile method {meth!r}"))
+                if "tensile" in low and re.search(r"\b178\b|D ?790", meth):
+                    findings.append(("info", "method-mismatch", mid, s,
+                                     f"tensile subject with flexural method {meth!r}"))
+                if "strength" in low and re.search(r"\b306\b|D ?1525", meth):
+                    findings.append(("info", "method-mismatch", mid, s,
+                                     f"strength subject with softening-point method {meth!r}"))
+
+    import statistics
+    for (s, family), rows in sorted(fam.items()):
+        if len(rows) < 6:
+            continue
+        vals = [v for _, v in rows]
+        mu, sd = statistics.mean(vals), statistics.pstdev(vals)
+        if sd <= 0:
+            continue
+        for rid, v in rows:
+            if abs(v - mu) > 5 * sd:
+                findings.append(("info", "family-outlier", rid, s,
+                                 f"{v:g} vs {family} family mean {mu:.3g} (sd {sd:.3g})"))
+    return findings
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--materials-dir", default="MTDS Materials")
     ap.add_argument("--out", default="materials.json")
-    ap.add_argument("--check", action="store_true", help="exit non-zero on any unit-conversion warning")
+    ap.add_argument("--check", action="store_true",
+                    help="exit non-zero on unit-conversion or data-corruption findings")
+    ap.add_argument("--audit", action="store_true",
+                    help="print the full data-quality report and exit")
     args = ap.parse_args(argv)
 
     root = pathlib.Path(args.materials_dir)
@@ -192,8 +302,28 @@ def main(argv=None):
         sys.exit(f"no .MTDS files found in {root}")
 
     canon, warnings = normalize_units(materials)
-    for w in warnings:
-        print("warning:", w, file=sys.stderr)
+
+    findings = [("error", "unit-convert", w.split(" / ")[0].strip(),
+                 w.split(" / ", 1)[1].split(":", 1)[0].strip(),
+                 w.split(":", 1)[1].strip()) for w in warnings]
+    findings += audit(materials, canon)
+
+    if args.audit or args.check:
+        by_code = collections.defaultdict(list)
+        for lvl, code, mid, subj, detail in findings:
+            by_code[(lvl, code)].append(f"    {mid}  |  {subj}  —  {detail}")
+        order = {"error": 0, "warn": 1, "info": 2}
+        for (lvl, code), rows in sorted(by_code.items(), key=lambda kv: (order[kv[0][0]], kv[0][1])):
+            print(f"[{lvl}] {code}  ({len(rows)})", file=sys.stderr)
+            for r in sorted(rows):
+                print(r, file=sys.stderr)
+        n_err = sum(1 for f in findings if f[0] == "error")
+        n_warn = sum(1 for f in findings if f[0] == "warn")
+        print(f"audit: {n_err} error, {n_warn} warn, "
+              f"{len(findings) - n_err - n_warn} info", file=sys.stderr)
+
+    if args.audit:
+        return
 
     payload = {
         "schema": "mtds-compiled/2",
@@ -205,10 +335,12 @@ def main(argv=None):
     pathlib.Path(args.out).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(f"wrote {args.out} ({len(materials)} materials, {len(warnings)} unit warnings)")
+    print(f"wrote {args.out} ({len(materials)} materials)")
 
-    if args.check and warnings:
-        sys.exit(f"{len(warnings)} unit-conversion warning(s)")
+    if args.check:
+        n_err = sum(1 for f in findings if f[0] == "error")
+        if n_err:
+            sys.exit(f"{n_err} data-corruption finding(s) — see report above")
 
 
 if __name__ == "__main__":

@@ -52,18 +52,6 @@
   < 140 | After heat treatment
   < °C
 
-# Mechanical Property
-
-> Young's Modulus (In-Plane)
-  <
-  < Increased rigidity vs. standard PLA
-  <
-
-> Young's Modulus (Interlayer)
-  <
-  < Increased rigidity vs. standard PLA
-  <
-
 # Print Setting
 
 > Nozzle Temperature
