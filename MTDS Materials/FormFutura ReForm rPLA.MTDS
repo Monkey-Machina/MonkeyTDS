@@ -1,0 +1,112 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < ReForm rPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256632?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/reform-rpla
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.24
+  < g/cm^3
+
+> Melt Index
+  <
+  < 7 | 210 °C, 2.16 kg
+  < g/10 min
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 55
+  < °C
+
+> Glass Transition Temperature
+  < DSC
+  < 60
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 50.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 53.5
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3420
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 5.5
+  < %
+
+> Bending Strength (In-Plane)
+  < ISO 178
+  < 60.7
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ISO 178
+  < 3780
+  < MPa
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 215 °C
+  <
+
+> Bed Temperature
+  <
+  < 40 - 60 °C
+  <
+
+> Print Speed
+  <
+  < 25 - 90 mm/s
+  <
+
+> Cooling Fan
+  <
+  < 80 - 100%
+  <
+
+> Drying Condition
+  <
+  < not necessary; 30 - 40 °C / 6 h
+  <

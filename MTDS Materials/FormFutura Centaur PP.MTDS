@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < Centaur PP
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256498?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/centaur-pp
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 0.89
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | TDS cites ISO 1183
+  < 8 | 230 °C, 2.16 kg
+  < g/10 min
+
+> Melting Temperature
+  <
+  < 170
+  < °C
+
+> Vicat Softening Temperature
+  <
+  < 103
+  < °C
+
+# Mechanical Property
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched 23 °C; TDS says Izod
+  < 30
+  < kJ/m^2
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield
+  < 12
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 600
+  < %
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 402
+  < MPa
+
+> Shore Hardness
+  <
+  < 50D
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 245 - 270 °C
+  <
+
+> Bed Temperature
+  <
+  < 80 - 85 °C
+  <
+
+> Cooling Fan
+  <
+  < 0 - 50%
+  <
+
+> Drying Condition
+  <
+  < 50 - 60 °C / 24 h
+  <

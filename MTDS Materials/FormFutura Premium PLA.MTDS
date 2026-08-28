@@ -1,0 +1,117 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < Premium PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256613?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/premium-pla
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.24
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238
+  < 6 | 210 °C, 2.16 kg
+  < g/10 min
+
+> Heat Deflection Temperature
+  < ASTM E2092 | HDT A
+  < 55
+  < °C
+
+> Glass Transition Temperature
+  < ASTM D3418
+  < 60
+  < °C
+
+# Mechanical Property
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched 23 °C
+  < 16
+  < J/m
+
+> Tensile Strength (In-Plane)
+  < ASTM D882 | at yield
+  < 60
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D882 | at break
+  < 53
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D882
+  < 3.5
+  < GPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D882
+  < 6
+  < %
+
+> Bending Strength (In-Plane)
+  < ASTM D790
+  < 83
+  < MPa
+
+> Bending Modulus (In-Plane)
+  < ASTM D790 | TDS labels GPa as MPa
+  < 3.8
+  < GPa
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 185 - 210 °C
+  <
+
+> Bed Temperature
+  <
+  < 50 - 60 °C
+  <
+
+> Print Speed
+  <
+  < 25 - 150 mm/s
+  <
+
+> Cooling Fan
+  <
+  < 80 - 100%
+  <
+
+> Drying Condition
+  <
+  < not necessary; 40 - 50 °C / 6 h
+  <

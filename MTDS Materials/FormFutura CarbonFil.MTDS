@@ -1,0 +1,99 @@
+# Specification
+
+> Manufacturer
+  <
+  < FormFutura
+  <
+
+> Product Name
+  <
+  < CarbonFil
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.formfutura.com/web/content/256493?download=true
+  <
+
+> Source
+  <
+  < Product Page | https://www.formfutura.com/carbonfil
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.32
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy notched 23 °C
+  < 5.4
+  < kJ/m^2
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | at break
+  < 45
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1
+  < 4.9
+  < %
+
+> Bending Modulus (In-Plane)
+  < ISO 178 | TDS cites ISO 527-1
+  < 4250
+  < MPa
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG + 15% carbon fiber
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 275 °C
+  <
+
+> Bed Temperature
+  <
+  < 80 - 90 °C
+  <
+
+> Print Speed
+  <
+  < 25 - 70 mm/s
+  <
+
+> Cooling Fan
+  <
+  < 0 - 50%
+  <
+
+> Drying Condition
+  <
+  < 40 - 60 °C / 12 h
+  <
