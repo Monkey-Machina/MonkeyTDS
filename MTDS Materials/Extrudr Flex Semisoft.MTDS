@@ -1,0 +1,122 @@
+# Specification
+
+> Manufacturer
+  <
+  < Extrudr
+  <
+
+> Product Name
+  <
+  < Flex Semisoft
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/flex-semisoft-TDS-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 2781
+  < 1.18
+  < g/cm^3
+
+> Melting Temperature
+  < ISO 3146-C
+  < 180 - 230
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | VICAT A
+  < 98 | 4 mm wall
+  < °C
+
+> Glass Transition Temperature
+  <
+  < -34
+  < °C
+
+> Abrasion Resistance
+  < ISO 4649-A
+  < 25 mm^3 | as published
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 42
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2 | 5A, 500 mm/min
+  < 550
+  < %
+
+> Tensile Stress (In-Plane)
+  < ISO 527-2 | at 50% strain
+  < 9
+  < MPa
+
+> Tensile Stress (In-Plane)
+  < ISO 527-2 | at 100% strain
+  < 11
+  < MPa
+
+> Tensile Stress (In-Plane)
+  < ISO 527-2 | at 300% strain
+  < 22
+  < MPa
+
+> Shore Hardness
+  < ISO 868
+  < 85A - 88A
+  <
+
+> Tear Strength
+  < ISO 34-1B
+  < 135 kN/m | as published
+  <
+
+> Compressive Strength (In-Plane)
+  < DIN 53452
+  < 42
+  < MPa
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 90
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 30%
+  <
+
+> Print Speed
+  <
+  < 20 - 100
+  < mm/s
+
+> Maximum Volumetric Speed
+  <
+  < 2.8
+  < mm^3/s

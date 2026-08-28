@@ -1,0 +1,139 @@
+# Specification
+
+> Manufacturer
+  <
+  < Extrudr
+  <
+
+> Product Name
+  <
+  < DuraPro ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://s3.extrudr.com/extrudr-media/datasheets/tds/tds-en/durapro-asa-TDS-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.05
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238 | sheet prints unit as g/cm^3
+  < 20
+  < g/10 min
+
+> Melting Temperature
+  < ISO 3146-C
+  < 180 - 200
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | HDT B
+  < 96
+  < °C
+
+> Vicat Softening Temperature
+  < ASTM D1525
+  < 96 | 4 mm wall
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < ASTM D955
+  < 0.4
+  < %
+
+# Mechanical Property
+
+> Bending Modulus (In-Plane)
+  < ASTM D790
+  < 3500 ± 200
+  < MPa
+
+> Bending Strength (In-Plane)
+  < ASTM D790
+  < 78
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2200
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 62.2 ± 3
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638
+  < 6
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 20 | nominal
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched, 23 °C
+  < 140
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | unnotched, -30 °C
+  < 29
+  < kJ/m^2
+
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 105
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < HB | 1.5 mm
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 110
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 30%
+  <
+
+> Print Speed
+  <
+  < 20 - 200
+  < mm/s
+
+> Maximum Volumetric Speed
+  <
+  < 15
+  < mm^3/s
