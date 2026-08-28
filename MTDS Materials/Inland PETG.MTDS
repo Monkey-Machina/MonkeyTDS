@@ -1,0 +1,72 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < PETG
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.03
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 223.77 mm; Width: 71.37 mm; Hub Diameter: 50.8 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/503741/inland-175mm-petg-3d-printer-filament-1kg-(22-lbs)-cardboard-spool-white
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.23 | as listed by Micro Center
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < 49 | as listed by Micro Center
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 228 | as listed by Micro Center
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 80
+  < °C

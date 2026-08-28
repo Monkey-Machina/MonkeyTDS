@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < Silk PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 223.77 mm; Width: 65.77 mm; Hub Diameter: 50.8 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/660577/inland-175mm-black-silk-pla-3d-printer-filament-1kg-spool-(22-lbs)
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.24 | as listed by Micro Center
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < 65 | as listed by Micro Center
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 8 | as listed by Micro Center
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 80
+  < °C

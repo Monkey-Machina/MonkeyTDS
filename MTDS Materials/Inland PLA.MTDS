@@ -1,0 +1,124 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.03
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 206.5 mm; Width: 71.37 mm; Hub Diameter: 50.8 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/606620/inland-175mm-pla-3d-printer-filament-1kg-(22-lbs)-cardboard-spool-gray
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.17
+  < g/cm^3
+
+> Melt Index
+  <
+  < 7 - 11 | 210 °C, 2.16 kg
+  < g/10 min
+
+> Heat Deflection Temperature
+  <
+  < 60 | 0.45 MPa
+  < °C
+
+> Odor
+  <
+  < Odorless
+  <
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < 60 | as listed by Micro Center
+  < MPa
+
+> Tensile Strength (Interlayer)
+  <
+  < 40.5 ± 0.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 29 | as listed by Micro Center
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  <
+  < 1.8 ± 0.1
+  < %
+
+> Bending Strength (In-Plane)
+  <
+  < 86.9 ± 1.2
+  < MPa
+
+> Bending Modulus (In-Plane)
+  <
+  < 3230.9 ± 55.3
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod; not cited by source
+  < 3.3 ± 0.2
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 215 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 80
+  < °C
+
+> Print Speed
+  <
+  < 30 - 200
+  < mm/s

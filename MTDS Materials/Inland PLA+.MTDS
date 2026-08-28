@@ -1,0 +1,72 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < PLA+
+  <
+
+> Material
+  <
+  < PLA+
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 206.5 mm; Width: 71.37 mm; Hub Diameter: 50.8 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/611532/inland-175mm-pla+-3d-printer-filament-1-kg-(22-lbs)-spool-black
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.24 | as listed by Micro Center
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < 60 | as listed by Micro Center
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 29 | as listed by Micro Center
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 205 - 225
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 80
+  < °C

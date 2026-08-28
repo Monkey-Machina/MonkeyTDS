@@ -1,0 +1,87 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < PLA Basic
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.03
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 206.5 mm; Width: 71.37 mm; Hub Diameter: 50.8 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/692936/inland-175mm-pla-basic-3d-printer-filament-1kg-(22lbs)-cardboard-spool-black
+  <
+
+# Physical Property
+
+> Heat Deflection Temperature
+  <
+  < 57 | 0.45 MPa
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (Interlayer)
+  <
+  < 31 ± 3
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  <
+  < 7.5 ± 1.3
+  < %
+
+> Bending Strength (In-Plane)
+  <
+  < 76 ± 5
+  < MPa
+
+> Bending Modulus (In-Plane)
+  <
+  < 2750 ± 160
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod; not cited by source
+  < 7.9 ± 1.2
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 35 - 60
+  < °C

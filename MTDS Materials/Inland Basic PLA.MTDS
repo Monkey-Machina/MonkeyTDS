@@ -1,0 +1,48 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < Basic PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 200 mm; Width: 71 mm; Hub Diameter: 50 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/702116/inland-175mm-basic-pla-3d-printer-filament-10-kg-(22-lbs)-cardboard-spool-blue
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 35 - 60
+  < °C

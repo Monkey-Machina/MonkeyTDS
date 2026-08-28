@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < Inland
+  <
+
+> Product Name
+  <
+  < ABS
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 1
+  < kg
+
+> Spool Size
+  <
+  < Diameter: 206.5 mm; Width: 71.37 mm; Hub Diameter: 50.8 mm
+  <
+
+> Source
+  <
+  < Product Page | https://www.microcenter.com/product/485643/inland-175mm-abs-3d-printer-filament-10-kg-(22-lbs)-spool-black
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.04 | as listed by Micro Center
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < 43 | as listed by Micro Center
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 22 | as listed by Micro Center
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 110
+  < °C
