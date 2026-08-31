@@ -1,0 +1,124 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Luvocom 3F PEEK 9581
+  <
+
+> Material
+  <
+  < PEEK
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_LUVOCOM_3F_PEEK_9581_Filament.pdf?v=1638285663
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.31
+  < g/cm^3
+
+> Melt Volume Rate
+  < ISO 1133 | 380 °C, 10 kg
+  < 2200
+  < mm^3/min
+
+> Saturated Water Absorption Rate
+  < | 23 °C, 24 h
+  < 0.1
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75
+  < 145
+  < °C
+
+> Continuous Service Temperature
+  < UL 746B
+  < 250
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 97
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 3800
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 5
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | 23 °C, 50% rh
+  < 145
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | 23 °C, 50% rh
+  < 3400
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | notched, 23 °C
+  < 7
+  < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < V-0
+  <
+
+> Composition
+  <
+  < PEEK | LEHVOSS LUVOCOM 3F compound
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 390 - 440
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C
+
+> Print Speed
+  <
+  < 15 - 30
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet / Magigoo HT
+  <
+
+> Drying Condition
+  <
+  < 110 °C, 4 h
+  <
