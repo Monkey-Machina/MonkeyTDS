@@ -49,20 +49,20 @@
 
 # Mechanical Property
 
-> Tensile Strength
+> Tensile Strength (In-Plane)
   < ISO 527
   < 55
-  <
+  < MPa
 
-> Flexural Strength
+> Flexural Strength (In-Plane)
   < ISO 178
   < 91
-  <
+  < MPa
 
-> Flexural Modulus
+> Flexural Modulus (In-Plane)
   < ISO 178
   < 2170
-  <
+  < MPa
 
 # Chemical Property
 
