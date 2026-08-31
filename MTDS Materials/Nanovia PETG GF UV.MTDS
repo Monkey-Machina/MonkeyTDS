@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PETG GF UV
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Filler Content
+  <
+  < glass fibre
+  <
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/petg-gf-uv/nanovia-petg-gf-uv-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.42
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | printed 0°
+  < 4284
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | printed 0°
+  < 63
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | printed 0°
+  < 2.3
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527 | printed 90°
+  < 2313
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | printed 90°
+  < 27
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | printed 90°
+  < 1.5
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG | glass fibre reinforced, UV-stabilised
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 90
+  < °C
+
+> Drying Condition
+  <
+  < 60 °C, 4 h
+  <

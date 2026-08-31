@@ -1,0 +1,129 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < ABS EF
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/abs-ef/nanovia-abs-ef-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.03
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 110
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | B50
+  < 102
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 1800
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 33
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 2.3
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 1820
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 26
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527-2/1A | printed 90°
+  < 2.1
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy notched
+  < 18
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS | certified free of estrogenic endocrine disruptors
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < HB
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 110
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C
+
+> Print Speed
+  <
+  < 20 - 60
+  < mm/s
+
+> Drying Condition
+  <
+  < 60 °C, 4 h
+  <
