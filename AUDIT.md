@@ -57,6 +57,32 @@ number spelling is a valid unit any more (`g/10 min` stays as a parse alias).
 | NinjaTek | Armadillo / Cheetah / NinjaFlex Abrasion Resistance: `0.03 g` etc. → value `0.03`, units `g` | 3 |
 | Bambu Lab / Polymaker / eSUN / colorFabb / Fillamentum / FormFutura | Print Setting rows carried the unit in the value string (`240 - 280 °C`, `20 - 40 mm/s`, `0 - 80%`) with an empty units slot — moved every unit into the units slot (Nozzle/Bed/Chamber temp, Print Speed, Retraction, Cooling Fan, Nozzle Size, Overhang, Bridging) | 160 |
 
+## Fillamentum catalog rebuilt from source TDS (#20)
+
+All 8 `Fillamentum *.MTDS` files were **systematically fabricated** by the original
+catalog agent (which reported it had no PDF access): invented In-Plane / Interlayer
+splits on every mechanical property, `ISO` method labels where the source is
+`ASTM` / `DIN`, `DSC` melting / Vicat / crystallization / glass-transition /
+saturated-water-absorption rows absent from the TDS, invented melt-index values,
+and ~12 fabricated print settings per file (retraction, chamber temp, humidity,
+drying) that no Fillamentum TDS carries.
+
+Fetched the 8 source TDS PDFs (7 from the Fillamentum data-sheets page, plus
+`Nylon CF15 Carbon` for the file catalogued as `PA12-CF`) and regenerated every
+file to contain **only** TDS-published data:
+
+- single values with the source's real ASTM/DIN/ISO method + test condition
+  (`| at yield, 50 mm/min` etc.), no fabricated orientation split;
+- `Melt Volume Rate` (`mm^3/min`) where the sheet gives MVR not MFR (ABS, TPU 92A);
+- `Stress at N% Strain (In-Plane)` for the TPU tensile-stress-at-elongation rows;
+- `Light Transmission` + `Haze` for the translucent grades (PETG, CPE HG100);
+- `CPE` → noted as "CPE HG100"; `PA12-CF` → noted as "Nylon CF15 Carbon" (Product
+  Name annotation, source PDF is the authority).
+
+Net ~680 lines removed across the 8 files (fabricated rows); audit stays clean
+(0 error / 0 warn added). Rockwell hardness (ASA/PETG/CPE) was dropped — no MTDS
+standard subject; logged for a standards pass.
+
 ## Still open
 
 - **3DXTECH mechanical units (#19).** 87 `no-unit` warnings across ~30 files —
@@ -64,8 +90,6 @@ number spelling is a valid unit any more (`g/10 min` stays as a parse alias).
   (comma-grouped, e.g. `314,000`), some in **MPa**; a few files look
   column-shifted (e.g. CarbonX HTN-CF: modulus `1,380` < strength `26,900`).
   Needs each TDS. Not touched here — too much guesswork.
-- **Fillamentum value verification (#20).** 8 files, full property sections, not
-  yet cross-checked against the source PDFs.
 - **eSUN / FormFutura / colorFabb redos (#15 / #16 / #17).** Still spec-only stubs
   where present.
 - **`family-outlier` review.** `Proto-pasta Stainless Steel PLA` density `2.4` is
