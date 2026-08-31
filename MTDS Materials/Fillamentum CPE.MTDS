@@ -7,7 +7,7 @@
 
 > Product Name
   <
-  < CPE
+  < CPE | published by Fillamentum as "CPE HG100"
   <
 
 > Material
@@ -20,6 +20,11 @@
   < 1.75
   < mm
 
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
 > Net Weight
   <
   < 0.75
@@ -27,173 +32,103 @@
 
 > Source
   <
-  < TDS | https://fillamentum.com/en/products/cpe/
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_CPE-HG100_03012019.pdf
   <
 
 # Physical Property
 
 > Density
-  < ISO 1183
-  < 1.15
+  < ASTM D792
+  < 1.25
   < g/cm^3
 
 > Melt Index
-  < ISO 1133 | 190 °C, 2.16 kg
-  < 5
+  < ASTM D1238 | 230 °C, 1.2 kg
+  < 1.6
   < dg/min
 
-> Melting Temperature
-  < DSC | 10 °C/min
-  < 185
-  < °C
+> Melt Index
+  < ASTM D1238 | 230 °C, 3.8 kg
+  < 5.9
+  < dg/min
 
 > Glass Transition Temperature
-  < DSC | 10 °C/min
-  < 58
-  < °C
-
-> Crystallization Temperature
-  < DSC | 10 °C/min
-  < 130
-  < °C
-
-> Vicat Softening Temperature
-  < ISO 306
-  < 75
+  < ASTM D1525 | TDS labels this Tg; D1525 is a Vicat method
+  < 90
   < °C
 
 > Heat Deflection Temperature
-  < ISO 75 | 1.8 MPa
-  < 68
+  < ASTM D648 | 0.455 MPa
+  < 80
   < °C
 
-> Saturated Water Absorption Rate
-  < 23 °C, 50% RH
-  < 0.5
+> Light Transmission
+  < ASTM D1003
+  < 90
+  < %
+
+> Haze
+  < ASTM D1003
+  < < 1.0
   < %
 
 # Mechanical Property
 
-> Young's Modulus (In-Plane)
-  < ISO 527 | 23 °C
-  < 180
-  < MPa
-
-> Young's Modulus (Interlayer)
-  < ISO 527 | 23 °C
-  < 140
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield, 50 mm/min
+  < 47
   < MPa
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | 23 °C
-  < 12
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | 23 °C
-  < 10
+  < ASTM D638 | at break, 50 mm/min
+  < 48
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | 23 °C
-  < 400
+  < ASTM D638 | 50 mm/min
+  < 150
   < %
 
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | 23 °C
-  < 350
-  < %
+> Flexural Strength (In-Plane)
+  < ASTM D790 | 1.27 mm/min
+  < 71
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790 | 1.27 mm/min
+  < 1860
+  < MPa
 
 > Impact Strength (In-Plane)
-  < ISO 179 | 23 °C
-  < N/A
+  < ASTM D256 | 23 °C, notched
+  < No break
   <
 
 # Chemical Property
 
 > Composition
   <
-  < CPE
-  <
-
-> Chemical Stability
-  <
-  < Stable under normal storage and handling conditions
-  <
-
-> Solubility
-  <
-  < Insoluble in water
-  <
-
-> Resistance to Oil and Grease
-  <
-  < Resistant
-  <
-
-> Flammability
-  <
-  < Flammable
+  < CPE | co-polyester, partly bio-based
   <
 
 # Print Setting
 
-> Drying Condition
-  <
-  < 60 - 70 °C, 4 - 6 h
-  <
-
-> Print & Storage Humidity
-  <
-  < < 15 | RH
-  < %
-
-> Nozzle Size
-  <
-  < 0.4
-  < mm
-
 > Nozzle Temperature
   <
-  < 200 - 220
+  < 255 - 275
   < °C
-
-> Build Plate Type
-  <
-  < PEI Sheet
-  <
-
-> Build Plate Surface Preparation
-  <
-  < Glue stick
-  <
 
 > Bed Temperature
   <
-  < 40 - 55
+  < 70 - 85
   < °C
 
-> Cooling Fan
+> Build Plate Surface Preparation
   <
-  < Turn on
+  < Magigoo
   <
 
-> Print Speed
+> Drying Condition
   <
-  < 25 - 50
-  < mm/s
-
-> Retraction Length
-  <
-  < 2 - 4
-  < mm
-
-> Retraction Speed
-  <
-  < 25 - 35
-  < mm/s
-
-> Support Material
-  <
-  < Support for CPE
+  < 60 °C, 3 - 4 h
   <

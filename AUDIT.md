@@ -83,14 +83,59 @@ Every 3DXTECH `.MTDS` was cross-checked against its source TDS PDF.
 - `| flat` / `| on edge` annotations record the specimen orientation on the
   per-orientation sheets.
 
-Audit went from **87 warn → 0 warn**. Not done here (own follow-up): the TDS
+Audit went from **87 warn → 0 warn**. Not done here (own follow-up, #39): the TDS
 sheets also publish tensile/Young's modulus, per-orientation *(Interlayer)*
 values, and Izod impact that these files don't yet carry.
 
+## Fillamentum catalog rebuilt from source TDS (#20)
+
+All 8 `Fillamentum *.MTDS` files were **systematically fabricated** by the original
+catalog agent (which reported it had no PDF access): invented In-Plane / Interlayer
+splits on every mechanical property, `ISO` method labels where the source is
+`ASTM` / `DIN`, `DSC` melting / Vicat / crystallization / glass-transition /
+saturated-water-absorption rows absent from the TDS, invented melt-index values,
+and ~12 fabricated print settings per file (retraction, chamber temp, humidity,
+drying) that no Fillamentum TDS carries.
+
+Fetched the 8 source TDS PDFs (7 from the Fillamentum data-sheets page, plus
+`Nylon CF15 Carbon` for the file catalogued as `PA12-CF`) and regenerated every
+file to contain **only** TDS-published data:
+
+- single values with the source's real ASTM/DIN/ISO method + test condition
+  (`| at yield, 50 mm/min` etc.), no fabricated orientation split;
+- `Melt Volume Rate` (`mm^3/min`) where the sheet gives MVR not MFR (ABS, TPU 92A);
+- `Stress at N% Strain (In-Plane)` for the TPU tensile-stress-at-elongation rows;
+- `Light Transmission` + `Haze` for the translucent grades (PETG, CPE HG100);
+- `CPE` → noted as "CPE HG100"; `PA12-CF` → noted as "Nylon CF15 Carbon" (Product
+  Name annotation, source PDF is the authority).
+
+Net ~680 lines removed across the 8 files (fabricated rows); audit stays clean
+(0 error / 0 warn added). Rockwell hardness (ASA/PETG/CPE) was dropped — no MTDS
+standard subject; logged for a standards pass.
+
+## Catalog expansion — 3D4Makers + Nanovia
+
+Two new industrial-FFF manufacturers added from their source TDS PDFs (see
+`work/expansion-reports/{3d4makers,nanovia}.md` for the per-file non-standard
+token logs):
+
+- **3D4Makers** (21 files) — PEEK, R-PEEK, PEKK-A, PPSU, PEI Ultem 9085/1010, the
+  LEHVOSS LUVOCOM 3F line, ABS-ESD, ABS-Kevlar, PETG-Carbon.
+- **Nanovia** (12 files) — ABS/PC/PETG in CF/GF/aramid/ESD, PC-PTFE, PEI Ultem
+  1010, TPU 70D. 0° / 90° printed-specimen data mapped to `(In-Plane)` /
+  `(Interlayer)`.
+
+Both add **0 error / 0 warn**. New non-standard subjects introduced consistently:
+`Continuous Service Temperature`, `Coefficient of Friction` (PC-PTFE) — both
+flagged for a `MTDS.md` standards pass, along with `Melt Volume Rate` (already in
+23 Prusament files).
+
+Coverage after all four merges: **17 manufacturers, 324 filaments** (was 15 / 291).
+
 ## Still open
 
-- **Fillamentum value verification (#20).** 8 files, full property sections, not
-  yet cross-checked against the source PDFs.
+- **3DXTECH catalog enrichment (#39).** Modulus / interlayer / Izod data present
+  in the same TDSs, not yet carried.
 - **eSUN / FormFutura / colorFabb redos (#15 / #16 / #17).** Still spec-only stubs
   where present.
 - **`family-outlier` review.** `Proto-pasta Stainless Steel PLA` density `2.4` is

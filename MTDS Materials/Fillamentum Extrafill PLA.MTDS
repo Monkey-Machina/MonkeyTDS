@@ -20,134 +20,79 @@
   < 1.75
   < mm
 
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
 > Net Weight
   <
   < 0.75
   < kg
 
-> Spool Material
-  <
-  < Cardboard
-  <
-
-> Spool Size
-  <
-  <
-  <
-
 > Source
   <
-  < TDS | https://fillamentum.com/en/products/extrafill-pla/
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_PLA-Extrafill_03012019.pdf
   <
 
 # Physical Property
 
 > Density
-  < ISO 1183
+  < ASTM D792
   < 1.24
   < g/cm^3
 
 > Melt Index
-  < ISO 1133 | 210 °C, 2.16 kg
-  < 16
+  < ASTM D1238 | 210 °C, 2.16 kg
+  < 6
   < dg/min
 
-> Melting Temperature
-  < DSC | 10 °C/min
-  < 160
-  < °C
-
 > Glass Transition Temperature
-  < DSC | 10 °C/min
-  < 58
-  < °C
-
-> Crystallization Temperature
-  < DSC | 10 °C/min
-  < N/A
-  <
-
-> Vicat Softening Temperature
-  < ISO 306
-  < 56
+  < ASTM D3418
+  < 55 - 60
   < °C
 
 > Heat Deflection Temperature
-  < ISO 75 | 1.8 MPa
-  < 53
+  < ASTM E2092 | 0.45 MPa
+  < 55
   < °C
-
-> Saturated Water Absorption Rate
-  < 23 °C, 50% RH
-  < 0.4
-  < %
-
-> Odor
-  <
-  < Odorless
-  <
 
 # Mechanical Property
 
 > Young's Modulus (In-Plane)
-  < ISO 527 | 23 °C
-  < 2700
-  < MPa
-
-> Young's Modulus (Interlayer)
-  < ISO 527 | 23 °C
-  < 2100
+  < ASTM D882
+  < 3600
   < MPa
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | 23 °C
-  < 50
+  < ASTM D882 | at yield
+  < 60
   < MPa
 
-> Tensile Strength (Interlayer)
-  < ISO 527 | 23 °C
-  < 45
+> Tensile Strength (In-Plane)
+  < ASTM D882 | at break
+  < 53
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | 23 °C
+  < ASTM D882
   < 6
   < %
 
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | 23 °C
-  < 3.5
-  < %
+> Flexural Strength (In-Plane)
+  < ASTM D790
+  < 83
+  < MPa
 
 > Flexural Modulus (In-Plane)
-  < ISO 178 | 23 °C
-  < 2800
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | 23 °C
-  < 2200
-  < MPa
-
-> Flexural Strength (In-Plane)
-  < ISO 178 | 23 °C
-  < 80
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | 23 °C
-  < 65
+  < ASTM D790
+  < 3800
   < MPa
 
 > Impact Strength (In-Plane)
-  < ISO 179 | 23 °C, notched
-  < 3.5
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ISO 179 | 23 °C, notched
-  < 2.5
-  < kJ/m^2
+  < ASTM D256 | 23 °C, notched
+  < 16
+  < J/m
 
 # Chemical Property
 
@@ -156,104 +101,19 @@
   < PLA
   <
 
-> Chemical Stability
-  <
-  < Stable under normal storage and handling conditions
-  <
-
-> Solubility
-  <
-  < Insoluble in water
-  <
-
-> Resistance to Acid
-  <
-  < Resistant
-  <
-
-> Resistance to Alkali
-  <
-  < Resistant
-  <
-
-> Resistance to Organic Solvent
-  <
-  < Not resistant to some organic solvents
-  <
-
-> Flammability
-  <
-  < Flammable
-  <
-
 # Print Setting
-
-> Drying Condition
-  <
-  < 50 - 60 °C, 4 - 6 h
-  <
-
-> Print & Storage Humidity
-  <
-  < < 15 | RH
-  < %
-
-> Nozzle Size
-  <
-  < 0.4
-  < mm
 
 > Nozzle Temperature
   <
-  < 210 - 230
+  < 190 - 210
   < °C
-
-> Build Plate Type
-  <
-  < PEI Sheet
-  <
-
-> Build Plate Surface Preparation
-  <
-  < None / Glue stick
-  <
 
 > Bed Temperature
   <
-  < 20 - 60
+  < 50 - 60
   < °C
 
-> Cooling Fan
+> Build Plate Surface Preparation
   <
-  < Turn on
-  <
-
-> Print Speed
-  <
-  < 40 - 100
-  < mm/s
-
-> Retraction Length
-  <
-  < 1 - 2
-  < mm
-
-> Retraction Speed
-  <
-  < 30 - 40
-  < mm/s
-
-> Max Overhang Angle
-  <
-  < 45
-  < °
-
-> Max Bridging Length
-  <
-  < 10 - 15
-  < mm
-
-> Support Material
-  <
-  < Support for PLA
+  < Magigoo
   <
