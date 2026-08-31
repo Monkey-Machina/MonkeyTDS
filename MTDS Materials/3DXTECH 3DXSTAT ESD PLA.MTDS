@@ -49,20 +49,20 @@
 
 # Mechanical Property
 
-> Tensile Strength
+> Tensile Strength (In-Plane)
   < ASTM D638
-  < 23
-  <
+  < 41 | flat
+  < MPa
 
-> Flexural Strength
+> Flexural Strength (In-Plane)
   < ASTM D790
-  < 51.4
-  <
+  < 51.4 | on edge
+  < MPa
 
-> Flexural Modulus
+> Flexural Modulus (In-Plane)
   < ASTM D790
-  < 2.8
-  <
+  < 2.8 | on edge
+  < GPa
 
 # Chemical Property
 

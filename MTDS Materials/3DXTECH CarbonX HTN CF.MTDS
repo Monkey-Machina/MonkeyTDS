@@ -44,20 +44,20 @@
 
 # Mechanical Property
 
-> Tensile Strength
+> Tensile Strength (In-Plane)
   < ASTM D638
-  < 4,500
-  <
+  < 15,500 | flat
+  < psi
 
-> Flexural Strength
+> Flexural Strength (In-Plane)
   < ASTM D790
-  < 26,900
-  <
+  < 26,900 | on edge
+  < psi
 
-> Flexural Modulus
+> Flexural Modulus (In-Plane)
   < ASTM D790
-  < 1,380
-  <
+  < 1,380,000 | on edge; TDS reports 1,380 ksi
+  < psi
 
 # Chemical Property
 
