@@ -1,0 +1,124 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < ABS AF
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Filler Content
+  <
+  < aramid fibre
+  <
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/abs-af/nanovia-abs-af-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.04
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 110
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 2410
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 30
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 1.7
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 1860
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 20
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527-2/1A | printed 90°
+  < 3.5
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy notched
+  < 17.59
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS | aramid fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 110
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C
+
+> Print Speed
+  <
+  < 20 - 60
+  < mm/s
+
+> Drying Condition
+  <
+  < 60 °C, 4 h
+  <

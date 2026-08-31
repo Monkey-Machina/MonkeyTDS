@@ -1,0 +1,141 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < ABS ESD
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Filler Content
+  <
+  < conductive carbon
+  <
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/abs-esd/nanovia-abs-esd-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.10
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 100
+  < °C
+
+> Heat Deflection Temperature
+  < | 1.8 MPa (DTUL)
+  < 88
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 45/-45°, 1 mm/min
+  < 1660
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 45/-45°, 1 mm/min
+  < 22
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 45/-45°
+  < 2.4
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 1515
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 17
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527-2/1A | printed 90°
+  < 1.6
+  < %
+
+> Shore Hardness
+  <
+  < 77D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS | conductive carbon, ESD
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  < PRE021
+  < < 1 x 10^5
+  < ohm·cm
+
+> Surface Resistance
+  < IEC
+  < < 1 x 10^6
+  < ohm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 110
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C
+
+> Print Speed
+  <
+  < 20 - 60
+  < mm/s
+
+> Drying Condition
+  <
+  < 60 °C, 4 h
+  <

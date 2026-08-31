@@ -1,0 +1,104 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/asa/nanovia-asa-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.07
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 100
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75/A | 1.8 MPa
+  < 79
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 47
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 20
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | at break
+  < 65
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2100
+  < MPa
+
+# Chemical Property
+
+> Composition
+  <
+  < ASA
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 110
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C
+
+> Drying Condition
+  <
+  < 60 °C, 4 h
+  <

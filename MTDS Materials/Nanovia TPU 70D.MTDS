@@ -1,0 +1,104 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < TPU 70D
+  <
+
+> Material
+  <
+  < TPU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/tpu-70d/nanovia-tpu-70d-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.12
+  < g/cm^3
+
+> Continuous Service Temperature
+  <
+  < 50
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 28
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 320
+  < %
+
+> Stress at 100% Strain (In-Plane)
+  < ISO 527
+  < 20
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < ISO 527
+  < 28
+  < MPa
+
+> Shore Hardness
+  <
+  < 70D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < TPU | polyurethane, UV resistant
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 80
+  < °C
+
+> Cooling Fan
+  <
+  < 0
+  < %
+
+> Drying Condition
+  <
+  < 60 °C, 4 h
+  <
