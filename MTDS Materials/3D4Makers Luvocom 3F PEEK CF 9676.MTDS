@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Luvocom 3F PEEK CF 9676
+  <
+
+> Material
+  <
+  < PEEK
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_LUVOCOM_3F_PEEK_CF_9676_BK_3D4Makers.pdf?v=1623004547
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.36
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 380 °C, 10 kg
+  < 16.3
+  < dg/min
+
+> Melt Volume Rate
+  < ISO 1133 | 380 °C, 10 kg
+  < 1430
+  < mm^3/min
+
+> Saturated Water Absorption Rate
+  < | 23 °C, 24 h
+  < 0.1
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75
+  < 280
+  < °C
+
+> Continuous Service Temperature
+  < UL 746B
+  < 250
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 126
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 7800
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 3.9
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eU | unnotched, 23 °C
+  < 66
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | notched, 23 °C
+  < 7
+  < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 1/16 in
+  < V-0
+  <
+
+> Composition
+  <
+  < PEEK | LEHVOSS LUVOCOM 3F compound
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 400 - 450
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C

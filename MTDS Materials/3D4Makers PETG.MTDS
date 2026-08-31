@@ -1,0 +1,134 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PETG
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PETG_Filament.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.29
+  < g/cm^3
+
+> Saturated Water Absorption Rate
+  < ASTM D570
+  < 0.12
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 68
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 62
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 78
+  < °C
+
+> Glass Transition Temperature
+  < ASTM D3418
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 53
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3000
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 4
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | nominal
+  < 31
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 171
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2040
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180 | Izod notched, 23 °C, 50% rh
+  < 4.5
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180 | Izod unnotched, 23 °C, 50% rh
+  < No break
+  <
+
+> Shore Hardness
+  < ASTM D2240
+  < 70D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 235
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 80
+  < °C
+
+> Print Speed
+  <
+  < 35 - 70
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet / BuildTak / adhesion spray
+  <

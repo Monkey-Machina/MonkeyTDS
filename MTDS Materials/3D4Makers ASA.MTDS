@@ -1,0 +1,124 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_ASA_Filament.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.05
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238
+  < 12
+  < dg/min
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.8 MPa, unannealed, 6.40 mm
+  < 86.0
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa, unannealed, 6.40 mm
+  < 96.0
+  < °C
+
+> Vicat Softening Temperature
+  < ASTM D1525
+  < 95.0
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield, 3.20 mm
+  < 47.1
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638 | 3.20 mm
+  < 2080
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638 | 3.20 mm
+  < 6.0
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638 | 3.20 mm
+  < 25
+  < %
+
+> Flexural Strength (In-Plane)
+  < ASTM D790 | 3.20 mm
+  < 75.5
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790 | 3.20 mm
+  < 2210
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched, 23 °C, 3.20 mm
+  < 180
+  < J/m
+
+# Chemical Property
+
+> Composition
+  <
+  < ASA
+  <
+
+> Flammability Rating
+  < UL 94 | 1.6 mm
+  < HB
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 280
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C
+
+> Print Speed
+  <
+  < 35 - 70
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet / BuildTak / adhesion spray
+  <

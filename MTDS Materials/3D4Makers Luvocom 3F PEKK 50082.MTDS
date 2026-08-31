@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Luvocom 3F PEKK 50082
+  <
+
+> Material
+  <
+  < PEKK
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_LUVOCOM_3F_PEKK_50082_Filament.pdf?v=1645614240
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183-3
+  < 1.27
+  < g/cm^3
+
+> Melt Volume Rate
+  < ISO 1133 | 380 °C, 2.16 kg
+  < 2000
+  < mm^3/min
+
+> Saturated Water Absorption Rate
+  < ISO 62 | 23 °C, 24 h
+  < 0.1
+  < %
+
+> Continuous Service Temperature
+  < IEC 60216
+  < 255
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 90
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 3000
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 23 °C, 50% rh
+  < 5
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | 23 °C, 50% rh
+  < 150
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | 23 °C, 50% rh
+  < 2500
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eU | 23 °C, 50% rh
+  < No break
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < V-0
+  <
+
+> Composition
+  <
+  < PEKK | LEHVOSS LUVOCOM 3F compound
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 340 - 380
+  < °C
+
+> Bed Temperature
+  <
+  < 110 - 140
+  < °C
+
+> Print Speed
+  <
+  < 20 - 50
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet / Magigoo HT
+  <
+
+> Drying Condition
+  <
+  < 110 °C, 4 h
+  <
