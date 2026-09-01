@@ -1,0 +1,104 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < ABS Kevlar
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_ABS_Kevlar_filament_3D4Makers_V1.pdf?v=1738753952
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.05
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, annealed
+  < 88
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.81 MPa, annealed
+  < 75
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 95
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | at yield
+  < 35
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | at break
+  < 35
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 1 mm/min
+  < 2350
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eU | Charpy unnotched
+  < 14
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | Charpy notched
+  < 6.1
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS | aramid fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 100
+  < °C
+
+> Print Speed
+  <
+  < 50
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < carbon fibre plate / glass / PEI Sheet
+  <

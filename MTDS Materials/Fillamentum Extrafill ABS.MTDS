@@ -20,6 +20,11 @@
   < 1.75
   < mm
 
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
 > Net Weight
   <
   < 0.75
@@ -27,111 +32,86 @@
 
 > Source
   <
-  < TDS | https://fillamentum.com/en/products/extrafill-abs/
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_ABS-Extrafill_03012019-1.pdf
   <
 
 # Physical Property
 
 > Density
-  < ISO 1183
+  < ISO 1183 | 23 °C
   < 1.04
   < g/cm^3
 
-> Melt Index
+> Melt Volume Rate
   < ISO 1133 | 220 °C, 10 kg
-  < 12
-  < dg/min
-
-> Melting Temperature
-  < DSC | 10 °C/min
-  < 228
-  < °C
-
-> Glass Transition Temperature
-  < DSC | 10 °C/min
-  < 105
-  < °C
-
-> Crystallization Temperature
-  < DSC | 10 °C/min
-  < N/A
-  <
-
-> Vicat Softening Temperature
-  < ISO 306
-  < 98
-  < °C
+  < 2900
+  < mm^3/min
 
 > Heat Deflection Temperature
   < ISO 75 | 1.8 MPa
-  < 92
+  < 81
   < °C
 
-> Saturated Water Absorption Rate
-  < 23 °C, 50% RH
-  < 0.8
-  < %
+> Vicat Softening Temperature
+  < ISO 306 | 50 °C/h, 1 kg
+  < 103
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | 50 °C/h, 5 kg
+  < 96
+  < °C
+
+> Coefficient of Thermal Expansion
+  < ISO 11359 | TDS: 9.0 x 10^-5 /°C
+  < 90
+  < ppm/°C
 
 # Mechanical Property
 
-> Young's Modulus (In-Plane)
-  < ISO 527 | 23 °C
-  < 2200
-  < MPa
-
-> Young's Modulus (Interlayer)
-  < ISO 527 | 23 °C
-  < 1900
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield, 50 mm/min
+  < 39
   < MPa
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | 23 °C
-  < 40
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | 23 °C
-  < 37
+  < ISO 527 | at break, 50 mm/min
+  < 32
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | 23 °C
-  < 25
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | 23 °C
+  < ISO 527 | 50 mm/min
   < 20
   < %
 
-> Flexural Modulus (In-Plane)
-  < ISO 178 | 23 °C
-  < 2000
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | 23 °C
-  < 1700
-  < MPa
-
 > Flexural Strength (In-Plane)
-  < ISO 178 | 23 °C
-  < 65
+  < ISO 178 | 2 mm/min
+  < 60
   < MPa
 
-> Flexural Strength (Interlayer)
-  < ISO 178 | 23 °C
-  < 58
+> Flexural Modulus (In-Plane)
+  < ISO 178 | 2 mm/min
+  < 1900
   < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180-1A | 23 °C, notched
+  < 24
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180-1A | -30 °C, notched
+  < 10
+  < kJ/m^2
 
 > Impact Strength (In-Plane)
   < ISO 179 | 23 °C, notched
   < 25
   < kJ/m^2
 
-> Impact Strength (Interlayer)
-  < ISO 179 | 23 °C, notched
-  < 18
+> Impact Strength (In-Plane)
+  < ISO 179 | -30 °C, notched
+  < 11
   < kJ/m^2
 
 # Chemical Property
@@ -141,84 +121,19 @@
   < ABS
   <
 
-> Chemical Stability
-  <
-  < Stable under normal storage and handling conditions
-  <
-
-> Solubility
-  <
-  < Insoluble in water
-  <
-
-> Flammability
-  <
-  < Flammable
-  <
-
 # Print Setting
-
-> Drying Condition
-  <
-  < 80 - 100 °C, 4 - 6 h
-  <
-
-> Print & Storage Humidity
-  <
-  < < 5 | RH
-  < %
-
-> Nozzle Size
-  <
-  < 0.4
-  < mm
 
 > Nozzle Temperature
   <
-  < 240 - 260
+  < 220 - 240
   < °C
-
-> Build Plate Type
-  <
-  < PEI Sheet
-  <
-
-> Build Plate Surface Preparation
-  <
-  < Glue stick / Kapton
-  <
 
 > Bed Temperature
   <
-  < 100 - 110
+  < 80 - 105
   < °C
 
-> Cooling Fan
+> Build Plate Surface Preparation
   <
-  < Turn off
-  <
-
-> Print Speed
-  <
-  < 30 - 60
-  < mm/s
-
-> Retraction Length
-  <
-  < 5 - 7
-  < mm
-
-> Retraction Speed
-  <
-  < 30 - 40
-  < mm/s
-
-> Chamber Temperature
-  <
-  < 40 - 60
-  < °C
-
-> Support Material
-  <
-  < Support for ABS
+  < 3Dlac / glue stick
   <

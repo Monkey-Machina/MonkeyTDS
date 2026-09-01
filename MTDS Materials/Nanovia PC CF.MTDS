@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PC CF
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/pc-cf/nanovia-pc-cf-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.26
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 120
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa
+  < 144
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.82 MPa
+  < 133
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527/1A | printed 0°
+  < 6390
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527/1A | printed 0°
+  < 87
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527/1A | printed 0°
+  < 2.7
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < PC | carbon fibre reinforced, UV resistant
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 140
+  < °C
+
+> Chamber Temperature
+  <
+  < 100
+  < °C
+
+> Drying Condition
+  <
+  < 100 °C, 4 h
+  <

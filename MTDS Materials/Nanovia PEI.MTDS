@@ -1,0 +1,136 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PEI
+  <
+
+> Material
+  <
+  < PEI
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/pei/nanovia-pei-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.35
+  < g/cm^3
+
+> Saturated Water Absorption Rate
+  < ISO 62 | 24 h
+  < 1.25
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75/Be | 0.45 MPa
+  < 200
+  < °C
+
+> Continuous Service Temperature
+  <
+  < 200
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3200
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 105
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 60
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | TDS misprints method as ISO 527
+  < 160
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | TDS misprints method as ISO 527
+  < 3300
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180/1A | Izod notched
+  < 5
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PEI | SABIC Ultem 1010
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < V-0
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  < IEC 60093
+  < 1 x 10^15
+  < ohm·cm
+
+> Dielectric Strength
+  < IEC 60243 | in oil, 0.8 mm
+  < 33
+  < kV/mm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 370 - 390
+  < °C
+
+> Bed Temperature
+  <
+  < 120 - 160
+  < °C
+
+> Chamber Temperature
+  <
+  < 120
+  < °C
+
+> Drying Condition
+  <
+  < 110 °C, 4 h
+  <

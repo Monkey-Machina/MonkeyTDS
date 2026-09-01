@@ -1,0 +1,136 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PPSU
+  <
+
+> Material
+  <
+  < PPSU
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PPSU_Filament.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.29
+  < g/cm^3
+
+> Melt Volume Rate
+  < ASTM D1238 | 365 °C, 5.0 kg
+  < 1400 - 2000
+  < mm^3/min
+
+> Saturated Water Absorption Rate
+  < ASTM D570 | 24 h
+  < 0.37
+  < %
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.8 MPa, unannealed
+  < 207
+  < °C
+
+> Glass Transition Temperature
+  < ASTM E1356
+  < 220
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | 3.18 mm
+  < 69.6
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638 | 3.18 mm
+  < 2340
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638 | 3.18 mm
+  < 7.2
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638 | 3.18 mm
+  < 60 - 120
+  < %
+
+> Flexural Strength (In-Plane)
+  < ASTM D790 | at 5.0% strain, 3.18 mm
+  < 91.0
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790 | 3.18 mm
+  < 2410
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched, 3.18 mm
+  < 690
+  < J/m
+
+# Chemical Property
+
+> Composition
+  <
+  < PPSU | Solvay-based technology
+  <
+
+> Flammability Rating
+  < UL 94 | 0.76 mm
+  < V-0
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  < ASTM D257
+  < 9.0 x 10^15
+  < ohm·cm
+
+> Dielectric Strength
+  < ASTM D149 | 3.19 mm
+  < 15
+  < kV/mm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 360 - 400
+  < °C
+
+> Bed Temperature
+  <
+  < 140
+  < °C
+
+> Print Speed
+  <
+  < 15 - 30
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet
+  <

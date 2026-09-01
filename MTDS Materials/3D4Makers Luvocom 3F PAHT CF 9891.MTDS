@@ -1,0 +1,121 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Luvocom 3F PAHT CF 9891
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PAHT-CF-9891-bk-filament_en_iso.pdf?v=1622995641
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183-3
+  < 1.24
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 250 °C, 2.16 kg
+  < 3.4
+  < dg/min
+
+> Melt Volume Rate
+  < ISO 1133 | 250 °C, 2.16 kg
+  < 300
+  < mm^3/min
+
+> Saturated Water Absorption Rate
+  < ISO 62 | 23 °C, 24 h
+  < 0.3
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT A
+  < 90
+  < °C
+
+> Continuous Service Temperature
+  < IEC 60216 | 20000 h
+  < 120
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | dry, 50 mm/min
+  < 130
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | dry, 1 mm/min
+  < 11500
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | dry, 50 mm/min
+  < 2
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eU | dry
+  < 35
+  < kJ/m^2
+
+# Electrical Property
+
+> Volume Resistance
+  < DIN IEC 60167
+  < 1 x 10^2
+  < ohm
+
+> Surface Resistance
+  < DIN IEC 60093
+  < 1 x 10^2
+  < ohm
+
+# Chemical Property
+
+> Composition
+  <
+  < PA | LEHVOSS LUVOCOM 3F compound
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 265 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < 50
+  < °C
+
+> Print Speed
+  <
+  < 40 - 60
+  < mm/s
+
+> Drying Condition
+  <
+  < 130 °C, 6 - 8 h
+  <

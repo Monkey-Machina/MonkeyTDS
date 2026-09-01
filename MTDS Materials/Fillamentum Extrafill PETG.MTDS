@@ -20,119 +20,79 @@
   < 1.75
   < mm
 
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
 > Net Weight
   <
-  < 0.75
+  < 1.0
   < kg
 
 > Source
   <
-  < TDS | https://fillamentum.com/en/products/extrafill-petg/
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_PETG_EN_06052020_FE.pdf
   <
 
 # Physical Property
 
 > Density
-  < ISO 1183
+  < ASTM D792
   < 1.27
   < g/cm^3
 
-> Melt Index
-  < ISO 1133 | 230 °C, 2.16 kg
-  < 7
-  < dg/min
-
-> Melting Temperature
-  < DSC | 10 °C/min
-  < 225
-  < °C
-
-> Glass Transition Temperature
-  < DSC | 10 °C/min
-  < 78
-  < °C
-
-> Crystallization Temperature
-  < DSC | 10 °C/min
-  < 165
-  < °C
-
-> Vicat Softening Temperature
-  < ISO 306
-  < 82
+> Heat Deflection Temperature
+  < ASTM D648 | 0.455 MPa
+  < 70
   < °C
 
 > Heat Deflection Temperature
-  < ISO 75 | 1.8 MPa
-  < 78
+  < ASTM D648 | 1.820 MPa
+  < 62
   < °C
 
-> Saturated Water Absorption Rate
-  < 23 °C, 50% RH
-  < 0.13
+> Light Transmission
+  < ASTM D1003
+  < 90
+  < %
+
+> Haze
+  < ASTM D1003
+  < < 1.0
   < %
 
 # Mechanical Property
 
-> Young's Modulus (In-Plane)
-  < ISO 527 | 23 °C
-  < 2100
-  < MPa
-
-> Young's Modulus (Interlayer)
-  < ISO 527 | 23 °C
-  < 1800
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield, 50 mm/min
+  < 50
   < MPa
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | 23 °C
-  < 53
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | 23 °C
-  < 48
+  < ASTM D638 | at break, 50 mm/min
+  < 26
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | 23 °C
-  < 13
+  < ASTM D638 | 50 mm/min
+  < 120
   < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | 23 °C
-  < 8
-  < %
-
-> Flexural Modulus (In-Plane)
-  < ISO 178 | 23 °C
-  < 2200
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | 23 °C
-  < 1900
-  < MPa
 
 > Flexural Strength (In-Plane)
-  < ISO 178 | 23 °C
-  < 75
+  < ASTM D790 | 1.27 mm/min
+  < 71
   < MPa
 
-> Flexural Strength (Interlayer)
-  < ISO 178 | 23 °C
-  < 68
+> Flexural Modulus (In-Plane)
+  < ASTM D790 | 1.27 mm/min
+  < 2150
   < MPa
 
 > Impact Strength (In-Plane)
-  < ISO 179 | 23 °C, notched
-  < 5
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ISO 179 | 23 °C, notched
-  < 4
-  < kJ/m^2
+  < ASTM D256 | 23 °C, notched
+  < 85
+  < J/m
 
 # Chemical Property
 
@@ -141,84 +101,49 @@
   < PETG
   <
 
-> Chemical Stability
+> Resistance to Acid
   <
-  < Stable under normal storage and handling conditions
-  <
-
-> Solubility
-  <
-  < Insoluble in water
+  < Resistant | 25 °C; TDS: good
   <
 
-> Flammability
+> Resistance to Alkali
   <
-  < Flammable
+  < Resistant | 25 °C; TDS: good
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant | acetone; 25 °C; TDS: low
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Not resistant | 25 °C; TDS: low
   <
 
 # Print Setting
 
-> Drying Condition
-  <
-  < 60 - 80 °C, 4 - 6 h
-  <
-
-> Print & Storage Humidity
-  <
-  < < 10 | RH
-  < %
-
-> Nozzle Size
-  <
-  < 0.4
-  < mm
-
 > Nozzle Temperature
   <
-  < 230 - 250
+  < 235 - 255
   < °C
-
-> Build Plate Type
-  <
-  < PEI Sheet
-  <
-
-> Build Plate Surface Preparation
-  <
-  < None / Glue stick
-  <
 
 > Bed Temperature
   <
-  < 70 - 90
+  < 65 - 75
   < °C
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo
+  <
 
 > Cooling Fan
   <
-  < Turn on
-  <
+  < 0 - 30
+  < %
 
-> Print Speed
+> Drying Condition
   <
-  < 40 - 80
-  < mm/s
-
-> Retraction Length
-  <
-  < 4 - 6
-  < mm
-
-> Retraction Speed
-  <
-  < 30 - 40
-  < mm/s
-
-> Max Overhang Angle
-  <
-  < 50
-  < °
-
-> Support Material
-  <
-  < Support for PLA/PETG
+  < 65 °C, 3 - 4 h
   <

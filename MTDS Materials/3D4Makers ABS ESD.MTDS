@@ -1,0 +1,111 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < ABS ESD
+  <
+
+> Material
+  <
+  < ABS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_ABS_ESD_3D4Makers.pdf?v=1592821918
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.03
+  < g/cm^3
+
+> Glass Transition Temperature
+  < ISO 11357
+  < 106
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 24.3
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1121
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 3.1
+  < %
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 19.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | TDS misprints method as ISO 178
+  < 6.4
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy
+  < 10.9
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 868
+  < 66.7D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < ABS | ESD / dissipative additive
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ASTM D257
+  < 1 x 10^8
+  < ohm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 100
+  < °C
+
+> Print Speed
+  <
+  < 40
+  < mm/s
+
+> Drying Condition
+  <
+  < 80 °C, 2 - 4 h
+  <

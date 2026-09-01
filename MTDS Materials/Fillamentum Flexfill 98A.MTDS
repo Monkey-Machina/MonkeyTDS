@@ -20,170 +20,130 @@
   < 1.75
   < mm
 
+> Diameter Tolerance
+  <
+  < ± 0.10
+  < mm
+
 > Net Weight
   <
-  < 0.75
+  < 0.5
   < kg
 
 > Source
   <
-  < TDS | https://fillamentum.com/en/products/flexfill-98a/
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_Flexfill-TPU-98A_26082019.pdf
   <
 
 # Physical Property
 
 > Density
-  < ISO 1183
-  < 1.12
+  < ISO 1183-1
+  < 1.23
   < g/cm^3
-
-> Melt Index
-  < ISO 1133 | 210 °C, 2.16 kg
-  < 8
-  < dg/min
-
-> Melting Temperature
-  < DSC | 10 °C/min
-  < 215
-  < °C
-
-> Glass Transition Temperature
-  < DSC | 10 °C/min
-  < 65
-  < °C
-
-> Vicat Softening Temperature
-  < ISO 306
-  < 68
-  < °C
-
-> Heat Deflection Temperature
-  < ISO 75 | 1.8 MPa
-  < 55
-  < °C
-
-> Saturated Water Absorption Rate
-  < 23 °C, 50% RH
-  < 1.2
-  < %
 
 # Mechanical Property
 
-> Young's Modulus (In-Plane)
-  < ISO 527 | 23 °C
-  < 35
-  < MPa
-
-> Young's Modulus (Interlayer)
-  < ISO 527 | 23 °C
-  < 25
-  < MPa
-
 > Tensile Strength (In-Plane)
-  < ISO 527 | 23 °C
-  < 13
+  < DIN 53504 | at break, 200 mm/min
+  < 53.7
   < MPa
 
-> Tensile Strength (Interlayer)
-  < ISO 527 | 23 °C
-  < 10
+> Stress at 10% Strain (In-Plane)
+  < DIN 53504 | 200 mm/min
+  < 12.1
+  < MPa
+
+> Stress at 50% Strain (In-Plane)
+  < DIN 53504 | 200 mm/min
+  < 22.1
+  < MPa
+
+> Stress at 100% Strain (In-Plane)
+  < DIN 53504 | 200 mm/min
+  < 28.4
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < DIN 53504 | 200 mm/min
+  < 37.8
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | 23 °C
-  < 510
+  < DIN 53504 | 200 mm/min
+  < 318
   < %
 
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | 23 °C
-  < 450
-  < %
-
-> Impact Strength (In-Plane)
-  < ISO 179 | 23 °C
-  < N/A
+> Shore Hardness
+  < ISO 7619-1
+  < 98A
   <
+
+> Shore Hardness
+  < ISO 7619-1
+  < 60D
+  <
+
+> Tear Strength (In-Plane)
+  < ISO 34-1 | 500 mm/min
+  < 170
+  < kN/m
+
+> Abrasion Resistance
+  < ISO 4649 | method A
+  < 23
+  < mm^3
 
 # Chemical Property
 
 > Composition
   <
-  < TPU
+  < TPU | polyurethane
   <
 
-> Chemical Stability
+> Resistance to Oil and Grease
   <
-  < Stable under normal storage and handling conditions
-  <
-
-> Solubility
-  <
-  < Insoluble in water
+  < Resistant | 25 °C; TDS: good
   <
 
-> Flammability
+> Resistance to Acid
   <
-  < Flammable
+  < Not resistant | 25 °C; TDS: bad
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant | 25 °C; TDS: bad
+  <
+
+> Resistance to Organic Solvent
+  <
+  < Not resistant | acetone, alcohols; 25 °C; TDS: bad
   <
 
 # Print Setting
 
-> Drying Condition
-  <
-  < 50 - 60 °C, 4 - 6 h
-  <
-
-> Print & Storage Humidity
-  <
-  < < 10 | RH
-  < %
-
-> Nozzle Size
-  <
-  < 0.4
-  < mm
-
 > Nozzle Temperature
   <
-  < 215 - 235
+  < 220 - 240
   < °C
-
-> Build Plate Type
-  <
-  < PEI Sheet
-  <
-
-> Build Plate Surface Preparation
-  <
-  < Glue stick
-  <
 
 > Bed Temperature
   <
-  < 50 - 65
+  < 50 - 60
   < °C
 
-> Cooling Fan
+> Build Plate Surface Preparation
   <
-  < Turn off
+  < Magigoo
   <
 
 > Print Speed
   <
-  < 20 - 40
+  < 20 - 30
   < mm/s
 
-> Retraction Length
+> Cooling Fan
   <
-  < 3 - 5
-  < mm
-
-> Retraction Speed
-  <
-  < 25 - 35
-  < mm/s
-
-> Support Material
-  <
-  < Flexible support not recommended
-  <
+  < 70 - 100
+  < %

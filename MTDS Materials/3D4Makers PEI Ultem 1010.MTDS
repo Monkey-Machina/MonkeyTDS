@@ -1,0 +1,191 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PEI Ultem 1010
+  <
+
+> Material
+  <
+  < PEI
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PEI_ULTEM_1010.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.27
+  < g/cm^3
+
+> Melt Volume Rate
+  < ISO 1183 | 340 °C, 5.0 kg
+  < 1300
+  < mm^3/min
+
+> Melt Volume Rate
+  < ISO 1183 | 360 °C, 5.0 kg
+  < 2500
+  < mm^3/min
+
+> Moisture Absorption
+  < ISO 62 | 23 °C, 50% RH, equilibrium
+  < 0.70
+  < %
+
+> Saturated Water Absorption Rate
+  < ISO 62 | 23 °C, saturation
+  < 1.3
+  < %
+
+> Glass Transition Temperature
+  < | per TDS text
+  < 217
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, unannealed
+  < 190
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa, unannealed
+  < 200
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | A50
+  < 215
+  < °C
+
+> Coefficient of Thermal Expansion
+  < ISO 11359 | 23 to 150 °C, flow
+  < 50
+  < ppm/°C
+
+> Thermal Conductivity
+  < ISO 8302
+  < 0.21
+  < W/m·K
+
+> Continuous Service Temperature
+  < UL 746 | RTI
+  < 170
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 105
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 85.0
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3200
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527
+  < 6.0
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 60
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 160
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 3300
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180/1A | Izod notched, 23 °C
+  < 5.0
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180/1U | Izod unnotched, 23 °C
+  < No break
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PEI | SABIC Ultem 1010
+  <
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < V-0
+  <
+
+> Flammability Rating
+  < UL 94 | 3.0 mm
+  < 5VA
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  < IEC 60093
+  < 1.0 x 10^15
+  < ohm·cm
+
+> Surface Resistivity
+  < IEC 60093
+  < 1.0 x 10^15
+  < ohm
+
+> Dielectric Strength
+  < IEC 60243 | 3.20 mm, in oil
+  < 16
+  < kV/mm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 340 - 360
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C
+
+> Print Speed
+  <
+  < 20 - 35
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet
+  <

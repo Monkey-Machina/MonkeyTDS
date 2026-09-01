@@ -1,0 +1,114 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PC-PTFE
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/pc-ptfe/nanovia-pc-ptfe-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.32
+  < g/cm^3
+
+> Continuous Service Temperature
+  <
+  < 130
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | printed 0°
+  < 1775
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | printed 0°
+  < 38
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | printed 0°
+  < 4.4
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eU | Charpy unnotched
+  < 50
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | Charpy notched
+  < 12
+  < kJ/m^2
+
+> Coefficient of Friction
+  < ASTM D1894 | static
+  < 0.18
+  <
+
+> Coefficient of Friction
+  < ASTM D1894 | dynamic
+  < 0.14
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PC | PTFE-blended, low friction
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 110 - 130
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C
+
+> Drying Condition
+  <
+  < 80 °C, 4 h
+  <

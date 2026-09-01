@@ -1,0 +1,116 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PETG ESD
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Filler Content
+  <
+  < conductive carbon
+  <
+
+> Source
+  <
+  < TDS | https://nanovia.tech/media/ref/petg-esd/nanovia-petg-esd-tds-en.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.32
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 2265
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 44
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 3.2
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 1834
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 24
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527-2/1A | printed 90°
+  < 1.5
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < PETG | conductive carbon, ESD
+  <
+
+# Electrical Property
+
+> Surface Resistance
+  <
+  < 1 x 10^9
+  < ohm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 245 - 255
+  < °C
+
+> Bed Temperature
+  <
+  < 85 - 90
+  < °C
+
+> Drying Condition
+  <
+  < 60 °C, 8 h
+  <

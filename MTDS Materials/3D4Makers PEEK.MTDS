@@ -1,0 +1,144 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PEEK
+  <
+
+> Material
+  <
+  < PEEK
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PEEK_Filament_1.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | crystalline
+  < 1.30
+  < g/cm^3
+
+> Melting Temperature
+  < ISO 11357
+  < 343
+  < °C
+
+> Glass Transition Temperature
+  < ISO 11357 | onset
+  < 143
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, as moulded
+  < 156
+  < °C
+
+> Coefficient of Thermal Expansion
+  < ISO 11359 | along flow
+  < 50
+  < ppm/°C
+
+> Thermal Conductivity
+  < ISO 22007 | along flow, 23 °C
+  < 0.32
+  < W/m·K
+
+> Continuous Service Temperature
+  < UL 746B | electrical RTI
+  < 260
+  < °C
+
+> Saturated Water Absorption Rate
+  < ISO 62 | 23 °C, saturation
+  < 0.45
+  < %
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield, 23 °C
+  < 105
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C
+  < 4100
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 23 °C
+  < 30
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | at 3.5% strain, 23 °C
+  < 130
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | 23 °C
+  < 3900
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | notched, 23 °C
+  < 4.2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180/A | notched, 23 °C
+  < 5.0
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 868 | 23 °C
+  < 85D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PEEK
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 360 - 400
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C
+
+> Print Speed
+  <
+  < 15 - 30
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet
+  <
+
+> Drying Condition
+  <
+  < 110 °C, 4 h
+  <

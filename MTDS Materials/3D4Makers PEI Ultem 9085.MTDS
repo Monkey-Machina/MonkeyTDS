@@ -1,0 +1,154 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PEI Ultem 9085
+  <
+
+> Material
+  <
+  < PEI
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PEI_ULTEM_9085.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.34
+  < g/cm^3
+
+> Melt Index
+  < ASTM D1238 | 295 °C
+  < 8.9
+  < dg/min
+
+> Moisture Absorption
+  < ISO 62 | 23 °C, 50% RH
+  < 0.17
+  < %
+
+> Saturated Water Absorption Rate
+  < ISO 62 | 23 °C, saturation
+  < 0.39
+  < %
+
+> Glass Transition Temperature
+  < | per TDS text
+  < 186
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa, unannealed
+  < 152
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | rate B/120
+  < 173
+  < °C
+
+> Coefficient of Thermal Expansion
+  < ASTM E831 | -30 to 80 °C, flow
+  < 60
+  < ppm/°C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at yield, 5 mm/min
+  < 84
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638 | at break, 5 mm/min
+  < 74
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638 | 5 mm/min
+  < 3440
+  < MPa
+
+> Elongation at Yield (In-Plane)
+  < ASTM D638 | 5 mm/min
+  < 7
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638 | 5 mm/min
+  < 72
+  < %
+
+> Flexural Strength (In-Plane)
+  < ASTM D790 | at yield, 1.3 mm/min
+  < 138
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790 | 1.3 mm/min
+  < 2920
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched, 23 °C
+  < 115
+  < J/m
+
+> Impact Strength (In-Plane)
+  < ISO 180/1A | notched, 23 °C
+  < 13
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/2C | Charpy notched, 23 °C
+  < 11
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PEI | SABIC Ultem 9085
+  <
+
+> Flammability Rating
+  < UL 94
+  < V-0
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 350 - 380
+  < °C
+
+> Bed Temperature
+  <
+  < 120 - 160
+  < °C
+
+> Print Speed
+  <
+  < 20 - 35
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI Sheet
+  <
