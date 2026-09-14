@@ -47,9 +47,19 @@
   < 0.39
   < %
 
+> Melt Volume Rate
+  < ISO 1183 | 360 °C, 5.0 kg
+  < 6500
+  < mm^3/min
+
 > Glass Transition Temperature
   < | per TDS text
   < 186
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.8 MPa, unannealed, 3.2 mm span
+  < 153
   < °C
 
 > Heat Deflection Temperature
@@ -130,6 +140,11 @@
   < UL 94
   < V-0
   <
+
+> Limiting Oxygen Index
+  < ASTM D2863
+  < 49
+  < %
 
 # Print Setting
 
