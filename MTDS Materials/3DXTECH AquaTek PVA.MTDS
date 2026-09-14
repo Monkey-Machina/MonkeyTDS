@@ -59,6 +59,13 @@
   < N/A
   <
 
+# Electrical Property
+
+> Surface Resistivity
+  < ASTM D257
+  < > 10^13
+  < ohm/sq
+
 # Chemical Property
 
 > Composition

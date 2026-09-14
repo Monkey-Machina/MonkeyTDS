@@ -47,12 +47,27 @@
   < 55
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 89
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | at break
   < 65
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3410
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 4
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -70,3 +85,15 @@
   <
   < PLA
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230
+  < °C
+
+> Bed Temperature
+  <
+  < 23
+  < °C

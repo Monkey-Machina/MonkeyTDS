@@ -47,12 +47,27 @@
   < 105
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 95
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | at break
   < 45
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1990
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 4
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -70,3 +85,20 @@
   <
   < ABS
   <
+
+> Flammability Rating
+  < UL 94 | base resin, 1.5 mm
+  < V-0
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235
+  < °C
+
+> Bed Temperature
+  <
+  < 110
+  < °C

@@ -42,9 +42,65 @@
   < 1.01
   < g/cm^3
 
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1 | 23 °C
+  < 88
+  < MPa
+
+> Shore Hardness
+  < ISO 868 | 15 s
+  < 90A
+  <
+
+> Compression Set
+  < ISO 815
+  < 37
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 1eA, notched Charpy, 23 °C
+  < No Break
+  <
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 1eA, notched Charpy, -30 °C
+  < No Break
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < IEC 62631-3-2 | 23 °C
+  < 10^12
+  < ohm/sq
+
+> Dielectric Strength
+  < IEC 60243-1 | 23 °C
+  < 43
+  < kV/mm
+
 # Chemical Property
 
 > Composition
   <
   < PEBA
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 225
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s

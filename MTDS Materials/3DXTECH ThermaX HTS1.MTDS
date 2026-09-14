@@ -47,6 +47,11 @@
   < 225
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 1.80 MPa
+  < 205
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -63,6 +68,13 @@
   < ISO 178
   < N/A
   <
+
+# Electrical Property
+
+> Surface Resistivity
+  < ASTM D257
+  < > 10^13
+  < ohm/sq
 
 # Chemical Property
 

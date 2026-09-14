@@ -51,13 +51,63 @@
 
 > Tensile Strength (In-Plane)
   < ASTM D638
+  < 19.0 | vertical
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 1495 | vertical
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 7.3 | vertical
+  < %
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 32.9 | on edge
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 1880 | on edge
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 12.3 | on edge
+  < %
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
   < 30.4 | flat
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 1480 | flat
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 17.7 | flat
+  < %
 
 > Flexural Strength (In-Plane)
   < ASTM D790
   < 48.4 | on edge
   < MPa
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790 | tangent modulus, 1%
+  < 1990 | on edge
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256-26 | notched Izod, flat
+  < 60.9
+  < J/m
 
 # Chemical Property
 
@@ -65,3 +115,25 @@
   <
   < PA
   <
+
+> Flammability Rating
+  < UL 94 | vertical burn, 3.0 mm
+  < V-0
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 285
+  < °C
+
+> Bed Temperature
+  <
+  < 100
+  < °C
+
+> Chamber Temperature
+  <
+  < 65
+  < °C

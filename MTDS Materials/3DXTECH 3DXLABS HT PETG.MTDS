@@ -33,8 +33,13 @@
 # Physical Property
 
 > Heat Deflection Temperature
-  < ASTM D648
+  < ASTM D648 | 0.45 MPa
   < 109
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.80 MPa
+  < 92
   < °C
 
 > Density
@@ -42,12 +47,27 @@
   < 1.27
   < g/cm^3
 
+> Post-Treatment Shrinkage (In-Plane)
+  < ASTM D955
+  < 0.3 - 0.4
+  < %
+
+> Haze
+  < ASTM D1003
+  < < 1.5
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ASTM D638
+  < ASTM D638 | at break
   < 54
   < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 150
+  < %
 
 > Flexural Strength (In-Plane)
   < ASTM D790
@@ -59,9 +79,36 @@
   < 1950
   < MPa
 
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 120
+  <
+
 # Chemical Property
 
 > Composition
   <
   < PETG
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 270
+  < °C
+
+> Bed Temperature
+  <
+  < 90
+  < °C
+
+> Chamber Temperature
+  <
+  < 65
+  < °C
+
+> Print Speed
+  <
+  < 43
+  < mm/s
