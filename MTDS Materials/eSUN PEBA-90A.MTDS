@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PEBA-90A
+  <
+
+> Material
+  <
+  < PEBA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PEBA-90A/PEBA90A-TDS-en.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/peba-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.01 | unit to be confirmed per source
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 10 - 16 | 190 °C, 2.16 kg
+  < dg/min
+
+> Vicat Softening Temperature
+  <
+  < 120 | 10 N
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < > 16.5
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 7.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < > 520
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 150
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 90
+  < °C
+
+> Cooling Fan
+  <
+  < 10 - 50
+  < %
+
+> Print Speed
+  <
+  < 25 - 110
+  < mm/s
+
+> Drying Condition
+  <
+  < 70 °C / > 6 h
+  <

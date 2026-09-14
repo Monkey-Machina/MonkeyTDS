@@ -7,12 +7,12 @@
 
 > Product Name
   <
-  < PLA-Silk
+  < PA12
   <
 
 > Material
   <
-  < PLA
+  < PA
   <
 
 > Diameter
@@ -22,101 +22,101 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Silk/PLA-Silk_TDS_2025.06.19.pdf
-  <
-
-> Source
-  <
-  < Product Page | https://www.esun3d.com/esilk-pla-product
+  < Product Page | https://www.esun3d.com/epa12-product
   <
 
 # Physical Property
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.21 | unit to be confirmed per source
+  < 1.012 | unit to be confirmed per source
   < g/cm^3
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 4.8 | 190 °C, 2.16 kg
+  < 55.64 | 270 °C, 2.16 kg
   < dg/min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 50 | 0.45 MPa
+  < 100 | 0.45 MPa
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 32.53
+  < 47.74
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 17.36
+  < 38.15
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 11.65
+  < 19.97
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 1.84
+  < 7.31
   < %
 
 > Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 44.4
+  < 61.9
   < MPa
 
 > Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 23.1
+  < 50.2
   < MPa
 
 > Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 1917.35
+  < 1443.67
   < MPa
 
 > Flexural Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1858.86
+  < 1180.38
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.93
+  < 6.05
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.19
+  < 4.07
   < kJ/m^2
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 190 - 230
+  < 260 - 290
   < °C
 
 > Bed Temperature
   <
-  < 45 - 60
+  < 70 - 90
   < °C
 
 > Cooling Fan
   <
-  < 100
+  < 0
   < %
 
 > Print Speed
   <
-  < < 200
+  < < 150
   < mm/s
+
+> Drying Condition
+  <
+  < 70 °C / > 12 h
+  <

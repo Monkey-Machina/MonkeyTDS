@@ -7,7 +7,7 @@
 
 > Product Name
   <
-  < PLA-Silk
+  < PLA-CF
   <
 
 > Material
@@ -22,12 +22,7 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Silk/PLA-Silk_TDS_2025.06.19.pdf
-  <
-
-> Source
-  <
-  < Product Page | https://www.esun3d.com/esilk-pla-product
+  < Product Page | https://www.esun3d.com/epla-cf-product
   <
 
 # Physical Property
@@ -39,64 +34,64 @@
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 4.8 | 190 °C, 2.16 kg
+  < 5.37 | 190 °C, 2.16 kg
   < dg/min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 50 | 0.45 MPa
+  < 53 | 0.45 MPa
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 32.53
+  < 59.64
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 17.36
+  < 31.78
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 11.65
+  < 5.26
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 1.84
+  < 2.91
   < %
 
 > Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 44.4
+  < 96.1
   < MPa
 
 > Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 23.1
+  < 53.1
   < MPa
 
 > Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 1917.35
+  < 5431.38
   < MPa
 
 > Flexural Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1858.86
+  < 3184.76
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.93
+  < 4.03
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.19
+  < 2.16
   < kJ/m^2
 
 # Print Setting

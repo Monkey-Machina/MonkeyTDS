@@ -7,7 +7,7 @@
 
 > Product Name
   <
-  < PLA-Silk
+  < PLA-Silk Candy
   <
 
 > Material
@@ -22,12 +22,7 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Silk/PLA-Silk_TDS_2025.06.19.pdf
-  <
-
-> Source
-  <
-  < Product Page | https://www.esun3d.com/esilk-pla-product
+  < Product Page | https://www.esun3d.com/epla-silk-candy-product
   <
 
 # Physical Property
@@ -39,71 +34,46 @@
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 4.8 | 190 °C, 2.16 kg
+  < 4.5 | 190 °C, 2.16 kg
   < dg/min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 50 | 0.45 MPa
+  < 52.15 | 0.45 MPa
   < °C
 
 # Mechanical Property
 
-> Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 32.53
-  < MPa
-
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 17.36
+  < 19.33
   < MPa
-
-> Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 11.65
-  < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 1.84
+  < 3.03
   < %
 
 > Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 44.4
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 23.1
+  < 85.08
   < MPa
 
 > Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 1917.35
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 1858.86
+  < 2770.8
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.93
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ASTM D256 | GB/T 1843, Izod
-  < 2.19
+  < 3.45
   < kJ/m^2
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 190 - 230
+  < 210 - 230
   < °C
 
 > Bed Temperature

@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PEEK-Industrial
+  <
+
+> Material
+  <
+  < PEEK
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.25
+  < kg
+
+> Source
+  <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PEEK-Industrial0.25KG/ePEEK-Industrial.2022.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/epeek-industrial-product
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | GB/T 1033
+  < 1.3 | unit to be confirmed per source
+  < g/cm^3
+
+> Heat Deflection Temperature
+  <
+  < 152
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 100
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 40
+  < %
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 170
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | GB/T 9341
+  < 4200
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | GB/T 1843, Izod
+  < 6.5
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 380 - 440
+  < °C
+
+> Bed Temperature
+  <
+  < 130 - 150
+  < °C
+
+> Cooling Fan
+  <
+  < 0
+  < %
+
+> Print Speed
+  <
+  < 40 - 60
+  < mm/s
+
+> Drying Condition
+  <
+  < 80 °C / > 8 h
+  <

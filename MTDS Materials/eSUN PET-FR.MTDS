@@ -7,12 +7,12 @@
 
 > Product Name
   <
-  < PLA-Silk
+  < PET-FR
   <
 
 > Material
   <
-  < PLA
+  < PET
   <
 
 > Diameter
@@ -22,101 +22,118 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Silk/PLA-Silk_TDS_2025.06.19.pdf
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PET-FR/PET-FR-TDS-EN.pdf
   <
 
 > Source
   <
-  < Product Page | https://www.esun3d.com/esilk-pla-product
+  < Product Page | https://www.esun3d.com/pet-fr-product
   <
 
 # Physical Property
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.21 | unit to be confirmed per source
+  < 1.52 | unit to be confirmed per source
   < g/cm^3
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 4.8 | 190 °C, 2.16 kg
+  < 18.6 | 270 °C, 2.16 kg
   < dg/min
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 50 | 0.45 MPa
+  < 75 | 0.45 MPa, as printed (not annealed)
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | GB/T 1634
+  < 130 | 0.45 MPa, after annealing
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 32.53
+  < 47.66
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 17.36
+  < 20
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 11.65
+  < 3.94
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 1.84
+  < 2.38
   < %
 
 > Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 44.4
+  < 76.4
   < MPa
 
 > Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 23.1
+  < 26.8
   < MPa
 
 > Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 1917.35
+  < 3869.28
   < MPa
 
 > Flexural Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1858.86
+  < 1533.26
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.93
+  < 5.99
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.19
+  < 2.2
   < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94
+  < V-0
+  <
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 190 - 230
+  < 300 - 320
   < °C
 
 > Bed Temperature
   <
-  < 45 - 60
+  < 70 - 90
   < °C
 
 > Cooling Fan
   <
-  < 100
+  < 40 - 70
   < %
 
 > Print Speed
   <
   < < 200
   < mm/s
+
+> Drying Condition
+  <
+  < 70 °C / > 8 h
+  <
