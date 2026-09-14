@@ -42,11 +42,41 @@
   < 1.2
   < g/cm^3
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 147
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ASTM D638
+  < 23.4 | vertical
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 1351.4 | vertical
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
   < 23.8 | flat
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 730.8 | flat
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 31.0 | on edge
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 1510.0 | on edge
   < MPa
 
 > Flexural Strength (In-Plane)
@@ -59,9 +89,26 @@
   < 1048 | on edge
   < MPa
 
+> Impact Strength (In-Plane)
+  < ASTM D256 | unnotched Izod, flat
+  < 854
+  < J/m
+
 # Chemical Property
 
 > Composition
   <
   < PA
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 275
+  < °C
+
+> Print Speed
+  <
+  < 30
+  < mm/s
