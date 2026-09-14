@@ -44,14 +44,29 @@
   < 2550
   < MPa
 
+> Young's Modulus (In-Plane)
+  < ISO 527 | injection moulded, from the raw-material supplier
+  < 2850
+  < MPa
+
 > Tensile Strength (In-Plane)
   < ISO 527
   < 55
   < MPa
 
+> Tensile Strength (In-Plane)
+  < ISO 527 | injection moulded, from the raw-material supplier
+  < 58
+  < MPa
+
 > Breaking Elongation Rate (In-Plane)
   < ISO 527
   < 8.6
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | injection moulded, from the raw-material supplier
+  < 14.2
   < %
 
 > Flexural Modulus (In-Plane)
@@ -67,6 +82,11 @@
 > Impact Strength (In-Plane)
   < ISO 179 | notched Charpy
   < 5.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | notched Charpy, injection moulded, from the raw-material supplier
+  < 3.41
   < kJ/m^2
 
 # Print Setting

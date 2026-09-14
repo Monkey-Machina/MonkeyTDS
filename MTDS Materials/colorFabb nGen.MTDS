@@ -59,9 +59,19 @@
   < 54
   < MPa
 
+> Tensile Strength (In-Plane)
+  < ASTM D638 | injection moulded, from the raw-material supplier
+  < 50
+  < MPa
+
 > Breaking Elongation Rate (In-Plane)
   < ISO 527
   < 11
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638 | injection moulded, from the raw-material supplier
+  < 190
   < %
 
 > Flexural Modulus (In-Plane)
@@ -73,6 +83,11 @@
   < ISO 179 | notched Charpy
   < 3.3
   < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, injection moulded, from the raw-material supplier
+  < 70
+  < J/m
 
 # Chemical Property
 
