@@ -32,6 +32,11 @@
   < 1.05
   < g/cm^3
 
+> Apparent Density
+  < ISO 60
+  < 0.65
+  < g/cm^3
+
 > Melt Index
   < ISO 1133 | 220 °C, 10.0 kg
   < 15
@@ -46,6 +51,11 @@
   < ISO 306 | B50
   < 97.0
   < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < ISO 294-4
+  < 0.40 - 0.70
+  < %
 
 # Mechanical Property
 
@@ -95,6 +105,21 @@
   < UL 94 | 1.5 mm
   < HB
   <
+
+> Flammability Rating
+  < UL 94 | 3.00 mm
+  < HB
+  <
+
+> Burning Rate
+  < ISO 75-2/A | 2.00 mm
+  < 55
+  < mm/min
+
+> Fogging
+  < ISO 294-4
+  < 97
+  < %
 
 # Print Setting
 
