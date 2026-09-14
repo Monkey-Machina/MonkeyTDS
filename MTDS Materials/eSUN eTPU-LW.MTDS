@@ -34,13 +34,35 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.15
+  < 1.12
   < g/cm^3
 
 > Melt Index
   < ISO 1133 | GB/T 3682
   < 5 | 190 °C, 10 kg
   < dg/min
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 24.5
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 5.4
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 113
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 48
+  < kJ/m^2
 
 # Print Setting
 
@@ -61,10 +83,5 @@
 
 > Print Speed
   <
-  < < 100
+  < 20 - 40
   < mm/s
-
-> Drying Condition
-  <
-  < 55 °C / > 4 h
-  <

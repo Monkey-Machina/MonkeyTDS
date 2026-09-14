@@ -37,6 +37,18 @@
   < 1.25
   < g/cm^3
 
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 22
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 360
+  < %
+
 # Print Setting
 
 > Nozzle Temperature
@@ -56,7 +68,7 @@
 
 > Print Speed
   <
-  < < 150
+  < 20 - 50
   < mm/s
 
 > Drying Condition
