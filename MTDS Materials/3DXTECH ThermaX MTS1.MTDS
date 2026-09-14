@@ -47,6 +47,11 @@
   < 128
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 112
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -64,9 +69,28 @@
   < N/A
   <
 
+# Electrical Property
+
+> Surface Resistivity
+  < ASTM D257
+  < > 10^13
+  < ohm/sq
+
 # Chemical Property
 
 > Composition
   <
   < PPS
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 310
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C
