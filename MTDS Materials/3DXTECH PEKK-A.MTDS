@@ -42,12 +42,32 @@
   < 165
   < °C
 
+> Melting Temperature
+  < DSC
+  < 335
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 182
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527
   < 105
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3200
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 10
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -65,3 +85,20 @@
   <
   < PEKK
   <
+
+> Flammability Rating
+  < UL 94 | base resin, 0.8 mm
+  < V-0
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 370
+  < °C
+
+> Bed Temperature
+  <
+  < 130
+  < °C
