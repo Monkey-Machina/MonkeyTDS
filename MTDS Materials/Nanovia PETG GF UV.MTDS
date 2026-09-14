@@ -69,6 +69,21 @@
   < 2.3
   < %
 
+> Young's Modulus (In-Plane)
+  < ISO 527 | printed 45°/-45° per layer
+  < 2810
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | printed 45°/-45° per layer
+  < 42
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | printed 45°/-45° per layer
+  < 2.6
+  < %
+
 > Young's Modulus (Interlayer)
   < ISO 527 | printed 90°
   < 2313
@@ -101,6 +116,11 @@
 > Bed Temperature
   <
   < 80 - 90
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
   < °C
 
 > Drying Condition
