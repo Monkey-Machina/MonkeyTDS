@@ -87,6 +87,11 @@
   < 170
   < °C
 
+> Post-Treatment Shrinkage (In-Plane)
+  <
+  < 0.50 - 0.70
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -134,6 +139,11 @@
   < No break
   <
 
+> Abrasion Resistance
+  < Internal Method | Taber CS-17, 1000 cycles, 1000 g
+  < 10.0
+  < mg
+
 # Chemical Property
 
 > Composition
@@ -150,6 +160,11 @@
   < UL 94 | 3.0 mm
   < 5VA
   <
+
+> Limiting Oxygen Index
+  < ISO 4589-2
+  < 47
+  < %
 
 # Electrical Property
 

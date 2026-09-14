@@ -47,6 +47,16 @@
   < 255
   < °C
 
+> Continuous Service Temperature
+  < | during lifetime, max. 200 h
+  < 300
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < DIN 16742
+  < 1.0 - 1.6
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -73,6 +83,11 @@
   < ISO 178 | 23 °C, 50% rh
   < 2500
   < MPa
+
+> Flexural Elongation (In-Plane)
+  < ISO 178 | 23 °C, 50% rh, at max. force
+  < 6
+  < %
 
 > Impact Strength (In-Plane)
   < ISO 179/1eU | 23 °C, 50% rh

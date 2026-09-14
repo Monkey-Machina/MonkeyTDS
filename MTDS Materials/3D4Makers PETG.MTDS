@@ -32,6 +32,11 @@
   < 1.29
   < g/cm^3
 
+> Bulk Density
+  <
+  < 0.73
+  < g/cm^3
+
 > Saturated Water Absorption Rate
   < ASTM D570
   < 0.12
@@ -79,6 +84,11 @@
   < 31
   < %
 
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 19
+  < MPa
+
 > Flexural Strength (In-Plane)
   < ISO 178
   < 171
@@ -88,6 +98,11 @@
   < ISO 178
   < 2040
   < MPa
+
+> Deflection at Flexural Strength (In-Plane)
+  < ISO 178
+  < 8.6
+  < mm
 
 > Impact Strength (In-Plane)
   < ISO 180 | Izod notched, 23 °C, 50% rh

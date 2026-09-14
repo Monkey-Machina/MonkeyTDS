@@ -52,6 +52,11 @@
   < 95.0
   < °C
 
+> Post-Treatment Shrinkage (In-Plane)
+  < ASTM D955 | 3.20 mm
+  < 0.40 - 0.70
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -89,6 +94,11 @@
   < 180
   < J/m
 
+> Rockwell Hardness
+  < ASTM D785 | R scale
+  < 103
+  <
+
 # Chemical Property
 
 > Composition
@@ -98,6 +108,11 @@
 
 > Flammability Rating
   < UL 94 | 1.6 mm
+  < HB
+  <
+
+> Flammability Rating
+  < UL 94 | 3.1 mm
   < HB
   <
 

@@ -42,6 +42,11 @@
   < 0.37
   < %
 
+> Post-Treatment Shrinkage (In-Plane)
+  < ASTM D955 | 3.18 mm
+  < 0.70
+  < %
+
 > Heat Deflection Temperature
   < ASTM D648 | 1.8 MPa, unannealed
   < 207
@@ -89,6 +94,11 @@
   < 690
   < J/m
 
+> Tensile Impact Strength
+  < ASTM D1822 | 3.18 mm
+  < 399
+  < kJ/m^2
+
 # Chemical Property
 
 > Composition
@@ -109,9 +119,19 @@
   < ohm·cm
 
 > Dielectric Strength
+  < ASTM D149 | 0.0254 mm
+  < > 200
+  < kV/mm
+
+> Dielectric Strength
   < ASTM D149 | 3.19 mm
   < 15
   < kV/mm
+
+> Relative Permittivity
+  < ASTM D150 | 3.18 mm, 60 Hz
+  < 3.44
+  <
 
 # Print Setting
 
