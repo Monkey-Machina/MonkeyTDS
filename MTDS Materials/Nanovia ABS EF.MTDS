@@ -69,6 +69,21 @@
   < 2.3
   < %
 
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer, 1 mm/min
+  < 1820
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer, 1 mm/min
+  < 29
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer
+  < 2.3
+  < %
+
 > Young's Modulus (Interlayer)
   < ISO 527-2/1A | printed 90°, 1 mm/min
   < 1820

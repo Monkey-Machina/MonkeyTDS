@@ -113,6 +113,31 @@
   < 33
   < kV/mm
 
+> Relative Permittivity
+  < IEC 60250 | 50/60 Hz
+  < 2.9
+  <
+
+> Relative Permittivity
+  < IEC 60250 | 1 MHz
+  < 2.9
+  <
+
+> Dissipation Factor
+  < IEC 60250 | 50/60 Hz
+  < 0.0005
+  <
+
+> Dissipation Factor
+  < IEC 60250 | 1 MHz
+  < 0.006
+  <
+
+> Dissipation Factor
+  < IEC 60250 | 2450 MHz
+  < 0.0025
+  <
+
 # Print Setting
 
 > Nozzle Temperature

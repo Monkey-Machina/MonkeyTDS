@@ -93,6 +93,11 @@
   < 60 - 80
   < °C
 
+> Chamber Temperature
+  <
+  < 20
+  < °C
+
 > Cooling Fan
   <
   < 0
