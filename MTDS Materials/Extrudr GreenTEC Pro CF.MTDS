@@ -74,6 +74,11 @@
   < 58
   < MPa
 
+> Elongation at Yield (In-Plane)
+  < ISO 527 | source labels this "elongation at strength"
+  < 3
+  < %
+
 > Breaking Elongation Rate (In-Plane)
   < ISO 527-2 | nominal
   < 2.5
