@@ -37,6 +37,16 @@
 
 # Physical Property
 
+> Melting Temperature
+  < ISO 11357
+  < 170
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 158
+  < °C
+
 > Density
   < ISO 1183
   < 1.71
@@ -45,9 +55,19 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | at break
   < 51
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2450
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 25
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -65,3 +85,20 @@
   <
   < PVDF
   <
+
+> Flammability Rating
+  < UL 94 | base resin, 1.5 mm
+  < V-0
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 255 - 275
+  < °C
+
+> Bed Temperature
+  <
+  < 70 - 110
+  < °C

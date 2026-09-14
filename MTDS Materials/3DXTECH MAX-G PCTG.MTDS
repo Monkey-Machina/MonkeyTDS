@@ -47,12 +47,27 @@
   < 78
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 76
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | at break
   < 45
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1755
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 24
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -64,9 +79,33 @@
   < 1600
   < MPa
 
+> Impact Strength (In-Plane)
+  < ISO 180/A | notched Izod
+  < 8
+  < kJ/m^2
+
+# Electrical Property
+
+> Surface Resistivity
+  < ASTM D257
+  < > 10^13
+  < ohm/sq
+
 # Chemical Property
 
 > Composition
   <
   < PCTG
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 275
+  < °C
+
+> Bed Temperature
+  <
+  < 90
+  < °C
