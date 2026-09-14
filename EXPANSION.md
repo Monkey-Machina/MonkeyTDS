@@ -17,13 +17,44 @@ turning it into MTDS-compliant `.MTDS` files.
    as the reference example.
 4. **Sources:** one `> Source` field per source document, value = document type
    (`TDS`, `MSDS`, `SDS`, `RoHS`, `Hex Code`, …), annotation = the URL.
-5. **Tooling stays out of the repo.** Put scrapers / scratch under
-   `C:\Users\ethan\Projects\MonkeyTDS\work\expansion\<source-slug>\`. Reference
-   implementations: `work/scrape.mjs` (page scrape via sitemap) and `work/gen.py`
-   (pdfplumber + PyMuPDF table extraction, `pdftotext -layout` fallback).
-6. **Branching:** each source gets its own branch `catalog-expansion/<source-slug>`
-   cut from `origin/catalog-expansion`; push it and open a **draft** PR into
-   `catalog-expansion`.
+5. **Tooling stays out of the repo.** Put scrapers / scratch / downloaded source
+   PDFs under `scratch/work/expansion/<source-slug>/` in the project folder
+   (outside this repo clone). Reference implementations: `scratch/work/scrape.mjs`
+   (page scrape via sitemap) and `scratch/work/gen.py` (pdfplumber + PyMuPDF table
+   extraction, `pdftotext -layout` fallback) — `pypdf` text extraction is a cheaper
+   fallback once you know a source's table layout well enough to regex it, but
+   always spot-check it against the rendered PDF first.
+6. **Branching:** each source (or fix) gets its own branch — `catalog-expansion/
+   <source-slug>` for a new manufacturer, `fix/<issue#>-<slug>` for a correction —
+   cut from `main`, with a PR back into `main`.
+
+## Completeness process (breadth + depth)
+
+Two gaps recur if you skip this: **missing filaments** (the manufacturer sells a
+product this repo never got) and **missing fields** (a file exists but wasn't
+built from every row its own source documents publish). Both trace to the same
+failure mode — going straight from "skim the PDF" to "write the `.MTDS` file"
+with no saved artifact recording what the *complete* source contained, so there
+was never anything to diff completeness against. Full writeup and worked
+examples: `scratch/work/PROCESS_DRAFT.md`; tracking issue **#44**.
+
+- **Phase A — inventory.** Get the manufacturer's current, complete product list
+  (sitemap.xml filtered to `/products/`, or a full category-page crawl if there's
+  no sitemap) and diff it against `MTDS Materials/<Manufacturer> *.MTDS`. Save the
+  dated list to `scratch/work/expansion/<slug>/products.txt`. A manufacturer WAF
+  blocking the fetch tool is common (seen on Bambu Lab's store) — a direct HTTP
+  request with a normal browser `User-Agent` usually isn't blocked the same way.
+- **Phase B — field inventory.** Before writing or re-verifying a file, find and
+  fetch *every* document type the product has (TDS, MSDS/SDS, RoHS, hex/color
+  chart — not just the TDS) and transcribe every row of every table into a plain
+  list first. Map each row to its MTDS subject (or a logged non-standard one);
+  anything deliberately not carried gets a one-line reason in the expansion
+  report, not silence. Build or update the `.MTDS` file *from that list*, then
+  re-diff the file's fields against it — everything in the list should resolve to
+  either a field in the file or a documented exclusion.
+- Prefer capturing a genuinely-published non-standard property (logged, not
+  silently dropped) over omitting it for file tidiness — the earlier 3D4Makers /
+  Nanovia catalog work under-captured on this axis and is worth a revisit.
 
 ## Reporting new standard candidates
 
