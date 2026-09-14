@@ -89,6 +89,23 @@
   < 175
   < kN/m
 
+> Compressive Strength (In-Plane)
+  < DIN 53453
+  < 40
+  < MPa
+
+> Poisson's Ratio
+  < per Hencky
+  < 0.45
+  <
+
+# Chemical Property
+
+> Fogging Value
+  < DIN 75201 | Method MB
+  < < 1.3
+  < mg
+
 # Print Setting
 
 > Nozzle Temperature
