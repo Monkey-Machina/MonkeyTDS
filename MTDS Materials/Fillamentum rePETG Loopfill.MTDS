@@ -1,0 +1,94 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < rePETG Loopfill
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2026/01/TDS_rePETG-Loopfill_EN_13112025.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.27
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 85
+  < °C
+
+> Continuous Service Temperature
+  <
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield, 50 mm/min
+  < 50
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break, 50 mm/min
+  < 28
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 50 mm/min
+  < 100
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 50 mm/min
+  < 2100
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 68
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2000
+  < MPa
+
+> Shore Hardness
+  < ISO 7619
+  < 80D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < recycled polyethylene terephthalate glycol, sourced from medical production, 100% recycled
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  <
+  < > 1 x 10^16
+  < ohm·cm

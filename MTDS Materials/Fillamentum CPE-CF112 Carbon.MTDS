@@ -1,0 +1,114 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < CPE-CF112 Carbon
+  <
+
+> Material
+  <
+  < CPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.10
+  < mm
+
+> Net Weight
+  <
+  < 0.6
+  < kg
+
+> Filler Content
+  <
+  < milled carbon fibre
+  <
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/TDS_CPE-CF112-Carbon.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.16
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield, 50 mm/min
+  < 52.4
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break, 50 mm/min
+  < 37.7
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 0.15 mm/min
+  < 8.0
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2200
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 25 °C, unnotched
+  < 105.9
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 7619 | 25 °C
+  < 77D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < CPE | milled carbon fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 250 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 70 - 85
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 15
+  < %
+
+> Print Speed
+  <
+  < 20 - 40
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo, 3Dlac
+  <

@@ -1,0 +1,84 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < Flexfill TPE 90A
+  <
+
+> Material
+  <
+  < TPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.10
+  < mm
+
+> Net Weight
+  <
+  < 0.5
+  < kg
+
+> Source
+  <
+  < Product Page | https://shop.fillamentum.com/products/flexfill-tpe-90a-natural
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.15
+  < g/cm^3
+
+> Continuous Service Temperature
+  <
+  < 80
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  <
+  < 5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 250
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < polyolefin + SEBS
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 225 - 245
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo PP
+  <

@@ -1,0 +1,114 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < Timberfill
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.10
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Filler Content
+  <
+  < wood fibre
+  <
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_Timberfill_03012019.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | 20 °C
+  < 1.26
+  < g/cm^3
+
+> Melt Volume Rate
+  < | 190 °C, 2.16 kg
+  < 2500
+  < mm^3/min
+
+> Melting Temperature
+  <
+  < 145 - 160
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | method B, 0.45 MPa
+  < 48
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break, 5 mm/min
+  < 39
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 5 mm/min
+  < 2
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 1 mm/min
+  < 3200
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eU | 23 °C, unnotched
+  < 22
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 7619
+  < 77D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | wood fibre reinforced, natural bio-based fillers
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 150 - 170
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo, glue stick
+  <

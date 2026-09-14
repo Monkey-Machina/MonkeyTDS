@@ -1,0 +1,126 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < ASA CF10
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2025/01/TDS_ASA-CF10-Carbon_EN_13012025.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.04
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 90
+  < °C
+
+> Continuous Service Temperature
+  <
+  < 90
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield, 50 mm/min
+  < 45
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break, 50 mm/min
+  < 38
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | 50 mm/min
+  < 10
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 50 mm/min
+  < 2800
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179
+  < 23
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 7619
+  < 74D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < ASA | carbon fibre reinforced
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  <
+  < 1 x 10^12
+  < ohm·cm
+
+# Print Setting
+
+> Nozzle Temperature
+  < non-high-speed printers; up to 275 °C for high-speed printers
+  < 245 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 105
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 20
+  < %
+
+> Print Speed
+  < non-high-speed printers
+  < 30 - 50
+  < mm/s
+
+> Drying Condition
+  <
+  < 80 °C / 3 h
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo, PVA glue, or Dimafix
+  <

@@ -1,0 +1,99 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < Vinyl 303
+  <
+
+> Material
+  <
+  < PVC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/TDS_Vinyl-303_FI.pdf
+  <
+
+# Physical Property
+
+> Density
+  < internal method 10-LA 022
+  < 1.35
+  < g/cm^3
+
+> Melt Index
+  <
+  < 10 | 190 °C, 10 kg
+  < g/10 min
+
+> Vicat Softening Temperature
+  < ISO 306 | 50 °C/h, 5 kg
+  < 71
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < internal method 10-LA 049 | at break
+  < 46.1
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < internal method 10-LA 049 | at break
+  < 13.1
+  < %
+
+> Shore Hardness
+  < internal method 10-LA 031
+  < 78D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PVC
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 215 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 80
+  < °C
+
+> Print Speed
+  <
+  < 40 - 60
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo, 3Dlac
+  <

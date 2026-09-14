@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < Nylon AF80 Aramid
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.10
+  < mm
+
+> Net Weight
+  <
+  < 0.6
+  < kg
+
+> Filler Content
+  <
+  < aramid fibre
+  <
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_Nylon-AF80-Aramid.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | 20 °C
+  < 0.99
+  < g/cm^3
+
+> Density
+  < ISO 1183 | 235 °C, molten
+  < 0.92
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133
+  < 9.9 | 235 °C, 2.16 kg
+  < g/10 min
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 50 mm/min
+  < 50.4
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 5.8
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 510
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | 20 °C, unnotched
+  < 53.2
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | -20 °C, unnotched
+  < 58.8
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PA12 | aramid fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235 - 255
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 110
+  < °C
+
+> Cooling Fan
+  <
+  < 0
+  < %
+
+> Print Speed
+  <
+  < 30 - 50
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo PA, or PVA glue
+  <
