@@ -62,10 +62,27 @@
   < 33
   < kJ/m^2
 
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched, XZ orientation
+  < 34
+  < kJ/m^2
+
 > Impact Strength (Interlayer)
   < ASTM D256 | Izod, unnotched
   < 10
   < kJ/m^2
+
+# Physical Property
+
+> Vicat Softening Temperature
+  < ASTM D1525 | 10 N, annealed
+  < 157
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa, annealed
+  < 94
+  < °C
 
 # Print Setting
 

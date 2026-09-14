@@ -27,6 +27,36 @@
 
 # Mechanical Property
 
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 48
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527
+  < 21.8
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2823
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | XZ orientation
+  < 2340
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 21.9
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527
+  < 0.9
+  < %
+
 # Print Setting
 
 > Nozzle Temperature

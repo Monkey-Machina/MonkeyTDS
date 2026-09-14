@@ -57,6 +57,11 @@
   < 90
   < kN/m
 
+> Tear Strength (In-Plane)
+  < ISO 34-1 | XZ orientation
+  < 8
+  < kN/m
+
 > Tear Strength (Interlayer)
   < ISO 34-1
   < 14

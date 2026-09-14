@@ -35,60 +35,145 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | source publishes two values per orientation (78.3 / 46.4), condition not specified
   < 78.3
   < MPa
 
+> Tensile Strength (In-Plane)
+  < ISO 527 | second published value, condition not specified by source
+  < 46.4
+  < MPa
+
 > Tensile Strength (Interlayer)
-  < ISO 527
+  < ISO 527 | source publishes two values per orientation (14.9 / 12.2), condition not specified
   < 14.9
   < MPa
 
+> Tensile Strength (Interlayer)
+  < ISO 527 | second published value, condition not specified by source
+  < 12.2
+  < MPa
+
 > Flexural Modulus (In-Plane)
-  < ISO 178
+  < ISO 178 | source publishes two values per orientation (4694 / 2861), condition not specified
   < 4694
   < MPa
 
+> Flexural Modulus (In-Plane)
+  < ISO 178 | second published value, condition not specified by source
+  < 2861
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | XZ orientation, first of two published values (8103 / 4300), condition not specified
+  < 8103
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | XZ orientation, second published value, condition not specified by source
+  < 4300
+  < MPa
+
 > Flexural Modulus (Interlayer)
-  < ISO 178
+  < ISO 178 | source publishes two values per orientation (2371 / 1070), condition not specified
   < 2371
   < MPa
 
+> Flexural Modulus (Interlayer)
+  < ISO 178 | second published value, condition not specified by source
+  < 1070
+  < MPa
+
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527
+  < ISO 527 | source publishes two values per orientation (2.2 / 3.2), condition not specified
   < 2.2
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | second published value, condition not specified by source
+  < 3.2
   < %
 
 > Breaking Elongation Rate (Interlayer)
-  < ISO 527
+  < ISO 527 | source publishes two values per orientation (0.8 / 1.9), condition not specified
   < 0.8
   < %
 
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | second published value, condition not specified by source
+  < 1.9
+  < %
+
 > Impact Strength (In-Plane)
-  < ASTM D256 | Izod, unnotched
+  < ASTM D256 | Izod, unnotched; source publishes two values (38.4 / 36.9), condition not specified
   < 38.4
   < kJ/m^2
 
-> Impact Strength (Interlayer)
-  < ASTM D256 | Izod, unnotched
-  < 2.6
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched; second published value, condition not specified by source
+  < 36.9
   < kJ/m^2
 
 > Impact Strength (In-Plane)
-  < ISO 179 | unnotched Charpy
-  < 38.9
+  < ASTM D256 | Izod, unnotched, XZ orientation; first of two published values (38.7 / 41.4)
+  < 38.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched, XZ orientation; second published value, condition not specified by source
+  < 41.4
   < kJ/m^2
 
 > Impact Strength (Interlayer)
-  < ISO 179 | unnotched Charpy
+  < ASTM D256 | Izod, unnotched; source publishes two values (2.6 / 3.8), condition not specified
+  < 2.6
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ASTM D256 | Izod, unnotched; second published value, condition not specified by source
+  < 3.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | unnotched Charpy; source publishes two values (38.9 / 41.8), condition not specified
+  < 38.9
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | unnotched Charpy; second published value, condition not specified by source
+  < 41.8
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | unnotched Charpy, XZ orientation; first of two published values (45.5 / 48.8)
+  < 45.5
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179 | unnotched Charpy, XZ orientation; second published value, condition not specified by source
+  < 48.8
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | unnotched Charpy; source publishes two values (2.2 / 3.1), condition not specified
   < 2.2
+  < kJ/m^2
+
+> Impact Strength (Interlayer)
+  < ISO 179 | unnotched Charpy; second published value, condition not specified by source
+  < 3.1
   < kJ/m^2
 
 # Physical Property
 
 > Heat Deflection Temperature
-  < ISO 75 | HDT B, 0.45 MPa
+  < ISO 75 | HDT B, 0.45 MPa; source publishes two values (110 / 114), condition not specified
   < 110
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | HDT B, 0.45 MPa; second published value, condition not specified by source
+  < 114
   < °C
 
 # Print Setting
