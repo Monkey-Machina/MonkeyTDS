@@ -84,6 +84,11 @@
   < 0.14
   <
 
+> Wear Factor
+  < ASTM D3702
+  < 4E-7
+  < mm^3/N/m
+
 # Chemical Property
 
 > Composition
