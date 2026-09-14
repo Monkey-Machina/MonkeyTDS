@@ -37,6 +37,11 @@
   < 110
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 100
+  < °C
+
 > Density
   < ISO 1183
   < 1.4
@@ -46,7 +51,32 @@
 
 > Tensile Strength (In-Plane)
   < ASTM D638
+  < 1,380 | vertical
+  < psi
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 247,000 | vertical
+  < psi
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
   < 6,580 | flat
+  < psi
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 477,000 | flat
+  < psi
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 4,420 | on edge
+  < psi
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 375,000 | on edge
   < psi
 
 > Flexural Strength (In-Plane)
@@ -58,6 +88,11 @@
   < ASTM D790
   < 314,000 | on edge
   < psi
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | unnotched Izod, flat; converted from 2.1 ft*lbf/in
+  < 112.1
+  < J/m
 
 # Chemical Property
 
