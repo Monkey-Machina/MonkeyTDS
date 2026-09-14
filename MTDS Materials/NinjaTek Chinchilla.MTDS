@@ -42,6 +42,11 @@
   < 180
   < °C
 
+> Glass Transition Temperature
+  < DSC | source's Imperial column prints -12 °F (-24 °C), inconsistent with its own -80 °C Metric column; transcribed as published
+  < -80
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
