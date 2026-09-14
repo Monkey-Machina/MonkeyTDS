@@ -54,8 +54,18 @@
   < 1900
   < MPa
 
+> Young's Modulus (In-Plane)
+  < ISO 527-1A | injection moulded, from the raw-material supplier
+  < 2000
+  < MPa
+
 > Tensile Strength (In-Plane)
   < ISO 527-1A
+  < 50
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A | injection moulded, from the raw-material supplier
   < 50
   < MPa
 
@@ -64,14 +74,29 @@
   < 90
   < %
 
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A | injection moulded, from the raw-material supplier
+  < 35
+  < %
+
 > Flexural Modulus (In-Plane)
   < ISO 178
   < 1000
   < MPa
 
+> Flexural Modulus (In-Plane)
+  < ISO 178 | injection moulded, from the raw-material supplier
+  < 1800
+  < MPa
+
 > Flexural Strength (In-Plane)
   < ISO 178
   < 70
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | injection moulded, from the raw-material supplier
+  < 65
   < MPa
 
 > Impact Strength (In-Plane)

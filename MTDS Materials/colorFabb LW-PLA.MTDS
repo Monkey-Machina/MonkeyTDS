@@ -54,6 +54,11 @@
   < 43.07
   < MPa
 
+> Elongation at Yield (In-Plane)
+  < ISO 527 | strain at tensile strength, 200 °C at 100% flow
+  < 1.68
+  < %
+
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | 200 °C at 100% flow
   < 8.08
@@ -68,6 +73,11 @@
   < ISO 527 | foamed, 250 °C at 45% flow
   < 10.83
   < MPa
+
+> Elongation at Yield (In-Plane)
+  < ISO 527 | strain at tensile strength, foamed, 250 °C at 45% flow
+  < 12.00
+  < %
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | foamed, 250 °C at 45% flow

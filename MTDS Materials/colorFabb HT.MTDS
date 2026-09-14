@@ -59,9 +59,19 @@
   < 50
   < MPa
 
+> Tensile Strength (In-Plane)
+  < ASTM D638 | injection moulded, from the raw-material supplier
+  < 43
+  < MPa
+
 > Breaking Elongation Rate (In-Plane)
   < ISO 527-1A
   < 26
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638 | injection moulded, from the raw-material supplier
+  < 210
   < %
 
 > Impact Strength (In-Plane)
