@@ -37,6 +37,16 @@
 
 # Physical Property
 
+> Continuous Service Temperature
+  < IEC 60216 | 20,000 h
+  < 150
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.80 MPa
+  < 200
+  < °C
+
 > Density
   < ISO 1183
   < 1.25
@@ -46,7 +56,32 @@
 
 > Tensile Strength (In-Plane)
   < ASTM D638
+  < 4,500 | vertical
+  < psi
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 553,000 | vertical; TDS reports 553 ksi
+  < psi
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
   < 15,500 | flat
+  < psi
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 977,000 | flat; TDS reports 977 ksi
+  < psi
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 13,700 | on edge
+  < psi
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 1,300,000 | on edge; TDS reports 1,300 ksi
   < psi
 
 > Flexural Strength (In-Plane)
@@ -59,9 +94,26 @@
   < 1,380,000 | on edge; TDS reports 1,380 ksi
   < psi
 
+> Impact Strength (In-Plane)
+  < ASTM D256 | unnotched Izod, flat; converted from 4.68 ft*lbf/in
+  < 249.8
+  < J/m
+
 # Chemical Property
 
 > Composition
   <
   < HTN
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 295
+  < °C
+
+> Bed Temperature
+  <
+  < 100
+  < °C

@@ -47,12 +47,32 @@
   < 80
   < °C
 
+> Continuous Service Temperature
+  < ISO 3167 A | 20,000 h
+  < 100
+  < °C
+
+> Saturated Water Absorption Rate
+  < ISO 62
+  < < 0.3
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | at break
   < 92
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 9500
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 2.5
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -69,9 +89,33 @@
   < 42
   < kJ/m^2
 
+# Electrical Property
+
+> Surface Resistivity
+  < DIN EN 62631-3-2
+  < 10^7 - 10^9
+  < ohm
+
 # Chemical Property
 
 > Composition
   <
   < PP
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240
+  < °C
+
+> Bed Temperature
+  <
+  < 50
+  < °C
+
+> Print Speed
+  <
+  < 50
+  < mm/s
