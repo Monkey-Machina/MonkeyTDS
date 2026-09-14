@@ -97,6 +97,11 @@
   < N/A
   <
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < N/A
+  <
+
 > Saturated Water Absorption Rate
   < 25 °C, 55% RH
   < 1.20
@@ -152,6 +157,11 @@
 > Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341
   < N/A
+  <
+
+> Shore Hardness
+  <
+  < 68D
   <
 
 > Impact Strength (In-Plane)

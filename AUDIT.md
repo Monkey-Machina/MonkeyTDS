@@ -22,6 +22,24 @@ Current: **0 error, 0 warn, 8 info** — the remaining info-level findings are
 `family-outlier` (6, all explained below) and `name-prefix` (2). The 87 `no-unit`
 warnings on 3DXTECH mechanical rows were cleared in #19.
 
+Note: this lint only catches malformed *existing* fields — a field the source TDS
+publishes but the file never gained at all is invisible to it. That gap (and a
+matching one for whole missing products) is what issue #44 and the process in
+`scratch/work/PROCESS_DRAFT.md` target; it isn't a `compile_materials.py` check.
+
+## Bambu Lab field-completeness pass (#44)
+
+Piloting the #44 process on Bambu Lab (the catalog's most mature manufacturer)
+found a systemic gap anyway: **every Bambu TDS publishes two Heat Deflection
+Temperature rows** (ISO 75 at 1.8 MPa *and* 0.45 MPa) but the original catalog
+build only ever captured the first. Confirmed against the source TDS for all 42
+files and added the missing row to every one (many `N/A` on the support/TPU
+grades, since Bambu tested and reported N/A for both). Also added `Shore Hardness
+68D` to `TPU for AMS` — published in the TDS's product description, not its
+properties table, but an exact manufacturer-stated value.
+`Bambu Lab TPU 95A HF`'s "interlayer adhesion" mention checked and confirmed to
+be prose, not a table value — correctly not added.
+
 ### Unit handling
 
 `scripts/units.py` is a compositional dimensional-analysis engine — it parses
