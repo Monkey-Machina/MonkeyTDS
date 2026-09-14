@@ -42,6 +42,11 @@
   < 60
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 55
+  < °C
+
 > Density
   < ISO 1183
   < 1.26
@@ -51,8 +56,33 @@
 
 > Tensile Strength (In-Plane)
   < ASTM D638
+  < 23 | vertical
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2.5 | vertical
+  < GPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
   < 41 | flat
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 3.1 | flat
+  < GPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 38.7 | on edge
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2.9 | on edge
+  < GPa
 
 > Flexural Strength (In-Plane)
   < ASTM D790
@@ -64,9 +94,38 @@
   < 2.8 | on edge
   < GPa
 
+> Impact Strength (In-Plane)
+  < ASTM D256 | unnotched Izod, flat
+  < 8.21
+  < kJ/m^2
+
+# Electrical Property
+
+> Surface Resistivity
+  < ASTM D257
+  < 10^4 - 10^9
+  < ohm
+
 # Chemical Property
 
 > Composition
   <
   < PLA
   <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240
+  < °C
+
+> Bed Temperature
+  <
+  < 55
+  < °C
+
+> Print Speed
+  <
+  < 246
+  < mm/s
