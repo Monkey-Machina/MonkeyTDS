@@ -97,12 +97,22 @@
   <
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | notched Izod, 23 °C
+  < ASTM D256 | notched Izod, 3.2 mm specimen, 23 °C
   < 23
   < kg·cm/cm
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | notched Izod, -30 °C
+  < ASTM D256 | notched Izod, 3.2 mm specimen, -30 °C
+  < 8
+  < kg·cm/cm
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, 6.4 mm specimen, 23 °C
+  < 20
+  < kg·cm/cm
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | notched Izod, 6.4 mm specimen, -30 °C
   < 8
   < kg·cm/cm
 
