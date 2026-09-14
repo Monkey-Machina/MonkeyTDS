@@ -57,6 +57,16 @@
   < 250
   < °C
 
+> Maximum Use Temperature
+  < | short term
+  < 280
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < DIN 16901 | VSR 3mm parallel
+  < 0.2 - 0.4
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -95,6 +105,18 @@
   <
   < PEEK | LEHVOSS LUVOCOM 3F compound
   <
+
+# Electrical Property
+
+> Volume Resistance
+  < DIN/IEC 60167
+  < < 10^9
+  < ohm
+
+> Surface Resistance
+  < DIN IEC 60093
+  < < 10^9
+  < ohm
 
 # Print Setting
 
