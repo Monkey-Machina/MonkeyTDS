@@ -34,8 +34,23 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.21 | unit to be confirmed per source
+  < 1.21
   < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < -9
+  < °C
+
+> Continuous Service Temperature
+  < IEC 60216
+  < 90
+  < °C
+
+> Maximum Use Temperature
+  < short term
+  < 120
+  < °C
 
 # Mechanical Property
 
@@ -59,6 +74,28 @@
   < 46
   < %
 
+# Chemical Property
+
+> Resistance to Acid
+  <
+  < Hydrofluoric acid resistance, organic acid resistance
+  <
+
+> Resistance to Oil and Grease
+  <
+  < Resistant to nonpolar solvents and most solvents
+  <
+
+> UV Resistance
+  <
+  < Light-resistant aging
+  <
+
+> Water Repellency
+  <
+  < Resistant to water below 60 °C
+  <
+
 # Print Setting
 
 > Nozzle Temperature
@@ -78,10 +115,10 @@
 
 > Print Speed
   <
-  < < 150
+  < 0 - 200
   < mm/s
 
 > Drying Condition
   <
-  < 55 °C / > 4 h
+  < 80 °C / 4 - 8 h
   <

@@ -34,7 +34,7 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.27 | unit to be confirmed per source
+  < 1.27
   < g/cm^3
 
 > Melt Index
@@ -103,7 +103,7 @@
 
 > Nozzle Temperature
   <
-  < 240 - 260
+  < 230 - 260
   < °C
 
 > Bed Temperature

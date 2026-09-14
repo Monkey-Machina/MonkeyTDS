@@ -22,6 +22,11 @@
 
 > Source
   <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Twinkling/eSUN_Twinkling_Filament_TDS_V4.0.pdf
+  <
+
+> Source
+  <
   < Product Page | https://www.esun3d.com/etwinkling-product
   <
 
@@ -29,7 +34,7 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.41 | unit to be confirmed per source
+  < 1.41
   < g/cm^3
 
 > Melt Index
@@ -41,6 +46,28 @@
   < ISO 75 | GB/T 1634
   < 67 | 0.45 MPa
   < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 58
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 70
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 2100
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 4
+  < kJ/m^2
 
 # Print Setting
 

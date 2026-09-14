@@ -34,7 +34,7 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.329 | unit to be confirmed per source
+  < 1.329
   < g/cm^3
 
 > Melt Index
@@ -99,6 +99,23 @@
   < 2.15
   < kJ/m^2
 
+# Chemical Property
+
+> Resistance to Acid
+  <
+  < Not resistant
+  <
+
+> Resistance to Alkali
+  <
+  < Not resistant
+  <
+
+> UV Resistance
+  <
+  < Not resistant
+  <
+
 # Print Setting
 
 > Nozzle Temperature
@@ -120,3 +137,8 @@
   <
   < < 200
   < mm/s
+
+> Drying Condition
+  <
+  < 50 °C / > 8 h
+  <

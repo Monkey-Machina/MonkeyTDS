@@ -34,7 +34,7 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.24 | unit to be confirmed per source
+  < 1.24
   < g/cm^3
 
 > Melt Index
@@ -118,5 +118,10 @@
 
 > Print Speed
   <
-  < < 600
+  < < 900
   < mm/s
+
+> Drying Condition
+  <
+  < 50 °C / 8 - 12 h
+  <

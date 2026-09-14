@@ -34,29 +34,19 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.14 | unit to be confirmed per source
+  < 1.14
   < g/cm^3
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 29
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 7.53
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 32
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < > 400
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 129.7
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 420
   < %
 
 # Print Setting
@@ -78,7 +68,7 @@
 
 > Print Speed
   <
-  < < 50
+  < 20 - 50
   < mm/s
 
 > Drying Condition
