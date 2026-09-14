@@ -91,12 +91,12 @@
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.29
+  < 2.2
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.2
+  < 2.29
   < kJ/m^2
 
 # Print Setting
@@ -108,7 +108,7 @@
 
 > Bed Temperature
   <
-  < 60 - 70
+  < 70
   < °C
 
 > Cooling Fan
@@ -118,5 +118,5 @@
 
 > Print Speed
   <
-  < < 250
+  < 40 - 250
   < mm/s
