@@ -42,6 +42,11 @@
   < 575
   < MPa
 
+> Flexural Modulus (In-Plane)
+  < ISO 178 | XZ orientation
+  < 494
+  < MPa
+
 > Flexural Modulus (Interlayer)
   < ISO 178
   < 380
@@ -62,6 +67,11 @@
   < 5.3
   < kJ/m^2
 
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, notched, XZ orientation
+  < 10.6
+  < kJ/m^2
+
 > Impact Strength (Interlayer)
   < ASTM D256 | Izod, notched
   < 2.3
@@ -70,6 +80,11 @@
 > Impact Strength (In-Plane)
   < ASTM D256 | Izod, unnotched
   < 37.7
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod, unnotched, XZ orientation
+  < 37.6
   < kJ/m^2
 
 > Impact Strength (Interlayer)
