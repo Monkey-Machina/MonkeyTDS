@@ -97,6 +97,11 @@
   < 235
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 264
+  < °C
+
 > Saturated Water Absorption Rate
   < 25 °C, 55% RH
   < 0.05
