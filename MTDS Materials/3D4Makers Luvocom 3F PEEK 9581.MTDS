@@ -52,6 +52,16 @@
   < 250
   < °C
 
+> Maximum Use Temperature
+  < | short term
+  < 260
+  < °C
+
+> Post-Treatment Shrinkage (In-Plane)
+  < DIN 16901 | VSR 3mm parallel
+  < 1.4 - 1.6
+  < %
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
@@ -78,6 +88,11 @@
   < ISO 178 | 23 °C, 50% rh
   < 3400
   < MPa
+
+> Flexural Elongation (In-Plane)
+  < ISO 178 | 23 °C, 50% rh
+  < 7
+  < %
 
 > Impact Strength (In-Plane)
   < ISO 179/1eA | notched, 23 °C
