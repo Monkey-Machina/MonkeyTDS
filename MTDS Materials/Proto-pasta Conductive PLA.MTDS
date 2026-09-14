@@ -27,6 +27,11 @@
 
 > Source
   <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/CDP1xxxx_TDS.pdf
+  <
+
+> Source
+  <
   < Technical Page | https://proto-pasta.com/pages/conductive-pla
   <
 
@@ -48,13 +53,23 @@
 
 > Nozzle Temperature
   <
-  < 215 - 230
+  < 210 - 230
   < °C
 
 > Bed Temperature
   <
-  < 50
+  < 60
   < °C
+
+> Print Speed
+  <
+  < up to 8 mm^3/s volumetric
+  <
+
+> Drying Condition
+  <
+  < generally not required; 55 °C / 6 h if needed
+  <
 
 > Build Plate Type
   <
@@ -63,33 +78,38 @@
 
 > Build Plate Surface Preparation
   <
-  < Standard
+  < PEI or similar, with Magigoo or glue stick for release
   <
 
 # Specific
 
-> Volume Resistivity (Molded Resin)
-  <
-  < 15
-  < ohm-cm
-
-> Volume Resistivity (3D Printed X/Y)
-  <
-  < 30
-  < ohm-cm
-
-> Volume Resistivity (3D Printed Z)
-  <
-  < 115
-  < ohm-cm
-
 > Filament Resistance (1.75mm, 10cm)
   <
-  < 2 - 3
+  < 2.0 - 3.5
   < kohm
 
-> Filament Resistance (2.85mm, 10cm)
+> Filament Volume Resistivity (1.75mm, 10cm)
   <
-  < 800 - 1200
-  < ohm
+  < 4.8 - 8.4
+  < ohm*cm
+
+> Volume Resistivity (3D Printed, Flat XY, 210 °C nozzle)
+  <
+  < 19.2 | reference only, batch- and print-parameter-dependent
+  < ohm*cm
+
+> Volume Resistivity (3D Printed, Flat XY, 230 °C nozzle)
+  <
+  < 14.4 | reference only, batch- and print-parameter-dependent
+  < ohm*cm
+
+> Volume Resistivity (3D Printed, Vertical Z, 210 °C nozzle)
+  <
+  < 33.6 | reference only, batch- and print-parameter-dependent
+  < ohm*cm
+
+> Volume Resistivity (3D Printed, Vertical Z, 230 °C nozzle)
+  <
+  < 27.2 | reference only, batch- and print-parameter-dependent
+  < ohm*cm
 

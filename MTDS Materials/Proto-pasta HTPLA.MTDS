@@ -32,9 +32,19 @@
 
 # Physical Property
 
+> Melting Temperature
+  < DSC | onset; per the shared value across the HTPLA product line's own TDS documents (Quantum Dot, Carbon Fiber variants) -- this base-grade product has no dedicated TDS
+  < 155
+  < °C
+
+> Glass Transition Temperature
+  < DSC | onset; per the shared value across the HTPLA product line's own TDS documents (Quantum Dot, Carbon Fiber variants) -- this base-grade product has no dedicated TDS
+  < 60
+  < °C
+
 > Heat Deflection Temperature
   <
-  < 140
+  < 140 | not confirmed against a current TDS -- this base-grade HTPLA has no dedicated TDS document; needs a follow-up check
   < °C
 
 # Print Setting
