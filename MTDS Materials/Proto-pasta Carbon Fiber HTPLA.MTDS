@@ -27,6 +27,11 @@
 
 > Source
   <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__CarbonFiber_HTPLA_1.0.1.pdf
+  <
+
+> Source
+  <
   < Technical Page | https://proto-pasta.com/pages/carbon-fiber-pla
   <
 
@@ -49,20 +54,25 @@
 
 > Heat Deflection Temperature
   <
-  < 140 | After heat treatment
+  < 140 | After heat treatment; not published in the current TDS revision, carried from an earlier source -- unconfirmed, needs a follow-up check
   < °C
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 220 - 240
+  < 205
   < °C
 
 > Bed Temperature
   <
-  < 55
+  < 60
   < °C
+
+> Print Speed
+  <
+  < 20 - 40
+  < mm/s
 
 > Nozzle Size
   <
@@ -81,7 +91,7 @@
 
 > Annealing Condition
   <
-  < Heat treat at 95 - 110 °C for improved temperature resistance
+  < Heat treat at 95 - 110 °C for 10+ minutes
   <
 
 # Specific

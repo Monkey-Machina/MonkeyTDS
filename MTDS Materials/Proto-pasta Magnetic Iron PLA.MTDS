@@ -27,6 +27,11 @@
 
 > Source
   <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Iron_PLA_1.0.1.pdf
+  <
+
+> Source
+  <
   < Technical Page | https://proto-pasta.com/pages/magnetic-iron-pla
   <
 
@@ -34,20 +39,30 @@
 
 > Density
   <
-  < 1.8
+  < 1.85
   < g/cm^3
+
+> Melting Temperature
+  <
+  < 155
+  < °C
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 185 - 195
+  < 192
   < °C
 
 > Bed Temperature
   <
-  < 50
+  < 60
   < °C
+
+> Print Speed
+  <
+  < 20 - 30
+  < mm/s
 
 > Build Plate Type
   <
@@ -75,6 +90,11 @@
   <
   < 5 - 8 | frequency independent up to 1 MHz
   <
+
+> Permeability
+  <
+  < 62E-7 - 100E-7 | frequency independent up to 1 MHz
+  < H/m
 
 > Spool Yield
   <

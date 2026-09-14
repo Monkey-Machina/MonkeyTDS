@@ -27,6 +27,11 @@
 
 > Source
   <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Stainless_Steel_PLA_1.0.1.pdf
+  <
+
+> Source
+  <
   < Technical Page | https://proto-pasta.com/pages/stainless-steel-pla
   <
 
@@ -34,20 +39,30 @@
 
 > Density
   <
-  < 2.4
+  < 2.3
   < g/cm^3
+
+> Melting Temperature
+  <
+  < 155
+  < °C
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 195 - 220
+  < 198
   < °C
 
 > Bed Temperature
   <
-  < 50
+  < 60
   < °C
+
+> Print Speed
+  <
+  < 20 - 30
+  < mm/s
 
 > Nozzle Size
   <
