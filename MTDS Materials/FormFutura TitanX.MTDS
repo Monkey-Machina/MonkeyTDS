@@ -7,7 +7,7 @@
 
 > Product Name
   <
-  < EasyFil ABS
+  < TitanX
   <
 
 > Material
@@ -22,12 +22,12 @@
 
 > Source
   <
-  < TDS | https://www.formfutura.com/web/content/256508?download=true
+  < TDS | https://www.formfutura.com/web/content/256648?download=true
   <
 
 > Source
   <
-  < Product Page | https://www.formfutura.com/easyfil-abs
+  < Product Page | https://www.formfutura.com/titanx
   <
 
 # Physical Property
@@ -38,8 +38,8 @@
   < g/cm^3
 
 > Melt Index
-  < ASTM D1238
-  < 21 | 220 °C, 10 kg
+  < ASTM D1238 | 220 °C, 10 kg
+  < 21
   < dg/min
 
 > Heat Deflection Temperature
@@ -53,11 +53,6 @@
   < °C
 
 # Mechanical Property
-
-> Impact Strength (In-Plane)
-  < ASTM D256 | Izod notched, 23 °C; converted from 33 kgf*cm/cm
-  < 323.6
-  < J/m
 
 > Tensile Strength (In-Plane)
   < ASTM D638 | at yield; converted from 460 kgf/cm^2
@@ -79,10 +74,10 @@
   < 2452
   < MPa
 
-> Rockwell Hardness
-  < ASTM D785 | R scale
-  < 108
-  <
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched, 23 °C; converted from 33 kgf*cm/cm
+  < 323.6
+  < J/m
 
 # Chemical Property
 
@@ -93,22 +88,27 @@
 
 # Print Setting
 
+> Drying Condition
+  <
+  < 45 - 60 °C, 12 h
+  <
+
 > Nozzle Temperature
   <
-  < 230 - 255
+  < 245 - 270
   < °C
 
 > Bed Temperature
   <
-  < 100
+  < 100 - 110
   < °C
 
 > Print Speed
   <
-  < 25 - 100
+  < 60 - 80
   < mm/s
 
 > Cooling Fan
   <
-  < 0 - 35
+  < 0 - 50
   < %
