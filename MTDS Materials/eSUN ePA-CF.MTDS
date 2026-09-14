@@ -34,7 +34,7 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.24 | unit to be confirmed per source
+  < 1.24
   < g/cm^3
 
 > Melt Index
@@ -50,53 +50,28 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 84.05
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 50.34
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 140
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 7.42
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 11.5
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 10.61
   < %
 
 > Flexural Strength (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 127.5
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 54.9
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 140
   < MPa
 
 > Flexural Modulus (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 6455.44
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 1657.25
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 4363
   < MPa
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | GB/T 1843, Izod
-  < 9.85
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ASTM D256 | GB/T 1843, Izod
-  < 2.15
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 18.67
   < kJ/m^2
 
 # Print Setting
@@ -108,7 +83,7 @@
 
 > Bed Temperature
   <
-  < 60 - 90
+  < 45 - 60
   < °C
 
 > Cooling Fan
@@ -118,7 +93,7 @@
 
 > Print Speed
   <
-  < < 150
+  < 40 - 100
   < mm/s
 
 > Drying Condition
