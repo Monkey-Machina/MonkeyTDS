@@ -47,12 +47,27 @@
   < 104
   < °C
 
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 96
+  < °C
+
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527
+  < ISO 527 | at break
   < 30
   < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2205
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 4.5
+  < %
 
 > Flexural Strength (In-Plane)
   < ISO 178
@@ -63,6 +78,13 @@
   < ISO 178
   < 1910
   < MPa
+
+# Electrical Property
+
+> Surface Resistivity
+  < IEC 60093
+  < > 10^13
+  < ohm/sq
 
 # Chemical Property
 
