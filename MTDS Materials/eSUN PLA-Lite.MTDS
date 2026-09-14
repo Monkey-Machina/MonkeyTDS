@@ -50,53 +50,28 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 53.05
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 26.88
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 53
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 3.89
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 2.39
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 29.92
   < %
 
 > Flexural Strength (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 90.57
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 62.2
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 100
   < MPa
 
 > Flexural Modulus (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 3114.92
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 2832.91
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 3824
   < MPa
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | GB/T 1843, Izod
-  < 4.53
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ASTM D256 | GB/T 1843, Izod
-  < 2.33
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 6.3
   < kJ/m^2
 
 # Print Setting
@@ -118,5 +93,5 @@
 
 > Print Speed
   <
-  < < 200
+  < 40 - 100
   < mm/s

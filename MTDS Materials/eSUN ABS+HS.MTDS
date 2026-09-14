@@ -22,6 +22,11 @@
 
 > Source
   <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/ABS_HS/eABS_HS.pdf
+  <
+
+> Source
+  <
   < Product Page | https://www.esun3d.com/eabshs-product
   <
 
@@ -34,7 +39,7 @@
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 6 | 220 °C, 10 kg
+  < 6 | 190 °C, 2.16 kg
   < dg/min
 
 > Heat Deflection Temperature
@@ -45,53 +50,28 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 41.64
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 27.08
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 39
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 5.14
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 3.4
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 21
   < %
 
 > Flexural Strength (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 46
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 44.5
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 58
   < MPa
 
 > Flexural Modulus (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 2349.32
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 1934.88
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 1906
   < MPa
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | GB/T 1843, Izod
-  < 25.94
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ASTM D256 | GB/T 1843, Izod
-  < 3.14
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 41
   < kJ/m^2
 
 # Print Setting
@@ -103,15 +83,15 @@
 
 > Bed Temperature
   <
-  < 95 - 110
+  < 100 - 110
   < °C
 
 > Cooling Fan
   <
-  < 0
+  < 100
   < %
 
 > Print Speed
   <
-  < < 300
+  < 50 - 300
   < mm/s

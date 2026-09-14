@@ -22,6 +22,11 @@
 
 > Source
   <
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA_HS/ePLA_HS.pdf
+  <
+
+> Source
+  <
   < Product Page | https://www.esun3d.com/eplahs-product
   <
 
@@ -45,53 +50,28 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 53.12
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 32.4
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 59
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 4.01
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 2.8
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 17.5
   < %
 
 > Flexural Strength (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 83
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 58.6
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 78
   < MPa
 
 > Flexural Modulus (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 2900
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 2680.2
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 2695
   < MPa
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | GB/T 1843, Izod
-  < 5.6
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ASTM D256 | GB/T 1843, Izod
-  < 2.41
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 4.1
   < kJ/m^2
 
 # Print Setting
@@ -113,5 +93,5 @@
 
 > Print Speed
   <
-  < < 350
+  < 50 - 350
   < mm/s

@@ -34,12 +34,12 @@
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.24
+  < 1.21
   < g/cm^3
 
 > Melt Index
   < ISO 1133 | GB/T 3682
-  < 5.2 | 190 °C, 2.16 kg
+  < 4.5 | 190 °C, 2.16 kg
   < dg/min
 
 > Heat Deflection Temperature
@@ -50,60 +50,35 @@
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 53.64
-  < MPa
-
-> Tensile Strength (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 30.46
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 59
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
-  < ISO 527 | GB/T 1040
-  < 4.34
-  < %
-
-> Breaking Elongation Rate (Interlayer)
-  < ISO 527 | GB/T 1040
-  < 2.43
+  < ISO 527 | GB/T 1040 | source gives one value, no In-Plane/Interlayer split
+  < 15
   < %
 
 > Flexural Strength (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 85.29
-  < MPa
-
-> Flexural Strength (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 48
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 81
   < MPa
 
 > Flexural Modulus (In-Plane)
-  < ISO 178 | GB/T 9341
-  < 2962.32
-  < MPa
-
-> Flexural Modulus (Interlayer)
-  < ISO 178 | GB/T 9341
-  < 2684.19
+  < ISO 178 | GB/T 9341 | source gives one value, no In-Plane/Interlayer split
+  < 2700
   < MPa
 
 > Impact Strength (In-Plane)
-  < ASTM D256 | GB/T 1843, Izod
-  < 4.77
-  < kJ/m^2
-
-> Impact Strength (Interlayer)
-  < ASTM D256 | GB/T 1843, Izod
-  < 2.01
+  < ASTM D256 | GB/T 1843, Izod | source gives one value, no In-Plane/Interlayer split
+  < 4.3
   < kJ/m^2
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 210 - 230
+  < 190 - 230
   < °C
 
 > Bed Temperature
@@ -118,5 +93,5 @@
 
 > Print Speed
   <
-  < 350
+  < 40 - 100
   < mm/s
