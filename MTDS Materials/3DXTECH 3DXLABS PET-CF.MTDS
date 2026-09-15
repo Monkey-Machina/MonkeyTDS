@@ -1,0 +1,75 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3DXTECH
+  <
+
+> Product Name
+  <
+  < 3DXLABS PET-CF
+  <
+
+> Material
+  <
+  < PET
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre, 15%
+  <
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0625/4185/6821/files/3DXLABS_TDS_-_PET_CF_v0.2.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.3dxtech.com/products/3dxlabs-pet-cf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.42
+  < g/cm^3
+
+> Moisture Absorption
+  < ISO 62
+  < < 0.3
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75-1 | 0.45 MPa
+  < 200
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75-2 | 1.80 MPa
+  < 150
+  < °C
+
+> Melting Temperature
+  < ISO 11357
+  < 245
+  < °C
+
+# Print Setting
+
+> Nozzle Temperature
+  < Bambu H2D, 0.6 mm nozzle
+  < 300
+  < °C
+
+> Print Speed
+  < Bambu H2D
+  < 20
+  < mm/s

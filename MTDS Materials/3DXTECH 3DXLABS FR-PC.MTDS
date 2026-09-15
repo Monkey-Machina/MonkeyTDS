@@ -1,0 +1,111 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3DXTECH
+  <
+
+> Product Name
+  <
+  < 3DXLABS FR-PC
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0625/4185/6821/files/3DXLABS_FR-PC_TDS_v0.1.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://www.3dxtech.com/products/3dxlabs%E2%84%A2-fr-pc
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.2
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < | 50 N, 50 °C/h
+  < 118
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.80 MPa
+  < 101
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | 5 mm/min
+  < 62
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | 23 °C
+  < 2400
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180/A | notched, 23 °C
+  < 19
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180/A | notched, -30 °C
+  < 45
+  < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < V-0
+  <
+
+# Electrical Property
+
+> Surface Resistivity
+  < IEC 62631-3-2
+  < 1 x 10^18
+  < ohm
+
+> Dielectric Strength
+  < IEC 60243-1 | 1 mm
+  < 36
+  < kV/mm
+
+> Comparative Tracking Index
+  < IEC 60112 | Solution A
+  < 600
+  < V
+
+# Print Setting
+
+> Nozzle Temperature
+  < Bambu H2D
+  < 280
+  < °C
+
+> Bed Temperature
+  < Bambu H2D
+  < 120
+  < °C
+
+> Print Speed
+  < Bambu H2D
+  < 200
+  < mm/s
