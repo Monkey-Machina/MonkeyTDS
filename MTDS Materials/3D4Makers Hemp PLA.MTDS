@@ -1,0 +1,55 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Hemp PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < hemp fibre
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/hemp-pla-filament
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | hemp fibre reinforced; no numeric mechanical/physical data published by 3D4Makers for this product as of this writing
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 220
+  < °C
+
+> Bed Temperature
+  < or unheated for certain surfaces
+  < 50 - 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 80
+  < mm/s

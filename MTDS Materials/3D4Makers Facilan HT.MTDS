@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Facilan HT
+  <
+
+> Material
+  <
+  < other
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_Facilan_HT_Filament_V1.4.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/facilan-ht-filament
+  <
+
+# Physical Property
+
+> Heat Deflection Temperature
+  < ISO 75 B | 120 K/h; other Material Properties table cells in the source TDS are blank
+  < 89
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < higher-performance replacement for PET/PET-G and other copolymers | food contact approved raw material, not based on Bisphenol-A
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 75 - 85
+  < °C
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < PEI sheet or glass
+  <
