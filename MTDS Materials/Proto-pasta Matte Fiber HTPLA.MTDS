@@ -1,0 +1,77 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Matte Fiber HTPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < plant fibre
+  <
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Matte_Fiber_HTPLA_1.0.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.14
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 60
+  < °C
+
+> Melting Temperature
+  <
+  < 155
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < heat-treatable PLA | plant-fibre filled (max particle size 0.1 mm), matte finish, does not require a wear-resistant nozzle (unlike Carbon Fiber HTPLA)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C
+
+> Print Speed
+  <
+  < 25 - 45
+  < mm/s
+
+> Annealing Condition
+  <
+  < heat treat at 95 - 110 °C for 10+ minutes
+  <

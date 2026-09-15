@@ -1,0 +1,77 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Translucent Sparkly HTPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__Translucent_Sparkly_HTPLA_1.0.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.24
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 60
+  < °C
+
+> Melting Temperature
+  <
+  < 155
+  < °C
+
+> Heat Deflection Temperature
+  <
+  < > 140 | after heat treatment
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < heat-treatable PLA | covers both the Translucent and Sparkly aesthetic sub-lines, which share the same base formulation and published properties
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 206
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C
+
+> Print Speed
+  <
+  < 25 - 45
+  < mm/s
+
+> Annealing Condition
+  <
+  < heat treat at 95 - 110 °C for 10+ minutes
+  <
