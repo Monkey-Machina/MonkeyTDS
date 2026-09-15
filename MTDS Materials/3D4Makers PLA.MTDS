@@ -1,0 +1,89 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/pla-filament
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.24
+  < g/cm^3
+
+> Moisture Absorption
+  < ISO 62
+  < 0.1968
+  < %
+
+> Glass Transition Temperature
+  < ISO 11357
+  < 57
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 66
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3027
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, 23 °C
+  < 3.4
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | food contact approved
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 180 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 20 - 60
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo Original, on glass or a PEI sheet
+  <

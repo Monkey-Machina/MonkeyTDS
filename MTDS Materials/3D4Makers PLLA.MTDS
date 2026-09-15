@@ -1,0 +1,129 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PLLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PLLA_Filament.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/plla-filament
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.24
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 190 °C, 2.16 kg
+  < 3
+  < g/10 min
+
+> Melting Temperature
+  <
+  < 175
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | method A50
+  < 61
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75-2 | method B120
+  < 55 - 60
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at break
+  < 50
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 5
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 3500
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 3350
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | unnotched, Charpy
+  < 21
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < poly(L-lactic acid) | 100% biobased, industrially compostable per NF EN 13432, produced per NF EN 16785-1
+  <
+
+> Flammability Rating
+  < UL 94
+  < V-0
+  <
+
+> Linear Mould Shrinkage
+  <
+  < 1.4 - 1.6
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 180 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 40 - 60
+  < °C
+
+> Print Speed
+  <
+  < 15 - 30
+  < mm/s
+
+> Drying Condition
+  <
+  < 60 °C / 3 h
+  <
+
+> Build Plate Surface Preparation
+  <
+  < PEI sheet, carbon fibre plate, or glass plate, with Magigoo Original
+  <

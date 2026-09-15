@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Facilan PCL100
+  <
+
+> Material
+  <
+  < PCL
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_Facilan_PCL100_filament_V1.4.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/facilan-pcl-100-filament
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183-1
+  < 1.1
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ISO 75 B | 120 K/h
+  < 57
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1 | 1.5 mm sample thickness
+  < 45
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1 | at yield, 1.5 mm sample thickness
+  < 15
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 350
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 18
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 380
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180-1 | notched, Izod
+  < 8
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 868
+  < 46D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < polycaprolactone (100%) | for biofabrication research (scaffolds, braces, implants, hydrogels, tissue engineering, drug delivery); not for permanent human implantation
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 130 - 170
+  < °C
+
+> Bed Temperature
+  <
+  < 30 - 45
+  < °C
+
+> Print Speed
+  <
+  < 20 - 40
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < smooth paper or PEI sheet
+  <

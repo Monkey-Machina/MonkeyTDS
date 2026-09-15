@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < Luvocom 3F PAHT CF 9742
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/LUVOCOM_3F_PAHT_CF_9742_BK_EN-TDS.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/luvocom-3f-paht-cf-9742-bk-filament
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.25
+  < g/cm^3
+
+> Saturated Water Absorption Rate
+  < ISO 1183-3 | 23 °C, 24 h
+  < < 0.3
+  < %
+
+> Linear Mould Shrinkage
+  < ISO 62 | DIN 16742
+  < 0.00 - 0.1
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | method A
+  < 200
+  < °C
+
+> Continuous Service Temperature
+  < IEC 60216 | 20,000 h
+  < 150
+  < °C
+
+> Coefficient of Thermal Expansion
+  < ISO 11359 | longitudinal, hot disk
+  < 180
+  < ppm/°C
+
+> Thermal Conductivity
+  < ISO 22007 | in-plane
+  < 1
+  < W/m·K
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | dry, 50 mm/min
+  < 170
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | dry, at F max, 50 mm/min
+  < 1
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527 | dry, 1 mm/min
+  < 15000
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 1eU | dry
+  < 47
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PA | carbon fibre reinforced, high-temperature grade
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 265 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < > 50
+  < °C
+
+> Print Speed
+  <
+  < 40 - 60
+  < mm/s

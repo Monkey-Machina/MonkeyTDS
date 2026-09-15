@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < R-Ultramarathon PP-GF
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < glass fibre
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/r-ultramarathon-pp-gf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.120
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2 | at break
+  < 67.1
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2
+  < 3.59
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2
+  < 5463
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 105.7
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 5563
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180/1U | unnotched, 23 °C
+  < 109.6
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180/1A | notched, 23 °C
+  < 25.9
+  < kJ/m^2
+
+> Shore Hardness
+  < ISO 868
+  < 71D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PP | glass fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 40 - 60
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo PP GF, on CF plate, glass, or a PEI sheet; use a 0.5 mm nozzle
+  <

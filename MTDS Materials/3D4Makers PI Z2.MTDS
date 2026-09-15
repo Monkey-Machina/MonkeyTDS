@@ -1,0 +1,104 @@
+# Specification
+
+> Manufacturer
+  <
+  < 3D4Makers
+  <
+
+> Product Name
+  <
+  < PI Z2
+  <
+
+> Material
+  <
+  < other
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0762/2839/files/TDS_PI_Filament_Z2_3D4Maker_ver.02.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://3d4makers.com/products/pi-filament-z2
+  <
+
+# Physical Property
+
+> Density
+  < ASTM B923-10
+  < 1.51
+  < g/cm^3
+
+# Chemical Property
+
+> Composition
+  <
+  < thermoplastic polyimide | inherent flame retardant; many mechanical/thermal properties are marked "TBD" (not yet determined) in the source TDS as of this writing, not omitted by us
+  <
+
+# Electrical Property
+
+> Relative Permittivity
+  < ASTM D150 | 1 GHz
+  < 2.87
+  <
+
+> Relative Permittivity
+  < ASTM D150 | 10 GHz
+  < 2.85
+  <
+
+> Dissipation Factor
+  < ASTM D150 | 1 GHz
+  < 0.0094
+  <
+
+> Dissipation Factor
+  < ASTM D150 | 10 GHz
+  < 0.0083
+  <
+
+> Dielectric Strength
+  < ASTM D149
+  < 172
+  < MV/m
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 390 - 410
+  < °C
+
+> Bed Temperature
+  <
+  < 120 - 160
+  < °C
+
+> Chamber Temperature
+  <
+  < 80 - 160
+  < °C
+
+> Print Speed
+  <
+  < 15 - 150
+  < mm/s
+
+> Drying Condition
+  <
+  < 120 °C / > 4 h
+  <
+
+> Build Plate Surface Preparation
+  <
+  < Glass or carbon plate, with Magigoo HT, Nano polymer adhesive, or GeckoTec EZ-Hot
+  <
