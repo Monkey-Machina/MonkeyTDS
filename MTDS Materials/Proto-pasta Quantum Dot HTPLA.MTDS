@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Quantum Dot HTPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS_QD_HTPLA.pdf
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.24
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 60
+  < °C
+
+> Melting Temperature
+  <
+  < 155
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < heat-treatable PLA | InP-based quantum dot pigment (0.04%), available in Red, Orange, Yellow, and Green
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 55 - 65
+  < °C
+
+> Print Speed
+  <
+  < 100 - 150
+  < mm/s

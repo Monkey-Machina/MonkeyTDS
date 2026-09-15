@@ -1,0 +1,77 @@
+# Specification
+
+> Manufacturer
+  <
+  < Proto-pasta
+  <
+
+> Product Name
+  <
+  < Bronze Fill HTPLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < bronze powder
+  <
+
+> Source
+  <
+  < TDS | https://cdn.shopify.com/s/files/1/0717/9095/files/TDS__BrassBronzeCopper_HTPLA_1.0.0.pdf
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 2.3
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 60
+  < °C
+
+> Melting Temperature
+  <
+  < 155
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < heat-treatable PLA | bronze metal powder filled, max particle size 250 microns; can be heat treated up to near melting for improved firmness
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C
+
+> Print Speed
+  <
+  < 20 - 30
+  < mm/s
+
+> Annealing Condition
+  <
+  < heat treat at 95 - 110 °C for 10+ minutes
+  <
