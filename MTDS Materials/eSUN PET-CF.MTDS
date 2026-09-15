@@ -7,12 +7,12 @@
 
 > Product Name
   <
-  < PLA-Silk
+  < PET-CF
   <
 
 > Material
   <
-  < PLA
+  < PET
   <
 
 > Diameter
@@ -22,101 +22,111 @@
 
 > Source
   <
-  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PLA-Silk/PLA-Silk_TDS_2025.06.19.pdf
+  < TDS | https://www.esun3d.com/media/esun/catalog/certification/product/PET-CF/PET-CF_TDS.pdf
   <
 
 > Source
   <
-  < Product Page | https://www.esun3d.com/esilk-pla-product
+  < Product Page | https://www.esun3d.com/pet-cf-product
   <
 
 # Physical Property
 
 > Density
   < ISO 1183 | GB/T 1033
-  < 1.21 | unit to be confirmed per source
+  < 1.42 | unit to be confirmed per source
   < g/cm^3
 
-> Melt Index
-  < ISO 1133 | GB/T 3682
-  < 4.8 | 190 °C, 2.16 kg
-  < dg/min
+> Glass Transition Temperature
+  <
+  < 70
+  < °C
 
 > Heat Deflection Temperature
   < ISO 75 | GB/T 1634
-  < 50 | 0.45 MPa
+  < 75 | 0.45 MPa, as printed (not annealed)
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | GB/T 1634
+  < 145 | 0.45 MPa, after annealing
   < °C
 
 # Mechanical Property
 
 > Tensile Strength (In-Plane)
   < ISO 527 | GB/T 1040
-  < 32.53
+  < 80.32
   < MPa
 
 > Tensile Strength (Interlayer)
   < ISO 527 | GB/T 1040
-  < 17.36
+  < 22
   < MPa
 
 > Breaking Elongation Rate (In-Plane)
   < ISO 527 | GB/T 1040
-  < 11.65
+  < 3.61
   < %
 
 > Breaking Elongation Rate (Interlayer)
   < ISO 527 | GB/T 1040
-  < 1.84
+  < 2.11
   < %
 
 > Flexural Strength (In-Plane)
   < ISO 178 | GB/T 9341
-  < 44.4
+  < 135.6
   < MPa
 
 > Flexural Strength (Interlayer)
   < ISO 178 | GB/T 9341
-  < 23.1
+  < 33.4
   < MPa
 
 > Flexural Modulus (In-Plane)
   < ISO 178 | GB/T 9341
-  < 1917.35
+  < 8264.15
   < MPa
 
 > Flexural Modulus (Interlayer)
   < ISO 178 | GB/T 9341
-  < 1858.86
+  < 2165.01
   < MPa
 
 > Impact Strength (In-Plane)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.93
+  < 7.16
   < kJ/m^2
 
 > Impact Strength (Interlayer)
   < ASTM D256 | GB/T 1843, Izod
-  < 2.19
+  < 2.12
   < kJ/m^2
 
 # Print Setting
 
 > Nozzle Temperature
   <
-  < 190 - 230
+  < 250 - 300
   < °C
 
 > Bed Temperature
   <
-  < 45 - 60
+  < 70 - 120
   < °C
 
 > Cooling Fan
   <
-  < 100
+  < 0 - 20
   < %
 
 > Print Speed
   <
   < < 200
   < mm/s
+
+> Drying Condition
+  <
+  < 80 °C / > 8 h
+  <

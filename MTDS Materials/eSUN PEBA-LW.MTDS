@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < eSUN
+  <
+
+> Product Name
+  <
+  < PEBA-LW
+  <
+
+> Material
+  <
+  < PEBA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.8
+  < kg
+
+> Source
+  <
+  < Product Page | https://www.esun3d.com/peba-lw-product
+  <
+
+# Physical Property
+
+> Density
+  <
+  < < 1.24 | at default print temperature, foaming-dependent
+  < g/cm^3
+
+> Density
+  <
+  < 0.48 | at maximum foaming ratio (~200% volume)
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | GB/T 3682
+  < 5 - 15 | 190 °C, 2.16 kg
+  < dg/min
+
+# Mechanical Property
+
+> Shore Hardness
+  <
+  < 66A - 92A | adjustable via print temperature (foaming ratio)
+  <
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 14
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 5.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527 | GB/T 1040
+  < 500
+  < %
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527 | GB/T 1040
+  < 30
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 270
+  < °C
+
+> Bed Temperature
+  <
+  < 35 - 75
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < 20 - 70
+  < mm/s
