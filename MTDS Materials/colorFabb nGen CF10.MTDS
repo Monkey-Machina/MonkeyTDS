@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < nGen CF10
+  <
+
+> Material
+  <
+  < PETG
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/Co-Polyester/colorFabb%20nGen/TDS_nGen%20CF10.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/ngen-cf10
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.20
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < HDT-B, ISO 75
+  < 78
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 2520
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 44.7
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 3.1
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2210
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 73.4
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 2.2
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < co-polyester | carbon fibre reinforced, matte finish
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 75 - 85
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 80
+  < %
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < abrasion-resistant nozzle recommended (stainless steel or hardened copper alloy)
+  <

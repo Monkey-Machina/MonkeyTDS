@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < glowFill
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PLA/colorFabb%20PLA%20specialFill/TDS_colorFabb%20glowFill.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/glowfill
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.2
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133-A | 190 °C, 1.16 kg
+  < 3.0 - 5.0
+  < g/10 min
+
+> Glass Transition Temperature
+  <
+  < 55
+  < °C
+
+> Melting Temperature
+  < DSC, ISO 11357
+  < > 155
+  < °C
+
+> Heat Deflection Temperature
+  < HDT-B, ISO 75
+  < 51
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 3180
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 49.1
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 4.1
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2980
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 83.0
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 3.07
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA/PHA | concentrated phosphorescent pigment
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 100
+  < mm/s

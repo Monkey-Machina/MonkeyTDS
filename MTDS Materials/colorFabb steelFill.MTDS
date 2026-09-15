@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < steelFill
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < stainless steel powder
+  <
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PLA/colorFabb%20PLA%20specialFill/TDS_E%20ColorFabb%20SteelFill.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/steelfill-light-gray
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 3.13
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 55
+  < °C
+
+> Heat Deflection Temperature
+  < HDT-B, ISO 75
+  < 50
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 3310
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 21.1
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 2.4
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 3190
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 35.2
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 2.41
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA/PHA | stainless steel powder filled, aesthetic grade (not an engineering composite)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 190 - 210
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 80
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < glass plate with glue stick or tape; use abrasion-resistant (hardened steel) nozzles
+  <

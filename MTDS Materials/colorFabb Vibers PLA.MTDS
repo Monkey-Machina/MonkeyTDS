@@ -1,0 +1,97 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < Vibers PLA
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < elephant grass fibre, 10%
+  <
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PLA/colorFabb%20PLA%20Vibers/TDS_E%20ColorFabb%20Vibers%20PLA.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/vibers-pla-white
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 2910
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 36.8
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 5.0
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2720
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 65.0
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 3.05
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | 10% elephant grass fibre, developed with Vibers (NL) to reduce carbon footprint by ~1/3 vs. standard PLA
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 100
+  < mm/s

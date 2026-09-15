@@ -1,0 +1,114 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < LW-ASA
+  <
+
+> Material
+  <
+  < ASA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/ASA/colorFabb%20LW-ASA/TDS_E%20colorFabb%20LW-ASA.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/lw-asa-black
+  <
+
+# Physical Property
+
+> Density
+  < | unfoamed
+  < 1.07
+  < g/cm^3
+
+> Density
+  < | actively foamed at 250 °C, 60% flow (max. ~2.5x volume expansion)
+  < 0.43
+  < g/cm^3
+
+> Vicat Softening Temperature
+  <
+  < 96
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A | foamed, 250 °C, 60% flow
+  < 824
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A | foamed, 250 °C, 60% flow
+  < 11.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A | foamed, 250 °C, 60% flow
+  < 3.9
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178 | foamed, 250 °C, 60% flow
+  < 769
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | foamed, 250 °C, 60% flow
+  < 20.7
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched, foamed, 250 °C, 60% flow
+  < 1.31
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < ASA | active-foaming grade, expands ~2.5x volume at ~230 °C
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 100
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 50
+  < %
+
+> Print Speed
+  <
+  < 30 - 50
+  < mm/s

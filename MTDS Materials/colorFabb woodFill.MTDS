@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < woodFill
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < recycled pinewood fibre
+  <
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PLA/colorFabb%20PLA%20specialFill/TDS_E%20colorFabb%20woodFill.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/woodfill
+  <
+
+# Physical Property
+
+> Glass Transition Temperature
+  <
+  < 55
+  < °C
+
+> Heat Deflection Temperature
+  < HDT-B, ISO 75
+  < 53
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 2390
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 26.9
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 4.0
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2350
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 51.2
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 3.38
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA/PHA | recycled pinewood fibre filled, aesthetic grade (not an engineering composite)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 100
+  < mm/s

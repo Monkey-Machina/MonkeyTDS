@@ -1,0 +1,119 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < copperFill
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < copper powder
+  <
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PLA/colorFabb%20PLA%20specialFill/TDS_E%20ColorFabb%20CopperFill.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/copperfill
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 3.9
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 55
+  < °C
+
+> Heat Deflection Temperature
+  < HDT-B, ISO 75
+  < 49
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 2500
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 13.7
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 5.9
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 3080
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 29.6
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 2.97
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA/PHA | copper powder filled, aesthetic grade (not an engineering composite)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 195 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 60
+  < °C
+
+> Print Speed
+  <
+  < 40 - 100
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < glass plate with glue stick or tape
+  <

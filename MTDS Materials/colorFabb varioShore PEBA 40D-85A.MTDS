@@ -1,0 +1,149 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < varioShore PEBA 40D-85A
+  <
+
+> Material
+  <
+  < PEBA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Net Weight
+  <
+  < 0.6
+  < kg
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PEBA/VARIOSHORE%20PEBA%2040D-85A/TDS_varioShore_PEBA40D.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/varioshore-peba-40d-85a-natural
+  <
+
+# Physical Property
+
+> Density
+  < | injection-molded raw material
+  < 1.03
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < -50
+  < °C
+
+> Melting Temperature
+  < DSC, ISO 11357 | injection-molded raw material
+  < 148
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 37-1A | unfoamed, 210 °C, 100% flow
+  < 8.0
+  < MPa
+
+> Young's Modulus (In-Plane)
+  < ISO 37-1A | foamed, 250 °C, 55% flow
+  < 4.3
+  < MPa
+
+> Stress at 100% Strain (In-Plane)
+  < ISO 37-1A | unfoamed, 210 °C, 100% flow
+  < 9.5
+  < MPa
+
+> Stress at 100% Strain (In-Plane)
+  < ISO 37-1A | foamed, 250 °C, 55% flow
+  < 5.0
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < ISO 37-1A | unfoamed, 210 °C, 100% flow
+  < 19.7
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < ISO 37-1A | foamed, 250 °C, 55% flow
+  < 6.2
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 37-1A | unfoamed, 210 °C, 100% flow
+  < 72.1
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 37-1A | foamed, 250 °C, 55% flow
+  < 36.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 37-1A | unfoamed, 210 °C, 100% flow
+  < 1110
+  < %
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 37-1A | foamed, 250 °C, 55% flow
+  < 616
+  < %
+
+> Shore Hardness
+  < ISO 7619-1
+  < 40D / 85A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PEBA | polyether block amide, active-foaming grade
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  < unfoamed, 100% flow
+  < 210
+  < °C
+
+> Nozzle Temperature
+  < foamed, 55% flow
+  < 250
+  < °C
+
+> Bed Temperature
+  <
+  < 60
+  < °C
+
+> Cooling Fan
+  <
+  < 100
+  < %
+
+> Print Speed
+  <
+  < 50
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < adhesion spray (3Dlac)
+  <
