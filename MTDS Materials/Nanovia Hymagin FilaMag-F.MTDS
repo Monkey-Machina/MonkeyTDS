@@ -1,0 +1,89 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < Hymagin FilaMag-F
+  <
+
+> Material
+  <
+  < other
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < magnetic particulate filler
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/hymagin-filamag-f-magnetique-flexible/
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 2.8
+  < g/cm^3
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 559
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 11
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 9.2
+  < %
+
+> Shore Hardness
+  < ISO 868
+  < 98A
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < flexible magnetic filament | flexural, shear, and full thermal property data available only in the manufacturer's TDS PDF, not on the product page. At 1 GHz: complex relative permittivity ε' = 19, ε'' = 3.86; complex relative permeability μ' = 2.52, μ'' = 0.78 (no standard MTDS subject for permeability; recorded here as text rather than forced into an unrelated field)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230
+  < °C
+
+> Bed Temperature
+  <
+  < 45
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < rough or textured bed surface
+  <

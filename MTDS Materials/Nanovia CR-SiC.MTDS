@@ -1,0 +1,62 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < CR-SiC
+  <
+
+> Material
+  <
+  < other
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < silicon carbide (SiC), sinterable
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/cr-sic/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 | green (pre-sintering) state
+  < 2.66
+  < g/cm^3
+
+# Chemical Property
+
+> Composition
+  <
+  < SiC-loaded debind-and-sinter feedstock | 71% mass loading, 49% volume loading, sintered at 2050 °C over 873 min total, with 10-15% sintering shrinkage
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 220
+  < °C
+
+> Bed Temperature
+  <
+  < 40 - 60
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

@@ -1,0 +1,134 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PA6-CF
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pa-6-cf/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.21
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306 | 50 °C/h, 50 N
+  < 190
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.80 MPa
+  < 50
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 140
+  < °C
+
+> Melting Temperature
+  < DSC, ISO 11357-1
+  < 205
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 5500
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 74
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 2.9
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer, 1 mm/min
+  < 4675
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer, 1 mm/min
+  < 77
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer
+  < 3.2
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 2140
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 36
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527-2/1A | printed 90°
+  < 4.5
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < PA6 | carbon fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 100
+  < °C
+
+> Chamber Temperature
+  <
+  < 60
+  < °C
+
+> Print Speed
+  <
+  < 20 - 80
+  < mm/s

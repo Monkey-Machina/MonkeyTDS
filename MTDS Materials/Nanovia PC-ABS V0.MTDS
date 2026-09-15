@@ -1,0 +1,94 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PC-ABS V0
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pc-abs-v0/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.18
+  < g/cm^3
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 2510
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 43
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 5
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | Charpy notched, 23 °C
+  < 40
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | Charpy notched, -30 °C
+  < 15
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | Izod notched, 23 °C
+  < 50
+  < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 IEC 60695-11-10 | 1.5 mm
+  < V0
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C
+
+> Print Speed
+  <
+  < 20 - 60
+  < mm/s

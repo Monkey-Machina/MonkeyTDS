@@ -1,0 +1,134 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PLA Lin
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < flax fibre (lin)
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pla-lin/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.25
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 55 - 60
+  < °C
+
+> Heat Deflection Temperature
+  <
+  < 50
+  < °C
+
+> Melt Index
+  < ISO 1133
+  < 7 - 9
+  < g/10 min
+
+> Heat Deflection Temperature
+  < E2092 | 0.45 MPa
+  < 80 - 90
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 3100
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 41
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 2.5
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer, 1 mm/min
+  < 2830
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer, 1 mm/min
+  < 37
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 45°/-45° per layer
+  < 2.4
+  < %
+
+> Young's Modulus (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 2270
+  < MPa
+
+> Tensile Strength (Interlayer)
+  < ISO 527-2/1A | printed 90°, 1 mm/min
+  < 26
+  < MPa
+
+> Breaking Elongation Rate (Interlayer)
+  < ISO 527-2/1A | printed 90°
+  < 2.1
+  < %
+
+> Shore Hardness
+  <
+  < 77D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | flax (lin) fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 50 - 70
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

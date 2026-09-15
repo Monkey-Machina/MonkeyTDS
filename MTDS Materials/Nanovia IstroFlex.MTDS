@@ -1,0 +1,82 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < IstroFlex
+  <
+
+> Material
+  <
+  < TPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/istroflex/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.55
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < ISO 306
+  < 91
+  < °C
+
+> Melt Index
+  < ISO 1133 | 190 °C, 2.16 kg
+  < 2.7 - 4.9
+  < g/10 min
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 60
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 11.5
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < > 300
+  < %
+
+> Shore Hardness
+  <
+  < 44D / 93A
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 20 - 40
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

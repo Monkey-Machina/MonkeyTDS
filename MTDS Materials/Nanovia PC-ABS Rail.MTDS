@@ -1,0 +1,104 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PC-ABS Rail
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pc-abs-rail/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.21
+  < g/cm^3
+
+> Heat Deflection Temperature
+  < ASTM D648 | 0.45 MPa
+  < 111
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 1.82 MPa
+  < 100
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527/1A
+  < 2620
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527/1A
+  < 60
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527/1A
+  < 3.7
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2610
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 180/1A | Izod notched
+  < 20
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179/1eA | Charpy notched
+  < 45
+  < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 1.5 mm
+  < V-0
+  <
+
+> Composition
+  <
+  < PC-ABS blend | base material compliant with EN 45545-2 (requirements R22, R23; risk levels HL1, HL2, HL3)
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < 120
+  < °C
+
+> Chamber Temperature
+  <
+  < 90
+  < °C

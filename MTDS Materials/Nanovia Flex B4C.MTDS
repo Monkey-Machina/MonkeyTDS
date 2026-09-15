@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < Flex B4C
+  <
+
+> Material
+  <
+  < other
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < boron carbide (B4C), 25% by mass / 10% by volume
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/flex-b4c/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.45
+  < g/cm^3
+
+> Continuous Service Temperature
+  <
+  < 70
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < flexible elastomer | boron carbide filled (neutron-shielding grade); no mechanical property data published by Nanovia for this product as of this writing
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 40 - 60
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C
