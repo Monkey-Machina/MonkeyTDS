@@ -1,0 +1,154 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < HIPS Extrafill
+  <
+
+> Material
+  <
+  < HIPS
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Net Weight
+  <
+  < 0.75
+  < kg
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2020/10/Technical-Data-Sheet_HIPS-Extrafill_03012019.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.05
+  < g/cm^3
+
+> Melt Volume Rate
+  < ISO 1133
+  < 950
+  < mm^3/min
+
+> Moisture Absorption
+  < | 23 °C, 50% r.h., method A
+  < < 0.1
+  < %
+
+> Saturated Water Absorption Rate
+  < ISO 62
+  < < 0.1
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.8 MPa
+  < 85
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 98
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | 50 °C/h, 50 N
+  < 88.5
+  < °C
+
+> Vicat Softening Temperature
+  < ISO 306 | 120 °C/h, 10 N
+  < 89
+  < °C
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 26
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 40
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2000
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 40
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2100
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179-1eA | 23 °C, notched
+  < 17
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 179-1eU | 23 °C, unnotched
+  < no break
+  <
+
+> Ball Indentation Hardness
+  < ISO 2039-1
+  < 74
+  < MPa
+
+# Electrical Property
+
+> Relative Permittivity
+  < IEC 250
+  < 2.50
+  <
+
+> Volume Resistivity
+  < IEC 93
+  < > 1 x 10^16
+  < ohm·cm
+
+> Surface Resistance
+  < IEC 93
+  < > 1 x 10^13
+  < ohm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 230 - 250
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 105
+  < °C
+
+> Build Plate Surface Preparation
+  <
+  < glue stick, Magigoo
+  <

@@ -1,0 +1,99 @@
+# Specification
+
+> Manufacturer
+  <
+  < Fillamentum
+  <
+
+> Product Name
+  <
+  < PP 2320
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.07
+  < mm
+
+> Net Weight
+  <
+  < 0.6
+  < kg
+
+> Source
+  <
+  < TDS | https://fillamentum.com/wp-content/uploads/2024/10/TDS_PP-2320_03122019.pdf
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183 A | (23 ± 2) °C
+  < 0.96
+  < g/cm^3
+
+> Melt Index
+  < ISO 1133 | 230 °C, 5 kg
+  < 7.4
+  < g/10 min
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < ISO 527
+  < 23.0
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < 20
+  < %
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 1400
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179-1/1eU | 25 °C, unnotched
+  < 184
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < polypropylene
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 225 - 245
+  < °C
+
+> Bed Temperature
+  <
+  < 90 - 105
+  < °C
+
+> Print Speed
+  <
+  < 20 - 40
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < Magigoo PP; PP plate or mirror/glass bed surface
+  <
