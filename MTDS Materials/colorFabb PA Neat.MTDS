@@ -1,0 +1,114 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < PA Neat
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/PA/colorFabb%20PA%20Neat/TDS_E%20colorFabb%20PA-NEAT.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/pa-neat
+  <
+
+# Physical Property
+
+> Density
+  <
+  < 1.14
+  < g/cm^3
+
+> Continuous Service Temperature
+  <
+  < 120
+  < °C
+
+> Heat Deflection Temperature
+  < HDT-B, ISO 75
+  < 90
+  < °C
+
+> Melt Index
+  < ISO 1133-A | 250 °C, 2.16 kg
+  < 5.5
+  < g/10 min
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 3000
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 63
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 8.5
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 5.2
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < engineering-grade polyamide (nylon) | low warp
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 265 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < ambient - 50
+  < °C
+
+> Cooling Fan
+  <
+  < 0
+  < %
+
+> Print Speed
+  <
+  < 30 - 40
+  < mm/s
+
+> Build Plate Surface Preparation
+  <
+  < glass plate with buildTak
+  <

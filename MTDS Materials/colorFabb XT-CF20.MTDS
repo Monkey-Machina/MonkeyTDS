@@ -1,0 +1,102 @@
+# Specification
+
+> Manufacturer
+  <
+  < colorFabb
+  <
+
+> Product Name
+  <
+  < XT-CF20
+  <
+
+> Material
+  <
+  < co-polyester
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Diameter Tolerance
+  <
+  < ± 0.05
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre, 20%
+  <
+
+> Source
+  <
+  < TDS | https://downloads.colorfabb.com/public.php/webdav/Technical%20Data%20Sheets/Co-Polyester/colorFabb_XT/TDS_colorFabb_XT-CF20.pdf
+  <
+
+> Source
+  <
+  < Product Page | https://colorfabb.com/xt-cf20
+  <
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1A
+  < 5150
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-1A
+  < 56
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-1A
+  < 2
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 2700
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178
+  < 70
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179 | Charpy, notched
+  < 2.5
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < Eastman Amphora AM1800 co-polyester | 20% carbon fibre reinforced, matte finish
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 70
+  < °C
+
+> Cooling Fan
+  <
+  < 0 - 50
+  < %
+
+> Print Speed
+  <
+  < 40 - 70
+  < mm/s
