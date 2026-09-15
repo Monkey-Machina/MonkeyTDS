@@ -1,0 +1,99 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PP-CF
+  <
+
+> Material
+  <
+  < PP
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pp-cf/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.00
+  < g/cm^3
+
+> Saturated Water Absorption Rate
+  <
+  < < 1
+  < %
+
+> Heat Deflection Temperature
+  < ISO 75-2 | 0.45 MPa
+  < 88
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 5385
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 29
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 3.3
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179-1eA | Charpy notched, 23 °C
+  < 3.5
+  < kJ/m^2
+
+> Shore Hardness
+  <
+  < 61D
+  <
+
+# Chemical Property
+
+> Composition
+  <
+  < PP | carbon fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235 - 255
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 100
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

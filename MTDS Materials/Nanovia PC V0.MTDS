@@ -1,0 +1,136 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PC V0
+  <
+
+> Material
+  <
+  < PC
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pc-v0/
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.20
+  < g/cm^3
+
+> Moisture Absorption
+  < ASTM D570
+  < 0.15
+  < %
+
+> Heat Deflection Temperature
+  < ASTM D648 | 4.6 kgf/cm^2
+  < 144
+  < °C
+
+> Heat Deflection Temperature
+  < ASTM D648 | 18.6 kgf/cm^2
+  < 133
+  < °C
+
+> Melt Index
+  < ASTM D1238 | 300 °C, 1.2 kg
+  < 10
+  < g/10 min
+
+> Coefficient of Thermal Expansion
+  < ASTM D696
+  < 55
+  < ppm/°C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 2165
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | printed 0°, 1 mm/min
+  < 53
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | printed 0°
+  < 4.1
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790
+  < 2160
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ASTM D638
+  < 90
+  < MPa
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 3.0 mm
+  < V-0
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  < ASTM D257
+  < 4 x 10^16
+  < ohm·cm
+
+> Dielectric Strength
+  < ASTM D149
+  < 30
+  < kV/mm
+
+> Relative Permittivity
+  < ASTM D150
+  < 2.80
+  <
+
+> Dissipation Factor
+  < ASTM D150
+  < 0.0082
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 270 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < 100 - 140
+  < °C
+
+> Chamber Temperature
+  <
+  < > 100
+  < °C
+
+> Print Speed
+  <
+  < 50 - 70
+  < mm/s

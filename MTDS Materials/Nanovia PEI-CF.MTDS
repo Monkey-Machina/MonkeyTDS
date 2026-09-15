@@ -1,0 +1,89 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PEI-CF
+  <
+
+> Material
+  <
+  < PEI
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pei-cf/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.27
+  < g/cm^3
+
+> Vicat Softening Temperature
+  < | method A, 50 N
+  < > 215
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75Be | 0.45 MPa
+  < > 200
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 4685
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 527
+  < 4950
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  <
+  < 3.5
+  < %
+
+# Chemical Property
+
+> Composition
+  <
+  < PEI | carbon fibre reinforced
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 370 - 400
+  < °C
+
+> Bed Temperature
+  <
+  < > 150
+  < °C
+
+> Chamber Temperature
+  <
+  < > 120
+  < °C

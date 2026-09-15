@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PLA Wood
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < wood fibre, 40% by volume
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pla-wood/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.13
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 52
+  < °C
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | wood fibre reinforced, 40% by volume; no mechanical property data published by Nanovia for this product as of this writing
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 210 - 230
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 70
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

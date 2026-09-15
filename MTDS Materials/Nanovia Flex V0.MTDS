@@ -1,0 +1,89 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < Flex V0
+  <
+
+> Material
+  <
+  < TPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/flex-v0/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.21
+  < g/cm^3
+
+# Mechanical Property
+
+> Tensile Strength (In-Plane)
+  < VDE 0282 part 10
+  < 27
+  < MPa
+
+> Stress at 100% Strain (In-Plane)
+  < VDE 0282 part 10
+  < 7
+  < MPa
+
+> Stress at 300% Strain (In-Plane)
+  < VDE 0282 part 10
+  < 10
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < VDE 0282 part 10
+  < 524
+  < %
+
+> Shore Hardness
+  <
+  < 90A / 40D
+  <
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 0.8 mm
+  < V-0
+  <
+
+> Limiting Oxygen Index
+  < ASTM D-2863
+  < 25
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 235 - 245
+  < °C
+
+> Bed Temperature
+  <
+  < 20 - 40
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

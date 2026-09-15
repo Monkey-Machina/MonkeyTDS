@@ -1,0 +1,146 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < InsuBlend
+  <
+
+> Material
+  <
+  < other
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/insublend/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.08
+  < g/cm^3
+
+> Moisture Absorption
+  <
+  < 0.10
+  < %
+
+> Glass Transition Temperature
+  <
+  < 140
+  < °C
+
+> Heat Deflection Temperature
+  <
+  < 114
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 67
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ISO 527
+  < 2430
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 178
+  < 20
+  < %
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 1.6 mm
+  < V0
+  <
+
+> Flammability Rating
+  < UL 94 | 2.5 mm
+  < 5VA
+  <
+
+> Composition
+  <
+  < electrically insulating blend | linear shrinkage 0.5-0.7%
+  <
+
+# Electrical Property
+
+> Relative Permittivity
+  < IEC 60250 | 100 Hz
+  < 2.9
+  <
+
+> Relative Permittivity
+  < IEC 60250 | 1 MHz
+  < 2.9
+  <
+
+> Dissipation Factor
+  < IEC 60250 | 100 Hz
+  < 0.0003
+  <
+
+> Dissipation Factor
+  < IEC 60250 | 1 MHz
+  < 0.0004
+  <
+
+> Dielectric Strength
+  < IEC 60243
+  < 29
+  < kV/mm
+
+> Volume Resistivity
+  < IEC 60093
+  < 1 x 10^15
+  < ohm·cm
+
+> Surface Resistance
+  < IEC 60093
+  < 1 x 10^15
+  < ohm
+
+> Comparative Tracking Index
+  < IEC 60112
+  < 190
+  < V
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 260 - 280
+  < °C
+
+> Bed Temperature
+  <
+  < 130 - 150
+  < °C
+
+> Chamber Temperature
+  <
+  < 110
+  < °C
+
+> Print Speed
+  <
+  < 50 - 70
+  < mm/s

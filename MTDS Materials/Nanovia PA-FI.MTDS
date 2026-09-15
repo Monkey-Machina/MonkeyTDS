@@ -1,0 +1,72 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PA-FI
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pa-fi/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.30
+  < g/cm^3
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-2/1A | 50 mm/min, ISO 3167 A specimen
+  < 3800
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527-2/1A | 50 mm/min, ISO 3167 A specimen
+  < 83
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527-2/1A | 50 mm/min, ISO 3167 A specimen
+  < 4.0
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179 1eU | Charpy
+  < 81
+  < kJ/m^2
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 265 - 290
+  < °C
+
+> Bed Temperature
+  <
+  < 70 - 80
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

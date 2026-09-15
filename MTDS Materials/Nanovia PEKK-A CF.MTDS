@@ -1,0 +1,111 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PEKK-A CF
+  <
+
+> Material
+  <
+  < PEKK
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Filler Content
+  <
+  < carbon fibre
+  <
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pekk-a-cf/
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.32
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 160
+  < °C
+
+> Heat Deflection Temperature
+  < | 1.8 MPa
+  < 139
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2900
+  < MPa
+
+> Flexural Modulus (In-Plane)
+  < ASTM D790
+  < 3000
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < > 80
+  < %
+
+> Impact Strength (In-Plane)
+  < ASTM D256 | Izod notched
+  < 5.5
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PEKK | carbon fibre reinforced
+  <
+
+# Electrical Property
+
+> Dielectric Strength
+  < ASTM D149
+  < 84
+  < kV/mm
+
+> Volume Resistivity
+  < ASTM D257
+  < 1 x 10^16
+  < ohm·cm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 360 - 380
+  < °C
+
+> Bed Temperature
+  <
+  < 120 - 150
+  < °C
+
+> Chamber Temperature
+  <
+  < > 90
+  < °C
+
+> Print Speed
+  <
+  < 20 - 40
+  < mm/s

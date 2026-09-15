@@ -1,0 +1,109 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PLA VX
+  <
+
+> Material
+  <
+  < PLA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pla-vx/
+  <
+
+# Physical Property
+
+> Density
+  < ASTM D792
+  < 1.24
+  < g/cm^3
+
+> Glass Transition Temperature
+  <
+  < 55 - 60
+  < °C
+
+> Heat Deflection Temperature
+  < | 0.45 MPa
+  < 80 - 90
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ASTM D638
+  < 2315
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ASTM D638
+  < 50
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ASTM D638
+  < 3.30
+  < %
+
+> Impact Strength (In-Plane)
+  < ISO 179-1eU | Charpy notched
+  < 1.8
+  < kJ/m^2
+
+# Chemical Property
+
+> Composition
+  <
+  < PLA | virucidal additive, tested to ISO 21702
+  <
+
+> Antimicrobial Reduction Rate
+  < ISO 21702 | 1 h
+  < 86.8
+  < %
+
+> Antimicrobial Reduction Rate
+  < ISO 21702 | 2 h
+  < 98.7
+  < %
+
+> Antimicrobial Reduction Rate
+  < ISO 21702 | 4 h
+  < 99.9
+  < %
+
+> Antimicrobial Reduction Rate
+  < ISO 21702 | 8 h
+  < 99.9
+  < %
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 200 - 215
+  < °C
+
+> Bed Temperature
+  <
+  < 60 - 70
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C

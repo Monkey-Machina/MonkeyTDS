@@ -1,0 +1,136 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < PA6
+  <
+
+> Material
+  <
+  < PA
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/pa-6/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.14
+  < g/cm^3
+
+> Saturated Water Absorption Rate
+  < ISO 62
+  < 0.5
+  < %
+
+> Vicat Softening Temperature
+  < ISO 306 | 50 °C/h, 50 N
+  < 190
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 1.80 MPa
+  < 50
+  < °C
+
+> Heat Deflection Temperature
+  < ISO 75 | 0.45 MPa
+  < 140
+  < °C
+
+> Melting Temperature
+  < DSC, ISO 11357-1
+  < 205
+  < °C
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527
+  < 2100
+  < MPa
+
+> Tensile Strength (In-Plane)
+  < ISO 527 | at yield
+  < 51
+  < MPa
+
+> Breaking Elongation Rate (In-Plane)
+  < ISO 527
+  < > 50
+  < %
+
+> Flexural Modulus (In-Plane)
+  < ISO 178
+  < 1650
+  < MPa
+
+> Flexural Strength (In-Plane)
+  < ISO 178 | at yield
+  < 85
+  < MPa
+
+> Impact Strength (In-Plane)
+  < ISO 179-1eA | Charpy notched
+  < 6
+  < kJ/m^2
+
+> Impact Strength (In-Plane)
+  < ISO 180-1A | Izod notched
+  < 5
+  < kJ/m^2
+
+# Chemical Property
+
+> Flammability Rating
+  < UL 94 | 0.8 mm
+  < HB
+  <
+
+# Electrical Property
+
+> Volume Resistivity
+  < IEC 93
+  < 1 x 10^15
+  < ohm·cm
+
+> Surface Resistance
+  < IEC 93
+  < 1 x 10^13
+  < ohm
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 240 - 260
+  < °C
+
+> Bed Temperature
+  <
+  < 80 - 100
+  < °C
+
+> Chamber Temperature
+  <
+  < 60
+  < °C
+
+> Print Speed
+  <
+  < 20 - 60
+  < mm/s

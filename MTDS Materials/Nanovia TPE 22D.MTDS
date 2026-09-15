@@ -1,0 +1,67 @@
+# Specification
+
+> Manufacturer
+  <
+  < Nanovia
+  <
+
+> Product Name
+  <
+  < TPE 22D
+  <
+
+> Material
+  <
+  < TPE
+  <
+
+> Diameter
+  <
+  < 1.75
+  < mm
+
+> Source
+  <
+  < Product Page | https://nanovia.tech/ref/tpe-22d/
+  <
+
+# Physical Property
+
+> Density
+  < ISO 1183
+  < 1.00
+  < g/cm^3
+
+# Mechanical Property
+
+> Young's Modulus (In-Plane)
+  < ISO 527-1
+  < 12
+  < MPa
+
+> Shore Hardness
+  <
+  < 22D / 70A
+  <
+
+# Print Setting
+
+> Nozzle Temperature
+  <
+  < 220 - 240
+  < °C
+
+> Bed Temperature
+  <
+  < 30 - 50
+  < °C
+
+> Chamber Temperature
+  <
+  < 20
+  < °C
+
+> Drying Condition
+  <
+  < 50 °C / 4 h
+  <
